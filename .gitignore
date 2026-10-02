@@ -1,0 +1,12 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Generated / intermediate art. The keyed sprites, busts and backgrounds under
+# assets/ are the ones the game loads; these are the raw renders and the
+# masks/sheets the tooling produces along the way.
+tools/shots/
+tools/*.log
+tools/__pycache__/
+__pycache__/
+*.pyc

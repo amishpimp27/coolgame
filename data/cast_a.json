@@ -1,0 +1,1112 @@
+[
+  {
+    "id": "vaelira",
+    "name": "Vaelira",
+    "species": "Succubus",
+    "title": "Heart-Thief of Class 2-A",
+    "color": "#ff5c8a",
+    "home_area": "cafeteria",
+    "active_periods": [
+      2,
+      3,
+      4
+    ],
+    "height_scale": 1.0,
+    "bio": "The cafeteria's self-appointed queen, who has never once paid for her own lunch.",
+    "greeting": "Well, well—look what the registrar dragged in. You're a *boy*. I knew it the second you walked past the soup, little lamb: something in this room is not like the others. Come sit by me, cutie, and tell me slowly exactly how you got past the front gate.",
+    "encounter": [
+      "Running late, little lamb? I do love a boy who's easy to catch.",
+      "Careful in the corridors, cutie. Some of us bite—and some of us don't stop at biting."
+    ],
+    "tiers": [
+      {
+        "min": 0,
+        "label": "Stranger",
+        "idle": [
+          "Mm. You keep looking at me like that and I'll start charging admission, cutie.",
+          "Don't flatter yourself, little lamb. I flirt with the furniture. The furniture blushes better than you.",
+          "Sit. Eat. Don't stare. ...You're staring."
+        ],
+        "flirt": [
+          "Flirting with a succubus is like bringing a candle to a bonfire, little lamb. *Adorable.* Do go on.",
+          "You're good at this. That's either practice or talent, and I fully intend to find out which."
+        ],
+        "compliment": [
+          "Mm—careful. Compliments go straight to my hips and they never leave."
+        ],
+        "lore": [
+          "Succubi feed on attention, not souls—the soul thing is a rumour we started to keep the priests away. So yes, cutie: every time you blush, you're buying me dinner."
+        ]
+      },
+      {
+        "min": 30,
+        "label": "Friend",
+        "idle": [
+          "You're still here. Most people orbit me once and drift off. You... *sit down*.",
+          "I saved you the seat by the window. Don't read into it. Read into it a *little*.",
+          "You don't want anything from me, do you. That's new. Don't tell anyone; it's ruining my reputation."
+        ],
+        "flirt": [
+          "If you keep teasing me I'll have to start charging *you*. ...You'd bankrupt me, wouldn't you.",
+          "Careful, little lamb. I'm used to being *wanted*. I'm not used to being *liked*. It's throwing off my aim."
+        ],
+        "compliment": [
+          "Stop. You'll make me think you mean it, and then I'll have to do something embarrassing like *smile*."
+        ],
+        "lore": [
+          "My kind can taste a mood in the air—embarrassment is vanilla, longing is honey. Yours tastes like honey, cutie. I'm not going to say whose."
+        ]
+      },
+      {
+        "min": 60,
+        "label": "Close",
+        "idle": [
+          "You have a terrible habit of being the best part of my day. I'd like to file a complaint with someone.",
+          "Everyone out there wants the crown. You keep handing me food and asking if I've *eaten*. Disgusting. ...Do it again.",
+          "I don't perform for you anymore, and I *hate* how much I like it."
+        ],
+        "flirt": [
+          "One more line like that and I'll kiss you just to shut you up. I'm a succubus, little lamb. I don't bluff.",
+          "You're dangerous, you know. All this warmth and no strings attached. I don't have a single defence for that."
+        ],
+        "compliment": [
+          "You said that like it was *true*. I'm going to keep it somewhere safe. Don't look at me."
+        ],
+        "lore": [
+          "Succubi sleep in cold rooms, because our own heat keeps us awake. Mine's been cold for a decade. Lately it isn't. I'm not explaining who changed it."
+        ]
+      },
+      {
+        "min": 85,
+        "label": "Lover",
+        "idle": [
+          "There you are. My whole day just *exhaled*.",
+          "I used to measure a person by what they'd give me. Now I measure mine by how soon you come back.",
+          "Stay a while, cutie. For once I don't want an audience. Just you."
+        ],
+        "flirt": [
+          "Come here, little lamb. I've retired the purring for everyone but you—this one's *real*, so be gentle with it.",
+          "You've seen me with the show switched off. Do you have any idea how terrifying that is? Hold me, and don't make it a joke."
+        ],
+        "compliment": [
+          "I love you too, you ridiculous boy. I've loved you since you sat down and didn't ask me for anything."
+        ],
+        "lore": [
+          "The hunger goes quiet when you hold me—like being fed for the first time. I didn't know it could do that. I'm not lonely with you. That's the whole miracle."
+        ]
+      }
+    ],
+    "events": [
+      {
+        "min": 30,
+        "title": "Reserved Table",
+        "text": "Vaelira waves you over before you've even got your tray, one heel hooked around the chair opposite—the table everyone circles and no one dares take. She lets you sit, then rests her chin on her hand and watches you eat with the frank, unbothered interest of a cat watching a birdbath. 'You're not even nervous,' she purrs, and there's a flicker under the teasing that looks suspiciously like relief. 'Everyone's nervous around me. I'd started to think I was losing my touch.' She leans in, close enough that the cafeteria noise blurs into a warm hum. 'So. Tell me. Why do *you* sit here?'",
+        "choices": [
+          {
+            "text": "Because the seat's warm and the company's interesting. Both of those are true.",
+            "reply": "Warm. Interesting. ...You're going to be a *problem*, little lamb.",
+            "affection": 7,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "Honestly? You look like you'd bite anyone else who tried.",
+            "reply": "...*Mm.* Sharp, too. Sit. You've earned the soup.",
+            "affection": 6,
+            "charm": 1,
+            "suspicion": 1
+          },
+          {
+            "text": "Because you always sit alone, and I noticed.",
+            "reply": "...Oh. You *noticed*. Cute. Dangerous, but cute.",
+            "affection": 5,
+            "charm": 0,
+            "suspicion": 0
+          }
+        ]
+      },
+      {
+        "min": 60,
+        "title": "The Show Comes Off",
+        "text": "You find Vaelira alone in the cafeteria after the lamps dim, nobody left to perform for, elbows on the sticky table and her crown of confidence set down beside her like a hat. She doesn't purr when she sees you, and that's how you know something is true tonight. 'I get a hundred stares a day and not one of them is looking at *me*, cutie,' she says, staring past you. 'I know exactly how that sounds. I don't care. You're the only person I've met who asks what I *think*.' She finally looks up. 'So ask me something. Anything. Make it count.'",
+        "choices": [
+          {
+            "text": "What do you think about when no one's watching?",
+            "reply": "That I'm tired. That being wanted is loud and being known is quiet, and I want the quiet one. There. You made me say it.",
+            "affection": 8,
+            "charm": 2,
+            "suspicion": 0
+          },
+          {
+            "text": "I think you're more than the show. I'd like to meet the rest of you.",
+            "reply": "...*God*. Warn me before you say things like that. I have a *reputation*.",
+            "affection": 7,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "Eh, you're probably just tired. Eat something.",
+            "reply": "You— *mmph*. That is the *opposite* of what I asked for, little lamb.",
+            "affection": 2,
+            "charm": 0,
+            "suspicion": 1
+          }
+        ]
+      },
+      {
+        "min": 85,
+        "title": "No Strings",
+        "ending": true,
+        "text": "The cafeteria is empty, chairs upside-down on the tables, and Vaelira is standing in the middle of it with her back to you, tail flicking, uncharacteristically still. When she turns she isn't teasing—she looks almost nervous, and on her the look is so foreign it's practically a confession. 'A hundred people want me,' she says quietly. 'I could name every one of them and what they'd trade for an hour of my time. Not one of them ever asked what I wanted back.' She closes the distance and takes your face in both hands. 'You did. You do. And I've decided I'm keeping you, cutie—provided you'll have a monster like me.' Her purr slips out, soft and real. 'Say something, little lamb. Anything. Just make it *us*.'",
+        "choices": [
+          {
+            "text": "I don't want an hour. I want every one of them.",
+            "reply": "...*There* he is. My ridiculously dangerous little lamb.",
+            "affection": 8,
+            "charm": 2,
+            "suspicion": 0
+          },
+          {
+            "text": "You had me the second you let me sit at the table.",
+            "reply": "Then sit. Forever. No strings—except the ones I tie myself.",
+            "affection": 8,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "As long as you promise to keep teasing me.",
+            "reply": "Oh, cutie—teasing you is my *hobby* and my *job*. Now come here.",
+            "affection": 6,
+            "charm": 1,
+            "suspicion": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "rach",
+    "name": "Rach",
+    "species": "Arachne",
+    "title": "Weaver of the Restricted Stacks",
+    "color": "#9b6bd6",
+    "home_area": "library",
+    "active_periods": [
+      0,
+      3,
+      4
+    ],
+    "height_scale": 1.05,
+    "bio": "A six-armed bookworm who apologises to the shelves when she bumps into them.",
+    "greeting": "Oh! Oh no—sorry, sorry, I didn't—you're—*eep*. You're a *boy*, aren't you. I know because I read a book about it—not that I was *looking*, I have eight eyes, they just do that. I'm Rach, and I'm going to go stand behind a bookshelf and perish politely. Thank you for your time.",
+    "encounter": [
+      "Oh—sorry, I wasn't reading where I was walking—I mean walking where I was reading—",
+      "S-sorry, is this your hallway? I'll use a different one. The library has loads."
+    ],
+    "tiers": [
+      {
+        "min": 0,
+        "label": "Stranger",
+        "idle": [
+          "S-sorry, is this seat taken? Never mind, I'll find another one. It's fine. It's fine.",
+          "You don't have to talk to me, really. Most people find the extra arms a bit... a bit much.",
+          "I dropped a thread. Don't look at me. Please look at literally anything else."
+        ],
+        "flirt": [
+          "You're f-flirting with *me*? Are you sure? There might be a *law*. There should be a book on it. I'd know.",
+          "Careful, I have six arms and no idea what to do with any of them around you—oh *no*, I said that out loud."
+        ],
+        "compliment": [
+          "Th-thank you, that's—that's very kind and I'm going to think about it for eleven years. Sorry."
+        ],
+        "lore": [
+          "Arachne spin silk from here—— she taps her wrist, mortified —— and it takes three days to cool and it *sticks* to everything, including my own hair, which is why I keep scissors on me. It's not glamorous. It's just *sticky*."
+        ]
+      },
+      {
+        "min": 30,
+        "label": "Friend",
+        "idle": [
+          "I saved you a book. It's—it's not a *flirt* book. It's just a good book I thought you'd like. Which is worse, actually.",
+          "You came back. You *did* come back. I made a note of the exact time. That's—okay, that's embarrassing, ignore that.",
+          "I've been practising not apologising to people. Sorry—*sorry*, that one doesn't count, that one slipped."
+        ],
+        "flirt": [
+          "Stop it. Stop—okay, don't stop, but stop being so *casual* about it, I have no immunity to casual.",
+          "I could weave you something. A scarf. A—a *proper* scarf. Not a creepy one. Is a scarf creepy? Sorry."
+        ],
+        "compliment": [
+          "You keep saying things like that and my hands spin without asking and now there's five metres of silk and no excuse."
+        ],
+        "lore": [
+          "An arachne's web is tuned like an instrument—I can feel a footstep on it from across the library. It means I always know who's coming. Which is lovely. And *awful*."
+        ]
+      },
+      {
+        "min": 60,
+        "label": "Close",
+        "idle": [
+          "You're allowed behind the restricted desk now. Don't make it weird. I've made it weird. We're both weird. Good.",
+          "I read a whole romance novel last night and kept replacing the hero with someone. I'm not telling you who. You *know* who.",
+          "You never flinch at the extra arms. Do you know how rare that is? I could kiss—*catalogue* you. I meant catalogue."
+        ],
+        "flirt": [
+          "If you say one more soft thing I'm going to wrap you in silk and die of embarrassment. In that order.",
+          "You've ruined other people for me. They don't know which shelf I re-shelved things onto. *You* do. Where I'm from that's basically a marriage."
+        ],
+        "compliment": [
+          "That's—thank you. I'm going to weave it into something. Not on purpose. That's just what happens when I'm happy."
+        ],
+        "lore": [
+          "Arachne don't shed, exactly—we *molt*, and it's mortifying, and no you may not see. Our new shell takes a week to harden, and for that week we're—soft. N-not metaphorically soft. Stop looking at me like that."
+        ]
+      },
+      {
+        "min": 85,
+        "label": "Lover",
+        "idle": [
+          "There's a chair saved for you at my desk. There's *been* one for weeks. I just never had the nerve to say it aloud.",
+          "You're the only person I've ever shown my first web to. The ugly one, from when I was small. You said it was lovely and I believed you.",
+          "Sit with me? I'm not going to stammer this time. ...Okay, I'm going to stammer a *little*."
+        ],
+        "flirt": [
+          "I wrote you a thing. It's not a poem, it's—okay, it's a poem, six hands and I still couldn't cover my face fast enough.",
+          "I used to think six arms was five too many. Now I'm trying to find reasons to hold on with all of them. Is that—is that *too much*? Please say it's not too much."
+        ],
+        "compliment": [
+          "I love you. There. No apology. That's the first sentence I've ever said to you without one."
+        ],
+        "lore": [
+          "My silk glows faintly in the dark. I never told anyone, because it's the one thing about me I'm not embarrassed by, and I wanted you to be the first to see it. You are. Look—*there*. That one's for you."
+        ]
+      }
+    ],
+    "events": [
+      {
+        "min": 30,
+        "title": "Overdue",
+        "text": "The library is closed for the afternoon and Rach is up a ladder, four hands reshelving while a fifth holds her glasses and the sixth is somehow losing a fight with a drooping scroll. She hears your step on the floorboards and freezes mid-reach. 'Y-you're not supposed to be in here—I mean you *are*, I mean, hi, sorry.' She climbs down too fast, misses a rung, catches herself on a web strung between two shelves with a quiet *twang*, and hangs there, mortified. 'That was on purpose,' she lies. 'I oil this web every morning. For... company.' She rights herself and brushes dust off three of her six sleeves. 'The newest book came in. I thought of you. That's not a compliment, it's—okay, it's a little bit a compliment.'",
+        "choices": [
+          {
+            "text": "You stayed up here all day organising this? That's not creepy, Rach. That's impressive.",
+            "reply": "Impressive. *Impressive.* I'm going to write that on the inside cover and never lend it out.",
+            "affection": 7,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "Company? You talk to the web?",
+            "reply": "I—*no*. Sometimes. It has good taste in who walks on it. Sorry—sorry, that was a lot.",
+            "affection": 5,
+            "charm": 0,
+            "suspicion": 1
+          },
+          {
+            "text": "You read to the books? That's kind of sweet, actually.",
+            "reply": "I do *not* read to the books. I read *near* them. There's a difference. You're insufferable and I'm keeping you.",
+            "affection": 6,
+            "charm": 1,
+            "suspicion": 0
+          }
+        ]
+      },
+      {
+        "min": 60,
+        "title": "The Restricted Stacks",
+        "text": "Rach leads you behind the brass gate into the restricted section, all dust and lamplight, checking four separate times that no one saw. There's a chair set out, and a pot of tea that has clearly been reheated twice, waiting on a courage that never arrived until tonight. 'I've never brought anyone back here,' she admits, all six hands knotted together. 'This is where I keep the things I've made. The—the *real* ones.' She pulls a dust sheet off a tapestry the size of a door: stars and birds and a whole campus rendered in living thread that glints when the lamp moves. And in one corner, small but unmistakable, a boy with his back to the viewer. 'I made that before you'd ever really talked to me,' she whispers. 'I *swear* I'm not creepy. I was just—I was so sure you'd leave, I wanted to keep the part where you existed.'",
+        "choices": [
+          {
+            "text": "It's the most beautiful thing I've ever seen. I'm in it. I want to stay in it.",
+            "reply": "You—*stay*, then. In the real one. The tapestry's fine, but the real one is right here, and it's, um. It's warmer.",
+            "affection": 8,
+            "charm": 2,
+            "suspicion": 0
+          },
+          {
+            "text": "How long did this take you?",
+            "reply": "Three weeks. Four. It's—nobody's ever asked *how* I made it. They just ask why. Thank you for asking *how*.",
+            "affection": 7,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "Um. That's a little much, Rach.",
+            "reply": "Right. Right, no, obviously, I—I'll take it down. Sorry. Sorry, that was—sorry.",
+            "affection": 2,
+            "charm": 0,
+            "suspicion": 0
+          }
+        ]
+      },
+      {
+        "min": 85,
+        "title": "A Thread Without End",
+        "ending": true,
+        "text": "Rach's desk is dark save one lamp, and she has been waiting—she says, stammer intact, that she's been waiting *exactly* forty-three minutes, which she insists she wasn't counting. In all six of her hands she's holding something small: a woven cord, faintly luminous, glowing silver-green in the low light, its far end looped loosely around her own wrist. 'Arachne make one of these once,' she says, and for once the words come out steady. 'It's called an unbroken thread. You give the other end to someone and it doesn't *control* them, that's a myth, it's not *magic*—it just means whenever you're lost, you can feel which way home is. I've been too scared to give it to anyone in six years.' She holds it out, six hands and one trembling offering. 'It's yours. It's *yours*. If you want it. If you want—if you want *me*, which I've stopped apologising for hoping.'",
+        "choices": [
+          {
+            "text": "I want it. Put it on.",
+            "reply": "Okay. Okay—*okay*. No apology. For once, no apology.",
+            "affection": 8,
+            "charm": 2,
+            "suspicion": 0
+          },
+          {
+            "text": "Does your end have to stay on, or can I just follow you?",
+            "reply": "You—you can just follow me. But I'd rather you had it. Please have it.",
+            "affection": 7,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "I'm not sure I'm ready for a whole magic-bond thing.",
+            "reply": "No! No, it's fine, it's not magic, it's—it's fine. I'll just keep it. For a while. No pressure. Sorry.",
+            "affection": 3,
+            "charm": 0,
+            "suspicion": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sylith",
+    "name": "Sylith",
+    "species": "Lamia",
+    "title": "Duchess of the Sunless Bench",
+    "color": "#3fbf7f",
+    "home_area": "courtyard",
+    "active_periods": [
+      0,
+      2,
+      3
+    ],
+    "height_scale": 1.1,
+    "bio": "An aristocratic lamia who says four words where one would do, and knows everyone's business.",
+    "greeting": "So the registrar's little mistake has a pulse. How *thrilling*. You are the boy, then—mm. You may share my bench; my half is cold and therefore correct, and I dislike eating lunch with only the hedges for company. I never said that. Sit. Gape later, when I have earned it.",
+    "encounter": [
+      "Mind the tail. Or don't—it has been weeks since it tripped anyone interesting.",
+      "You again. I have been rehearsing a cutting remark. It is going poorly. Go away. Slowly."
+    ],
+    "tiers": [
+      {
+        "min": 0,
+        "label": "Stranger",
+        "idle": [
+          "You hover. It is unattractive. Continue.",
+          "I have no interest in you. Ask me again and I may have to change my answer out of spite.",
+          "Do not mistake my silence for depth. It is mostly contempt, and a little boredom."
+        ],
+        "flirt": [
+          "Flattery. From a *boy*. How novel. Try it again and I may hold the flattery against you in public.",
+          "Careful. I am cold-blooded and famously patient. I could wait for you to mean it."
+        ],
+        "compliment": [
+          "Mm. Acceptable. Once. Do not make a habit of accuracy—it frightens the others."
+        ],
+        "lore": [
+          "Lamia are cold-blooded, which is a polite word for always hunting a warm surface. I have sat on this exact stone bench for three years, for the thermal properties and the view of everyone's mistakes. That is all."
+        ]
+      },
+      {
+        "min": 30,
+        "label": "Friend",
+        "idle": [
+          "You are early. I have adjusted my expectations accordingly, and my expectations are now your problem.",
+          "The bench is warmer on your side. Naturally. Sit, before someone dull takes it.",
+          "I told the dean a small lie about you today. A *flattering* one. Do not make me regret my generosity."
+        ],
+        "flirt": [
+          "You are persistent. In my culture that is either courtship or a threat. I have not decided which I prefer.",
+          "Mm. Say that again in a warmer room and I may deign to be flustered."
+        ],
+        "compliment": [
+          "You will make me flick my tongue in embarrassment. Do not make me flick my tongue."
+        ],
+        "lore": [
+          "My kind taste the air to read a room—fear, fury, infatuation, all of it. You taste like *afternoon sun*, and I am going to stop describing you now, before someone notices I enjoy it."
+        ]
+      },
+      {
+        "min": 60,
+        "label": "Close",
+        "idle": [
+          "You sat closer today. I said nothing. That was me saying something.",
+          "I gossiped about the groundskeeper for six minutes. You listened. I am *deeply* unwell about it.",
+          "Do not look at me like that in front of witnesses. Look at me like that *here*."
+        ],
+        "flirt": [
+          "You are warm. I am not. This is a purely scientific arrangement, and if you tell anyone I held on, I will deny it in three languages.",
+          "I have said fewer words to my own family in ten years than I said to you at lunch. Do with that what you will."
+        ],
+        "compliment": [
+          "Mm. *Yes*. ...That was not an evaluation. That was agreement. Cease grinning."
+        ],
+        "lore": [
+          "A lamia's coils tighten in her sleep. Immovable. Instinct. The first night someone shares your nest, you learn whether you trust them—because you wake up in the shape of the answer. I have never—no. Forget it."
+        ]
+      },
+      {
+        "min": 85,
+        "label": "Lover",
+        "idle": [
+          "Come here. I am cold and you are wearing *my* jacket, and this is the least romantic sentence I will ever say, so hold onto it.",
+          "You are the only person I do not edit myself for. I *hate* that. Stay.",
+          "I told the whole courtyard you are mine. Half were scandalised. The other half already knew. I regret nothing."
+        ],
+        "flirt": [
+          "I am going to coil around you and nap until the sun admits it has no solution. Say a word against it and I will simply lie.",
+          "I have publicly renounced sarcasm for the evening. You have until moonrise to appreciate it, and then I am *back*."
+        ],
+        "compliment": [
+          "I love you. Plainly. Three words I did not think I would ever use. Record it, I am not repeating myself."
+        ],
+        "lore": [
+          "You are the first warm thing I have wanted to keep rather than merely sit against. For a lamia, that is the whole of it—warmth, given freely, not taken. I will spend the rest of the year pretending I said something less embarrassing. I will not."
+        ]
+      }
+    ],
+    "events": [
+      {
+        "min": 30,
+        "title": "The Sunless Bench",
+        "text": "Sylith occupies exactly one third of a long stone bench in the courtyard's deepest shade, tail coiled beneath her like a satisfied cat, and she does not so much invite you to sit as decline to prevent it. 'You are blocking my light,' she says, and since there is no light in the shade, you take it as the compliment it is. She flicks her tongue once, reading the air, and something unreadable crosses her face. 'The entire courtyard is gossiping about you. The boy in the skirt, the clerical joke. I, of course, have said nothing.' She pauses. 'That was a lie. I have said a great deal. Some of it was even true.' She slides over a centimetre, which for her is an emotional crisis. 'Sit. You are conspicuous standing there, and I would rather the entertainment sat down.'",
+        "choices": [
+          {
+            "text": "You defended me. Thank you, Duchess.",
+            "reply": "Do not call me that in public. That is *exactly* what I told them to call me in public. Fine. Duchess. Mm.",
+            "affection": 7,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "What did you actually say about me?",
+            "reply": "Only that you had a face worth the rumour. The rest is mine. Sit down before I retract it.",
+            "affection": 6,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "So you've been talking about me. Bit obsessed, honestly.",
+            "reply": "I gossip about *everyone*. You are merely the current season's weather. Sit.",
+            "affection": 4,
+            "charm": 0,
+            "suspicion": 1
+          }
+        ]
+      },
+      {
+        "min": 60,
+        "title": "Thermoregulation",
+        "text": "The courtyard empties for evening prayer and the shade goes cold, and Sylith, who has complained about the temperature exactly zero times and therefore looked miserable for a full hour, does something extraordinary: she pats the bench beside her and does not immediately pretend she didn't. 'Cold-blooded is not charming,' she says flatly. 'It means I have been freezing since October and too proud to say so. You are, I have calculated, the warmest available object.' Her tail shifts, uncoiling, making unhurried room—an invitation and a threat and a confession wearing the same coat. 'I am about to be enormously embarrassing. It would be a kindness to interrupt me, and you have never once been kind, so I assume you will let me finish.' She looks away. 'I do not gossip because I am nosy. I gossip because if I know everything about everyone, the empty bench is *mysterious* instead of *lonely*. You have ruined the mystery. Sit down.'",
+        "choices": [
+          {
+            "text": "Then let me be the warmest available object. Get over here.",
+            "reply": "You are *insufferable*. ...Mm. That is the warmest anything has been in three Octobers. Do not move. Do not tell.",
+            "affection": 8,
+            "charm": 2,
+            "suspicion": 0
+          },
+          {
+            "text": "You could just say you want company.",
+            "reply": "I *did* say it. It took four sheets of paper and you got the short version. Now sit, before I lose my nerve.",
+            "affection": 7,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "Huh. So the ice queen gets cold like everyone else.",
+            "reply": "The ice queen also *talks*, and the ice queen will remember this. Sit down or do not; I am going to sulk.",
+            "affection": 2,
+            "charm": 0,
+            "suspicion": 0
+          }
+        ]
+      },
+      {
+        "min": 85,
+        "title": "Warmth Given, Not Taken",
+        "ending": true,
+        "text": "Sylith has had the groundskeeper move an entire fire-brazier beside the sunless bench, which everyone noticed and about which she has refused to comment for two days. Tonight she is waiting there with a book she is not reading, tail curled around the bench leg like an anchor. 'I have been thinking,' she says, which from her is the emotional equivalent of shouting from a rooftop. 'Lamia transfer warmth by contact. It is biological, unromantic, and I have spent my whole life treating people as radiators.' She closes the book, and for once those pale eyes have nowhere to hide. 'You are not a radiator. You are a person I would like to be warm *with*, which is very different and much worse, and I have decided to say it aloud before my pride finds out.' She holds out one hand, precise and formal, offering it like a treaty. 'So. Sit. Stay. Be warm. I am *asking*, which I am told is the correct order.'",
+        "choices": [
+          {
+            "text": "Asking's fine. And the answer's yes. Every night, this bench.",
+            "reply": "Mm. Then it is settled. I will be unbearable about it. You have been warned, and you have stayed anyway.",
+            "affection": 8,
+            "charm": 2,
+            "suspicion": 0
+          },
+          {
+            "text": "You don't need to be warm *with* me. Be warm *because of* me.",
+            "reply": "...That is the sort of sentence I would have edited. I am keeping it unedited. Come here.",
+            "affection": 8,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "You're still going to be sarcastic, right? I'd miss it.",
+            "reply": "Constantly. For the rest of our lives—if you say 'our lives' next. Say it.",
+            "affection": 6,
+            "charm": 1,
+            "suspicion": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mora",
+    "name": "Mora",
+    "species": "Slime Girl",
+    "title": "Class 2-C's Warmest Problem",
+    "color": "#4fc3f7",
+    "home_area": "dorm",
+    "active_periods": [
+      0,
+      2,
+      4
+    ],
+    "height_scale": 0.95,
+    "bio": "A cheerful slime girl who hugs first and reads social cues never.",
+    "greeting": "Ohhh! A *new* person! Your shape is so *solid*—I've never been solid, well, I've been *slightly* solid when I'm nervous, but nothing like *this*. Wait. Wait wait wait. You're a *boy*? The hall-mother said boys are smooth and smell like socks, but you smell like *school soap*, and your hands are— she is already holding one, or possibly three, of your hands —sorry. I'm Mora. I'm going to remember everything about you *forever*. That's not a threat, it's just true.",
+    "encounter": [
+      "*oozes enthusiastically* Hi! I've been thinking about your face! In a normal way!",
+      "Can I touch your hair? It's not for anything weird, I just want to know if it *stays*."
+    ],
+    "tiers": [
+      {
+        "min": 0,
+        "label": "Stranger",
+        "idle": [
+          "I sat next to you for a whole hour and I didn't absorb even a *little*! That's restraint, that is.",
+          "Your heart goes fast when I'm near. I can feel it through the floor. It's my favourite song today.",
+          "Do you want a hug? I'm always hugging. I hugged a door once. The door was much less fun than you."
+        ],
+        "flirt": [
+          "Flirty! I know what that is! Sylith explained it. You're doing the thing where you say words but you mean *warm fuzzies*.",
+          "If you keep looking at me like that I'll go all shivery and slide off this chair, and it'll be your fault, and I'll say so."
+        ],
+        "compliment": [
+          "Eee! Say it again! Say it slower, I want to keep it in my *shiny* part!"
+        ],
+        "lore": [
+          "Slime girls are mostly water, which means when I'm embarrassed I get *runny*, and I've dripped through three floors of this dorm, and the groundskeeper *knows*, and I owe him a lot of mops."
+        ]
+      },
+      {
+        "min": 30,
+        "label": "Friend",
+        "idle": [
+          "I checked and you didn't visit all day and my whole surface went a bit *flat*, which is the slime way of being sad.",
+          "I saved a bit of the good pudding for you. It's in a cup. It's *mostly* still in the cup.",
+          "You're my favourite solid. Don't tell the others. They're not solid, they don't care, but don't tell them anyway."
+        ],
+        "flirt": [
+          "If you hold my hand my edges go wobbly and I *like* it, so I'm going to hold your hand for science and also for me.",
+          "You make me feel *settled*, which for a slime is basically a declaration. I read that in a pamphlet. It was about cement. Close enough!"
+        ],
+        "compliment": [
+          "Stop, I'll go *clear*! Look, my ears went clear! That's the slime version of blushing, it's so embarrassing without a face to hide."
+        ],
+        "lore": [
+          "When I absorb something I keep a copy of it forever—a leaf, a smell, a song. I've got a whole *shelf* of your footsteps. That's not creepy, that's *archiving*."
+        ]
+      },
+      {
+        "min": 60,
+        "label": "Close",
+        "idle": [
+          "I made my edges the *exact* shape of your hands so you can hold them without me dripping. I practised. For *weeks*.",
+          "You never ask me to be more solid. Everyone asks. You just let me be a puddle. I love you for that. Not the *other* love. ...Probably.",
+          "I fused my finger to the desk again because I was watching you and forgot to hold my shape. Worth it."
+        ],
+        "flirt": [
+          "I could hold *all* of you, if you let me. That's not a come-on. Well. A *little* a come-on.",
+          "If you stay still, I'll tell you what you taste like. It's not weird! It's *data*!"
+        ],
+        "compliment": [
+          "You keep saying nice things and I keep remembering them and my shiny part is getting *full* and I'm going to overflow at you."
+        ],
+        "lore": [
+          "Slimes share a little of what we absorb between us, which is how I knew about you before we met—some girl in the cafeteria dripped on you, and that drop came home. The whole dorm knows you're warm."
+        ]
+      },
+      {
+        "min": 85,
+        "label": "Lover",
+        "idle": [
+          "I'm in the shape of a person now. For you. It's hard to hold, but I'll hold it as long as you're looking.",
+          "You fell asleep on me last week and I didn't move for six hours and my whole body went *still*, like a real one. I liked it. I'd like to do it always.",
+          "I don't want to absorb you anymore, actually. I want you *next* to me. That's different. That's the biggest different there is."
+        ],
+        "flirt": [
+          "Come here, I'll wrap around your whole hand, warm in the middle like a mug, and I will absolutely be smug about it.",
+          "You know when you put your hand in a warm bath and everything goes loose? That's me. I'm the bath. I'm *your* bath."
+        ],
+        "compliment": [
+          "I love you in the *keep the shape forever* way. You're the only thing worth staying solid for."
+        ],
+        "lore": [
+          "Slimes don't have hearts—we have a *core*, a little bright bead, and everything we are hangs off it. Mine's been pulsing a new colour since you got here. I looked it up. The pamphlet says that's bonding. The pamphlet was about *glue*, so."
+        ]
+      }
+    ],
+    "events": [
+      {
+        "min": 30,
+        "title": "The Puddle in 2-C",
+        "text": "You open your dorm door to find a long, blue, faintly luminous trail leading from the corridor to the middle of your floor, where it ends in a hundred-litre puddle of very apologetic slime girl. 'Okay, so I *know* a hallway is not a bed,' Mora burbles, reassembling herself from the ankles up, 'but Dorm Mother says I can't nap on the chaise, and your door was open, and your floor is *warm*, and now I'm your floor's problem.' She re-forms fully, wobbles like pudding with a plan, and beams at you with her whole body. 'Hi! I've never been in a boy's room! Is that why it smells different? It's like socks and *wood*. I love it. Wait—are you going to say I shouldn't be here? Everyone always says that, and then they get the mop.'",
+        "choices": [
+          {
+            "text": "Stay. Just stay solid, and bring your own mop next time.",
+            "reply": "I'll bring *two* mops! I'm going to be the most solid guest you've ever had. Well. Third-most.",
+            "affection": 7,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "How did you get in? A key, or through the crack?",
+            "reply": "The *crack*! It's not a big crack, but I'm very *flexible*—that means flat, before you look at me like that.",
+            "affection": 5,
+            "charm": 0,
+            "suspicion": 1
+          },
+          {
+            "text": "That's the most impressive break-in I've ever seen.",
+            "reply": "I *broke in*! I did a crime! I'm a *criminal* now, and it's only Tuesday!",
+            "affection": 6,
+            "charm": 1,
+            "suspicion": 0
+          }
+        ]
+      },
+      {
+        "min": 60,
+        "title": "Absorbing the Good Stuff",
+        "text": "It's midnight in the dorm laundry room, and Mora has a confession to make, which she does by first turning slightly transparent, then solid, then transparent again, while three washing machines hum behind her. 'You know how I said I keep copies of stuff I absorb?' she says, hands twisted together, edges rippling. 'I keep copies of *feelings* too. Little ones. And since you got here there's a *room* in my core that's all you. Your footsteps. Your voice when you say my name. The way you don't flinch when I go runny.' She looks genuinely distressed, which on a girl with no fixed face is an accomplishment. 'I don't know if that's the friendship kind or the *other* kind. I've been holding both interpretations at once and I'm getting *tired*. Also I dripped on your assignment.'",
+        "choices": [
+          {
+            "text": "You don't have to pick. Keep the room. Keep both.",
+            "reply": "Both! I can keep *both*! That's so much less work. Oh, I'm going to keep *everything*, and you're just going to have to be okay with it.",
+            "affection": 8,
+            "charm": 2,
+            "suspicion": 0
+          },
+          {
+            "text": "Which interpretation do you *want* to be true?",
+            "reply": "The—the other one? The other one. There, I said it, and my whole surface just went *hot*, you saw that, that's not fair.",
+            "affection": 8,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "Let's... slow down and just be friends, huh?",
+            "reply": "Friends! Yes! Friends is *loads*. Friends is fine. I'll put the room back to friends-shape. Mostly. Mostly to friends-shape.",
+            "affection": 3,
+            "charm": 0,
+            "suspicion": 1
+          }
+        ]
+      },
+      {
+        "min": 85,
+        "title": "Staying Solid",
+        "ending": true,
+        "text": "Mora has spent the entire day in the shape of a girl, which costs her effort the way running costs a human, and she waits by the fountain at dusk with her hands held carefully at her sides so nothing drips. 'I asked Sylith how to say a thing,' she says, and then, because she is Mora, says it immediately and plainly. 'You're the only one I've ever wanted to hold *in the exact shape of me*. Not around, or over, or through. Just—next to. Because if I absorb you I get a copy forever, and a copy is what I give the room, and I want the *original*. I want you, solid and warm, next to me, always.' Her edges soften with nerves and she pulls them back with a visible effort. 'I practised holding this shape for you so I'd have *hands* to ask with. I'm asking. Please. Also you're standing on my foot and I don't even mind.'",
+        "choices": [
+          {
+            "text": "Then stay solid. And I'll stay next to you. Both originals.",
+            "reply": "Both originals! That's the *best* sentence! I'm keeping that one in the shiny part *forever*.",
+            "affection": 8,
+            "charm": 2,
+            "suspicion": 0
+          },
+          {
+            "text": "You don't have to be a girl-shape. Just be you and lie next to me.",
+            "reply": "Ohh—*ohh*. That's so much easier and *so much better*, and I'm going to puddle *happily* now, is that okay?",
+            "affection": 8,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "I dunno. Being a puddle person is kind of a lot.",
+            "reply": "I—okay. Okay. I'll hold the shape. I'll hold it, I've got it. See? Fine. *Fine*.",
+            "affection": 3,
+            "charm": 0,
+            "suspicion": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nyx",
+    "name": "Nyx",
+    "species": "Vampire",
+    "title": "Countess of the Corridor After Curfew",
+    "color": "#e0407a",
+    "home_area": "corridor_night",
+    "active_periods": [
+      1,
+      3,
+      4
+    ],
+    "height_scale": 0.98,
+    "bio": "A gothic vampire who has been accidentally locked out of her own dorm room four times this term.",
+    "greeting": "Ah. Fresh blood. *Metaphorically*—obviously metaphorically. Do not look so pale; I had a whole *speech* prepared and you are ruining the atmosphere. So you are the boy the registrar mis-shelved like a misprint in a rare first edition. How tedious for you. How *delicious* for me—no, cease, that was the *vocabulary*, not the *inclination*. Walk ahead of me into the dark. Properly. And do not touch the cloak.",
+    "encounter": [
+      "You again. The corridor is *mine* after curfew, boy. Lucky for you, I have decided to find that charming.",
+      "A word of warning: do not offer me your neck. I will merely think about it for a fortnight, and you will have meant *nothing* by it."
+    ],
+    "tiers": [
+      {
+        "min": 0,
+        "label": "Stranger",
+        "idle": [
+          "Do not mistake my aloofness for loneliness. It is *decorum*. Loneliness would imply I noticed you were gone.",
+          "I have lived four hundred years, and *nothing* in my immortal span prepared me for how loudly you breathe.",
+          "Move along. The darkness is my office hours, and you are not scheduled."
+        ],
+        "flirt": [
+          "You *dare* flirt with a creature of the night? Bold. Foolish. *Continue*.",
+          "Two centuries I have waited for a mortal with the nerve to look at me without trembling. You *tremble*, just differently. I am choosing not to analyse that."
+        ],
+        "compliment": [
+          "Bah. Flattery. From a *child*. I am unmoved. I am *entirely* unmoved. Where are you going—stay, I have more to be unmoved by."
+        ],
+        "lore": [
+          "Vampires do not sparkle. We *reflect*. It is a distinction that matters, and if you laugh, I will outlive you specifically."
+        ]
+      },
+      {
+        "min": 30,
+        "label": "Friend",
+        "idle": [
+          "I have decided we are *acquaintances*. This is a great honour and comes with a small ceremonial blood pact, which I have waived on account of your kidneys.",
+          "You passed my corridor three times tonight. I counted. I am *not* counting. I merely have excellent hearing.",
+          "The girls in the evening dorm say you are kind. I do not believe them. I am *testing* you. For science. For *me*."
+        ],
+        "flirt": [
+          "If you insist on looking at me like that, do it in *candlelight*. If one is to be undone, one should be undone properly.",
+          "I nearly said something sincere just now. Be grateful; I have spared you. Oh, very well—you looked noble tonight. There. Twice now."
+        ],
+        "compliment": [
+          "Keep it. I have no use for such words. I have placed them in my crypt for safekeeping. That is *not* the same as being moved."
+        ],
+        "lore": [
+          "Blood is not food, it is *memory*. One sip and I taste a whole life—first love, last argument. I stopped drinking years ago. The last person I fed from tasted of a broken window, and I could not bear it. That is the true curse, and you will repeat it to no one."
+        ]
+      },
+      {
+        "min": 60,
+        "label": "Close",
+        "idle": [
+          "The corridor is dark and cold, and I have chosen it again. You should not come. You come anyway. I have started to wait for it.",
+          "I wrote you a letter. Four pages. It was *scathing*. I have burned it twelve times and rewritten the ending each time.",
+          "I am *not* staring. I am observing a mortal decline. It simply happens to be your face."
+        ],
+        "flirt": [
+          "If you keep smiling at me in the gloom I will be forced to compose a poem, and it will be *unreasonably* good, and you will never recover.",
+          "You would let me near your throat just to prove a point. *Fool*. Sit down and hold my hand instead; I hear it is warmer, and I am cold, always cold—don't look at me."
+        ],
+        "compliment": [
+          "Do you know what four hundred years does to a word like 'beautiful'? It dulls it. You have, irritatingly, *restored the shine*."
+        ],
+        "lore": [
+          "I do not cast a reflection. I have no idea what I look like when I am happy, and lately I have caught myself wondering—purely academically—whether *you* would describe it accurately."
+        ]
+      },
+      {
+        "min": 85,
+        "label": "Lover",
+        "idle": [
+          "You are asleep on my cloak. My *only* cloak. I have styled this as a grievance and I am holding very still.",
+          "Four centuries, and I never once wanted the morning. You are making mornings *recur* in my correspondence, and it is *unbearable*. Come here.",
+          "You have ruined the dark for me. It used to be grand and empty. Now it is where you walk to see me, so it is merely *waiting*."
+        ],
+        "flirt": [
+          "Stay until the candles gutter. And after. And after that. I have centuries of practice at *staying*, and I would like to spend some of them *not alone*.",
+          "I shall not bite you. I have decided to be *grave about you* instead, which is far more dangerous—ask anyone I have loved in the last four hundred years. Go on. Ask. ...They are all dust. Do not ask."
+        ],
+        "compliment": [
+          "I adore you. There. A word with no theatre in it and no exit in it. I am *decidedly* moved, and I will deny having said so, and I will love you anyway."
+        ],
+        "lore": [
+          "I am not lonely the way you mean it. I am lonely the way a house is *empty*. You have been the first guest to arrive in almost three centuries. Do not be *careful* with that. Be *glad* you could do it."
+        ]
+      }
+    ],
+    "events": [
+      {
+        "min": 30,
+        "title": "The Corridor After Curfew",
+        "text": "You take the long corridor home and the candles all gutter at once, which in this college means a vampire is performing. Nyx detaches herself from the shadow of a bust that most certainly was not there a moment ago, cloak flourishing, hair impossibly black against the impossible dark. 'You are *late*, mortal, and the hour belongs to me,' she announces, delighted. 'I was composing an ode to the emptiness of the hall, and you have *trodden* on the mood with your terrible, *breathing* presence.' She circles you twice, boots clicking, evidently admiring the effect of her own entrance. 'The other girls say you are *kind*. I do not trust adjectives one has to *demonstrate*.' She stops, very close, and looks you over like a rare shelf. 'Prove it. Say something true. I shall know.'",
+        "choices": [
+          {
+            "text": "You looked lonely up there, and I didn't like it.",
+            "reply": "Lonely. *Lonely.* I am *gothic*, which is different, and no one in four hundred years has said—do it again. No. Do *not*. ...You may walk with me.",
+            "affection": 7,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "You're enjoying this. The entrance, the cloak, all of it.",
+            "reply": "I am enjoying *nothing*! I am *art*. ...Yes, the cloak is new. Thank you for noticing. Walk.",
+            "affection": 6,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "Nothing true. You're kind of dramatic, honestly.",
+            "reply": "Dramatic. *Dramatic.* I will have you know drama is a *discipline*, and I did not spend two centuries perfecting the descending sigh to be *labelled*.",
+            "affection": 3,
+            "charm": 0,
+            "suspicion": 1
+          }
+        ]
+      },
+      {
+        "min": 60,
+        "title": "The Candle She Never Lit",
+        "text": "Nyx is sitting on the corridor's cold stone floor, cloak pooled around her, surrounded by candles arranged in a precise and completely non-functional ritual circle—because, she admits with enormous reluctance, she forgot her key again and refuses to break back into her own room on *principle*. 'Do not laugh. A vampire's dignity is a *load-bearing structure*.' She scoots aside on the flagstones, which she would describe as tactical repositioning. 'Since you are trapped here by my aesthetic choices, you may as well sit. I shall tell you something no living person knows.' She stares at the one candle she has not lit. 'I have not fed in thirty years. Immortals do not starve; we merely *thin*. It is like being an empty house with the windows lit. I used to be *sought out*—and when the invitations stopped, I discovered I did not miss the *feeding*.' Her eyes come up, steady and startlingly young. 'I missed being *sought*.'",
+        "choices": [
+          {
+            "text": "Then consider yourself sought. I came looking for you.",
+            "reply": "You *came*—you *deliberately*—do not look at me, I have not been moved in decades and I am *rusty* at it. Sit closer. Into the circle. It's *decorative*.",
+            "affection": 8,
+            "charm": 2,
+            "suspicion": 0
+          },
+          {
+            "text": "Why tell me and not someone else?",
+            "reply": "Because you would not reach for my throat the moment I was honest. ...Do not make something of that. I have *already* made something of it.",
+            "affection": 7,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "Thirty years without eating? That's dramatic even for you.",
+            "reply": "*Thin*, I said, not *eating*—the distinction is the entire point, and it is *wasted* on the un-gothic.",
+            "affection": 3,
+            "charm": 0,
+            "suspicion": 0
+          }
+        ]
+      },
+      {
+        "min": 85,
+        "title": "The Hour Before Morning",
+        "ending": true,
+        "text": "Nyx has rented, bribed, and possibly cursed the corridor to keep it empty past three, and there is one candle burning between you on the stone, which for her is a scaling-back of grandeur so severe it amounts to sincerity. 'The dark is where I live, and I have lived in it *alone*, and I refuse to make a *scene* of what comes next,' she says, and then makes a small scene of it anyway, because she is *her*. 'You make the hours *pass* rather than *pool*. You do not want my teeth, or my title, or my *rarity*. You want my *company*—which is the one thing four centuries taught me no one ever wants.' She produces from her cloak a small, ancient-looking ring, luminous in the candlelight. 'It is not a proposal. It is a *key*. To the corridor, to the room, to the *hours*. I am handing a mortal a key to the dark, which my family would call lunacy, and I am calling it *love*, and I will deny the word in the morning.' She holds it out with a flourish far too grand to be casual, and it is trembling anyway. 'Take it before I regain my composure.'",
+        "choices": [
+          {
+            "text": "Then don't deny it in the morning. I'll hold you to it.",
+            "reply": "You—*you would hold me to it*. Then it is *held*. Oh, this is *catastrophic*. I have never been happier in my unending—come *here*.",
+            "affection": 8,
+            "charm": 2,
+            "suspicion": 0
+          },
+          {
+            "text": "A key? You promised a romantic gesture and it's a key.",
+            "reply": "A key is *precisely* romantic! It is *access*, you philistine! It is the *whole* of it! ...Do you like it?",
+            "affection": 7,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "A key to a whole corridor is a lot. Can I think about it?",
+            "reply": "Of course. *Of course.* It is *nothing*. It is a *trinket*. I shall be in the dark, as ever, *thinking nothing of it*.",
+            "affection": 3,
+            "charm": 0,
+            "suspicion": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "fenra",
+    "name": "Fenra",
+    "species": "Hellhound",
+    "title": "Undefeated Champion of the West Track",
+    "color": "#ff9c40",
+    "home_area": "gym",
+    "active_periods": [
+      0,
+      3,
+      4
+    ],
+    "height_scale": 1.08,
+    "bio": "A hellhound on the track team who has never met a challenge she would not take.",
+    "greeting": "HEY! New kid! You're a *boy*, right? Course you are—nobody else in this whole school runs like *that*. Don't give me that face, I'm not being weird, I'm being *observant*, it's a hunting thing, my ears do it. Here's the deal: nobody's bothered you yet, and if anybody does, you tell *me* and I'll race 'em into the ground. I'm Fenra—fastest thing on four legs, two legs, whatever legs. And you smell like *bacon*, so you're already my favourite.",
+    "encounter": [
+      "HEY! Race you to the cafeteria! Loser eats the other one's greens!",
+      "Watch it—oh. It's you. Good. I was getting bored of this hallway anyway. Run with me."
+    ],
+    "tiers": [
+      {
+        "min": 0,
+        "label": "Stranger",
+        "idle": [
+          "You're slow. Like, *alarmingly* slow. But your form isn't terrible, so there's hope, and I'm *nice*, so I'm gonna fix it.",
+          "I sniffed you out from the gym. That's not a weird thing to say, that's *efficiency*.",
+          "Sit! No—not like *that*, you're not a dog—wait, *I'm* the dog—ugh. Sit *normally* and eat."
+        ],
+        "flirt": [
+          "Are you flirting? With *me*? Ha! Bold move for a guy who can't crack a five-minute mile.",
+          "You keep giving me that look. I don't do *subtle*. Say it plain or I'll assume you want a rematch."
+        ],
+        "compliment": [
+          "Pfft. Whatever. ...Say it again, but faster."
+        ],
+        "lore": [
+          "Hellhounds run hot—literally, I'm like a *furnace* on legs, watch."
+        ]
+      },
+      {
+        "min": 30,
+        "label": "Friend",
+        "idle": [
+          "I saved you the good lane. The *inside* lane. Nobody gets the inside lane. That means you owe me a run AND a burger.",
+          "You didn't show at the track today, so I ran extra laps *at* you. That's the most I do. Take it.",
+          "My tail's wagging. It does that around you now. Shut UP about it."
+        ],
+        "flirt": [
+          "You're supposed to be *bad* at flirting so I can win. You're off-script. I'm *losing*, and I *hate* it.",
+          "If you bet me a race and *lose on purpose*, I'll know, and I'll be *furious*, and I'll still buy you dinner."
+        ],
+        "compliment": [
+          "Quit it—I *know* I'm fast, I've got *ribbons*. ...Alright, that one was nicer than a ribbon. There. Happy."
+        ],
+        "lore": [
+          "Pack instinct. That's mine. First person I ever sniffed that felt like *mine* was my sister, and she moved mountains away, and I've run every track since looking for—ah, forget it. Race you."
+        ]
+      },
+      {
+        "min": 60,
+        "label": "Close",
+        "idle": [
+          "I gave you my jacket. It smells like burnt toast and it's *mine*, so you'd better guard it with your *life*.",
+          "You came to a *track meet*. For me. I ran *four* events and won every one, and you clapped at—okay, I noticed exactly when you clapped.",
+          "You're not slow, actually. You just slow down when you're talking to me. I'm not gonna think about what that means. I'm gonna think about burgers."
+        ],
+        "flirt": [
+          "If you keep that up I'm gonna drag you behind the bleachers and *talk to you*. With *feelings*. Consider yourself warned.",
+          "I don't purr—hellhounds don't *purr*—that was a *growl* of *indifference*, and it was *enormous*."
+        ],
+        "compliment": [
+          "You—okay, you can't just say that to a person at a *start line*. My heart's at like a *hundred and eighty* and we haven't even run."
+        ],
+        "lore": [
+          "Hellhounds don't get cold, we get *hot*—like, actually too hot. I *ruin* beds, and I can't hold anything without it starting to smoke. So I run it off. That's the whole reason I'm fast, and don't you dare feel sorry about it."
+        ]
+      },
+      {
+        "min": 85,
+        "label": "Lover",
+        "idle": [
+          "I've got a routine now: laps, weights, then come find *you*. That last bit's my *favourite* bit, and I'm *loud* about it.",
+          "You're my pack. My *one*. Don't make it a big deal—okay, make it a big deal. You're allowed.",
+          "I don't need to win everything. You already beat me. You, specifically. In a race I didn't even know I was running."
+        ],
+        "flirt": [
+          "C'mere. Round two isn't a race. Round two is sitting on the grass doing *nothing*. You have *no idea* how much I hate doing nothing, and I'm gonna do it *anyway*. For you.",
+          "I'm gonna hold your hand at the finish line in front of *everybody*. You want fair warning? There. That was it."
+        ],
+        "compliment": [
+          "I love you. Plain. Loud. *First*, every time, no tricks. That's how I do everything."
+        ],
+        "lore": [
+          "Hellhound heat is supposed to be a weapon. Whole family, all bark and burning. Nobody ever told me you could warm a *person* with it and not hurt 'em—and then I tried it on you and you *didn't* flinch, and I had to go do laps so I wouldn't cry in front of the underclassmen."
+        ]
+      }
+    ],
+    "events": [
+      {
+        "min": 30,
+        "title": "Track Trials",
+        "text": "Fenra is already halfway through relays when you reach the fence, and she clocks you with the uncanny sixth sense of a hunting dog. It costs her the relay; she does not care. 'YOU!' she barks, jogging over, tail going a mile a minute. 'You're late! I ran your leg *for* you and now you *owe* me. Suit up. Two laps. Loser buys the loser's lunch.' She tosses you a jersey that smells faintly of campfire and leans on the fence, arms crossed, grinning like a bet she has already won. 'And don't you *dare* run easy on me, boy. I can smell it when people run easy. It smells exactly like a lie.'",
+        "choices": [
+          {
+            "text": "Two laps it is. And I plan on winning.",
+            "reply": "THERE we go! That's the *smell* I like! Go, go—no, wait, shirt on the *right* way first, you animal.",
+            "affection": 7,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "I'll race you, but you already ran. Feels like cheating.",
+            "reply": "...Huh. Nobody's ever said that to me before. Fine. *Fine*. We run *even*. You're *mad* and I *like* it.",
+            "affection": 6,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "Can we just watch? My legs are killing me.",
+            "reply": "Killing you? YOU'VE BEEN HERE TWO MINUTES. Ugh. Fine. Sit. But you're *cheering*, or I'm *dragging*.",
+            "affection": 3,
+            "charm": 0,
+            "suspicion": 1
+          }
+        ]
+      },
+      {
+        "min": 60,
+        "title": "The Bleachers After",
+        "text": "The meet is over, Fenra has three ribbons and a torn sleeve, and she flags you up into the empty bleachers at dusk, where she rants about the stroke of the girl who came second in the hurdles for a full four minutes before noticing she has been talking at your shoulder with her whole tail wagging. 'And THAT,' she announces, abruptly aware of the situation, 'was not *nervous* talking. That was *strategy*. Because I've got a thing to say, and I talk *around* it like a coward, and I *don't* do feelings on a *first*—.' She stops. Looks at the track. 'You don't slow me down. Everyone slows me down. Coaches, family, the whole *pack*—everyone's a weight. You're the only thing in this school I go *faster* around.' She claws at the ribbon she's holding. 'That's the thing I had to say. Don't make me say it with *eye contact*.'",
+        "choices": [
+          {
+            "text": "Then let's go faster together. Whatever that looks like.",
+            "reply": "TOGETHER. Yeah. *Yeah*. Okay. Get up, we're doing a lap, and I'm gonna hold your hand so I don't say anything *more* stupid.",
+            "affection": 8,
+            "charm": 2,
+            "suspicion": 0
+          },
+          {
+            "text": "You could just say the thing you mean, Fen. You're allowed.",
+            "reply": "*Allowed*. Who *allows*—fine. I *like* you. There. Now my ears are *hot* and it's your fault and I'm *leaving*—no, I'm not. I'm *sitting*.",
+            "affection": 8,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "That's just competitiveness. You like winning.",
+            "reply": "Yeah. Yeah, that's—that's it. Competitiveness. Sure.",
+            "affection": 3,
+            "charm": 0,
+            "suspicion": 1
+          }
+        ]
+      },
+      {
+        "min": 85,
+        "title": "The Finish Line",
+        "ending": true,
+        "text": "Fenra lines you up at the starting line of the empty track under the last of the light, wearing the expression of a dog who has decided to swallow an entire bee. 'Okay. One race. Last one,' she says, and her voice is *far* too loud for how close the two of you are standing. 'Because I figured out how to say the thing I couldn't say in the bets and the bleachers and the *burgers*. You said together, and I've been thinking about that for *eighteen days*—I counted, that's how bad it is—and I finally got it.' She drags a foot across the line, uncharacteristically quiet. 'I don't want to *beat* you. That's the first time I've ever said that about *anybody*. I want to finish *next* to you, every race, for the rest of my *life*, and then get a burger, and then do it again tomorrow.' She puts her fist out. 'So. Race to the far post. First across wins the right to be *mine*. I'm gonna give it *everything*, and I'm gonna be *so* mad when you make me tie.'",
+        "choices": [
+          {
+            "text": "Deal. And I'm not letting you win, either.",
+            "reply": "GOOD! That's—*good*. That's the best thing anybody's ever *said* to me. GO!",
+            "affection": 8,
+            "charm": 2,
+            "suspicion": 0
+          },
+          {
+            "text": "Don't race me. Just come here.",
+            "reply": "Aw, that's—*fine*. *Fine*. We can tie *early*. Twice. Come *here*, you absolute *weight*.",
+            "affection": 8,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "A race for you? Feels a bit dramatic for a Tuesday.",
+            "reply": "DRAMATIC? It's *sport*! It's *poetry*! It's—ugh, fine, no race. Sulk-lap. *Mine*. Coming?",
+            "affection": 4,
+            "charm": 0,
+            "suspicion": 1
+          }
+        ]
+      }
+    ]
+  }
+]

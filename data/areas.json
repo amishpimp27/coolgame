@@ -1,0 +1,214 @@
+{
+  "start": "gate",
+  "walk_top": 330,
+  "walk_bottom": 655,
+  "areas": [
+    {
+      "id": "gate",
+      "name": "Front Gate",
+      "bg": "gate",
+      "desc": "Cherry petals drift across the entrance path. Nobody has questioned you yet.",
+      "spawn": [640, 600],
+      "slots": [
+        [400, 520],
+        [700, 490],
+        [900, 545]
+      ],
+      "links": [
+        "courtyard"
+      ],
+      "char_scale": 1.0
+    },
+    {
+      "id": "courtyard",
+      "name": "Courtyard",
+      "bg": "courtyard",
+      "desc": "The fountain burbles. Somebody is always sunbathing on the benches.",
+      "spawn": [640, 610],
+      "slots": [
+        [380, 500],
+        [640, 480],
+        [900, 520],
+        [520, 570]
+      ],
+      "links": [
+        "gate",
+        "hallway",
+        "gym",
+        "greenhouse"
+      ],
+      "char_scale": 1.0
+    },
+    {
+      "id": "hallway",
+      "name": "Main Hallway",
+      "bg": "hallway",
+      "desc": "The spine of the school. Every route through Monster Girl College runs through here.",
+      "spawn": [620, 620],
+      "slots": [
+        [420, 540],
+        [640, 505],
+        [870, 545],
+        [520, 610]
+      ],
+      "links": [
+        "courtyard",
+        "classroom",
+        "library",
+        "cafeteria",
+        "dorm",
+        "council",
+        "corridor_night",
+        "rooftop"
+      ],
+      "char_scale": 1.0
+    },
+    {
+      "id": "classroom",
+      "name": "Classroom 2-A",
+      "bg": "classroom",
+      "desc": "Thirty desks, thirty girls, one you. Attendance is taken very personally.",
+      "spawn": [640, 600],
+      "slots": [
+        [400, 520],
+        [660, 495],
+        [900, 530]
+      ],
+      "links": [
+        "hallway"
+      ],
+      "char_scale": 1.0
+    },
+    {
+      "id": "library",
+      "name": "Library",
+      "bg": "library",
+      "desc": "Tall shelves, warm lamps, and a great deal of whispering about you.",
+      "spawn": [620, 610],
+      "slots": [
+        [400, 510],
+        [700, 490],
+        [910, 530]
+      ],
+      "links": [
+        "hallway",
+        "corridor_night"
+      ],
+      "char_scale": 1.0
+    },
+    {
+      "id": "cafeteria",
+      "name": "Cafeteria",
+      "bg": "cafeteria",
+      "desc": "The queue is chaos. The seating chart appears to be closing in on you.",
+      "spawn": [630, 605],
+      "slots": [
+        [390, 520],
+        [650, 490],
+        [900, 530],
+        [520, 580]
+      ],
+      "links": [
+        "hallway"
+      ],
+      "char_scale": 1.0
+    },
+    {
+      "id": "gym",
+      "name": "Gymnasium",
+      "bg": "gym",
+      "desc": "The smell of floor polish and competition. You will be made to participate.",
+      "spawn": [640, 600],
+      "slots": [
+        [400, 510],
+        [700, 490],
+        [920, 530]
+      ],
+      "links": [
+        "courtyard"
+      ],
+      "char_scale": 1.0
+    },
+    {
+      "id": "greenhouse",
+      "name": "Greenhouse",
+      "bg": "greenhouse",
+      "desc": "Humid, green, and very quiet. Something here is always watching you grow.",
+      "spawn": [640, 600],
+      "slots": [
+        [400, 515],
+        [720, 495],
+        [910, 540]
+      ],
+      "links": [
+        "courtyard"
+      ],
+      "char_scale": 1.0
+    },
+    {
+      "id": "rooftop",
+      "name": "Rooftop",
+      "bg": "rooftop",
+      "desc": "Fence, water tank, and a sky doing its best oil painting. Good place to be ambushed.",
+      "spawn": [640, 605],
+      "slots": [
+        [400, 515],
+        [700, 490],
+        [910, 535]
+      ],
+      "links": [
+        "hallway"
+      ],
+      "char_scale": 1.0
+    },
+    {
+      "id": "corridor_night",
+      "name": "Old Corridor",
+      "bg": "corridor_night",
+      "desc": "Off the official map, and colder than it should be. You are not always alone.",
+      "spawn": [640, 600],
+      "slots": [
+        [420, 520],
+        [720, 495],
+        [910, 535]
+      ],
+      "links": [
+        "hallway",
+        "library"
+      ],
+      "char_scale": 1.0
+    },
+    {
+      "id": "dorm",
+      "name": "Dormitory",
+      "bg": "dorm",
+      "desc": "The girls' dorm. You have been assigned a room here. Someone fainted when they read the list.",
+      "spawn": [620, 605],
+      "slots": [
+        [400, 515],
+        [690, 495],
+        [910, 535]
+      ],
+      "links": [
+        "hallway"
+      ],
+      "char_scale": 1.0
+    },
+    {
+      "id": "council",
+      "name": "Student Council Room",
+      "bg": "council",
+      "desc": "Red carpet, polished wood, and a throne that is not officially a throne.",
+      "spawn": [640, 605],
+      "slots": [
+        [400, 515],
+        [700, 495],
+        [910, 535]
+      ],
+      "links": [
+        "hallway"
+      ],
+      "char_scale": 1.0
+    }
+  ]
+}

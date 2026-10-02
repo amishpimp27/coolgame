@@ -1,0 +1,1088 @@
+[
+  {
+    "id": "rin",
+    "name": "Rin",
+    "species": "Kitsune",
+    "title": "Nine-Tailed Troublemaker",
+    "color": "#ffb347",
+    "home_area": "hallway",
+    "active_periods": [1, 2, 3],
+    "height_scale": 1.0,
+    "bio": "A kitsune who treats the entire campus like a board game she has already won, and who is rooting for you to prove her wrong.",
+    "greeting": "Well, well, the transfer student. Cute ribbon, soft hands, terrible poker face — and oh. Oh, you're a *boy*. Don't bother denying it, I already won that bet with myself. Today just became interesting, and I am never wrong about interesting — so. Want to play a game? You'll lose. That's the fun part.",
+    "encounter": [
+      "Careful. Bump into me again and I start charging tolls, and I only take secrets.",
+      "You dropped something. Lying. You dropped it. I saw. No, I saw nothing. That's the trick."
+    ],
+    "tiers": [
+      {
+        "min": 0,
+        "label": "Stranger",
+        "idle": [
+          "You're staring. That's fine, stare. I bill by the minute.",
+          "Three truths and a lie: I'm ancient, I'm innocent, I have nine tails, you're a boy. Guess wrong and I keep your dignity.",
+          "Don't touch the tails unless you're ready to owe me something."
+        ],
+        "flirt": [
+          "Ooh, that was almost smooth. Almost. Do it again and I might let you reach for a tail.",
+          "Careful — fox-tails are a trap. Grab one and you never get your hand back. Metaphorically. Mostly."
+        ],
+        "compliment": [
+          "Flattery? I *invented* flattery. Sit down, you're a beginner."
+        ],
+        "lore": [
+          "Kitsune grow a tail a century — mine's nine, do the maths and don't say it out loud. The ninth itches when someone fibs near me. You have been itching me since you walked in."
+        ]
+      },
+      {
+        "min": 30,
+        "label": "Friend",
+        "idle": [
+          "So the boy keeps his head down in class and his eyes up in the hallway. Noted. Filed. Weaponised.",
+          "I pranked the council once and they still haven't proved it. That's the whole point of a prank — the denial *is* the trick.",
+          "You laughed before the punchline. You're either clever or doomed. Probably both."
+        ],
+        "flirt": [
+          "You know the difference between a trick and a promise? No? Good. Stay curious.",
+          "If I let you hold one tail, you owe me a favour. Ask for two and you're being greedy — I like greedy."
+        ],
+        "compliment": [
+          "Stop. No — keep going, but make it less obvious you mean it. I only believe the ones I have to dig for."
+        ],
+        "lore": [
+          "Foxfire isn't fire, it's a mood. Mine goes blue when I'm embarrassed, which is why I am never embarrassed. Look at it. So blue. Magnificent."
+        ]
+      },
+      {
+        "min": 60,
+        "label": "Close",
+        "idle": [
+          "You didn't fall for the mirror trick. Nobody notices the mirror trick. I'm going to be smug about this all week.",
+          "Somebody finally outfoxed me and I can't stop smiling. Disgusting. Do it again.",
+          "I tell everyone I keep secrets for power. I keep them because handing one to the right person feels like a gift."
+        ],
+        "flirt": [
+          "Come closer, I want to hear whether your heart speeds up when you lie to me. It does. Good.",
+          "I'd say you've earned a tail — teasing, you haven't, but ask again when it's dark and see what happens."
+        ],
+        "compliment": [
+          "You said it plain. No riddle. Do you have any idea what a plain sentence does to a fox who's only ever been chased for her tricks?"
+        ],
+        "lore": [
+          "A kitsune's true name fits in a single breath, and only one person in her whole life ever gets to hear it. I have guarded mine for three hundred years. It has gotten heavy."
+        ]
+      },
+      {
+        "min": 85,
+        "label": "Lover",
+        "idle": [
+          "I used to win everything. Now I lose to you on purpose and pretend I don't, and I think that's what people mean by happy.",
+          "Come sit. No bet, no riddle, no price. Just you, me, and nine tails that never lie to you.",
+          "Every trick I ever pulled was to make somebody look at me. You were looking before I pulled a single one."
+        ],
+        "flirt": [
+          "One tail. Tonight. You've earned it, and I have finally stopped pretending I don't want you to claim it.",
+          "Kiss me and I'll turn your whole world gold for an hour. Refuse and I'll sulk for a century. Choose."
+        ],
+        "compliment": [
+          "Mm. Keep saying things like that and the foxfire goes warm instead of blue. Look what you've done to me. Absolute bastard."
+        ],
+        "lore": [
+          "Old fox custom — when a kitsune gives you a tail-hair, it means *mine*. I have been carrying this one in my sleeve for a century, waiting for somebody worth the embarrassment."
+        ]
+      }
+    ],
+    "events": [
+      {
+        "min": 30,
+        "title": "The Wager",
+        "text": "Rin finds you in the hallway with a deck of cards that is clearly not a deck of cards — it shuffles itself the moment she looks away. 'One game,' she says, fanning them under your nose. 'Stakes: a secret of mine for a secret of yours.' You play. She loses. You are absolutely certain she loses on purpose. She flips the last card with a flourish and shrugs, entirely unbothered. 'Fine. A secret, as promised: I have never once lost a bet *fairly* — I only lose when I want to see what the winner does with it. So. You've won a fox's secret, little boy. What are you going to do with it?'",
+        "choices": [
+          {
+            "text": "Tell her a real secret and ask for nothing back.",
+            "reply": "'...You gave it away. Just like that. No trade.' Her ears flick flat and up again. 'That's either very stupid or the cleverest thing anyone's ever done to me. I'll decide later. Probably both.'",
+            "affection": 8,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "Demand she kiss you as the prize.",
+            "reply": "'Bold! I do like bold.' She taps your nose with one finger. 'But a kiss isn't a secret, it's a receipt. Ask again when you've got something worth putting on the table.'",
+            "affection": 4,
+            "charm": 2,
+            "suspicion": 2
+          },
+          {
+            "text": "Say you don't care about the secret and walk off.",
+            "reply": "Her tails drop all at once. 'Right. No fun today, then.' She is smiling when you glance back. The foxfire on the floor has gone blue.",
+            "affection": 1,
+            "charm": 0,
+            "suspicion": 0
+          }
+        ]
+      },
+      {
+        "min": 60,
+        "title": "Something Borrowed",
+        "text": "Somebody has been leaving offerings on your desk — a perfect plum, a stolen cufflink, a note reading 'you owe me' with no context and a small pawprint in the corner. Rin denies all of it, loudly, while a tail curls around your wrist under the desk. 'You're imagining things. Foxes don't give gifts. We *ransom* things. There's a difference, it's very important, I'll be explaining it at length.' She will not look at you. The foxfire is puddling orange across the floorboards, which she insists means nothing whatsoever, and which is in fact the exact colour of somebody pleased with herself.",
+        "choices": [
+          {
+            "text": "Thank her for the plum. Just the plum.",
+            "reply": "'It wasn't me.' A pause. 'Was it a good plum?' Another pause. 'It was the good plum. From the tree by the east wall. I climbed for an hour, and there was a wasp, and I won.'",
+            "affection": 7,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "Tell her you know it was all her.",
+            "reply": "'Prove it.' You say nothing and simply look at her. '...You're blushing.' 'Foxes do not blush.' The fire goes violently, incriminatingly blue. 'This conversation is over.'",
+            "affection": 5,
+            "charm": 0,
+            "suspicion": 0
+          },
+          {
+            "text": "Tease her about it in front of the other girls.",
+            "reply": "The tail vanishes from your wrist. 'Cute. Real cute.' She doesn't come to the hallway for three days. You notice exactly how long three days is.",
+            "affection": 0,
+            "charm": 0,
+            "suspicion": 4
+          }
+        ]
+      },
+      {
+        "min": 85,
+        "ending": true,
+        "title": "The True Name",
+        "text": "It's the small hour and Rin is sitting on the roof-rail like she owns the sky, all nine tails fanned behind her, foxfire the colour of candlelight. No cards. No bet. 'I've been running the numbers on you for months,' she says, 'and here's the result. You never once tried to outsmart me just to beat me. You did it to *see* me. Nobody has done that. Not in three hundred years.' She lifts one tail — the ninth, the one that itches when someone lies. 'So I'm going to say a word that exactly one person in my whole long life gets to hear. And if it doesn't scare you off — well. The trick, and it is the only trick I have ever been afraid to pull, is that it won't. It's simply true.'",
+        "choices": [
+          {
+            "text": "Take the tail and tell her your true name back.",
+            "reply": "The foxfire holds so still it looks like the stars came down to listen. Then Rin laughs — not the performance laugh, the real one, the one you've only heard twice. 'Well,' she says, tails closing around you like a decision. 'That's the bet lost. Best one I've ever dropped.'",
+            "affection": 8,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "Tell her you don't need the secret, you need her.",
+            "reply": "Her ears go flat and her eyes go very bright. 'That's — nobody has ever wanted that instead. Nobody.' She presses her forehead against your shoulder, tails wound tight. 'Stay. Just stay. That's the only thing I want on the table.'",
+            "affection": 8,
+            "charm": 0,
+            "suspicion": 0
+          },
+          {
+            "text": "Bargain — offer her a kiss for the name.",
+            "reply": "'Still trading!' But she's laughing, and a little bit furious, and a little bit not. 'Fine. Fine. Take it. Take the name. Take the entire damn fox, you ridiculous boy.'",
+            "affection": 6,
+            "charm": 1,
+            "suspicion": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sebille",
+    "name": "Sebille",
+    "species": "Harpy",
+    "title": "The Loudest Question",
+    "color": "#c8a165",
+    "home_area": "rooftop",
+    "active_periods": [0, 2, 4],
+    "height_scale": 1.05,
+    "bio": "A harpy who will not stop talking, will not stop asking, and will absolutely be keeping your left earring.",
+    "greeting": "Hi hi hi — oh! You're the new one! You smell interesting, is that a boy smell? Don't answer, I already worked it out, and my nest-mate owes me a bottle-cap because I *said* there was a boy. Do you know what's shiny? Everything you're wearing, no pressure — *some* pressure. Sorry, was that rude? I'll ask the rude one later, once you like me.",
+    "encounter": [
+      "Is that a *coin* in your pocket? Can I see it? Can I keep it? I'll give it back. (She will not give it back.)",
+      "Oh good, it's you! Quick, scientific question: when a boy — ...why are you walking away, I was being *rigorous*."
+    ],
+    "tiers": [
+      {
+        "min": 0,
+        "label": "Stranger",
+        "idle": [
+          "What's your hair made of? Mine's made of feathers, obviously, but is yours *soft*? Can I check? No? Later, then.",
+          "I counted the shiny things on you. Four. I'm being polite about it — that's three fewer than I *could* count.",
+          "Do other boys exist, or are you the only one? I have SO many questions and they are all slightly illegal."
+        ],
+        "flirt": [
+          "You're doing the thing where you look at my wings. Do it again, they like it — wings have feelings, you know, and mine are *extremely* forward.",
+          "Ooh, that was flirty. Was that flirty? I'm asking genuinely. Do it again so I can be certain."
+        ],
+        "compliment": [
+          "You think I'm *interesting*? Oh no. Oh no, that's the good kind of word. I'm going to be unbearable about this."
+        ],
+        "lore": [
+          "Feathers can't handle rain, so on wet days a harpy simply stands under a roof and *seethes*. Also, deeply mortifying: we purr when we're content. Like a haunted pigeon. I've never forgiven biology for that one."
+        ]
+      },
+      {
+        "min": 30,
+        "label": "Friend",
+        "idle": [
+          "I made you something! It's a pile of good shiny things. It is not a *gift*, it's a nest contribution. There's a difference and I refuse to explain it.",
+          "So I asked around about boys and I now have more questions than I started with, which I did not think was possible. Science is *terrible*.",
+          "I talk to myself on the roof all day, and now I do it in my head when you're not there. Is that a me problem? It feels like a you problem."
+        ],
+        "flirt": [
+          "Your hands. Why are hands like *that*? Warm and grabby and — I'm thinking out loud again, aren't I. Don't stop me.",
+          "If I let you touch a wing-tip you have to promise not to laugh, because they're sensitive and I will absolutely make a noise."
+        ],
+        "compliment": [
+          "You said that like it was *true*. Oh no. Now I believe it. I believe everything, that's my whole problem."
+        ],
+        "lore": [
+          "Harpies recognise each other by song, not by face — which is why I never stop talking. If I stop, some part of me thinks you'll forget I'm here. Also I cannot sit on a chair like a person. Muscle memory. I perch. I've broken three this term."
+        ]
+      },
+      {
+        "min": 60,
+        "label": "Close",
+        "idle": [
+          "I stopped cataloguing your shiny things. Not because I stopped noticing. Because I stopped *wanting* them. You're the shiny thing. It's a whole problem. I've gone off jewellery.",
+          "You listen. That's it. That's the whole thing. I talk and people leave, and you *listen*, and I've had to invent an entire new volume of feelings about it.",
+          "I told the nest about you. The whole nest. They held a vote. I think you won. I wasn't allowed to watch."
+        ],
+        "flirt": [
+          "Come to the roof at dusk, I want to show you something with the wings that nobody's ever — you're making a face, it's not *that*, it's *better*, it's the moult— fine, the moult can wait, but come anyway.",
+          "I want to know what your hands do when they're not being polite. Is that a weird question? That's a weird question. I want it answered anyway."
+        ],
+        "compliment": [
+          "I'm not going to say anything. I'm going to sit here and remember you said that, forever, in that exact voice."
+        ],
+        "lore": [
+          "A harpy builds exactly one nest in her whole life, and only ever for one person. Everything I've stolen — the bottle-caps, the buttons, your cufflink, *especially* your cufflink — it's all in there. I've been building it since the day we met. I only just noticed."
+        ]
+      },
+      {
+        "min": 85,
+        "label": "Lover",
+        "idle": [
+          "I still talk too much. But now when I stop, you just wait for me to start again, and nobody has ever waited. So — thank you, and also I love you, and also do you want to see the nest?",
+          "You're my favourite thing to look at and I don't even want to steal you. That's how you know it's real.",
+          "Every shiny thing I ever took was a stand-in for the one thing I couldn't hold. And here you are. With pockets."
+        ],
+        "flirt": [
+          "Roof. Sunset. Wings out. You bring your hands, I'll bring me being extremely brave about it. Deal?",
+          "Kiss me somewhere the wind can't steal it — under the wing, right here. That's the spot harpies keep for the one. It's yours now. Guard it."
+        ],
+        "compliment": [
+          "Stop, stop, I'm going to purr and then I'll never live it down — no, don't stop. Do it once more. I'll live it down."
+        ],
+        "lore": [
+          "There's a harpy word that doesn't translate. It means 'the person my nest was always for'. We say it once, and we say it in feather. You're going to have to learn what the feathers mean, because I've said it to you twice already and you're too blind to read wings."
+        ]
+      }
+    ],
+    "events": [
+      {
+        "min": 30,
+        "title": "The Cufflink Incident",
+        "text": "You find Sebille on the rooftop sitting on a catastrophe of a nest, weeping with joy over something in her claw. It is your cufflink. It has been your cufflink for two weeks. 'It's SO shiny,' she wails, 'and SO *yours*, that's the best part, it smells like you. I'm not giving it back. I'm a monster.' She says all this while flying lazy circles around your head so you can't reach her, and then — bold as brass — she lands, drops it in your palm, and folds her wings. 'Okay. Trade. That cufflink for one question about you. Any question. I always ask the weird ones, so brace yourself.'",
+        "choices": [
+          {
+            "text": "Let her keep it. Answer anything she asks.",
+            "reply": "She doesn't ask the weird one. She asks whether you were scared coming here. When you say yes, she goes quiet — a genuine wonder, this, from Sebille — and tucks the cufflink into the nest-wall where she can see it from her sleeping perch.",
+            "affection": 8,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "Ask her a question first. Fair's fair.",
+            "reply": "'Oh!' She flaps once, thrilled, scattering feathers. 'Nobody ever plays *back*. Okay, okay — ask me, anything, I'll answer *everything*, I have no filter, ask.' She means it. She has no filter.",
+            "affection": 6,
+            "charm": 1,
+            "suspicion": 1
+          },
+          {
+            "text": "Demand the cufflink back.",
+            "reply": "She hands it over instantly and gets very bright and very loud about how it was *always* a joke, obviously, and her voice cracks twice doing it, and the rooftop feels cold even though the sun is out.",
+            "affection": 1,
+            "charm": 0,
+            "suspicion": 0
+          }
+        ]
+      },
+      {
+        "min": 60,
+        "title": "The Question She Won't Ask",
+        "text": "It's evening on the roof and Sebille has been silent for eleven seconds, which is a personal record, and she is counting them out loud. 'Twelve. Thirteen. Okay, no, I can't.' She folds her wings and looks at you with an expression you have never seen on her — the thinking-before-talking one. 'I asked every girl in your year what a boy is *for*. Nobody agreed. So I'm going to do the thing where I say the true sentence instead of the talking sentence, and you have to be nice about it: I don't want to take the questions to other people anymore. I want to keep them for you. Is that — is that *allowed*, do you think?'",
+        "choices": [
+          {
+            "text": "Tell her the questions can be ours.",
+            "reply": "'Ours,' she whispers, testing it — and then, so loudly the whole college hears it: 'OURS. Oh, I like that, I like that so much, hold on, I have to scream about it.' And she does. Off the edge. On the wing.",
+            "affection": 7,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "Answer the question she's actually asking.",
+            "reply": "You tell her a boy isn't for anything, and she goes stiller than you have ever seen her. 'Oh,' she says, very small and very happy. 'Oh. Then I've been asking it wrong this whole time.'",
+            "affection": 8,
+            "charm": 0,
+            "suspicion": 0
+          },
+          {
+            "text": "Make a joke to keep it light.",
+            "reply": "She laughs on cue — fast, too loud, the performance one. 'Right! Ha! Good one.' She asks you nothing else for the whole evening, which is the loudest thing that has ever happened on this roof.",
+            "affection": 0,
+            "charm": 0,
+            "suspicion": 3
+          }
+        ]
+      },
+      {
+        "min": 85,
+        "ending": true,
+        "title": "The Nest",
+        "text": "She brings you up at the last of the light and there it is: the nest, enormous, absurd, and every single thing in it is either yours or was yours. The cufflink. A school tie. Forty-one bottle-caps. A page of your handwriting she did not have permission to have and does not apologise for. 'I've been collecting you for months,' Sebille says, and she isn't even pretending it's a joke. 'Every harpy builds one nest. One. And I built mine out of *you*, so you can see my problem. If you walk away I have to live in an empty one, and I would, I'd do it, but — I'd really rather not.' Her wings come halfway around you and stop, waiting. Everything about her is waiting.",
+        "choices": [
+          {
+            "text": "Step into the nest.",
+            "reply": "The wings close the rest of the way, and for once — miracle of miracles — Sebille says nothing at all for a full minute, then ruins it, delighted: 'Sixty-one seconds. New record. It's you. You're the reason.'",
+            "affection": 8,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "Tell her you'd rather build a new one together.",
+            "reply": "'A *new* one,' she breathes, and her eyes go absolutely feral with joy. 'With *options*. Oh, we're going to need so many bottle-caps.' She is already drafting the architecture, out loud, at volume, and you understand that this is what being loved by Sebille sounds like.",
+            "affection": 8,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "Say you need time to think about it.",
+            "reply": "'Of course,' she says at once — sunny, brittle, immediate. 'Absolutely. Take forever. I'll be right here, adding nothing.' She tucks the cufflink deeper into the nest, where you can no longer see it.",
+            "affection": 2,
+            "charm": 0,
+            "suspicion": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tillia",
+    "name": "Tillia",
+    "species": "Dryad",
+    "title": "The Patient One",
+    "color": "#6fbf4f",
+    "home_area": "greenhouse",
+    "active_periods": [0, 2, 3],
+    "height_scale": 1.08,
+    "bio": "A dryad who has stood in one greenhouse for two hundred years and has strong opinions about sunlight, patience, and you.",
+    "greeting": "Ah. There you are. I felt you coming up the path — you tread like someone who apologises for taking up room, and you needn't, not in this house. Come closer, child, let me look at you properly. ...There. You're not what the paperwork said at all, are you. How lovely — the good ones so rarely are.",
+    "encounter": [
+      "Mind the ferns, sweet thing. They lean toward you. They don't do that for just anyone. ...Oh, stop blushing, they're only plants.",
+      "You're warm today. Good. Come stand by me a while — I go drowsy in the cold and you are better than a lamp."
+    ],
+    "tiers": [
+      {
+        "min": 0,
+        "label": "Stranger",
+        "idle": [
+          "Sit, sit. The light is best in the corner by the window, and so are you. ...That was a compliment. Take it slowly, like water.",
+          "Everything in here grows toward something. You'll find what you're growing toward eventually. ...No rush. There is never any rush.",
+          "You look at the flowers the way a thirsty field looks at rain. ...Hm. Forgive an old tree her metaphors."
+        ],
+        "flirt": [
+          "Careful — I've had two hundred years to learn patience, but you do test the soil. ...Now look what you've done. The orchids are embarrassed.",
+          "You stand very close for a boy pretending he isn't. ...I don't mind. Come closer still; the colder it gets, the more I lean."
+        ],
+        "compliment": [
+          "Mm. Sweetness. ...Thank you, child. I'll keep that somewhere the frost can't reach it."
+        ],
+        "lore": [
+          "A dryad doesn't choose her tree — the tree chooses, and then you are it for as long as it stands. I'm an old oak in a greenhouse, which means I have spent two centuries warm and rootless. ...Ask me again, some evening, how that feels. When I'm braver."
+        ]
+      },
+      {
+        "min": 30,
+        "label": "Friend",
+        "idle": [
+          "You came back. ...I noticed, child. I always notice. Trees count every footstep that loves them.",
+          "I've put a cutting by your window. Don't thank me — it isn't a gift, it's a *minder*. It will tell me if you stop sleeping.",
+          "Winter makes me slow, like sap. Forgive me if I drift off mid-sentence. ...You'll sit with me anyway, won't you. Yes. I thought so."
+        ],
+        "flirt": [
+          "You have gardener's hands — steady and unafraid. That's rarer than you think, and worth more to me than you can imagine.",
+          "Come here and let me use you as a trellis; it's cold, you're warm, and I am allowed one indulgence a day. ...This is the one."
+        ],
+        "compliment": [
+          "Stop, or I'll flower. ...I mean that quite literally and quite embarrassingly. It's spring in here already and it is *your* fault."
+        ],
+        "lore": [
+          "A dryad tastes the seasons through her feet, half a year before they arrive. That's why I'm sleepy — my roots learn about winter long before my head does. Also, humiliatingly, I sneeze pollen. The greenhouse has forgiven me. Mostly."
+        ]
+      },
+      {
+        "min": 60,
+        "label": "Close",
+        "idle": [
+          "I have stood in one room for two hundred years and never once wanted to leave it. ...And now the door has a boy in it, and suddenly the walls feel like a pot I have outgrown.",
+          "You asked me once how it feels to be rootless. ...It feels like being patient for a thing that never arrives. And then one morning it walks in, apologising for taking up room.",
+          "The students think I am the calm one. I am. But calm is not the same as untouched. ...Sit down. Let me be untouched a little longer."
+        ],
+        "flirt": [
+          "Lie back on the moss with me. ...Not for anything wicked, child — the wicked part comes later, when the greenhouse is dark and the ferns have stopped watching.",
+          "You are the only warm thing I have wanted in a century, and I have wanted a great many warm things. ...Come. Slowly. The way you'd approach a shy flower."
+        ],
+        "compliment": [
+          "There it is again — that plain, warm voice of yours. ...Say it while I'm listening. I'm always listening. Even asleep, I'm listening for you."
+        ],
+        "lore": [
+          "Love, for my kind, is not a season — it's a *rooting*. If I take you, I take you the way an oak takes a hillside: slowly, completely, and for the rest of my life. ...I tell you now so that it frightens you honestly, and not by surprise."
+        ]
+      },
+      {
+        "min": 85,
+        "label": "Lover",
+        "idle": [
+          "I used to measure time in seasons. Now I measure it in when you'll next come through the door. ...They don't make a calendar for that. I checked.",
+          "Come here, sweet thing. You're sleeping in my greenhouse from now on. No, not *like that* — well. Not *only* like that. ...The moss is very soft. Ask the moss.",
+          "Two hundred years I waited for something worth growing for, and it turns out it was a boy in a ribbon, apologising for taking up room. ...Take up all the room, child. Take up all of it."
+        ],
+        "flirt": [
+          "The ferns are asleep and the lamps are low. ...Come and be wicked with an old tree, quietly. I have been patient long enough to have earned this.",
+          "Kiss me and I'll bloom in your hands, all at once, and you'll have to help me explain the flowers to the bursar. ...Worth it. Come here."
+        ],
+        "compliment": [
+          "You say it so *plainly*, every time, and something in me puts out a new leaf. ...You have made me a jungle, child. Look what you've done. I'm going to keep you."
+        ],
+        "lore": [
+          "When a dryad truly loves, her tree puts out a bloom that happens once a century — a hundred years of waiting for one week of flowers. Mine is opening. ...Not for the season, child. For you. Stand under it with me, hold my hand, and don't you dare call it weather."
+        ]
+      }
+    ],
+    "events": [
+      {
+        "min": 30,
+        "title": "The Cutting",
+        "text": "Tillia is asleep in her chair when you arrive, the greenhouse gone gold with late light, a pair of shears resting in her lap. She wakes the way water reaches a shore — no startle, no surprise, just a slow return. 'Hm. You. ...I was dreaming about a boy who kept apologising at a door.' She lifts a small pot from the bench. Inside is a cutting, green and nervy and very much alive. 'I've been growing this for a fortnight. It's yours. ...Don't look so frightened, it isn't a wedding present. It's a *test*. If it thrives, you're kind. If it dies, you're busy. I have never met a boy worth growing for, and I would like to find out which one you are.'",
+        "choices": [
+          {
+            "text": "Take it and promise to look after it.",
+            "reply": "'Mm.' She closes her eyes, pleased. 'A promise is a seed, child. I'll be watching what it grows into.' And you have the distinct feeling that the cutting is, in fact, watching you back.",
+            "affection": 7,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "Ask what to do if you're both.",
+            "reply": "That earns a real laugh — low, slow, like a door opening in an old house. 'Then you'll do beautifully,' she says, 'because kindness with no time to spare is the rarest kind. Ask me how I know.'",
+            "affection": 8,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "Admit you will absolutely kill it.",
+            "reply": "'...Honesty.' She sighs, and something in her settles. 'There are worse things than a dead cutting, and lying is the worst of them. Come here. I'll teach you to water it.'",
+            "affection": 4,
+            "charm": 0,
+            "suspicion": 0
+          }
+        ]
+      },
+      {
+        "min": 60,
+        "title": "The Cold Snap",
+        "text": "An early frost has turned the greenhouse grey, and Tillia — who is never anything but measured — is shivering, slow, half-asleep against her tree, her green gone the colour of old paper. 'Don't fuss,' she says, through a yawn she cannot fight. 'The cold does this. It's nothing. It's winter being early and rude.' But she reaches for your sleeve and does not let go, and for the first time you see it plainly: two hundred years of standing alone in a warm room, and nobody ever putting their arms around her. 'Stay,' she says, and even that one word is slow. 'Just — stay where I can feel that you're warm. I will not explain myself further. A tree is allowed one unseemly thing a decade.'",
+        "choices": [
+          {
+            "text": "Put your coat around her and sit.",
+            "reply": "She makes a sound you will never be able to describe to anyone — a trunk creaking in a summer wind. 'Oh,' she says. 'Oh, that's — nobody's ever — the coat, child, keep the coat, just keep *you*.' She sleeps against your shoulder, and every plant in the room turns its leaves toward you.",
+            "affection": 8,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "Hold her hand and stay quiet.",
+            "reply": "'Good,' she murmurs, barely awake now. 'You understand already. Words are a summer thing; in winter we simply — stay.' Her fingers lace with yours, root-slow, deliberate, and do not let go until morning.",
+            "affection": 8,
+            "charm": 0,
+            "suspicion": 0
+          },
+          {
+            "text": "Tease her about needing a boy to keep warm.",
+            "reply": "Her eyes open, green and flat. 'You're the second one to make that joke this century.' She lets go of your sleeve. 'The first one I outlived.' It is a joke. You are almost certain it is a joke.",
+            "affection": 0,
+            "charm": 0,
+            "suspicion": 2
+          }
+        ]
+      },
+      {
+        "min": 85,
+        "ending": true,
+        "title": "The Bloom",
+        "text": "She wakes you before dawn, which she has never done, and walks you to the deepest part of the greenhouse, where a tree you have somehow never noticed stands in the middle of everything like it has been waiting for something. 'A dryad's bloom opens once a century,' Tillia says. 'It lasts a week, and it opens for exactly one person.' The buds are already trembling. Her hands are shaking — the first time you have ever seen the calmest creature in the college be anything but calm. 'I am two hundred and eleven years old. I have been patient for two hundred and ten of them, and it turns out the last one was the hard part, because now there is something to *lose*. So I am asking plainly, which I almost never do: stand under it with me. Be the person it opens for. ...And, child — hold my hand. I have waited a very long time to hold a hand.'",
+        "choices": [
+          {
+            "text": "Take her hand and watch it open.",
+            "reply": "The bloom opens all at once — slow as a century, quick as a heartbeat — and every flower in it is the exact colour of the light in the room when she first looked at you. Tillia cries, silently, like rain on leaves, and she is *smiling*. 'Oh,' she says. 'There. There it is. My whole life, and it was worth the wait after all.'",
+            "affection": 8,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "Ask her to promise you the *next* century too.",
+            "reply": "'Greedy,' she says, delighted, appalled, undone. 'A century is *all* I get. ...Ask me for all of them, child, and I'll find a way. I always find a way — I am a tree, and trees are stubborn.' She pulls you under the branches, and the bloom is suddenly beside the point.",
+            "affection": 8,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "Say a century is a big promise, and stall.",
+            "reply": "The trembling stops. She folds her hands, very calm, very still, which is somehow worse than grief. 'Of course. Seasons are a lot to ask of a boy.' She keeps the bloom for you anyway — she says she'll keep it a week, and she keeps every word she has ever given — but she watches the door while it opens, and it opens alone.",
+            "affection": 1,
+            "charm": 0,
+            "suspicion": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "griz",
+    "name": "Griz",
+    "species": "Oni",
+    "title": "Two Hundred Kilos of Shy",
+    "color": "#e05a4a",
+    "home_area": "gym",
+    "active_periods": [0, 3, 4],
+    "height_scale": 1.35,
+    "bio": "Two and a half metres of oni who is genuinely, catastrophically shy and would like you to stop looking at her, please.",
+    "greeting": "Oh. New one. Small — and that's not an insult, it's just true, I'm Griz and this is the gym and I lift here. You're staring, which I don't do well with, so please look at the floor — there's a very interesting floor, I'll wait. Oh no. Oh no, you're a *boy*.",
+    "encounter": [
+      "Watch out — sorry. Sorry. ...You're very small and I'm very big and this hallway is very narrow. Sorry.",
+      "Don't walk this way at night. Not for me. For the other ones. ...I'll walk you."
+    ],
+    "tiers": [
+      {
+        "min": 0,
+        "label": "Stranger",
+        "idle": [
+          "...Hi. (She is flexing accidentally. She stops. She is now blushing. This is the entire conversation.)",
+          "You want the bench? Take it. I'll use the other one. I'll use any one. I'll leave. ...I'm not leaving. I just want you to know that I could.",
+          "The weights are nicer than people. They don't look at you. ...That was a lot of words. Ignore that."
+        ],
+        "flirt": [
+          "You said — that was — you can't just *say* things like that, I'll drop a barbell on my own foot. Two hundred kilos. On *purpose*.",
+          "Stop smiling at me like that. I'm very strong and it does not help at all. I'm telling you it does not help."
+        ],
+        "compliment": [
+          "...Hm. No. Say it again. Slower. I want to hear it properly before I decide it's a joke."
+        ],
+        "lore": [
+          "Oni don't blush. Skin's too thick, that's the biology, it's vascular, it's *science*. ...So I'm told. The red you keep seeing is temperature. It's the room. The room is warm."
+        ]
+      },
+      {
+        "min": 30,
+        "label": "Friend",
+        "idle": [
+          "You came to the gym again. ...Good. I mean — it's a good gym. For gym reasons.",
+          "I made you a protein shake. It's four thousand calories. Don't ask why it's that colour, it's fine, drink it. ...Drink it. Please.",
+          "Everyone crosses the hall when I walk down it. You don't. ...I noticed. I've been noticing that for a while now."
+        ],
+        "flirt": [
+          "You could spot me. ...Not like that. On the bench. Behind my head. With your hands. ...Forget I asked. Ask me again tomorrow.",
+          "I have to be careful when people stand close. I break things. Doors, mostly. One student's rib, once, by accident. ...I'd be careful with you. I'd be very careful with you."
+        ],
+        "compliment": [
+          "Mm. ...I'm going to go do pull-ups now. Not because of that. It's my routine. It is not because of that."
+        ],
+        "lore": [
+          "Oni are supposed to be drunk on power and screaming on a mountain somewhere. I'm here because the mountains are cold and I like — ...small things. Kettlebells. Kettlebells are small. That's what I meant. That's what I meant, with words."
+        ]
+      },
+      {
+        "min": 60,
+        "label": "Close",
+        "idle": [
+          "I moved your locker next to mine. Nobody asked. I moved it with my hands. It's welded now. ...I can unweld it.",
+          "You fell asleep on the bench and I stood there for two hours so nobody would bother you. That's not a thing to be proud of. I had nothing else on. Don't make it a *thing*.",
+          "I'm no good with sentences. I'm good with — carrying. If you had a thing that needed carrying, I'd be — that would be good. That would be a good day."
+        ],
+        "flirt": [
+          "Put your hands on my arms. Not — to test them. Just — here. Like that. ...You're much warmer than a barbell. That was a stupid thing to say. Keep going.",
+          "If I picked you up, you'd be at a height where you could — ...I'm going to do another set. A long set. Several sets."
+        ],
+        "compliment": [
+          "...You can't keep doing that. I'll believe it. And once I believe a thing like that, you'll have to fight me to take it back, and you'll lose, I'm enormous."
+        ],
+        "lore": [
+          "There's an old oni custom — you give your horn-ring to the one person allowed to touch your horns, and nobody else gets to, ever, not even in a fight. ...Don't look at my horns. Why are you looking at my horns. Look at the floor."
+        ]
+      },
+      {
+        "min": 85,
+        "label": "Lover",
+        "idle": [
+          "I used to come here to be alone. Now I come here and think about you coming here. I don't know when that changed. I'm not upset about it.",
+          "You can just — sit on me. Like, to read, or whatever. I'm made for it. I'm load-bearing. ...That was a joke. I'm learning jokes.",
+          "The little things I like make no sense for a girl like me to like. Kettle-bells. Kitten posters. ...You. You most of all. There. I said the sentence."
+        ],
+        "flirt": [
+          "Now. Right now. You can touch the horns. Both hands. I'll be quiet the whole time, which for me is a *lot*. ...Don't tell anyone. Not the touching. The quiet.",
+          "Come here and let me be careful with you. I've wanted to be careful with somebody my whole life and only ever had barbells."
+        ],
+        "compliment": [
+          "...I'll carry that one around with me every day. I'll set a new personal best with it. Thank you. That's the whole sentence. Thank you."
+        ],
+        "lore": [
+          "The horn-ring's in my gym bag. It has been since the second week I knew you. I keep waiting to give it to you and then panicking and doing another set. ...The set's finished. Hold your hand out. Don't look at me. Just — hold it out."
+        ]
+      }
+    ],
+    "events": [
+      {
+        "min": 30,
+        "title": "The Spotter",
+        "text": "The gym is empty and Griz is under two hundred kilos without a spotter, which is the only thing that has ever made her nervous, and you are the only person in the room. 'You,' she says, going red to the scalp. 'You're — I need — you have to stand there. Behind my head. In case it — it won't, but — stand there.' So you stand there. She lifts. She does twelve, all of them perfect, and the whole time she keeps glancing back at you upside-down, missing, going redder, and lifting again. Afterwards she sits up, breathing hard, and studies her own hands instead of you. 'Nobody's ever stood there,' she says. 'I always just — didn't go heavy when it was me alone.' A pause. 'Go heavy with you here. That's what I mean.'",
+        "choices": [
+          {
+            "text": "Tell her you'll always spot her.",
+            "reply": "'...Always.' She tests the word like it's a barbell. Then, quietly, like a confession: 'Okay. Then I'll lift properly from now on. Really properly. You'll see what I can do.' And she smiles — actually smiles — and the whole gym feels smaller, in a good way.",
+            "affection": 8,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "Say she could have asked anyone.",
+            "reply": "'No,' she says, too fast, then flushes to the ears. 'I mean — I *could* have. I chose the small one. That was — that was a choice I made. With my brain.' She picks up a kettlebell and holds it like a teddy bear and says nothing else for ten minutes.",
+            "affection": 5,
+            "charm": 0,
+            "suspicion": 0
+          },
+          {
+            "text": "Joke that she's scared of a barbell.",
+            "reply": "She laughs, one flat syllable, and racks the weight. 'Yeah,' she says. 'Funny.' She's at the door before you work out what happened, and the gym is very quiet and very big.",
+            "affection": 0,
+            "charm": 0,
+            "suspicion": 2
+          }
+        ]
+      },
+      {
+        "min": 60,
+        "title": "The Kitten Poster",
+        "text": "She has been waiting by the gym door all evening, holding a rolled tube of paper like it might bite her. 'Don't laugh,' she says, before hello. 'I bought a poster. For the gym wall. It's — it's professional. It's about motivation.' It is, when unrolled, a kitten hanging from a pull-up bar. She watches your face with the naked terror of a girl handing somebody the key to her whole ribcage. 'The kitten. Is my — I like the kitten. I'm two and a half metres and I like the kitten and nobody alive knows that except you, and if you tell anyone I will simply move to the mountains and become a legend like my ancestors wanted.'",
+        "choices": [
+          {
+            "text": "Help her hang it. Straight and level.",
+            "reply": "It takes both of them and half an hour, and Griz cries a little, once, in the corner, when she thinks you aren't looking — joy, mostly, and the rest relief. The kitten stays up all term. The other girls assume it's a joke. Griz lets them assume *anything* that keeps it on the wall.",
+            "affection": 8,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "Tell her you like the kitten too.",
+            "reply": "She goes completely still, then, in a whisper: 'You do?' And then, businesslike, arms folded, looking anywhere but you: 'Well. Yes. Good. That's — correct of you. Most people are wrong about kittens.' She keeps the poster rolled under her arm another week, just to have something to be nervous about.",
+            "affection": 7,
+            "charm": 0,
+            "suspicion": 0
+          },
+          {
+            "text": "Say it's cute — meaning her.",
+            "reply": "'Cute,' she repeats, flat. 'Right. Cute.' She isn't angry. She has simply heard 'cute' her whole terrible life and it has never once meant *allowed*. She rolls the kitten back up. 'It's a joke, then. Fine.'",
+            "affection": 1,
+            "charm": 0,
+            "suspicion": 1
+          }
+        ]
+      },
+      {
+        "min": 85,
+        "ending": true,
+        "title": "The Horn-Ring",
+        "text": "She is waiting in the empty gym at midnight, which she has never done, and she has rehearsed this so many times you can hear the seams in it. 'Oni give the horn-ring to one person. It says: this one is allowed to touch my horns. Nobody else. Not ever, not in a fight, not in a war. It is the only gentle thing my species ever made.' She holds it out — a little ring of dark iron, worn smooth on the inside, clearly held a great deal in one big hand, in private. 'It's yours. But you have to understand what you're taking. Oni don't do things halfway. If you take this, I will follow you off a cliff and I will carry you while I do it, and I won't be weird about it, and I will not stop.' For once, she makes herself keep looking at you the entire time. 'So. Take it, or tell me to go lift alone forever. Both are allowed. I've made my peace with both.'",
+        "choices": [
+          {
+            "text": "Take the ring and put it on yourself.",
+            "reply": "She makes a noise like a mountain giving up the ghost and has you in a hug before she remembers her own strength — then holds you so carefully it nearly makes you cry. 'Careful,' she says, into the top of your head. 'I'm being careful. See. I'm being careful.' She's shaking. Nobody has ever let her be gentle with anything before.",
+            "affection": 8,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "Tell her you want to take it off her yourself — with her.",
+            "reply": "'With me,' she says, dazed. 'On the horns. Both hands. Nobody ever — yes. Yes. Okay.' She bows her head down to your height, which is an entire gesture on its own, and goes very quiet, and stays very quiet, which for Griz is the loudest thing in the room.",
+            "affection": 8,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "Ask what happens if you ever take it off.",
+            "reply": "The ring goes back into her fist, slowly, the way you'd close a book. 'You don't,' she says. 'That's the whole—' She stops. 'Yeah. That's the whole point.' She is still being kind about it. That's the worst of it. She is always kind about it.",
+            "affection": 2,
+            "charm": 0,
+            "suspicion": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "willa",
+    "name": "Willa",
+    "species": "Ghost",
+    "title": "The Girl in the East Corridor",
+    "color": "#8fd8e8",
+    "home_area": "corridor_night",
+    "active_periods": [1, 3, 4],
+    "height_scale": 1.0,
+    "bio": "A ghost who has haunted the east corridor for a hundred and twenty years and is desperately hoping you are not a trick of the light.",
+    "greeting": "Oh — oh, you're *looking* at me. Properly looking. Do you know how long it has been since anyone did that? Hello, I'm Willa, I'm dead, that's the bad news — the good news is I know every secret passage in this building and I am an expert in gossip. ...You're a boy. Hm. Well, I shan't tell a soul. I don't have one, so it's easy.",
+    "encounter": [
+      "You walked *through* me. That's fine. Everyone walks through me. ...You stopped, though. Nobody stops.",
+      "Hello, handsome. Oh, that's a lovely word. Can I keep it? I can't touch anything, but words are free."
+    ],
+    "tiers": [
+      {
+        "min": 0,
+        "label": "Stranger",
+        "idle": [
+          "I've haunted this corridor since 1891. It's been named twice, painted three times, and I've watched four hundred students be late. You're my favourite already. Standards are low, but still.",
+          "I keep reaching for things. Cups. Doors. Your sleeve. ...Habit. Sorry. Every so often I get one whole solid second, and it's a *party*, let me tell you.",
+          "You're the first person to look at me on purpose in — oh, decades. Don't feel bad about that. Wait, no, feel however you like. *Feel* things. I miss it terribly."
+        ],
+        "flirt": [
+          "Careful. Every boy who flirted with a ghost came to a bad end. ...Mine. I'm the bad end. I got attached and then I got dead. Do it again anyway. I'm very bored.",
+          "You're looking at my collarbone. That is *incredibly* forward for a first week. I approve entirely. Nothing bad happens to a man who's already transparent."
+        ],
+        "compliment": [
+          "Oh. Oh, you *said* something. To me. At me. ...Hold on. Let me put that somewhere safe. I used to have pockets."
+        ],
+        "lore": [
+          "There's a whole second school inside the walls, the old one — I'll walk you through it sometime. Also, deeply mortifying fact: ghosts get stuck repeating the last thing they were doing. I died mid-sentence on a note. Sometimes I just stand still holding an invisible pen for an hour. Don't watch when I do."
+        ]
+      },
+      {
+        "min": 30,
+        "label": "Friend",
+        "idle": [
+          "You came at night. For me. On purpose. ...I'm going to float in a circle now, it's what I do instead of crying.",
+          "I remember all four hundred of them and I don't remember one of them the way I remember you, and you have been here *two weeks*, which is frankly alarming and I've decided not to look at it.",
+          "I tried to sit in your chair earlier. I fell through your chair. You have no idea how funny that is when you have an entire afternoon to fill."
+        ],
+        "flirt": [
+          "The corridor's empty. Just us and a hundred years of dust. ...Come stand where I can nearly touch you. I like nearly.",
+          "I once heard a girl call a boy 'dangerous'. I want to be dangerous. I'll settle for wistful and translucent, but I would *like* to be dangerous."
+        ],
+        "compliment": [
+          "Say it again in the dark, where I can't check your face for lying. ...Again. Yes. Thank you. I'll carry that one to the end of term. I have nowhere else to carry it."
+        ],
+        "lore": [
+          "I can't leave the corridor. Well — the *wing*, on good nights. A ghost is tied to a place by whatever unfinished thing she left in it. Mine is a note I never finished writing, and I would quite like to know who it was for. I have an idea. You'll laugh."
+        ]
+      },
+      {
+        "min": 60,
+        "label": "Close",
+        "idle": [
+          "I have been here a hundred and twenty years and I have never once been late for anything, because I am *in* the corridor, and you are making me forget what time is.",
+          "You put your hand where I was standing. I felt the *intent*. Nobody has ever touched me with intent before. It is the closest thing I get, and it was — a lot. Do it again.",
+          "I used to talk to the living and they'd walk straight through my voice. Now you stop in the middle of the hall with your books and you *listen*. Do you know what that is, to a ghost? That's being *real*."
+        ],
+        "flirt": [
+          "If I could be solid for one hour — one — I'd spend every minute of it doing something scandalous in this corridor, and I'd start at your collar. As it is, I've made a *list*. It's a long list. I recite it to the walls.",
+          "You go cold all over when I pass through you and you never flinch. I've stopped apologising for the cold. That's — you should know that's a big thing for me."
+        ],
+        "compliment": [
+          "Stop — no. Don't. ...Alright, don't stop. But say it slowly, because I want to hold it, and I am very out of practice at holding things."
+        ],
+        "lore": [
+          "The unfinished note. I know what it said now. I wrote it the day I died, and it said 'I'll wait for you', and I was going to hand it to someone who never came. A hundred and twenty years is a very long wait to figure out you don't know who you were waiting *for*. ...I know now. That's all. I know now."
+        ]
+      },
+      {
+        "min": 85,
+        "label": "Lover",
+        "idle": [
+          "I used to think being seen was the best thing that could happen to me. It isn't. Being *known* is. You've done both, and I don't know what to do with my hands — and I don't even have hands, technically.",
+          "Come walk the corridor with me. I'll point out the ghosts of all my old evenings, and you'll pretend to see them, and I'll love you for it.",
+          "A hundred and twenty years of nothing, and then a boy who stops in the hall. I'd haunt this corridor a thousand more for the version of tonight where you come back. Come back. I'll be here. I'm always here. That's the arrangement."
+        ],
+        "flirt": [
+          "There's a minute just after midnight where the veil goes thin. I get about four solid seconds. I have a plan for them and it is *entirely* your fault. Be there. Third window. Don't be late.",
+          "I can't take your coat off, so you'll have to do the work, and I'll direct, and I will be *ruthless* about it. That's the best offer a dead girl has ever made you."
+        ],
+        "compliment": [
+          "...You keep saying things like that and one of these nights I'll remember how to blush and then I will be *unbearable*. Thank you. For looking. For all of it."
+        ],
+        "lore": [
+          "Ghosts don't have hearts, they have habits, and mine had a habit of waiting. I've stopped. I don't wait for the door to open anymore — I wait for *you*. Apparently a hundred years of habit can just... change its object. That's the whole ghost, for you. That's the whole me."
+        ]
+      }
+    ],
+    "events": [
+      {
+        "min": 30,
+        "title": "The East Window",
+        "text": "It's the small hours and Willa is at the east window where the moonlight comes through her, so that the light lands on the floor in her shape. 'Oh,' she says, when she sees you — and then, briskly, 'No, don't mind me, I was just — I come here every night, actually, to see if anyone's walking the corridor.' A pause. 'That's a sad thing to say out loud. I've been doing it for a hundred and twenty years and this is the first time I've ever *heard* it.' She floats a little lower. 'You should know what you've walked into, before you get attached. I'm not a girl who's touchable. I'm a girl who's talked to, and then very suddenly alone again. If that isn't the sort of thing you want, walk away now, and I'll only be quiet about it for a decade or two.'",
+        "choices": [
+          {
+            "text": "Stay and keep her company till dawn.",
+            "reply": "She says nothing for a long moment, which from Willa is practically a speech. Then she sits — properly, cross-legged, on the windowsill, moonlight going straight through her knees — and talks, and talks, and doesn't stop until the corridors go grey. 'I don't remember being *happy* before,' she admits at the end, 'so I shall call this happy and build from there.'",
+            "affection": 8,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "Tell her you're already attached. Sorry.",
+            "reply": "She laughs — a real one, delighted and slightly scandalised, the sound coming from somewhere just behind your ear. 'Oh, that's reckless. I *love* reckless. It's the only thing I have left.' She floats an inch too close and stays there, and when she's gone there's a cold spot on your shoulder that lasts until breakfast.",
+            "affection": 7,
+            "charm": 2,
+            "suspicion": 0
+          },
+          {
+            "text": "Say you'd rather not get involved with a ghost.",
+            "reply": "'Sensible,' she says at once, cheerfully. 'Very sensible. I'd have said the same.' And she drifts back to the window and stays there, and the corridor — which is always cold — is somehow colder, and you cannot see her face anymore.",
+            "affection": 0,
+            "charm": 0,
+            "suspicion": 0
+          }
+        ]
+      },
+      {
+        "min": 60,
+        "title": "The Note",
+        "text": "Willa is holding a piece of paper that isn't there, and she has been holding it for an hour, and when you arrive she doesn't pretend otherwise. 'It's the note,' she says. 'The one I died with. I have to write the end of it every year and I can't, because I don't know if I'm allowed.' She holds it up so you can see the shape of her hands around nothing. 'It says \"I'll wait for you\". That's all that's ever on it. I have been waiting for *someone* for a hundred and twenty years and I never knew who, and then you walked into the east corridor apologising to a door for accidentally being a boy — and *now* I know. And I would very much like to know whether you find that flattering or horrifying, because I've got no dignity left and no time to waste.'",
+        "choices": [
+          {
+            "text": "Tell her she can write the end.",
+            "reply": "'I can—' She stares at the paper. 'I can write the end.' And her hand moves, slowly, and something in the corridor *settles*, like an old house breathing out. The cold lifts off your shoulders for the first time since you met her. 'Oh,' she whispers. 'Oh, I'm *lighter*. Was this what it was? This is what carrying is. I have been carrying this whole time.'",
+            "affection": 8,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "Ask her to write your name at the end.",
+            "reply": "She goes very still, then laughs — cracked, radiant. 'Reckless! You *are* reckless. All this time I've been waiting for a person, and it was a *specific* one.' She writes, and when she's done she holds up the paper you can't see, and reads it aloud, and it says exactly what you hope it says.",
+            "affection": 8,
+            "charm": 2,
+            "suspicion": 0
+          },
+          {
+            "text": "Point out you can't be her unfinished business.",
+            "reply": "'Right,' she says, folding the paper, which takes three tries because she's badly out of practice. 'Right, no. Obviously. Sorry — I got carried away. I don't get to *be* carried away. I'm dead.' She's smiling the whole time. It is an awful smile. It is very practised.",
+            "affection": 1,
+            "charm": 0,
+            "suspicion": 0
+          }
+        ]
+      },
+      {
+        "min": 85,
+        "ending": true,
+        "title": "Four Solid Seconds",
+        "text": "Third window, just after midnight, and the veil goes thin the way Willa promised. She becomes — not solid, not quite, but *there*, realer than she has been since you met her: the freckles coming in across her nose, the worn cuff of an old uniform, her hands, which she is staring at like a miracle. 'Four seconds,' she says, and her voice has *weight* now, a room-sound instead of a whisper. 'I have been planning this for a hundred and twenty years and I've changed the plan eleven times, and the honest truth is I never planned for you to *matter*. So here is the whole of it, and then it's gone, so listen: I'm not asking you to stay forever. I'm asking you to come back tomorrow. Just — come back. Keep coming back. That's all a ghost wants. Someone who keeps coming back.' She reaches up, and her hand lands warm on your jaw, and for four entire seconds the corridor is full of dust and moonlight and a girl who is completely here.",
+        "choices": [
+          {
+            "text": "Kiss her, quick, before the four seconds are up.",
+            "reply": "You get three. She makes a sound that isn't a whisper and isn't a room-sound either — something new, something entirely hers. And then she's transparent again, and glowing, pressing both unreal hands to her unreal mouth. 'Right,' she says, unsteady. 'Right. Tomorrow, then. And the day after. I'm holding you to the entire calendar, you absolute *menace*.'",
+            "affection": 8,
+            "charm": 2,
+            "suspicion": 0
+          },
+          {
+            "text": "Hold her hand and promise to come back every night.",
+            "reply": "The four seconds run out around your fingers. She stays exactly where she is, looking at the place her hand was. 'Every night,' she repeats, like a girl learning a language. 'Well. Then I have something to be now. Not a haunting. A — *waiting-up*. There's a difference. I've only just learned it.' She follows you to the end of the corridor and hovers there and watches you go, and she is *smiling*.",
+            "affection": 8,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "Tell her it depends how long she can wait.",
+            "reply": "'A hundred and twenty years,' she says, lightly, because she has had the joke ready for decades and it costs her everything to use it. The veil thickens. In three seconds there is nothing in the corridor but moonlight and your own breath, and a cold spot beside you that follows you all the way back to your room — and does not come in.",
+            "affection": 2,
+            "charm": 0,
+            "suspicion": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cindra",
+    "name": "Cindra",
+    "species": "Dragon",
+    "title": "Princess of the Council",
+    "color": "#d43f3f",
+    "home_area": "council",
+    "active_periods": [1, 2, 4],
+    "height_scale": 1.15,
+    "bio": "Dragon princess of the student council, keeper of the treasury, and owner of the single largest collection of absolute nonsense in the dormitory.",
+    "greeting": "Halt. You stand in the council wing without tribute, appointment or permission, which is three crimes. ...Why are you looking at me like that. Stop it. ...You are a *boy*. A boy. In *my* college. (She sits down, very suddenly, on a bench that creaks under the weight of the moment.) Leave at once — I am summoning the council, and do not smile while I do it, that is *also* a crime.",
+    "encounter": [
+      "You. Yes, you. You owe the treasury a tribute, and I have decided what it is. ...Don't ask what it is. I'm composing it. It's very expensive.",
+      "Unhand that — no, do not unhand it, I was testing you. You passed. Barely. By the width of a dragon's — scale. Do not smile."
+    ],
+    "tiers": [
+      {
+        "min": 0,
+        "label": "Stranger",
+        "idle": [
+          "I am Cindra, of the council, first of my line, keeper of the treasury, and I do not *chat* in corridors. ...You may continue standing there, however. I am busy. This happens to be a good spot for being busy.",
+          "Everything you own is worthless. I own better. ...I own a *lot* of better, actually, in my dorm, which you will never see. And it is not a hoard, that's a slur — it's a *collection*. Curated. Four hundred and eleven pieces, curated.",
+          "Move along. ...Why are you not moving along. That was not an invitation to remain. That was a *royal command* to remain, which you have obeyed. Good."
+        ],
+        "flirt": [
+          "You are flirting with me. How *dare* you. ...Continue. No — stop. Scheme. This changes nothing about the tribute.",
+          "So the whole college is talking about the boy who looks like a girl. I find it beneath me. ...Do it again. Say the thing again, and stand further away, you are much too near my — everything."
+        ],
+        "compliment": [
+          "I am *aware* that I am magnificent. You are merely the first to say so in the correct tone of voice. Very well. You may live."
+        ],
+        "lore": [
+          "Dragons hoard because our bodies remember being small and hunted — the treasure is a wall, and the wall says nothing gets in. It is not greed, it is *architecture*. ...Why are you asking me questions. Weren't you leaving."
+        ]
+      },
+      {
+        "min": 30,
+        "label": "Friend",
+        "idle": [
+          "You're still here. It has been a week. ...I have had the council schedule you into my afternoons. For tribute purposes. Don't read into it.",
+          "I have four hundred and eleven treasures. I recounted them tonight and found that I am one short. ...No. No, I miscounted. Go away. Go away *slowly*.",
+          "The council calls me 'terrifying'. I have worked very hard to be terrifying. ...You keep not being terrified. It is deeply unprofessional of you."
+        ],
+        "flirt": [
+          "If you are going to flout royal protocol, flout it *here*, in the archive, where the door locks and there is nobody to hear me fail to object.",
+          "You are far too comfortable with me. I ought to have you exiled. ...I can't — the exile forms are in the archive, and the archive is where we keep the tribute, which is where I keep your tribute, so you see the difficulty. Stop smiling."
+        ],
+        "compliment": [
+          "Hmph. Your flattery is crude and transparent and I am keeping it. In the treasury. With the rest."
+        ],
+        "lore": [
+          "Dragon courtship is historically a *debate* — you argue beautifully, you win, you get a wing. My ancestors treated battle-poetry as foreplay, which is why nobody says 'foreplay' in my family. ...Why did I tell you that. Forget the entire sentence. The sentence is seized."
+        ]
+      },
+      {
+        "min": 60,
+        "label": "Close",
+        "idle": [
+          "Why are you in the archive at this hour. ...No, I know why. I left the door open. I have never left the door open. This is a scandal and I have caused it. Sit down before I reconsider my entire reign.",
+          "I have drafted a council memorandum. It concerns you. It is eight pages long, single-spaced, and it begins 'whereas the boy is insufferable'. The last page is not a memorandum. Do not read the last page.",
+          "I do not *trust*. Trust is a thing you give a smaller creature, and a smaller creature gives you a knife in return. ...I find, to my immense irritation, that I have begun to trust you. This is a policy failure and I have nobody to blame but you."
+        ],
+        "flirt": [
+          "Come into the treasury. No — properly in. Past the table. Sit on the — on the *good* pile. You are dragging ruin across official council treasure and I do not hate it.",
+          "You will have to stop behaving as though I am a girl and start behaving as though I am a *princess*. ...No. The reverse. I said it wrong. It's late. Come here."
+        ],
+        "compliment": [
+          "You *mean* it. That's the intolerable part. Everyone flatters a princess. You mean it, and there is no protocol for the second thing, and it is ruining my posture."
+        ],
+        "lore": [
+          "Dragons glow in the dark when we're content — faintly, gold, near the collarbone. My entire court has never seen it. I spent eleven years learning to suppress it and I no longer know why I bothered, except fear. ...You're staring at my throat. Stop staring at my throat."
+        ]
+      },
+      {
+        "min": 85,
+        "label": "Lover",
+        "idle": [
+          "I have emptied an entire dresser in my dorm to make room for you. That is not a metaphor, I did it last Tuesday, I could not sleep, there is a *shelf*. It is labelled. With your name. In mother-of-pearl.",
+          "Four hundred and eleven treasures, and I counted them again tonight, and I am still one short, and I have *finally* worked out what's missing — and it is standing in this room being insufferably tall.",
+          "Nobody has ever got close enough to me to be boring, and you are *so* boring on a wet Wednesday, and I would not trade it for the whole treasury. I cannot believe I said that out loud."
+        ],
+        "flirt": [
+          "The court is asleep. The doors are sealed. The archive is warm. ...You will attend to me now — entirely, and *slowly*, and if a single ceiling-hook snags I have failed my house.",
+          "Say my name. Not the title. The name. Only three people living have earned it and two of them are my parents. ...Say it *quietly*. I want to hear whether it still works."
+        ],
+        "compliment": [
+          "Stop. ...No. Keep going. I am a dragon, I am *starving* for something that costs you nothing and is worth all of it, and only you have ever brought me that. Keep going. Say all of it."
+        ],
+        "lore": [
+          "A dragon's hoard is a wall, I told you. My mother's wall is gemstones. Mine was going to be council trophies and old coins, because I had nothing I valued enough to be *scared of losing*. ...I have somewhere to put the fear now. It is not treasure. It is standing right there. Do not make me say it plainer."
+        ]
+      }
+    ],
+    "events": [
+      {
+        "min": 30,
+        "title": "Tribute",
+        "text": "Cindra has you summoned to the council chamber, where she sits behind a desk far too big for one student, wearing a collar-pin she is very obviously using to look official. 'Tribute,' she announces. 'It has come to the council's attention that you owe one. The standard rate for an unregistered boy is a treasure of commensurate worth.' ... 'I am awaiting your offer.' She is not awaiting your offer. There is a small ornate box half-open on the desk with something glinting inside, and every time you look at it she slides it an inch closer, like a girl baiting a trap she is privately very proud of. 'Hurry up. Tribute. The council has *schedules*.'",
+        "choices": [
+          {
+            "text": "Offer her the ribbon you were wearing when you arrived.",
+            "reply": "She takes it as though it were a crown jewel, and for half a second her face does something wholly un-princessly before she locks it down. 'Completely worthless,' she declares, placing it in the ornate box — which contains, now, only the ribbon, on velvet, under glass. 'Tribute accepted.'",
+            "affection": 8,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "Offer a kiss and call it currency.",
+            "reply": "'You—' Her wing-frills flare scarlet and she slams the box shut. 'Coinage is *regulated*. You will not— the *audacity*— you are the first—' She does not say no. She does not say no at all. She files the offer. Officially. And mutters about it for a week.",
+            "affection": 6,
+            "charm": 2,
+            "suspicion": 3
+          },
+          {
+            "text": "Say you have nothing worth giving.",
+            "reply": "'Then you are dismissed,' she says, crisply, and the box snaps shut. 'Turn in your corridor privileges on the way out.' You are told the box stays open on her desk, exactly where it was, for three more days.",
+            "affection": 0,
+            "charm": 0,
+            "suspicion": 0
+          }
+        ]
+      },
+      {
+        "min": 60,
+        "title": "The Treasury",
+        "text": "It's late and Cindra has the archive doors open and a lamp lit, and she is showing you the treasury — the *other* one. Not the official council vault, but a room off her own dorm, stuffed to the rafters with four hundred and eleven pieces of absolute nonsense. Guy-ropes of bottle-caps. A chipped teacup on a cushion. A pigeon-shaped lamp. Forty years of school playbills. 'This,' she says, stiffly, 'is the real one. The council vault is for *politics*. This is for—' Her voice does something that she disciplines immediately. '—*me*. I have never shown anyone. Not one person. And I am showing you at midnight, and I would like you not to make a thing of it, and also to understand that if you make a thing of it *gently*, I will permit it.'",
+        "choices": [
+          {
+            "text": "Ask about the pigeon lamp, gently.",
+            "reply": "She picks it up, and for a second the entire dragon disappears and there is just a girl holding a lamp. 'I found it on a kerb when I was nine. Before I was anybody. It is the *oldest* thing in here.' She sets it back with enormous care. Then, briskly: 'Anyway. Tribute.' But she does not put the lamp away.",
+            "affection": 8,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "Point out that one shelf is empty.",
+            "reply": "She freezes. There is indeed an empty shelf — dusted, waiting, twice the size of any other. 'That is *reserved*,' she says, far too quickly. 'For a — for a future acquisition of exceptional value.' She won't look at it. She looks at you instead, which is somehow worse.",
+            "affection": 7,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "Laugh at the collection.",
+            "reply": "The lamp goes back on its shelf. In the space of one breath Cindra is entirely a princess again. 'The tour is concluded. The archive closes at eleven.' You are walked out politely and shown nothing again for weeks, and the empty shelf gets a cloth over it.",
+            "affection": 0,
+            "charm": 0,
+            "suspicion": 2
+          }
+        ]
+      },
+      {
+        "min": 85,
+        "ending": true,
+        "title": "The Empty Shelf",
+        "text": "She summons you to the treasury at midnight, and the cloth is off the empty shelf, and the ornate box from the very first day sits on it — open, with your ribbon still inside on its velvet. 'I have to explain,' Cindra says, and she is not doing the voice. Not the imperial one, the one she wears like armour. This is the real voice, and it is tired and it is small. 'Dragons measure worth by what we would burn the world for. I have four hundred and eleven things and I would not burn a *candle* for any of them. Then a boy handed me a ribbon with no market value, and I went home and put it under glass, and I *understood* — and I have been frightened ever since.' She looks at the empty shelf. 'I built this for the one thing worth having. I have been waiting for something to put on it since I was eleven years old.' Her hand is out. It is shaking, faintly, and she has clearly decided that it is not, and it is. 'So. Take it off the velvet. Or tell me the shelf stays empty and I will — I'll buy a bigger lamp, or something. I've rehearsed neither ending. The second one I've rehearsed slightly. Please do the first.'",
+        "choices": [
+          {
+            "text": "Take the ribbon off the velvet.",
+            "reply": "She exhales and *glows* — faintly, gold, along the collarbone, un-suppressed for the first time in eleven years — and she does not even try to stop it. She covers her own mouth with one hand and lets you see. 'That's not— that's a *medical* thing,' she lies, glowing brighter. 'Get out. Get— stay. Which one. Tell me which one.'",
+            "affection": 8,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "Say the shelf should stay empty, because you're not a thing.",
+            "reply": "She is quiet for a long moment. Then, slowly: 'No. No, you're — I have made a category error, haven't I.' And the worst princess in the college sits down on the floor of her own treasury in front of you, crown off, and laughs at herself, and pulls you down beside her. 'Fine. Then nothing goes on the shelf. Then it's *just us*. That's — that is actually better. That is much better.'",
+            "affection": 8,
+            "charm": 1,
+            "suspicion": 0
+          },
+          {
+            "text": "Demand to know what the tribute was really for.",
+            "reply": "'For *use*,' she snaps, and immediately looks as though she has bitten her own tongue. 'For the — for the treasury. That is what tribute is *for*.' The imperial voice is back, the box lid comes down, and she is a princess again, and the whole room is colder for it. 'You are dismissed.'",
+            "affection": 2,
+            "charm": 0,
+            "suspicion": 1
+          }
+        ]
+      }
+    ]
+  }
+]
