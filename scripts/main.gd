@@ -43,7 +43,7 @@ var _pending_ending := ""
 var _last_day := 1
 var _intro_done := false
 
-# Headless-ish verification hooks: --shot=path --shot-delay=3 --auto=new --scene=talk:vaelira
+# Headless-ish verification hooks: --shot=path --shot-delay=3 --auto=new --scene=talk:vilma
 var _shot_path := ""
 var _shot_delay := 3.0
 var _auto := ""
@@ -596,7 +596,7 @@ func _run_selftest() -> void:
 	var ids := Cast.all_ids()
 	_check(Cast.load_errors.is_empty(), "cast/area JSON parsed with no errors %s"
 			% str(Cast.load_errors))
-	_check(ids.size() == 12, "12 students loaded (got %d)" % ids.size())
+	_check(ids.size() == 11, "11 students loaded (got %d)" % ids.size())
 	_check(Cast.area_order.size() == 12, "12 areas loaded (got %d)"
 			% Cast.area_order.size())
 
@@ -747,12 +747,12 @@ func _run_playtest() -> void:
 	_check(world.visible and hud.visible, "world and HUD are live after starting")
 
 	# 1. walking into somebody you have never met
-	_on_talk("vaelira")
+	_on_talk("vilma")
 	await _wait(0.3)
 	_check(vn.is_open(), "talking to an unmet girl opens a scene")
-	_check(Game.has_met("vaelira"), "the first meeting marks her as met")
+	_check(Game.has_met("vilma"), "the first meeting marks her as met")
 	_check(not hud.visible, "the HUD hides during a scene")
-	var before := Game.get_affection("vaelira")
+	var before := Game.get_affection("vilma")
 	var guard := 0
 	while vn.is_open() and guard < 150:
 		guard += 1
@@ -762,17 +762,17 @@ func _run_playtest() -> void:
 			await _wait(0.07)
 	_check(not vn.is_open(), "the conversation ends on its own (%d steps)" % guard)
 	await _wait(0.5)  # is_open() clears at the start of the fade-out; let it finish
-	_check(Game.get_affection("vaelira") > before,
-			"chatting raised affection (%d -> %d)" % [before, Game.get_affection("vaelira")])
+	_check(Game.get_affection("vilma") > before,
+			"chatting raised affection (%d -> %d)" % [before, Game.get_affection("vilma")])
 	_check(world.visible and hud.visible, "the world unlocks again after the scene")
 
 	# 2. the milestone event firing on the next conversation
-	Game.add_affection("vaelira", 40)
-	_on_talk("vaelira")
+	Game.add_affection("vilma", 40)
+	_on_talk("vilma")
 	await _wait(0.4)
 	_check(vn.is_open(), "the milestone event plays on the next conversation")
-	_check(Game.events_seen.has("vaelira:30"), "the milestone is marked as seen")
-	var aff_before := Game.get_affection("vaelira")
+	_check(Game.events_seen.has("vilma:30"), "the milestone is marked as seen")
+	var aff_before := Game.get_affection("vilma")
 	guard = 0
 	while vn.is_open() and guard < 80:
 		guard += 1
@@ -781,11 +781,11 @@ func _run_playtest() -> void:
 		if vn.choose(0):
 			await _wait(0.08)
 	_check(not vn.is_open(), "the event scene closes")
-	_check(Game.get_affection("vaelira") >= aff_before, "the event choice applied affection")
+	_check(Game.get_affection("vilma") >= aff_before, "the event choice applied affection")
 
 	# 3. flirting raises suspicion
 	Game.suspicion = 0
-	_on_talk("vaelira")
+	_on_talk("vilma")
 	await _wait(0.3)
 	guard = 0
 	var flirted := false
@@ -844,7 +844,7 @@ func _run_playtest() -> void:
 
 	# 7. getting caught
 	Game.add_suspicion(Game.MAX_SUSPICION)
-	_on_talk("vaelira")
+	_on_talk("vilma")
 	await _wait(0.4)
 	guard = 0
 	while vn.is_open() and guard < 140:

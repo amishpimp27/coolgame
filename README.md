@@ -62,23 +62,22 @@ Open `project.godot` in Godot 4.7 and press F5, or from a shell:
 
 ## The cast
 
-12 students, ~340 dialogue lines plus 36 milestone events, written per character
+11 students, ~340 dialogue lines plus 33 milestone events, written per character
 with distinct voices:
 
 | Name | Species | Title | Usually found |
 |---|---|---|---|
-| Vaelira | Succubus | Heart-Thief of Class 2-A | Cafeteria |
-| Rach | Arachne | Weaver of the Restricted Stacks | Library |
-| Sylith | Lamia | Duchess of the Sunless Bench | Courtyard |
-| Mora | Slime Girl | Class 2-C's Warmest Problem | Dormitory |
-| Nyx | Vampire | Countess of the Corridor After Curfew | Old Corridor |
-| Fenra | Hellhound | Undefeated Champion of the West Track | Gymnasium |
-| Rin | Kitsune | Nine-Tailed Troublemaker | Main Hallway |
-| Sebille | Harpy | The Loudest Question | Rooftop |
-| Tillia | Dryad | The Patient One | Greenhouse |
-| Griz | Oni | Two Hundred Kilos of Shy | Gymnasium |
-| Willa | Ghost | The Girl in the East Corridor | Old Corridor |
-| Cindra | Dragon | Princess of the Council | Student Council Room |
+| Vilma | Ghost | The Girl Who Died Mid-Prank | Old Corridor |
+| Moira | Slime Girl | Class 2-C's Warmest Puddle | Dormitory |
+| Nyra | Wolf Girl | Alpha of the West Track | Gymnasium |
+| Krista | Goth Vampire | Countess of the Shaded Corridor | Old Corridor |
+| Honkers | Evil Clown | The Laugh of the Lunch Queue | Cafeteria |
+| Squidney | Kraken Girl | The Fountain's Problem | Courtyard |
+| Rachnia | Spider Girl | Curator of the Corner Webs | Library |
+| Zorp | Alien | The Girl From Somewhere Else | Rooftop |
+| Kealoha | Shark Girl | Apex of the Cafeteria | Cafeteria |
+| Valerie | Demon | The Devil's in the Details | Student Council Room |
+| Asteria | Minotaur | Two Tonnes of Gentleness | Gymnasium |
 
 Each has `active_periods`, so the school repopulates as the day goes on.
 
