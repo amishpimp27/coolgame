@@ -22,8 +22,8 @@ func _build() -> void:
 	head.position = Vector2(48, 26)
 	add_child(head)
 
-	var summary := UIKit.label("Day %d  \u2022  Charm %d  \u2022  Suspicion %d%%" % [
-			Game.day, Game.charm, Game.suspicion], 19, UIKit.INK_DIM)
+	var summary := UIKit.label("Day %d  \u2022  Tokens %d  \u2022  Suspicion %d%%" % [
+			Game.day, Game.tokens, Game.suspicion], 19, UIKit.INK_DIM)
 	summary.position = Vector2(50, 68)
 	add_child(summary)
 

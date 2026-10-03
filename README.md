@@ -4,7 +4,8 @@ A playable visual-novel / walk-around dating sim built in **Godot 4.7**.
 
 You are the only boy at an all-monster-girl college. A clerical mix-up let you in
 because the interviewer took one look at your face and stopped reading the form.
-Now the girls are working it out, one conversation at a time.
+At first the girls only know you as their strange new classmate; they work out
+that you're a boy as your friendship with them deepens.
 
 ---
 
@@ -64,8 +65,8 @@ Open `project.godot` in Godot 4.7 and press F5, or from a shell:
    herself* is free but once per day per girl. When tokens run out you can only
    leave.
 6. The clock runs Morning → Class → Lunch → Afternoon → Evening. *Pass Time*
-   advances it, *Attend Class* costs a period and buys Charm, *Go to Sleep* ends
-   the day.
+   advances it, *Attend Class* costs a period and tops up your conversation
+   tokens by +5, *Go to Sleep* ends the day.
 7. Progress autosaves on travel, on first meetings, and on milestones. There is
    also a save/load round trip from the title screen.
 

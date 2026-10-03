@@ -306,10 +306,9 @@ func _meet(char_id: String) -> void:
 	Game.add_affection(char_id, 5)
 	Game.save_game()
 	var ch := Cast.get_char(char_id)
-	var species := str(ch.get("species", "student")).to_lower()
-	var notice := ("She stops dead. Her eyes go from your face, to your shoulders, "
-		+ "to your shoes, and back to your face. %s is a %s, and she has just "
-		+ "worked something out.") % [Cast.display_name(char_id), species]
+	var notice := str(ch.get("meet", ""))
+	if notice.is_empty():
+		notice = "%s looks you over, curious about the new face at this school." % Cast.display_name(char_id)
 	vn.open([
 		{"text": notice},
 		{"text": str(ch.get("greeting", "")), "id": char_id},
@@ -391,7 +390,6 @@ func _attend_class() -> void:
 	if Game.period != 1:
 		return
 	_gameplay_pause()
-	Game.add_charm(1)
 	# Nobody lives in the classroom, so draw the cameo from whoever is on campus
 	# during a class period rather than from the room's own roster.
 	var present := Cast.anyone_present(1)
@@ -401,8 +399,9 @@ func _attend_class() -> void:
 		steps.append({"text": "%s leans over. \"%s\"" % [Cast.display_name(who),
 				Cast.pick_dialogue(who, Game.tier_of(who), "chat", "success")
 						.get("reply", "...")], "id": who})
-	steps.append({"text": "You survive the lesson. (+1 Charm)"})
+	steps.append({"text": "You survive the lesson. (+%d Tokens)" % Game.CLASS_TOKEN_REWARD})
 	Game.advance_period()
+	Game.add_tokens(Game.CLASS_TOKEN_REWARD)
 	vn.open(steps)
 
 
@@ -796,15 +795,15 @@ func _run_selftest() -> void:
 		Game.reset()
 		Game.day = 7
 		Game.period = 3
-		Game.charm = 9
 		Game.suspicion = 22
+		Game.tokens = 5
 		Game.area = "library"
 		Game.mark_met(ids[0])
 		Game.add_affection(ids[0], 44)
 		_check(Game.save_game(), "save writes to disk")
 		Game.reset()
 		_check(Game.load_game(), "save reads back")
-		_check(Game.day == 7 and Game.period == 3 and Game.charm == 9
+		_check(Game.day == 7 and Game.period == 3 and Game.tokens == 5
 				and Game.suspicion == 22 and Game.area == "library"
 				and Game.get_affection(ids[0]) == 44 and Game.has_met(ids[0]),
 				"loaded state matches what was saved")
@@ -937,16 +936,16 @@ func _run_playtest() -> void:
 	await _wait(0.4)
 	_check(_journal == null and hud.visible, "the journal closes and play resumes")
 
-	# 6. class, and the clock rolling over (which also refills tokens)
+	# 6. class, and the clock rolling over (which also refills + tops up tokens)
 	Game.period = 1
 	var day_before := Game.day
-	var charm_before := Game.charm
 	_action("class")
 	await _wait(0.4)
-	_check(Game.charm > charm_before, "attending class raised charm")
 	await _close_scene()
 	_check(Game.period != 1, "attending class advanced the clock")
-	_check(Game.tokens == Game.TOKENS_PER_PERIOD, "a new period refilled tokens")
+	_check(Game.tokens == Game.TOKENS_PER_PERIOD + Game.CLASS_TOKEN_REWARD,
+			"attending class topped tokens up to %d (got %d)"
+					% [Game.TOKENS_PER_PERIOD + Game.CLASS_TOKEN_REWARD, Game.tokens])
 	Game.period = 4
 	_action("wait")
 	await _wait(0.6)

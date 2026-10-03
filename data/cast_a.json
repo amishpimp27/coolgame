@@ -13,10 +13,10 @@
     ],
     "height_scale": 1.0,
     "bio": "A wistful, gentle ghost who has haunted the old corridor for decades, starved for company until tonight's one breath that wasn't a draft.",
-    "greeting": "Oh. Oh, you can see me. I mean—you *looked* at me. Ninety years of floating through this corridor and everyone passes through me like I'm the night air, but you stopped. And you're... hmm, you're a boy. A real, breathing, sort-of-there boy, at an all-girls school, sneaking the same midnight air I haunt. That's funny. That's the funniest thing that's happened to me since I died mid-prank back in '31. Come closer, so I can pretend my cold is catching. I promise I bite about as hard as a frosty sigh.",
+    "greeting": "Oh. Oh, you can see me. I mean—you *looked* at me. Ninety years of floating through this corridor and everyone passes through me like I'm the night air, but you stopped. And you're... new. A fresh face in my midnight, one no rumor has prepared me for. That's funny. That's the nicest surprise that's happened to me since I died mid-prank back in '31. Come closer, so I can pretend my cold is catching. I promise I bite about as hard as a frosty sigh.",
     "encounter": [
-      "You looked at me. Nobody looks at me.",
-      "The west stair is free, if you want unsettled company."
+      "You looked at me like I was worth a second glance. Nobody's done that in ninety years.",
+      "The east stairwell's moonlit tonight, if you want company that drifts."
     ],
     "tiers": [
       {
@@ -51,7 +51,7 @@
         ],
         "flirt_neutral": [
           "Oh. That was almost a compliment. I'd blush, if I still had the blood for it.",
-          "Cute. A boy telling a ghost she gives him chills. Bold.",
+          "Cute. A brand-new face telling a ghost she gives them chills. Bold.",
           "Is that your gentle way of telling me the dead are boring company?"
         ],
         "flirt_fail": [
@@ -126,7 +126,7 @@
               },
               {
                 "mc": "I think you give me chills, Vilma. I meant it as a good thing—promise.",
-                "reply": "Cute. A boy telling a ghost she gives him chills. Bold."
+                "reply": "Cute. A brand-new face telling a ghost she gives them chills. Bold."
               },
               {
                 "mc": "No—I meant the opposite. You're the least boring thing in this corridor. I was stumbling to say it.",
@@ -916,7 +916,8 @@
           "Will you stay, Vilma? Stay with me, and be my ghost, my heart, my everything?"
         ]
       }
-    ]
+    ],
+    "meet": "A pale shimmer gathers at the end of the dark corridor — you catch a girl-shaped glow watching you, almost shyly, as though she's testing whether this new face is real or just another trick of the night."
   },
   {
     "id": "moira",
@@ -932,10 +933,10 @@
     ],
     "height_scale": 0.95,
     "bio": "A bouncy, unguarded slime girl who hugs first and asks questions never, and is currently trying very hard not to fully melt in front of the only boy she's ever seen.",
-    "greeting": "HI HI HI. Okay, hold on, I'm going to try to be cool and liquid-graceful about this and I'm already failing—you're a BOY. Like a real one, with bones and a pulse, and you're standing in MY dorm hallway. Everyone's been whispering about you all day and I said 'no way, they made up a boy to make us study' but here you ARE, all solid and warm-looking. Can I hug you? I'm asking because my instincts say just flop onto you, but my brain, which is mostly water and feelings, says ask first. Please let me hug you. I'll be good. I'll only absorb like ten percent of your body heat.",
+    "greeting": "HI HI HI. Okay, hold on, I'm going to try to be cool and liquid-graceful about this and I'm already failing—you're NEW. A brand-new face in MY dorm hallway, all quiet and warm-looking, and nobody warned me how to greet a brand-new face! Everyone's been whispering about you all day and I said 'no way, they made someone up to make us study' but here you ARE, all real and warm-looking. Can I hug you? I'm asking because my instincts say just flop onto you, but my brain, which is mostly water and feelings, says ask first. Please let me hug you. I'll be good. I'll only absorb like ten percent of your body heat.",
     "encounter": [
-      "Oh no. Oh no you're warm. This is a problem. A happy problem.",
-      "You smell like soap and being alive. I'm gonna think about that a lot."
+      "You're new! And you're warm! This is a happy problem.",
+      "You smell like soap and being brand-new. I'm gonna think about that a lot."
     ],
     "tiers": [
       {
@@ -948,7 +949,7 @@
           "I love this school SO much. Everyone's so warm—literally, some of them get me all steamy and happy."
         ],
         "flirt": [
-          "Ooh, a BOY! You're so warm and solid! Can I just—no, no, too much, too fast, sorry, I'm leaking goo!!",
+          "Ooh, you're SO warm and solid! Can I just—no, no, too much, too fast, sorry, I'm leaking goo!!",
           "If I hugged you I'd leave a wet mark, but I promise it'd be a FRIENDLY wet mark! Mostly friendly!!",
           "You smell like sunshine and I absorb the good smells! That's my way of saying I already like you!!"
         ],
@@ -1027,7 +1028,7 @@
             "success": [
               {
                 "mc": "Take as much time as you need. But for the record, a friendly leak from you wouldn't bother me one bit.",
-                "reply": "Ooh, a BOY! You're so warm and solid! Can I just—no, no, too much, too fast, sorry, I'm leaking goo!!"
+                "reply": "Ooh, you're SO warm and solid! Can I just—no, no, too much, too fast, sorry, I'm leaking goo!!"
               },
               {
                 "mc": "Hug me any time. I'll wear your wet marks like badges—friendly or otherwise, they'd make my day.",
@@ -1835,7 +1836,8 @@
           "If I asked you to be mine — really mine — what would you say?"
         ]
       }
-    ]
+    ],
+    "meet": "A warm, wobbling shape pops out of a dorm doorway and stops dead, its half-formed face visibly remaking itself mid-greeting as it takes stock of the new student who's wandered onto its stretch of hall."
   },
   {
     "id": "nyra",
@@ -1851,10 +1853,10 @@
     ],
     "height_scale": 1.08,
     "bio": "The proud, competitive alpha of the West Track pack, all ears, tail and lean muscle, who just caught the scent of a boy and decided hers wasn't up for debate.",
-    "greeting": "Whoa. Whoa, hold it, hold it right there. They told me the new student was a boy and I said 'sure, and my tail's a mop,' and then you walked in. You—huh. My nose says you smell like one thing, and it's not like any girl in this school, and it's neither afraid of me nor impressed by me, which is interesting. I'm Nyra. Alpha of the West Track pack. Where I'm from, when a lone strange warm-blooded thing wanders onto pack territory, we don't ask questions first—we protect it and figure out the rest later. You're on my territory now, boy. That means you're mine to look after. Try to keep up—I've got ears for days and I've already heard three girls planning to 'accidentally' bump into you.",
+    "greeting": "Whoa. Whoa, hold it, hold it right there. They told me there was a new student and I said 'sure, and my tail's a mop,' and then you walked in. You—huh. My nose says that scent doesn't come from any corner of this campus I know, and it's neither afraid of me nor impressed by me, which is interesting. I'm Nyra. Alpha of the West Track pack. Where I'm from, when a lone strange warm-blooded thing wanders onto pack territory, we don't ask questions first—we protect it and figure out the rest later. You're on my territory now. That means you're mine to look after. Keep that new scent steady—I've got ears for days and I've already heard three girls planning to 'accidentally' bump into you.",
     "encounter": [
-      "Your scent's got no pack behind it. That's dangerous. Lucky you've got me.",
-      "I don't chase anything that doesn't want to run. But I'll stand real close to you."
+      "Your scent's got no pack behind it yet. That's dangerous. Lucky you met me.",
+      "I don't chase anything that doesn't want to run. But I'll keep pace beside you."
     ],
     "tiers": [
       {
@@ -1867,7 +1869,7 @@
           "Don't eat my protein stash. I'll know. I count every single bar with my nose."
         ],
         "flirt": [
-          "You're the only boy here. That makes you interesting by default. Don't let it go to your head—it's a very small head.",
+          "You're the only new face here who's wandered in without a pack. That makes you interesting by default. Don't let it go to your head—it's a very small head.",
           "I smelled you before I saw you. That's my way of saying I've decided you're not a threat. Yet. Stay interesting.",
           "Try to keep up with me and I might let you walk on my side of the field. You'd like that, wouldn't you?"
         ],
@@ -1875,7 +1877,7 @@
           "Fur? It's just fur. Heh. You've got a soft spot for strays, don't you? Careful—I bite.",
           "You think my eyes are sharp? They see everything. Including that you were staring. I'm flattered. Mostly.",
           "Heh. No one's called me 'fierce and handsome' before. Keep talking and I'll start believing you.",
-          "My ears are big so I can hear the whole pack. And now, apparently, one very brave boy's compliments."
+          "My ears are big so I can hear the whole pack. And now, apparently, one very brave newcomer's compliments."
         ],
         "lore": [
           "I'm the alpha of the west track. It sounds grand, but really I just run hardest and protect my corner of campus.",
@@ -1895,7 +1897,7 @@
         "flirt_fail": [
           "Smooth words get snapped up out here. Earn the ground before you posture.",
           "Flirting with me like I'm meat, not an alpha? That's a challenge. Careful.",
-          "That's a city-boy line. I've scented a dozen like it on better wolves, and none of them claimed a thing."
+          "That's a borrowed line. I've scented a dozen like it on better wolves, and none of them claimed a thing."
         ],
         "compliment_fail": [
           "Flattery. Prey uses it. Prove you mean it on the track first.",
@@ -1946,7 +1948,7 @@
             "success": [
               {
                 "mc": "Small head, big ego—aren't you counting on it? I'll keep it in check if you keep finding me interesting.",
-                "reply": "You're the only boy here. That makes you interesting by default. Don't let it go to your head—it's a very small head."
+                "reply": "You're the only new face here who's wandered in without a pack. That makes you interesting by default. Don't let it go to your head—it's a very small head."
               },
               {
                 "mc": "I'll do my best to stay interesting. And I don't mind you having my scent, Nyra—not one bit.",
@@ -1977,12 +1979,12 @@
                 "reply": "Smooth words get snapped up out here. Earn the ground before you posture."
               },
               {
-                "mc": "Not meat, never meant it that way. That's a clumsy line from a clumsy boy—my apologies, alpha.",
+                "mc": "Not meat, never meant it that way. A clumsy line, clumsily said—my apologies, alpha.",
                 "reply": "Flirting with me like I'm meat, not an alpha? That's a challenge. Careful."
               },
               {
-                "mc": "City-boy line, yeah, I've got no defense there. Let me swap it for the plain one: I'd like to know you.",
-                "reply": "That's a city-boy line. I've scented a dozen like it on better wolves, and none of them claimed a thing."
+                "mc": "Borrowed line, yeah, I've got no defense there. Let me swap it for the plain one: I'd like to know you.",
+                "reply": "That's a borrowed line. I've scented a dozen like it on better wolves, and none of them claimed a thing."
               }
             ]
           },
@@ -1993,7 +1995,7 @@
                 "reply": "Fur? It's just fur. Heh. You've got a soft spot for strays, don't you? Careful—I bite."
               },
               {
-                "mc": "Your eyes are striking, Nyra. Can you blame a guy for looking—especially when they're that sharp?",
+                "mc": "Your eyes are striking, Nyra. Can you blame me for looking—especially when they're that sharp?",
                 "reply": "You think my eyes are sharp? They see everything. Including that you were staring. I'm flattered. Mostly."
               },
               {
@@ -2002,7 +2004,7 @@
               },
               {
                 "mc": "Your ears are gorgeous, and I don't mind a bit if they're catching every nice thing I say about you.",
-                "reply": "My ears are big so I can hear the whole pack. And now, apparently, one very brave boy's compliments."
+                "reply": "My ears are big so I can hear the whole pack. And now, apparently, one very brave newcomer's compliments."
               }
             ],
             "fail": [
@@ -2754,7 +2756,8 @@
           "If I pledged myself to you, would you carry me the same way you carry your own?"
         ]
       }
-    ]
+    ],
+    "meet": "A lean wolf-girl cuts across your path in the gym and halts, ears swiveling toward you, quietly working a scent she's never caught in this school before — deciding, before she speaks, whether it belongs or not."
   },
   {
     "id": "krista",
@@ -2770,7 +2773,7 @@
     ],
     "height_scale": 0.98,
     "bio": "A dramatic, theatrical goth who plays up the dark aesthetic but is secretly the softest girl in the whole shade-draped corridor.",
-    "greeting": "So… the night has finally deigned to bring me something interesting. You're the boy, aren't you? The one mortal speck of warmth in this whole cold institution. Don't look so startled — I smelled you the moment you rounded the corner. A pulse. A heartbeat. Do you know how rare that is in a place like this? Everyone else here is walking shadow and borrowed breath. And you… you're ruinously alive. Stay near my corridor, little flame. The dark is lovely, but it's lonelier than you can imagine, and I am so, so tired of being the only one who notices.",
+    "greeting": "So… the night has finally deigned to bring me something interesting. A new face in this cold institution — and you aren't scurrying past like the rest. Don't look so startled; I noticed you the moment you rounded the corner. Everyone else here walks as shadow and borrowed breath, but you carry ruinous warmth, and you stopped to look. That's rarer than you know. Stay near my corridor a while, little flame. The dark is lovely, but it's lonelier than you can imagine, and I am so, so tired of being the only one who notices.",
     "encounter": [
       "You walk my hall at this hour? Bold. Or foolish. I can't decide which I find more attractive.",
       "Don't mind the bats. They're shy tonight. They only bite when you ignore me."
@@ -2786,7 +2789,7 @@
           "Homework? I dispatch it with the cold efficiency of a creature of the night. It is merely bureaucracy with a cape."
         ],
         "flirt": [
-          "A lone boy, brave enough to address the Countess? How charmingly foolish. I shall allow it, for now.",
+          "A lone new face, brave enough to address the Countess? How charmingly foolish. I shall allow it, for now.",
           "You have the warm flush of the recently thralled. Tell me, do you intend to be my next captivating distraction?",
           "I grant you a rare audience, mortal. Savor it. My attention is not offered to just any living warmth."
         ],
@@ -2865,7 +2868,7 @@
             "success": [
               {
                 "mc": "The, um, Countess? Should I be bowing or something? Because I'd honestly keep talking to you either way.",
-                "reply": "A lone boy, brave enough to address the Countess? How charmingly foolish. I shall allow it, for now."
+                "reply": "A lone new face, brave enough to address the Countess? How charmingly foolish. I shall allow it, for now."
               },
               {
                 "mc": "I might not be 'thralled,' but I'm definitely distracted. Is that what you were aiming for?",
@@ -3673,7 +3676,8 @@
           "What does your heart want, after so many years of guarding everyone else's shadows? Tell me slow, and I'll listen like it's all I have."
         ]
       }
-    ]
+    ],
+    "meet": "A cold current cuts through the warm hallway as Krista steps out of the shadow of the west corridor, one pale hand raised as though parting a curtain of darkness. Her eyes sweep you once, head to toe, filing you away under a category she hasn't named yet, then a slow, practiced smile curves her lips. 'A loose new face in my territory and not a single warning could be bothered? The night grows interesting.'"
   },
   {
     "id": "honkers",
@@ -3689,7 +3693,7 @@
     ],
     "height_scale": 1.0,
     "bio": "A gleeful, chaotic prankster with a painted grin a mile wide who plays at being a villain but is melting into genuine affection the moment anyone looks close.",
-    "greeting": "A BOY! A real live boy, right here in my cafeteria! Oh, this is too good, this is the best surprise since I hid a whoopee cushion in the principal's chair — I mean, in an entirely hypothetical way. Welcome, welcome, fresh meat of unusual gender! I'm Honkers, heir apparent to the throne of the lunch queue, and I have been SO bored. Everyone here is either scared of me or knows all my tricks. But you? You don't even know how to dodge a cream pie yet. The possibilities are making me shake. Don't worry, I'm evil, but I'm a regular at this cafeteria, so my evil is at least fifty percent butter-based. You're going to be my new favorite plaything. And also, maybe, my new favorite person. Don't tell anyone I said that last part.",
+    "greeting": "A new student! A real, live, brand-new face, right here in my cafeteria! Oh, this is too good — the best surprise since I hid a whoopee cushion in the principal's chair — I mean, in an entirely hypothetical way. Welcome, welcome, fresh meat of the morning! I'm Honkers, heir apparent to the throne of the lunch queue, and I have been SO bored. Everyone here is either scared of me or knows all my tricks. But you? You don't even know how to dodge a cream pie yet. The possibilities are making me shake. Don't worry, I'm evil, but I'm a regular at this cafeteria, so my evil is at least fifty percent butter-based. You're going to be my new favorite plaything. And also, maybe, my new favorite person. Don't tell anyone I said that last part.",
     "encounter": [
       "HONK. That's the sound of your future, buddy.",
       "You flinched! You flinched and it was ADORABLE. I'm keeping you."
@@ -3791,7 +3795,7 @@
                 "reply": "If I pranked you, it'd be because I like you. That's my love language."
               },
               {
-                "mc": "Comedic relief, huh? I'll take it. Any excuse to be the guy you're looking at.",
+                "mc": "Comedic relief, huh? I'll take it. Any excuse to be the one you're looking at.",
                 "reply": "You're looking all... comedic relief. I dig it."
               }
             ],
@@ -4592,7 +4596,8 @@
           "What's the one prank you've never had the nerve to pull? Whatever it is, I'll be the accomplice this time, no running, I promise."
         ]
       }
-    ]
+    ],
+    "meet": "The cafeteria's busiest corner erupts in a single HONK before the sound resolves into a girl with a painted grin a mile wide, bouncing on her heels as she locks eyes on you across the lunch queue. She points, delighted, like she's just spotted the one interesting thing in a very boring room. 'A new student. Oh, this is going to be FUN.' The honk goes again, softer, almost a greeting."
   },
   {
     "id": "squidney",
@@ -4608,7 +4613,7 @@
     ],
     "height_scale": 1.05,
     "bio": "An enormous, impossibly gentle kraken girl with tentacles she can't quite control, shy about her size and limbs but secretly the softest giant on campus.",
-    "greeting": "Oh! Oh gosh, I'm so sorry, I didn't mean to loom! — and you watch as a cascade of inky, suction-cupped tentacles scramble to tuck themselves out of your way, while a blushing face emerges from behind the courtyard fountain. You're the boy, aren't you? The whole dorm keeps whispering about you, and I was trying to be brave and say hello, but my tentacles get so excited when I'm nervous, and now they're all tangled in the rosebush and — oh no. She laughs, a shy, watery sound. I'm Squidney. Please don't be scared of me. I know I'm big and I have too many arms and I drip a little bit, but I swear I'm nice. I'm the nicest thing in the depths, I promise. Just… maybe keep at arm's length until I untangle myself. Which one of these is an arm? Honestly, I lose count.",
+    "greeting": "Oh! Oh gosh, I'm so sorry, I didn't mean to loom! — and a cascade of inky, suction-cupped tentacles scramble to tuck themselves out of your way while a blushing face emerges from behind the courtyard fountain. You're the new student, aren't you? The whole dorm keeps whispering about you, and I was trying to be brave and say hello, but my tentacles get so excited when I'm nervous, and now they're all tangled in the rosebush and — oh no. She laughs, a shy, watery sound. I'm Squidney. Please don't be scared of me. I know I'm big and I have too many arms and I drip a little bit, but I swear I'm nice. I'm the nicest thing in the depths, I promise. Just… maybe keep at arm's length until I untangle myself. Which one of these is an arm? Honestly, I lose count.",
     "encounter": [
       "Oh! Sorry, did I splash you? My tentacles get so excited when you're near.",
       "Please don't be afraid — I promise my hugs are calibrated. Mostly. For a given value of 'mostly'."
@@ -5511,6 +5516,7 @@
           "Tell me the strongest thing you've ever carried, Squidney—and let me be the one who helps you carry whatever comes next, always."
         ]
       }
-    ]
+    ],
+    "meet": "The fountain tosses a small, careful wave as an enormous shape uncoils from behind it — tentacles, many of them, scrambling apologetically out of your way while a shy, blushing face emerges over the water's edge. Her voice carries across the courtyard like soft water she's trying not to spill. 'Oh! Oh, hello — I didn't mean to loom. You're the new student, right? I was going to say hi properly, but...' She gestures at the tangled muddle of limbs, laughing a watery, embarrassed laugh."
   }
 ]

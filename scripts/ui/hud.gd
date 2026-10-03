@@ -9,7 +9,6 @@ signal action_requested(action: String)
 var _day_label: Label
 var _area_label: Label
 var _desc_label: Label
-var _charm_label: Label
 var _susp_label: Label
 var _tokens_label: Label
 var _susp_bar: ProgressBar
@@ -60,8 +59,6 @@ func _build() -> void:
 	var stat_row := HBoxContainer.new()
 	stat_row.add_theme_constant_override("separation", 18)
 	stat_stack.add_child(stat_row)
-	_charm_label = UIKit.label("", 18)
-	stat_row.add_child(_charm_label)
 	_susp_label = UIKit.label("", 18)
 	stat_row.add_child(_susp_label)
 	_tokens_label = UIKit.label("", 18, Color("#ffd24a"))
@@ -93,7 +90,6 @@ func refresh() -> void:
 	_day_label.text = "Day %d  \u2022  %s" % [Game.day, Game.period_name()]
 	_area_label.text = Cast.area_name(Game.area)
 	_desc_label.text = str(Cast.area_def(Game.area).get("desc", ""))
-	_charm_label.text = "Charm %d" % Game.charm
 	_susp_label.text = "Suspicion %d%%" % Game.suspicion
 	_tokens_label.text = "Tokens %d" % Game.tokens
 	_mood_label.text = _mood()

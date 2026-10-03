@@ -13,11 +13,10 @@
     ],
     "height_scale": 1.02,
     "bio": "A quiet, meticulous spider girl who words the library's oldest corners with silk and memory, watching everything from patient webs and sharing her treasures only with those who prove worth keeping.",
-    "greeting": "Oh. Oh, you startled me. Let me, um— let me just finish this thread. There. Now. You're the boy, aren't you? I'd heard the whispers, of course—one does hear everything from the corners—but I wanted to see you with my own eight eyes before believing it. I'm Rachnia. I keep the library's forgotten shelves, and I keep things. I keep them carefully, in silk, where they can't be lost. That's what I do with the things I decide are precious. I don't decide lightly. But I find myself, already, thinking you might be one of them. Please ignore that. I'm still cataloguing you. Just— don't go anywhere I can't see you. I like to know where my treasures are.",
+    "greeting": "Oh. Oh, you startled me. Let me, um— let me just finish this thread. There. Now. You must be new, yes? I'd heard the whispers, of course—one does hear everything from the corners—but I hadn't yet seen you with my own eight eyes. Kind of you to find my quiet corner first. I'm Rachnia. I keep the library's forgotten shelves, and I keep things. I keep them carefully, in silk, where they can't be lost. That's what I do with the things I decide are precious. I don't decide lightly. But a new face with quiet footsteps... I find myself curious, already, whether you might be worth keeping. Please ignore that. I'm still cataloguing you. Just— don't go anywhere I can't see you. I like to know where my treasures are.",
     "encounter": [
-      "I've been watching you from this corner for a while. Not in a strange way. In a cataloguing way.",
-      "Careful—I just re-silked that aisle. You'll stick if you're meant to stay.",
-      "You make the quietest footsteps. I like that. Quiet things are worth listening for."
+      "I've been watching you from this corner ever since you walked in. Not in a strange way. In a cataloguing way.",
+      "Careful—I just re-silked that aisle. You'll stick if you're meant to stay."
     ],
     "tiers": [
       {
@@ -58,7 +57,7 @@
         "flirt_fail": [
           "That was a very practiced line. I've seen practiced lines before, and I prefer yours freshly spun. Try the un-webbed version.",
           "I've catalogued smoother. Also you leaned in too fast—that's how I know it was a rehearsed angle, not a real one.",
-          "That sentence was very poorly labled. I think I will shelve it."
+          "That sentence was very poorly labeled. I think I will shelve it."
         ],
         "compliment_fail": [
           "You're being too deliberate. I keep the sparest compliments; that one was overwoven. If it's true, it'll still be here tomorrow.",
@@ -122,7 +121,7 @@
             ],
             "neutral": [
               {
-                "mc": "I'll take 'promising.' What does a guy have to do to get moved up to 'retained'?",
+                "mc": "I'll take 'promising.' What does someone have to do to get moved up to 'retained'?",
                 "reply": "I'll log that under 'promising,' but I'll need to see it twice more before I move it to 'retained.'"
               },
               {
@@ -145,7 +144,7 @@
               },
               {
                 "mc": "Yeah, that was a total flop of a line. Can I get a redo?",
-                "reply": "That sentence was very poorly labled. I think I will shelve it."
+                "reply": "That sentence was very poorly labeled. I think I will shelve it."
               }
             ]
           },
@@ -917,7 +916,8 @@
           "What would it take to make my home more yours than this library is? Name it, and I'll start weaving."
         ]
       }
-    ]
+    ],
+    "meet": "In a far corner of the library, half-hidden behind a tall shelf, a quiet figure pauses mid-thread, one forelimb frozen over an open ledger. Eight patient eyes lift, take you in, and lower again with the calm of someone who has been expecting company for a while."
   },
   {
     "id": "zorp",
@@ -933,10 +933,9 @@
     ],
     "height_scale": 1.0,
     "bio": "An aeon-old but endlessly innocent alien girl studying human customs with reverent joy, who speaks in translated tenderness and views the boy as the most fascinating specimen she has ever been given permission to love.",
-    "greeting": "Beep. BEEP. I mean— hello. Greetings of the human sort. I am Zorp. I have been learning your customs, and I have been told the correct greeting is to wave the hand as though shooing a small sun. (I am doing this.) I came to this college to study its fascinating inhabitants, and I did not anticipate— did NOT anticipate— a boy. My translators say that word with some excitement in several of my dialects. You are the only one, yes? The only boy. I have read three hundred and forty-two files on boys, and I find the live specimen even more fascinating. I would like to study you up close, over time, in a careful and consenting manner. I will bring you my favorite shimmer-paste as an offering. It tastes like stars with a note of welcome. Do you consent to being studied? I promise my methods are tender and my hands are soft, even if there are only three of each.",
+    "greeting": "Beep. BEEP. I mean— hello. Greetings of the human sort. I am Zorp. I have been learning your customs, and I have been told the correct greeting is to wave the hand as though shooing a small sun. (I am doing this.) I came to this college to study its fascinating inhabitants, and you are... a new one. My translators do not have much on you yet, and I find the prospect of study quite thrilling. I would like to observe you up close, over time, in a careful and consenting manner. I will bring you my favorite shimmer-paste as an offering. It tastes like stars with a note of welcome. Do you consent to being studied? I promise my methods are tender and my hands are soft, even if there are only three of each.",
     "encounter": [
-      "Ah! The boy-specimen has arrived at my rooftop. I was just calibrating my wonder at your arrival.",
-      "Do you know, my people never blink? I have practiced blinking for you. See? I performed eleven blinks just now.",
+      "Ah. A new specimen has arrived at my rooftop. I was just calibrating my wonder at your arrival.",
       "I have saved you a rock that is shaped like a heart and also like a question. I do not know which, so I saved it for you to decide."
     ],
     "tiers": [
@@ -1837,7 +1836,8 @@
           "Tell me what a forever looks like to a being of aeons — so I can spend my whole life becoming it with you."
         ]
       }
-    ]
+    ],
+    "meet": "On the wide rooftop, a small figure stands perfectly still, three-fingered hands clasped, gazing down at the courtyard with the reverent stillness of a surveyor. As you take the final step through the door, she turns, and a translator device hums softly to life between you."
   },
   {
     "id": "kealoha",
@@ -1853,11 +1853,10 @@
     ],
     "height_scale": 1.06,
     "bio": "A sunny, salt-warm shark girl who never stops moving until she wants to stop for you, all grin and fin and fierce loyalty, forever forgetting she's the intimidating one.",
-    "greeting": "HEYYY. Sorry—I get excited. You're the boy, aren't you? The one everyone's been whisperin' about? Broke, uh—broke the whole 'all monster girls' thing. Love it. Love the energy. Total plot twist, top-tier decision, ten out of ten. I'm Kealoha, the apex predator of this cafeteria, and before you ask: yes, the teeth are mine, yes, they're for biting snacks mostly, and no, I'm not gonna bite you—unless you're made of fish sticks, in which case, no promises. Kidding. Mostly. I got a thing for the ocean and a thing for people with spines, and you walked in here with a whole surfboard's worth of 'em. C'mon, sit with me. I don't usually share my sun-spot or my fries, but for the only boy in a school of monsters? I'll make an exception. Pull up a chair. Let's see if you can keep up with the apex.",
+    "greeting": "HEYYY. Sorry—I get excited. You're new, aren't you? Fresh fin in the water. Love it. Love the energy. I'm Kealoha, the apex predator of this cafeteria, and before you ask: yes, the teeth are mine, yes, they're for biting snacks mostly, and no, I'm not gonna bite you—unless you're made of fish sticks, in which case, no promises. Kidding. Mostly. I got a thing for the ocean and a thing for people with spines, and you walked in here lookin' like you got a whole surfboard's worth of 'em. C'mon, sit with me. I don't usually share my sun-spot or my fries, but for a brand-new face? I'll make an exception. Pull up a chair. Let's see if you can keep up with the apex.",
     "encounter": [
-      "YO. The legend himself. Sit, sit—I saved you the warm spot.",
-      "Don't mind the fins. They're for show and for speed. Mostly speed.",
-      "You ever surfed? 'Cause I'm thinkin' you and me, we got beach potential."
+      "YO. Fresh fin in the water. Sit, sit—I saved you the warm spot.",
+      "Don't mind the fins. They're for show and for speed. Mostly speed."
     ],
     "tiers": [
       {
@@ -1902,7 +1901,7 @@
         ],
         "compliment_fail": [
           "You're sweet, but you're butterin' me up. I can smell the flattery through the water. Be real or be gone.",
-          "Flattery'll make the pod think you're dinner. Tone it down, blue boy.",
+          "Flattery'll make the pod think you're dinner. Tone it down a notch.",
           "Aw, that's sweet, but I keep my fins on me, so no buttering.",
           "You're saying nice stuff and I'm just over here like 'uh, my towel?'"
         ],
@@ -2015,7 +2014,7 @@
               },
               {
                 "mc": "You're gorgeous, Kealoha—best-looking shark in the whole school, no contest.",
-                "reply": "Flattery'll make the pod think you're dinner. Tone it down, blue boy."
+                "reply": "Flattery'll make the pod think you're dinner. Tone it down a notch."
               },
               {
                 "mc": "You're beautiful, you know that? Really. It's not even close to a competition.",
@@ -2757,7 +2756,8 @@
           "If I promised to keep up with you, would you show me your ocean and every secret place in it?"
         ]
       }
-    ]
+    ],
+    "meet": "A big laugh cuts across the cafeteria before you even spot her—a shark girl sprawled across the best sunlit table, one fin flicking, grinning at nothing in particular. She catches you hovering by the trays, and her whole face lights up as she waves you over like you're already old friends."
   },
   {
     "id": "valerie",
@@ -2773,7 +2773,7 @@
     ],
     "height_scale": 1.05,
     "bio": "A teasing demon of bargains and mischief whose horns and coiled tail hide a devotion that burns far hotter than any hellfire.",
-    "greeting": "Well, well, well. The council room's been boring me to actual tears all year, and now the universe drops the one thing my contract didn't mention: a boy. A real, breathing, stubbornly alive boy, sitting in MY seat and pretending he isn't deliciously out of place. Don't bother denying it, sweet thing — I can smell a little mortal soul from three doors down, and yours is positively sizzling. Now, before I get carried away imagining all the interesting ways this could go, let me make you an offer I'm famous for: a bargain, a favor, a secret — your pick, my terms, and I'll throw in a smile that's been known to make archangels second-guess themselves. Deal?",
+    "greeting": "Ah, a fresh face in the council wing — and about time, too. The committee schedules have been the only company worth my while, and they've been dreadful company. Don't look so wary, sweet thing; I read people before they ever catch me doing it, and you're the most interesting thing to wander into my rooms all term. Before you dash off to find the commons — third left, by the way — let me offer you the one thing I'm actually famous for: a bargain, a favor, a secret. Your pick, my terms, and I'll throw in a smile that's been known to make archangels second-guess themselves. Care to deal?",
     "encounter": [
       "Oh, hello there, little flame. Come to offer me your soul, or just to warm your hands?",
       "Hush now — I'm still deciding which part of you is the riskiest to keep."
@@ -3676,7 +3676,8 @@
           "Is this forever something you want with me, Valerie? Because I'm ready to bargain my whole life for your yes."
         ]
       }
-    ]
+    ],
+    "meet": "A new face in the council wing never slips past Valerie. The sharpest demon on the student council pauses mid-stamp over her ledger, arches a slim dark brow, and lets one corner of her mouth curl as she sizes you up from behind the paperwork."
   },
   {
     "id": "asteria",
@@ -3692,10 +3693,10 @@
     ],
     "height_scale": 1.35,
     "bio": "A towering, soft-spoken gentle giant whose immense strength is wielded only carefully, her cow ears pricking with warmth whenever she's near someone she's sworn to protect.",
-    "greeting": "Oh. Oh, you're— you're the boy, aren't you? I mean— I'm sorry, that came out too loud. I was doing my stretches and I saw you, and I just— I've never met a boy before, not up close. I'm Asteria. I'm sorry if the horns are a lot. Everyone always says the horns are a lot, and the height, and, well, all of it really. Please don't be frightened of me— I know I'm big, but I would sooner fall over myself than hurt a single soul, especially someone like you. If you ever need anything, anything at all, I have very careful hands and a very steady heart, and I'd be honored to use both for you. That's... that's a real offer. I don't make those to just anyone.",
+    "greeting": "Oh. Oh — you're new, aren't you? I'm sorry, that came out too loud. I was doing my stretches and I saw you come in, and I just — I don't think I've ever seen you around before, and I wanted to say welcome. I'm Asteria. I'm sorry if the horns are a lot. Everyone always says the horns are a lot, and the height, and, well, all of it really. Please don't be frightened of me — I know I'm big, but I would sooner fall over myself than hurt a single soul, especially someone still learning the way around this place. If you ever need anything, anything at all, I have very careful hands and a very steady heart, and I'd be honored to use both for you. That's... that's a real offer. I don't make those to just anyone.",
     "encounter": [
       "Oh— careful there, the rack's heavy. Here, let me move it. See? Gentle as a lamb.",
-      "You're so small. That's not an insult— it just makes me want to keep you extra safe."
+      "You're new in here, aren't you? Welcome. I'll mind my horns and keep the heavy things out of your way."
     ],
     "tiers": [
       {
@@ -4595,7 +4596,8 @@
           "Will you let me be the one to guard you sometimes, Asteria? I'd stand in front of the whole world for you."
         ]
       }
-    ]
+    ],
+    "meet": "The gym doors sigh shut behind you, and somewhere among the weight racks a pair of cow ears pricks upright. Asteria straightens from her stretches, all too aware of how much space she takes up even at rest, and offers the new face a careful, gentle smile."
   },
   {
     "id": "emilia",
@@ -4611,7 +4613,7 @@
     ],
     "height_scale": 1.0,
     "bio": "Emilia is the college's sweetest succubus, who would rather share your dreams and a warm pillow than take a single thing from you, charm and all.",
-    "greeting": "\"Oh. Oh my. You're a boy—a real, breathing, honest-to-the-moon boy, here, in my hallway.\" She lets out a breathy, delighted laugh, her wings giving a soft flutter. \"I've spent whole lifetimes weaving dreams and charms, and I'm not sure I ever dreamed I'd meet one of you face to face.\" \"Forgive a succubus for staring, but you've gone and caught me completely off my game.\" She offers a slow, warm smile, a gloved hand hovering near yours without quite touching. \"Charm is my work, you know. Tell me, before I think my way around you—is your heart as sweet as you look?\"",
+    "greeting": "Oh — oh my. You're new. A brand-new face, right here in my hallway, and you've gone and caught me completely off my game. She lets out a soft, delighted laugh, her wings giving a gentle flutter. I've spent whole lifetimes weaving dreams and charms, and I'm not sure I've ever seen you slip through the dusk before. Forgive a succubus for staring — it's just that unfamiliar things fascinate me, and you look like a story I haven't been told yet. She offers a slow, warm smile, a gloved hand hovering near yours without quite touching. Charm is my work, you know. Tell me, before I think my way 'round you — is your heart as sweet as you look?",
     "encounter": [
       "Well, well. Look who wandered into my corner of the world—and actually stayed this time.",
       "You again. Hm. My dreams keep insisting you were worth remembering, and for once they aren't wrong."
@@ -4628,8 +4630,8 @@
         ],
         "flirt": [
           "You caught me mid-glide. Careful — close as you are, I might decide you look warm.",
-          "I'm not flirting. I'm *observing*. The fact that it makes your ears turn red is entirely your doing.",
-          "Most boys run the other way. You're still standing here. That's either brave or interesting."
+          "I'm not flirting. I'm observing. The fact that it makes your ears turn red is entirely your doing.",
+          "Most new faces run the other way. You're still standing here. That's either brave or interesting."
         ],
         "compliment": [
           "The horns? Hardly anyone says it kindly. Thank you — I'll let you keep the compliment out of politeness.",
@@ -4644,7 +4646,7 @@
         "idle_neutral": [
           "Hm. You went quiet all of a sudden. Dreaming of something nicer than this hallway, are we?",
           "Not much of a talker yet. That's fine—I know silence is just a dream that hasn't woken up.",
-          "Mm, and I thought a boy might at least be interesting. That was small talk, wasn't it?",
+          "Mm, and I thought a new face might at least be interesting. That was small talk, wasn't it?",
           "You were looking at my horns the whole time. Eyes up, stranger — I'm nicer when engaged."
         ],
         "flirt_neutral": [
@@ -4655,7 +4657,7 @@
         "flirt_fail": [
           "Oh, careful now. Charm's a game to me, but I don't love being treated like the finished prize.",
           "That tone's a bit heavy-handed for a first meeting. Try earning it before you spend it.",
-          "Smooth, sweet boy. A little too smooth — I've heard that opener on the night breeze before."
+          "Smooth, friend. A little too smooth — I've heard that opener on the night breeze before."
         ],
         "compliment_fail": [
           "Flattery so thick a girl could drown. Ask me what I am before you tell me what I'm worth, hm?",
@@ -4694,7 +4696,7 @@
               },
               {
                 "mc": "That came out as small talk, huh. I'm better once I've given it a minute, I swear.",
-                "reply": "Mm, and I thought a boy might at least be interesting. That was small talk, wasn't it?"
+                "reply": "Mm, and I thought a new face might at least be interesting. That was small talk, wasn't it?"
               },
               {
                 "mc": "Sorry — I kept getting caught on your horns. I'll try to keep my eyes where they belong.",
@@ -4710,11 +4712,11 @@
               },
               {
                 "mc": "You keep looking at me like you're deciding something. Should I be nervous, or flattered?",
-                "reply": "I'm not flirting. I'm *observing*. The fact that it makes your ears turn red is entirely your doing."
+                "reply": "I'm not flirting. I'm observing. The fact that it makes your ears turn red is entirely your doing."
               },
               {
                 "mc": "Everyone says succubi make people nervous. Funny — you're the one thing here I'm not scared to stand near.",
-                "reply": "Most boys run the other way. You're still standing here. That's either brave or interesting."
+                "reply": "Most new faces run the other way. You're still standing here. That's either brave or interesting."
               }
             ],
             "neutral": [
@@ -4742,7 +4744,7 @@
               },
               {
                 "mc": "You've got me pegged as reheated, huh. What if I told you I meant every single word of it?",
-                "reply": "Smooth, sweet boy. A little too smooth — I've heard that opener on the night breeze before."
+                "reply": "Smooth, friend. A little too smooth — I've heard that opener on the night breeze before."
               }
             ]
           },
@@ -4786,11 +4788,11 @@
           },
           "ask": [
             {
-              "mc": "I've met demons who deal in contracts. You told me you're different — so what kind of succubus are you, exactly?",
+              "mc": "I've met demons who deal in contracts, but you seem like a different sort. What kind of succubus are you, exactly?",
               "reply": "I'm what the old books call a dream-weaver. I walk into sleep, not out of a deal like the other sort."
             },
             {
-              "mc": "You said you only go where you're invited, never by force, and that it matters to you. What does your kind actually do?",
+              "mc": "Do you only ever go where you're invited? You seem like that matters to you.",
               "reply": "There's a difference between my kind and the contract demons. I don't take — I'm invited. That matters to me."
             }
           ]
@@ -5514,6 +5516,7 @@
           "Will you let me be the one who chooses you, every morning, for the rest of our lives, Emilia?"
         ]
       }
-    ]
+    ],
+    "meet": "The dusk wing's longest hallway catches a new arrival, and a soft-winged figure perched on the windowsill stirs. Emilia tips her head, taking you in with a slow, warm curiosity that knows exactly what's worth remembering."
   }
 ]

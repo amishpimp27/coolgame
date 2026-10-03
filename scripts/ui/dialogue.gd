@@ -8,7 +8,7 @@ extends Control
 ##   {"text": "...", "choices": [ {...}, ... ]}  a line that then offers choices
 ##   {"id": "vaelira", "choices": [ ... ]}       choices with no line of text
 ##   {"menu": "vaelira"}                          the talk-about-things menu
-## A choice entry: {"text","reply","affection","charm","suspicion","end"}
+## A choice entry: {"text","reply","affection","suspicion","end"}
 
 signal finished
 signal ending_reached(char_id: String, option: Dictionary)
@@ -358,9 +358,6 @@ func _on_choice(opt: Dictionary) -> void:
 		if delta != 0:
 			gains.append([("+%d Affection" % delta) if delta > 0 else ("%d Affection" % delta),
 					Cast.color_of(id)])
-	if int(opt.get("charm", 0)) != 0:
-		Game.add_charm(int(opt["charm"]))
-		gains.append(["+%d Charm" % int(opt["charm"]), Color("#8fd0ff")])
 	if int(opt.get("suspicion", 0)) != 0:
 		Game.add_suspicion(int(opt["suspicion"]))
 		gains.append(["+%d Suspicion" % int(opt["suspicion"]), Color("#ff8a6a")])

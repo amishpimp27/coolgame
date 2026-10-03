@@ -75,6 +75,7 @@ func _normalise(c: Dictionary) -> void:
 	c["home_area"] = str(c.get("home_area", "hallway"))
 	c["bio"] = str(c.get("bio", ""))
 	c["greeting"] = str(c.get("greeting", "She looks at you. Then looks again."))
+	c["meet"] = str(c.get("meet", ""))
 	c["height_scale"] = float(c.get("height_scale", 1.0))
 	c["active_periods"] = c.get("active_periods", [0, 1, 2, 3, 4])
 	c["tiers"] = c.get("tiers", [])

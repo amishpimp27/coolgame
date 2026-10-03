@@ -21,12 +21,13 @@ const COST_CHAT := 1
 const COST_FLIRT := 3
 const COST_COMPLIMENT := 2
 const COST_ASK := 0
+## Attending class tops the conversation budget up by this much.
+const CLASS_TOKEN_REWARD := 5
 
 var player_name := "Yuuji"
 
 var day := 1
 var period := 1  # index into PERIODS
-var charm := 2
 var suspicion := 0
 var area := "gate"
 var tokens := TOKENS_PER_PERIOD
@@ -75,7 +76,6 @@ func period_name() -> String:
 func reset() -> void:
 	day = 1
 	period = 1
-	charm = 2
 	suspicion = 0
 	area = "gate"
 	tokens = TOKENS_PER_PERIOD
@@ -124,8 +124,8 @@ func tier_of(id: String) -> int:
 	return Cast.tier_index(id, get_affection(id))
 
 
-func add_charm(amount: int) -> void:
-	charm = maxi(0, charm + amount)
+func add_tokens(amount: int) -> void:
+	tokens = maxi(0, tokens + amount)
 	stats_changed.emit()
 
 
@@ -139,8 +139,6 @@ func apply_effects(fx: Dictionary) -> void:
 		return
 	if fx.has("affection"):
 		add_affection(str(fx.get("char", "")), int(fx["affection"]))
-	if fx.has("charm"):
-		add_charm(int(fx["charm"]))
 	if fx.has("suspicion"):
 		add_suspicion(int(fx["suspicion"]))
 
@@ -207,7 +205,6 @@ func to_dict() -> Dictionary:
 		"player_name": player_name,
 		"day": day,
 		"period": period,
-		"charm": charm,
 		"suspicion": suspicion,
 		"area": area,
 		"tokens": tokens,
@@ -226,7 +223,6 @@ func from_dict(d: Dictionary) -> void:
 	player_name = str(d.get("player_name", "Yuuji"))
 	day = int(d.get("day", 1))
 	period = int(d.get("period", 1))
-	charm = int(d.get("charm", 2))
 	suspicion = int(d.get("suspicion", 0))
 	area = str(d.get("area", "gate"))
 	tokens = int(d.get("tokens", TOKENS_PER_PERIOD))
