@@ -45,25 +45,33 @@ Open `project.godot` in Godot 4.7 and press F5, or from a shell:
    triggers her first-meeting scene — that is the premise of the game, so it is
    proximity-based rather than a menu.
 2. Talking opens a topic menu: *Just chat*, *Flirt with her*, *Compliment her*,
-   *Ask about herself*, *Leave*. Each option draws from that girl's dialogue pool
-   for your current affection tier, so what she says changes as she warms up.
+   *Ask about herself*, *Leave*. Every topic is a **roll** whose odds improve
+   as she warms up — success, a neutral fizzle, or (for the risky ones) a
+   failure that costs suspicion. Each exchange is a short scripted
+   back-and-forth: the boy opens with one of his tier-appropriate lines and she
+   answers according to how the roll landed.
 3. **Affection** climbs 0→100 across four tiers — Stranger (0), Friend (30),
-   Close (60), Lover (85). Crossing a threshold queues a bespoke **milestone
-   event** that plays on your next conversation with her. The 85 event is her
-   route ending.
-4. **Suspicion** rises when you flirt and never quite goes away. Hit 100 and the
-   enrolment form gets read out loud in the staff room: game over.
-   It decays a little every night — gossip goes stale.
-5. The clock runs Morning → Class → Lunch → Afternoon → Evening. *Pass Time*
+   Close (60), Lover (85). Higher tiers raise your odds but never guarantee a
+   success, so flirting and compliments can still fail at Lover. Crossing a
+   threshold queues a bespoke **milestone event** that plays on your next
+   conversation with her. The 85 event is her route ending.
+4. **Suspicion** rises when a risky roll lands badly. Hit 100 and the enrolment
+   form gets read out loud in the staff room: game over. It decays a little
+   every night — gossip goes stale.
+5. The **conversation budget** refreshes to 25 tokens at the start of every
+   period. Just chat costs 1, Flirt costs 3, Compliment costs 2; *Ask about
+   herself* is free but once per day per girl. When tokens run out you can only
+   leave.
+6. The clock runs Morning → Class → Lunch → Afternoon → Evening. *Pass Time*
    advances it, *Attend Class* costs a period and buys Charm, *Go to Sleep* ends
-   the day. Charm gates whether flirting lands or gets you politely rebuffed.
-6. Progress autosaves on travel, on first meetings, and on milestones. There is
+   the day.
+7. Progress autosaves on travel, on first meetings, and on milestones. There is
    also a save/load round trip from the title screen.
 
 ## The cast
 
-11 students, ~340 dialogue lines plus 33 milestone events, written per character
-with distinct voices:
+12 students, hundreds of dialogue lines plus 36 milestone events, written per
+character with distinct voices:
 
 | Name | Species | Title | Usually found |
 |---|---|---|---|
@@ -78,6 +86,7 @@ with distinct voices:
 | Kealoha | Shark Girl | Apex of the Cafeteria | Cafeteria |
 | Valerie | Demon | The Devil's in the Details | Student Council Room |
 | Asteria | Minotaur | Two Tonnes of Gentleness | Gymnasium |
+| Emilia | Succubus | The Dream-Weaver of the Dusk Wing | Main Hallway |
 
 Each has `active_periods`, so the school repopulates as the day goes on.
 
@@ -108,18 +117,19 @@ hand-authored scene tree to go stale.
 Two suites, both headless, both exit non-zero on failure:
 
 ```
-# 296 checks: JSON schema, art presence, tier boundaries, area link symmetry,
-# NPC scheduling, affection/suspicion clamping, milestone ordering, save round trip
+# several hundred checks: JSON schema, art presence, tier boundaries, roll-outcome
+# buckets, player lines, area link symmetry, NPC scheduling, affection/suspicion
+# clamping, token budget, ask-once/day, milestone ordering, save round trip
 godot --headless --path . -- --selftest
 
 # 20 checks: drives the real UI - opens scenes, presses the actual choice
-# buttons, travels, opens the journal, advances the clock, gets caught
+# buttons, spends tokens, travels, opens the journal, advances the clock, gets caught
 godot --headless --path . -- --playtest
 ```
 
 Other dev hooks: `--auto=world|new|continue`, `--scene=area:hallway`,
-`--scene=meet:vaelira`, `--scene=menu:rin`, `--scene=journal:demo`,
-`--scene=ending:cindra`, `--scene=gameover:0`, `--autoplay=1.5`,
+`--scene=meet:vilma`, `--scene=menu:emilia`, `--scene=journal:demo`,
+`--scene=ending:asteria`, `--scene=gameover:0`, `--autoplay=1.5`,
 `--shot=out.png --shot-delay=3`.
 
 ## Regenerating the art

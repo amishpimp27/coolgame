@@ -34,7 +34,6 @@ var _typed := 0.0
 var _awaiting_choice := false
 var _sprite_id := ""
 var _menu_char := ""
-var _menu_topics := 0
 var _active := false
 
 
@@ -115,7 +114,8 @@ func advance() -> void:
 
 
 ## Press the nth visible choice, exactly as a click would. Returns false when no
-## choice is currently offered. Exists so the game can drive itself in tests.
+## choice is currently offered (or that choice is disabled). Exists so the game
+## can drive itself in tests.
 func choose(index: int) -> bool:
 	if not _active or not _awaiting_choice:
 		return false
@@ -124,7 +124,10 @@ func choose(index: int) -> bool:
 		return false
 	var b := buttons[index]
 	if b is Button:
-		(b as Button).pressed.emit()
+		var btn := b as Button
+		if btn.disabled:
+			return false
+		btn.pressed.emit()
 		return true
 	return false
 
@@ -142,7 +145,6 @@ func open(steps: Array) -> void:
 		return
 	_steps = steps.duplicate()
 	_idx = -1
-	_menu_topics = 0
 	_active = true
 	visible = true
 	_sprite_id = ""
@@ -180,6 +182,31 @@ func _show_step(step: Dictionary) -> void:
 	if step.has("menu"):
 		_menu_char = str(step["menu"])
 		_show_menu()
+		return
+	# A step attributed to the main character shows a name plate (Yuuji) with no
+	# sprite; it is not interactive, just his scripted opening line.
+	if step.has("speaker"):
+		_set_sprite("")
+		_set_speaker_named(str(step["speaker"]),
+				Color.from_string(str(step.get("colour", "#d9a0ff")), Color(0.85, 0.63, 1.0)))
+		var ptext := str(step.get("text", ""))
+		if ptext.is_empty():
+			_text.text = ""
+			_typing = false
+			_hint.visible = false
+			if step.has("choices"):
+				_show_choices(step["choices"])
+			else:
+				_next()
+			return
+		_text.text = ptext
+		_text.visible_characters = 0
+		_typed = 0.0
+		_typing = true
+		_hint.visible = false
+		_choices.visible = false
+		_awaiting_choice = false
+		_pending_choices = step.get("choices", [])
 		return
 	var id := str(step.get("id", ""))
 	_set_sprite(id)
@@ -235,7 +262,11 @@ func _set_sprite(id: String) -> void:
 
 func _set_speaker(id: String) -> void:
 	var colour := Cast.color_of(id)
-	_name_label.text = "  %s  " % Cast.display_name(id)
+	_set_speaker_named(Cast.display_name(id), colour)
+
+
+func _set_speaker_named(name: String, colour: Color) -> void:
+	_name_label.text = "  %s  " % name
 	_name_panel.visible = true
 	_name_panel.add_theme_stylebox_override("panel",
 			UIKit.panel_style(Color(colour.r * 0.22, colour.g * 0.22, colour.b * 0.28, 0.97),
@@ -362,21 +393,24 @@ func _insert_after_current(extra: Array) -> void:
 func _show_menu() -> void:
 	var id := _menu_char
 	var aff := Game.get_affection(id)
-	var tier := Game.tier_of(id)
 	_awaiting_choice = true
 	_clear_choices()
 
-	var can_flirt: bool = tier >= 1 or Game.charm >= 5
-	var flirt_gain: int = 4 if can_flirt else 1
-	var flirt_susp: int = Game.FLIRT_SUSPICION if can_flirt else 1
+	_text.text = "%s is waiting for you to say something.%s  [Tokens: %d]" % [
+		Cast.display_name(id), _menu_note(aff), Game.tokens]
+	_text.visible_characters = -1
+	_typing = false
+	_hint.visible = false
+	_name_panel.visible = false
 
-	_add_topic("Just chat", id, "idle", 2, 0)
-	if can_flirt:
-		_add_topic("Flirt with her  \u2665", id, "flirt", flirt_gain, flirt_susp)
-	else:
-		_add_topic("Flirt with her  (risky)", id, "flirt", flirt_gain, flirt_susp)
-	_add_topic("Compliment her", id, "compliment", 2, 0)
-	_add_topic("Ask about herself", id, "lore", 1, 0)
+	var token_colour := Color("#ffd24a")
+	_add_topic_button("Just chat" + _cost_suffix(Game.COST_CHAT), id, "chat", Game.COST_CHAT, token_colour)
+	_add_topic_button("Flirt with her  \u2665 (risky)" + _cost_suffix(Game.COST_FLIRT), id, "flirt", Game.COST_FLIRT, token_colour)
+	_add_topic_button("Compliment her" + _cost_suffix(Game.COST_COMPLIMENT), id, "compliment", Game.COST_COMPLIMENT, token_colour)
+	# Ask about herself is free but limited to once per day.
+	var ask_avail := Game.ask_available(id)
+	var ask_label := "Ask about herself" if ask_avail else "Ask about herself (used today)"
+	_add_topic_button(ask_label + _cost_suffix(Game.COST_ASK), id, "ask", Game.COST_ASK, token_colour, ask_avail)
 
 	var leave := UIKit.button("Leave", Color("#8a8aa0"), 18)
 	leave.alignment = HORIZONTAL_ALIGNMENT_LEFT
@@ -384,12 +418,12 @@ func _show_menu() -> void:
 	leave.pressed.connect(_on_leave)
 	_choices.add_child(leave)
 	_choices.visible = true
-	_name_panel.visible = false
-	_text.text = "%s is waiting for you to say something.%s" % [
-		Cast.display_name(id), _menu_note(aff)]
-	_text.visible_characters = -1
-	_typing = false
-	_hint.visible = false
+
+
+func _cost_suffix(cost: int) -> String:
+	if cost <= 0:
+		return "   (free)"
+	return "   (%d token%s)" % [cost, "s" if cost > 1 else ""]
 
 
 func _menu_note(aff: int) -> String:
@@ -402,35 +436,92 @@ func _menu_note(aff: int) -> String:
 	return "  She is very aware that you are the only boy here."
 
 
-func _add_topic(label: String, id: String, category: String, gain: int, susp: int) -> void:
+func _add_topic_button(label: String, id: String, category: String, cost: int,
+		accent: Color, enabled := true) -> void:
 	var b := UIKit.button(label, UIKit.ACCENT, 18)
 	b.alignment = HORIZONTAL_ALIGNMENT_LEFT
 	b.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	b.pressed.connect(_on_topic.bind(id, category, gain, susp))
+	b.disabled = not (enabled and Game.can_pay(cost))
+	b.pressed.connect(_on_topic.bind(id, category, cost))
 	_choices.add_child(b)
 
 
-func _on_topic(id: String, category: String, gain: int, susp: int) -> void:
-	_menu_topics += 1
-	var line := Cast.pick_line(id, category, Game.get_affection(id))
-	var opt := {"char": id, "affection": gain, "suspicion": susp}
-	var delta := Game.add_affection(id, gain)
+func _on_topic(id: String, category: String, cost: int) -> void:
+	if not Game.can_pay(cost):
+		_toast("Not enough tokens", Color("#ff8a6a"))
+		return
+	if cost > 0:
+		if not Game.spend_tokens(cost):
+			return
+		_toast("- %d Tokens" % cost, Color("#ffd24a"))
+	var tier := Game.tier_of(id)
+	var outcome: String
+	if category == "ask":
+		if not Game.ask_available(id):
+			return
+		Game.mark_asked(id)
+		outcome = "success"
+	else:
+		match category:
+			"chat":
+				outcome = Rolls.roll_chat(tier)
+			"flirt":
+				outcome = Rolls.roll_flirt(tier)
+			"compliment":
+				outcome = Rolls.roll_compliment(tier)
+			_:
+				outcome = "success"
+	_play_topic_exchange(id, category, outcome, tier)
+
+
+func _play_topic_exchange(id: String, category: String, outcome: String, tier: int) -> void:
+	var aff := 0
+	var susp := 0
+	match category:
+		"chat":
+			if outcome == "success":
+				aff = 1
+		"flirt":
+			match outcome:
+				"success":
+					aff = 3
+				"neutral":
+					aff = 2
+					susp = 1
+				_:
+					susp = 2
+		"compliment":
+			if outcome == "success":
+				aff = 2
+			else:
+				susp = 1
+		"ask":
+			aff = 2
+	_awaiting_choice = false
+	_choices.visible = false
+	_clear_choices()
 	var gains := []
-	if delta != 0:
-		gains.append(["+%d Affection" % delta, Cast.color_of(id)])
-	if susp > 0:
+	if aff != 0:
+		var delta := Game.add_affection(id, aff)
+		if delta != 0:
+			gains.append(["+%d Affection" % delta, Cast.color_of(id)])
+	if susp != 0:
 		Game.add_suspicion(susp)
 		gains.append(["+%d Suspicion" % susp, Color("#ff8a6a")])
 	for g: Array in gains:
 		_toast(str(g[0]), g[1])
-	_awaiting_choice = false
-	_choices.visible = false
-	_clear_choices()
-	_show_step({"text": line, "id": id})
-	# Re-offer the menu after the reply, so the conversation keeps looping until
-	# the player chooses to leave.
-	if _menu_topics < 3 and Game.get_affection(id) < 100:
-		_insert_after_current([{"menu": id}])
+	# Yuuji opens, then the girl reacts to the roll result.
+	var follow := []
+	var mc := Cast.player_line(id, tier)
+	if not mc.is_empty():
+		follow.append({"text": mc, "speaker": Game.player_name, "colour": "#d9a0ff"})
+	follow.append({"text": Cast.pick_outcome(id, category, outcome, Game.get_affection(id)),
+			"id": id})
+	# Keep the conversation open while the player still has budget; Leave is
+	# always offered so nobody is trapped.
+	follow.append({"menu": id})
+	_insert_after_current(follow)
+	_next()
 
 
 func _on_leave() -> void:

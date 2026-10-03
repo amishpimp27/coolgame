@@ -11,6 +11,7 @@ var _area_label: Label
 var _desc_label: Label
 var _charm_label: Label
 var _susp_label: Label
+var _tokens_label: Label
 var _susp_bar: ProgressBar
 var _mood_label: Label
 var _prompt: Label
@@ -63,6 +64,8 @@ func _build() -> void:
 	stat_row.add_child(_charm_label)
 	_susp_label = UIKit.label("", 18)
 	stat_row.add_child(_susp_label)
+	_tokens_label = UIKit.label("", 18, Color("#ffd24a"))
+	stat_row.add_child(_tokens_label)
 	_susp_bar = UIKit.hue_bar(0, Game.MAX_SUSPICION, Color("#ffb347"), 340, 13)
 	stat_stack.add_child(_susp_bar)
 	_mood_label = UIKit.label("", 15, UIKit.INK_DIM)
@@ -92,6 +95,7 @@ func refresh() -> void:
 	_desc_label.text = str(Cast.area_def(Game.area).get("desc", ""))
 	_charm_label.text = "Charm %d" % Game.charm
 	_susp_label.text = "Suspicion %d%%" % Game.suspicion
+	_tokens_label.text = "Tokens %d" % Game.tokens
 	_mood_label.text = _mood()
 	_susp_bar.value = Game.suspicion
 	var t := float(Game.suspicion) / float(Game.MAX_SUSPICION)

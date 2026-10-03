@@ -12,8 +12,15 @@ const MAX_SUSPICION := 100
 const SAVE_PATH := "user://monster_girl_college_save.json"
 
 ## Player-facing knobs.
-const FLIRT_SUSPICION := 3
 const NIGHT_SUSPICION_DECAY := 14
+
+## Conversation budget. Every period the player gets a fresh pool of tokens and
+## spends them to talk: Just Chat 1, Flirt 3, Compliment 2, Ask free (once/day).
+const TOKENS_PER_PERIOD := 25
+const COST_CHAT := 1
+const COST_FLIRT := 3
+const COST_COMPLIMENT := 2
+const COST_ASK := 0
 
 var player_name := "Yuuji"
 
@@ -22,10 +29,12 @@ var period := 1  # index into PERIODS
 var charm := 2
 var suspicion := 0
 var area := "gate"
+var tokens := TOKENS_PER_PERIOD
 
 var affection := {}       # char_id -> int
 var met := {}             # char_id -> true
 var events_seen := {}     # "char_id:min" -> true
+var asked_about := {}     # char_id -> day the "ask about herself" was used
 var confessed := ""       # char_id of whoever the run ended on
 var ending_title := ""
 var ending_text := ""
@@ -69,9 +78,11 @@ func reset() -> void:
 	charm = 2
 	suspicion = 0
 	area = "gate"
+	tokens = TOKENS_PER_PERIOD
 	affection.clear()
 	met.clear()
 	events_seen.clear()
+	asked_about.clear()
 	confessed = ""
 	ending_title = ""
 	ending_text = ""
@@ -134,9 +145,37 @@ func apply_effects(fx: Dictionary) -> void:
 		add_suspicion(int(fx["suspicion"]))
 
 
+# --- conversation budget ---------------------------------------------------
+
+func can_pay(cost: int) -> bool:
+	return cost <= 0 or tokens >= cost
+
+
+## Deduct `cost` tokens (asks cost nothing) and returns whether it was possible.
+## Callers should gate on can_pay() first so they can render an option disabled
+## rather than have the click silently fail; this is the hard enforcement.
+func spend_tokens(cost: int) -> bool:
+	if not can_pay(cost):
+		return false
+	tokens -= cost
+	stats_changed.emit()
+	return true
+
+
+## The free "Ask about herself" is a once-a-day deal per character.
+func ask_available(id: String) -> bool:
+	return int(asked_about.get(id, -1)) != day
+
+
+func mark_asked(id: String) -> void:
+	asked_about[id] = day
+
+
 # --- clock -----------------------------------------------------------------
 
 func advance_period() -> void:
+	# A fresh period is a fresh conversation budget (also fires on a new day).
+	tokens = TOKENS_PER_PERIOD
 	period += 1
 	if period >= PERIODS.size():
 		_next_day()
@@ -171,9 +210,11 @@ func to_dict() -> Dictionary:
 		"charm": charm,
 		"suspicion": suspicion,
 		"area": area,
+		"tokens": tokens,
 		"affection": affection,
 		"met": met,
 		"events_seen": events_seen,
+		"asked_about": asked_about,
 		"confessed": confessed,
 		"ending_title": ending_title,
 		"ending_text": ending_text,
@@ -188,9 +229,11 @@ func from_dict(d: Dictionary) -> void:
 	charm = int(d.get("charm", 2))
 	suspicion = int(d.get("suspicion", 0))
 	area = str(d.get("area", "gate"))
+	tokens = int(d.get("tokens", TOKENS_PER_PERIOD))
 	affection = d.get("affection", {})
 	met = d.get("met", {})
 	events_seen = d.get("events_seen", {})
+	asked_about = d.get("asked_about", {})
 	confessed = str(d.get("confessed", ""))
 	ending_title = str(d.get("ending_title", ""))
 	ending_text = str(d.get("ending_text", ""))

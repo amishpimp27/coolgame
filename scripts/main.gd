@@ -195,10 +195,7 @@ func _run_scene_arg() -> void:
 			Game.mark_met(who)
 			Game.add_affection(who, 62)
 			_gameplay_pause()
-			vn.open([
-				{"text": Cast.pick_line(who, "idle", Game.get_affection(who)), "id": who},
-				{"menu": who},
-			])
+			vn.open([{"menu": who}])
 		"journal":
 			if who == "demo":
 				_demo_populate()
@@ -292,11 +289,7 @@ func _on_talk(char_id: String) -> void:
 	if not ev.is_empty():
 		_play_event(char_id, ev)
 		return
-	vn.open([
-		{"text": Cast.pick_line(char_id, "idle", Game.get_affection(char_id)),
-			"id": char_id},
-		{"menu": char_id},
-	])
+	vn.open([{"menu": char_id}])
 
 
 ## The first time you come near somebody, she notices what you are. That is the
@@ -406,7 +399,7 @@ func _attend_class() -> void:
 	if not present.is_empty():
 		var who: String = present[randi() % present.size()]
 		steps.append({"text": "%s leans over. \"%s\"" % [Cast.display_name(who),
-				Cast.pick_line(who, "idle", Game.get_affection(who))], "id": who})
+				Cast.pick_outcome(who, "chat", "success", Game.get_affection(who))], "id": who})
 	steps.append({"text": "You survive the lesson. (+1 Charm)"})
 	Game.advance_period()
 	vn.open(steps)
@@ -596,7 +589,7 @@ func _run_selftest() -> void:
 	var ids := Cast.all_ids()
 	_check(Cast.load_errors.is_empty(), "cast/area JSON parsed with no errors %s"
 			% str(Cast.load_errors))
-	_check(ids.size() == 11, "11 students loaded (got %d)" % ids.size())
+	_check(ids.size() == 12, "12 students loaded (got %d)" % ids.size())
 	_check(Cast.area_order.size() == 12, "12 areas loaded (got %d)"
 			% Cast.area_order.size())
 
@@ -617,7 +610,26 @@ func _run_selftest() -> void:
 			var total := 0
 			for t: Dictionary in tiers:
 				total += (t.get(cat, []) as Array).size()
-			_check(total >= 4, "%s has %s lines in all tiers (%d)" % [id, cat, total])
+			_check(total >= 4, "%s has %s success lines in all tiers (%d)" % [id, cat, total])
+		# Roll-outcome lines: each tier needs its neutral/fail variants.
+		for cat: String in ["idle_neutral", "flirt_neutral", "flirt_fail", "compliment_fail"]:
+			var total2 := 0
+			for t: Dictionary in tiers:
+				total2 += (t.get(cat, []) as Array).size()
+			_check(total2 >= 4, "%s has %s outcome lines in all tiers (%d)" % [id, cat, total2])
+		# The main character's scripted lines: 5 per affection tier.
+		var player: Array = c.get("player", [])
+		_check(player.size() == 4, "%s has 4 player-line tiers (%d)" % [id, player.size()])
+		for t in player.size():
+			var lines: Array = player[t]
+			_check(lines.size() >= 5, "%s player lines at tier %d >= 5 (got %d)" % [id, t, lines.size()])
+		# Outcome + player line lookups never come back empty at any tier.
+		_check(not Cast.player_line(id, 0).is_empty(), "%s player_line tier 0 non-empty" % id)
+		for outcome_cat: Array in [["chat", "success"], ["chat", "neutral"],
+				["flirt", "success"], ["flirt", "neutral"], ["flirt", "fail"],
+				["compliment", "success"], ["compliment", "fail"], ["ask", "success"]]:
+			_check(not Cast.pick_outcome(id, outcome_cat[0], outcome_cat[1], 0).is_empty(),
+					"%s %s/%s line at tier 0 non-empty" % [id, outcome_cat[0], outcome_cat[1]])
 		var events: Array = c.get("events", [])
 		_check(events.size() == 3, "%s has 3 milestone events" % id)
 		for e: Variant in events:
@@ -694,6 +706,29 @@ func _run_selftest() -> void:
 	_check(Game.suspicion == Game.MAX_SUSPICION, "suspicion clamps at max")
 	_check(Game.is_outed(), "max suspicion triggers the outed ending")
 
+	# Conversation budget: fresh tokens each period, strict spend enforcement.
+	Game.reset()
+	_check(Game.tokens == Game.TOKENS_PER_PERIOD, "a new run starts full of tokens (%d)" % Game.tokens)
+	_check(Game.spend_tokens(Game.COST_CHAT), "can afford a Just chat")
+	_check(Game.tokens == Game.TOKENS_PER_PERIOD - Game.COST_CHAT, "chat cost deducted")
+	_check(Game.spend_tokens(999) == false, "cannot spend more than held")
+	Game.tokens = 1
+	_check(Game.can_pay(1), "can pay exactly what is held")
+	_check(not Game.can_pay(2), "cannot pay above what is held")
+	Game.reset()
+	Game.advance_period()
+	_check(Game.tokens == Game.TOKENS_PER_PERIOD, "period advance refills tokens")
+
+	# Ask about herself: free, once per day, per character.
+	Game.reset()
+	var ask_id := ids[0]
+	Game.day = 4
+	_check(Game.ask_available(ask_id), "ask is available the first time")
+	Game.mark_asked(ask_id)
+	_check(not Game.ask_available(ask_id), "ask is spent for the day once used")
+	Game.day = 5
+	_check(Game.ask_available(ask_id), "ask resets on a new day")
+
 	Game.reset()
 	Game.period = 4
 	Game.add_suspicion(50)
@@ -734,6 +769,23 @@ func _wait(seconds: float) -> void:
 	await get_tree().create_timer(seconds).timeout
 
 
+## Advance an open scene to its natural end: event/encounter choice-screens pick
+## the first option, the talk menu always picks Leave (so no tokens are spent).
+func _close_scene() -> void:
+	var guard := 0
+	while vn.is_open() and guard < 200:
+		guard += 1
+		vn.advance()
+		await _wait(0.05)
+		var nc := vn.choice_count()
+		if nc <= 0:
+			continue
+		if nc >= 4 and vn.choose(nc - 1):  # the talk menu -> Leave
+			await _wait(0.08)
+		elif vn.choose(0):                  # event/encounter -> first option
+			await _wait(0.08)
+
+
 ## Drives the real UI -- opening scenes, pressing choice buttons, closing them,
 ## travelling, opening the journal -- so the integration the data self-test
 ## cannot reach is actually exercised. Run with: godot --headless -- --playtest
@@ -746,73 +798,83 @@ func _run_playtest() -> void:
 	await _wait(0.3)
 	_check(world.visible and hud.visible, "world and HUD are live after starting")
 
-	# 1. walking into somebody you have never met
+	# 1. walking into somebody you have never met, then one Just chat and Leave
 	_on_talk("vilma")
 	await _wait(0.3)
 	_check(vn.is_open(), "talking to an unmet girl opens a scene")
 	_check(Game.has_met("vilma"), "the first meeting marks her as met")
 	_check(not hud.visible, "the HUD hides during a scene")
-	var before := Game.get_affection("vilma")
+	var tk_before := Game.tokens
 	var guard := 0
-	while vn.is_open() and guard < 150:
+	var chatted := false
+	while vn.is_open() and guard < 120:
 		guard += 1
 		vn.advance()
-		await _wait(0.07)
-		if vn.choose(0):
-			await _wait(0.07)
-	_check(not vn.is_open(), "the conversation ends on its own (%d steps)" % guard)
-	await _wait(0.5)  # is_open() clears at the start of the fade-out; let it finish
-	_check(Game.get_affection("vilma") > before,
-			"chatting raised affection (%d -> %d)" % [before, Game.get_affection("vilma")])
+		await _wait(0.06)
+		if not chatted and vn.choice_count() >= 4 and vn.choose(0):
+			chatted = true
+			await _wait(0.12)
+		elif chatted and vn.choice_count() >= 4:
+			break
+	await _wait(0.25)
+	guard = 0
+	while vn.is_open() and guard < 100:
+		guard += 1
+		vn.advance()
+		await _wait(0.06)
+		if vn.choice_count() >= 4 and vn.choose(vn.choice_count() - 1):
+			await _wait(0.12)
+			break
+	await _wait(0.5)
+	_check(not vn.is_open(), "the conversation ends on its own")
+	_check(Game.tokens == tk_before - Game.COST_CHAT,
+			"one Just chat cost %d token (%d -> %d)" % [Game.COST_CHAT, tk_before, Game.tokens])
 	_check(world.visible and hud.visible, "the world unlocks again after the scene")
 
-	# 2. the milestone event firing on the next conversation
+	# 2. the milestone event firing on the next conversation (free, no tokens)
 	Game.add_affection("vilma", 40)
 	_on_talk("vilma")
 	await _wait(0.4)
 	_check(vn.is_open(), "the milestone event plays on the next conversation")
 	_check(Game.events_seen.has("vilma:30"), "the milestone is marked as seen")
 	var aff_before := Game.get_affection("vilma")
-	guard = 0
-	while vn.is_open() and guard < 80:
-		guard += 1
-		vn.advance()
-		await _wait(0.08)
-		if vn.choose(0):
-			await _wait(0.08)
+	await _close_scene()
+	await _wait(0.5)
 	_check(not vn.is_open(), "the event scene closes")
 	_check(Game.get_affection("vilma") >= aff_before, "the event choice applied affection")
 
-	# 3. flirting raises suspicion
+	# 3. flirting spends the risky option's tokens (suspicion is now a roll)
 	Game.suspicion = 0
+	var tk_flirt := Game.tokens
 	_on_talk("vilma")
 	await _wait(0.3)
 	guard = 0
 	var flirted := false
-	while vn.is_open() and guard < 60 and not flirted:
+	while vn.is_open() and guard < 80 and not flirted:
 		guard += 1
 		vn.advance()
-		await _wait(0.08)
-		if vn.choice_count() > 1 and vn.choose(1):
+		await _wait(0.07)
+		if vn.choice_count() >= 4 and vn.choose(1):
 			flirted = true
 			await _wait(0.12)
 	while vn.is_open() and guard < 140:
 		guard += 1
 		vn.advance()
 		await _wait(0.06)
-		vn.choose(vn.choice_count() - 1)
-	_check(Game.suspicion > 0, "flirting raised suspicion (%d)" % Game.suspicion)
+		if vn.choice_count() >= 4 and vn.choose(vn.choice_count() - 1):
+			await _wait(0.1)
+			break
+	await _wait(0.5)
+	_check(Game.tokens == tk_flirt - Game.COST_FLIRT,
+			"one Flirt cost %d tokens (%d -> %d)" % [Game.COST_FLIRT, tk_flirt, Game.tokens])
 
 	# 4. travelling and whatever is waiting in the next room
 	_travel("cafeteria")
 	await _wait(0.4)
 	_check(Game.area == "cafeteria", "travel moved the player")
-	guard = 0
-	while vn.is_open() and guard < 80:
-		guard += 1
-		vn.advance()
-		await _wait(0.07)
-		vn.choose(0)
+	await _close_scene()
+	await _wait(0.5)
+	_check(not vn.is_open(), "any travel encounter closed")
 	_check(hud.visible, "the HUD returns after a travel encounter")
 
 	# 5. the journal
@@ -824,19 +886,16 @@ func _run_playtest() -> void:
 	await _wait(0.4)
 	_check(_journal == null and hud.visible, "the journal closes and play resumes")
 
-	# 6. class, and the clock rolling over
+	# 6. class, and the clock rolling over (which also refills tokens)
 	Game.period = 1
 	var day_before := Game.day
 	var charm_before := Game.charm
 	_action("class")
 	await _wait(0.4)
 	_check(Game.charm > charm_before, "attending class raised charm")
-	guard = 0
-	while vn.is_open() and guard < 80:
-		guard += 1
-		vn.advance()
-		await _wait(0.07)
+	await _close_scene()
 	_check(Game.period != 1, "attending class advanced the clock")
+	_check(Game.tokens == Game.TOKENS_PER_PERIOD, "a new period refilled tokens")
 	Game.period = 4
 	_action("wait")
 	await _wait(0.6)
@@ -846,13 +905,8 @@ func _run_playtest() -> void:
 	Game.add_suspicion(Game.MAX_SUSPICION)
 	_on_talk("vilma")
 	await _wait(0.4)
-	guard = 0
-	while vn.is_open() and guard < 140:
-		guard += 1
-		vn.advance()
-		await _wait(0.07)
-		vn.choose(0)
-	await _wait(0.6)
+	await _close_scene()
+	await _wait(0.7)
 	_check(not hud.visible and not world.visible, "max suspicion ends the run")
 
 	print("=== %d checks, %d failures ===\n" % [_checks, _failures])

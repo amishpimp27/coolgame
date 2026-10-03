@@ -36,6 +36,22 @@
         ],
         "lore": [
           "Back in '31 this was the sleep-out corridor. We tied a bedsheet to a fan and a girl screamed loud enough to wake the whole wing—except me. I got the timing wrong. The prank worked, though. Everyone remembers it. I just got stuck being its punchline forever."
+        ],
+        "idle_neutral": [
+          "The lockers ate my voice tonight. I can hear you, though. It's fine.",
+          "Mm. The moon's keeping me company. You can, if you like."
+        ],
+        "flirt_neutral": [
+          "Oh. That was almost a compliment. I'd blush, if I still had the blood for it.",
+          "Cute. A boy telling a ghost she gives him chills. Bold."
+        ],
+        "flirt_fail": [
+          "Flattery flutters off me like ash. Save your breath for something warm.",
+          "I've had a century of smooth talk. Yours is sweet, but I don't trust sweet."
+        ],
+        "compliment_fail": [
+          "Stop. I'm not a statue to be admired. I'm a girl who's been dead a long time.",
+          "That's too kind, and I crumble under kindness. Please just talk to me plainly."
         ]
       },
       {
@@ -55,6 +71,22 @@
         ],
         "lore": [
           "The school buried me out behind the gym, where the old gate rusts. They put a name on it. I visit when I feel forgotten—I read my own epitaph like a letter from a girl I used to be. 'Beloved prankster.' It was the best one they could think of."
+        ],
+        "idle_neutral": [
+          "The floor's cold tonight. I'd say sit with me, but you'd catch a draft.",
+          "I was counting the cracks in the ceiling. You're more interesting."
+        ],
+        "flirt_neutral": [
+          "You said that like you mean it. Suppose I let myself believe it for a moment.",
+          "Careful. Wistful ghosts get attached. And I remember what attachment cost me."
+        ],
+        "flirt_fail": [
+          "Charm is a fishing net, and I've slipped through too many to bite it now.",
+          "I'd rather you be honest than clever. Clever leaves me cold."
+        ],
+        "compliment_fail": [
+          "You flatter like you're trying to warm a frozen bird. I appreciate it. I just can't receive it.",
+          "That's the kindest thing said to me in decades, and it scares me more than silence."
         ]
       },
       {
@@ -74,6 +106,22 @@
         ],
         "lore": [
           "There's a cellar door under the east wing only ghosts can find. Some of the older ones say there's a way to be heavy again, if a living heart asks the right question at midnight. I used to laugh at it. Now I write the question down and lose it on purpose, because I'm scared you'd say yes to the answer."
+        ],
+        "idle_neutral": [
+          "You're early. Or I've started missing the hours when you're here.",
+          "The corridor feels warmer when you sit in it, even if that's all in my head."
+        ],
+        "flirt_neutral": [
+          "When you go, the dark feels like a room, not a friend. You've spoiled me.",
+          "Keep talking to me like that and I'll forget I'm supposed to be haunting."
+        ],
+        "flirt_fail": [
+          "Don't soften into poetry now. I just found my balance near you.",
+          "Hush. You'll make me hope, and hoping's the one thing I gave up on."
+        ],
+        "compliment_fail": [
+          "You say I glow. I glow because you look at me like that. Don't you see it's yours?",
+          "That's too much, and I can't give it back, and that'll break me. Dial it down."
         ]
       },
       {
@@ -93,6 +141,22 @@
         ],
         "lore": [
           "I found the cellar question now. I know the words. But I don't need to be heavy anymore—you already hold me up. Being your ghost is better than being anyone's girl. And being your girl, too, in the only way the moon lets me."
+        ],
+        "idle_neutral": [
+          "You're here. The night made sense to me before you arrived. Now it makes itself for you.",
+          "Even my coldest hour feels lighter when you're humming in it."
+        ],
+        "flirt_neutral": [
+          "Kiss me and I might not feel it — but I'd remember it until the moon burns out.",
+          "You make me wish I had a heartbeat, just so I could offer it to you."
+        ],
+        "flirt_fail": [
+          "Don't tease a ghost with forever. I'll take it too literally and never let you go.",
+          "That's cruel, lovely boy — I'll love you and outlive every version of you."
+        ],
+        "compliment_fail": [
+          "You're so good to me I forget I'm dead. Then I remember, and it's devastating.",
+          "I can't hold your hand warm the way you need. Loving you is a grief I'll choose anyway."
         ]
       }
     ],
@@ -182,6 +246,36 @@
           }
         ]
       }
+    ],
+    "player": [
+      [
+        "Um, hi. Sorry to walk through your hallway this late. I heard even ghosts can't sleep some nights.",
+        "So you're the one they whisper about. That's kind of amazing, honestly. I'm Yuuji.",
+        "I brought tea. I know you can't drink it. I thought maybe you'd like to watch the steam rise with me.",
+        "Sorry, I'm not usually this bad at talking to girls. It's just — you're not usually translucent.",
+        "I don't know why my feet keep landing in this corridor. I think they decided before I did."
+      ],
+      [
+        "The other girls think you're scary. They're wrong. You told me about the prank, remember? That took guts.",
+        "You should prank me sometime. I promise I'll scream properly and play along this time.",
+        "Do ghosts get bored at night? Because I could pull up a chair and we could both just exist here.",
+        "You said the cold keeps you company. I could bring my jacket next time, so the cold isn't alone.",
+        "You laughed at my joke. I'm writing that down as my biggest win at this school."
+      ],
+      [
+        "Stand a little closer. You can't catch my warmth, but I can be warm toward you — that's something.",
+        "Some nights I almost forget you're not alive and I start to ask about tomorrow. I'm sorry. Please stay.",
+        "You said cold is company. I'd rather be the warmth than one of these walls, if you'd let me.",
+        "Tell me again about the day you were awake. I want to keep it for you when the nights go long.",
+        "Hey. Being near you feels like holding something precious. You don't have to be alive to be that."
+      ],
+      [
+        "If I could bleed warmth for you, I would. You'd be the only one I'd ever give it to.",
+        "They call it haunting. I'd call it waiting — for the only steps that make the floor feel warm.",
+        "You're the first warm thing I've stood beside in a hundred years. I don't want to forget how that feels.",
+        "I love the way you try to warm my hands. Even if they stay cold, I'll keep reaching for yours.",
+        "Stay. That's all I'd ever ask — keep being the warm spot in my long, cold night."
+      ]
     ]
   },
   {
@@ -221,6 +315,22 @@
         ],
         "lore": [
           "Slimes are born from someone's spilled feelings, usually. Me? I was a test tube that one time a whole class cried at the same moment during finals winter. I'm literally made of shared tears and it's why I'm so good at hugging—I'm ninety percent comfort."
+        ],
+        "idle_neutral": [
+          "Ooh, hi! I heard you coming. You're warm, that's NICE.",
+          "I'm just soaking. Tuesdays are soak days. You can stay."
+        ],
+        "flirt_neutral": [
+          "Ohh! Warm words! I like warm words! Tell me more warm things!",
+          "Hehe, you're smooth. I'm gonna pretend I got a little blush in here."
+        ],
+        "flirt_fail": [
+          "Hm! That's a LINE. Lines are slippery, and I know slippery — I'm made of one.",
+          "Nope, too goopy for that. You gotta earn the squish, not flatter for it."
+        ],
+        "compliment_fail": [
+          "Aww! But wait — I can't tell if you mean it! I might just SUCK UP all your nice and run with it.",
+          "That's SO nice it'll give me a happy overheat. Dial it back or I'll dribble!"
         ]
       },
       {
@@ -240,6 +350,22 @@
         ],
         "lore": [
           "When a slime trusts someone, they let them see their core—the one bit of us that's not water, the place feelings actually live. I've only ever shown mine to the janitor who unclogged me once. And I'm starting to think about showing it to you, which is terrifying and also very wet news."
+        ],
+        "idle_neutral": [
+          "Hey hey! Sit down, sit down, the floor's warm right here!",
+          "I was counting my wobbles. You interrupted, which is honestly an upgrade."
+        ],
+        "flirt_neutral": [
+          "Oho, flirting! I love flirting! Do it again but MORE.",
+          "You're looking at me all sweet and I'm just — GLEAMING. It's good."
+        ],
+        "flirt_fail": [
+          "Heeeey, that's a pickup line! I'm a goo, not a goon. Spicy attempt, though!",
+          "Nuh-uh! Buttering up a puddle makes it ROUND, not soft for you. Try being sincere!"
+        ],
+        "compliment_fail": [
+          "TOO NICE! I'm gonna dissolve into a happy puddle, and then who'll sit with you?!",
+          "You're melting me before I even chose to. Warn a goo first!"
         ]
       },
       {
@@ -259,6 +385,22 @@
         ],
         "lore": [
           "Here's a slime secret: we can share a single consciousness—split into two puddles that still feel the same thing. It's how families of slimes stay close. I've been thinking about leaving a little piece of me near your door at night, not to scare you—just so a part of me is always the closest thing to you and still feels what you feel. That's the deepest puddle-level truth I know."
+        ],
+        "idle_neutral": [
+          "Yuuji! You HAVE the warmth today. I was just missing you — look, I'm shivering for you.",
+          "Today's a cuddle-adjacent day. Sit close and I'll hum."
+        ],
+        "flirt_neutral": [
+          "Ooh, say that again right near me so I can absorb it. I think I just got three degrees warmer.",
+          "You wiggle my insides when you flirt. It's my favorite weather."
+        ],
+        "flirt_fail": [
+          "Hey — going goopy-flirty on the one who knows your name? I caught that. Be real!",
+          "Too slidey. I like you when you're honest, not when you're all sparkle."
+        ],
+        "compliment_fail": [
+          "You're gonna overheat me, and then every squish I give you is YOUR fault!",
+          "That's so sweet it's SPICY. My whole body's going pink. Bad for conservation of goo!"
         ]
       },
       {
@@ -278,6 +420,22 @@
         ],
         "lore": [
           "Slimes remember everything we absorb—every hug, every warm spot, every feeling. So I'm storing you. Every second of you. A hundred years from now, if I'm still goo, I'll still know the exact warmth of your hand and the way you said my name. You're the best thing I've ever taken into myself, and I'm keeping you forever."
+        ],
+        "idle_neutral": [
+          "My love, you're here. The bucket already knew. It's warmer with you in the room.",
+          "Come be my warmth. I've saved the center spot just for you."
+        ],
+        "flirt_neutral": [
+          "Flirt with me forever, love — I'll soak up every warm syllable and glow about it for days.",
+          "Every time you look at me like that, I go a little more liquid. I LIKE where that's going."
+        ],
+        "flirt_fail": [
+          "Oh my love, don't tease. My whole being is already yours; a line makes me want you MORE, and that's dangerous.",
+          "Smooth talk from MY Yuuji? I'll take it, but I know the real you is warmer than any lyric."
+        ],
+        "compliment_fail": [
+          "Stop — I'll melt ALL over you and then never be able to leave. Is that what you want? Because okay, maybe yes.",
+          "Too lovely! My goo can't hold that much joy. I'm going to have to leak it onto you as a hug."
         ]
       }
     ],
@@ -367,6 +525,36 @@
           }
         ]
       }
+    ],
+    "player": [
+      [
+        "Uh, sorry — I didn't mean to trip over your bucket. Are you okay in there?",
+        "You're the puddle everyone calls the warmest thing in the dorm. Hi, I'm Yuuji.",
+        "I, um, brought you a little cup of water? I read that slimes like moisture. Sorry if it's weird.",
+        "You jiggle when you talk. That's way friendlier than I expected. I like you.",
+        "Do you want to sit with me at lunch? I mean — if a bucket's not your only seat."
+      ],
+      [
+        "You're literally the happiest thing I've met. Your whole body does a little shimmy when you're excited.",
+        "I saved you the warm spot on the bench. I've seen you edge toward it. Go on.",
+        "Okay, but when you say 'squish' with that voice, I have to believe you mean it as a hug.",
+        "C'mon, do the thing where you ripple when you laugh. Best thing on campus.",
+        "You can borrow my hoodie to hold. I know you like collecting warm textures."
+      ],
+      [
+        "You're my favorite kind of warmth — the kind that doesn't ask for anything back.",
+        "When you're low and droopy, come find me. I'll be your sun-warmed step.",
+        "I don't mind if your goop messes up a sleeve or two. It's just proof you were here.",
+        "Hey. You're not just warm. You're kind, and that's warmer.",
+        "Sit on my shoulder a minute. I like when you glow like that just from being near me."
+      ],
+      [
+        "I'd hold you all night if I could. You deserve to be kept somewhere warm.",
+        "Every puddle in me wants to be yours. I think I've been heading for you all along.",
+        "If loving you had a temperature, you'd be exactly it. I want to live in that.",
+        "You melt toward me and I catch you, every time. Don't ever stop edging closer.",
+        "I love you like a warm step loves the puddle that keeps coming back to it."
+      ]
     ]
   },
   {
@@ -406,6 +594,22 @@
         ],
         "lore": [
           "The West Track pack isn't wolves by blood—we're wolves by the way we move and protect. We claim territory by running it daily, and I've run this gym track every dawn since I was a cub-teen. Someone's gotta keep the order. That's my whole thing: order, and loyalty, and not letting anyone run alone."
+        ],
+        "idle_neutral": [
+          "You've got scent, but it's not a threat scent. I'll let you stay by the track.",
+          "I'm resting my legs. Don't take that as an invitation to herd me."
+        ],
+        "flirt_neutral": [
+          "That was... a bold thing to say to an alpha. I'll allow it once.",
+          "Hn. You smell a little like courage. Noted."
+        ],
+        "flirt_fail": [
+          "Smooth words get snapped up out here. Earn the ground before you posture.",
+          "Flirting with me like I'm meat, not an alpha? That's a challenge. Careful."
+        ],
+        "compliment_fail": [
+          "Flattery. Prey uses it. Prove you mean it on the track first.",
+          "Pretty words don't run laps. Show me — don't sweet-talk me."
         ]
       },
       {
@@ -425,6 +629,22 @@
         ],
         "lore": [
           "A real pack doesn't throw out the weak, it runs slow for them. When I was a cub my littermates got lost in the fog over by the north woods, and I ran slow for hours so they'd find the path by my scent. That's the rule I live by now, even off the track: you never leave a packmate behind, no matter how slow the run."
+        ],
+        "idle_neutral": [
+          "Same corner. Same boy. Good. Keep coming back and I'll know you.",
+          "I looped the perimeter once. Just checking you weren't a stray."
+        ],
+        "flirt_neutral": [
+          "You said I was fast and it landed. Fine. You earned a tail-wag.",
+          "Hm. Flirt again, and I might let you call me your favorite wolf."
+        ],
+        "flirt_fail": [
+          "That's a line, and I sniff lines out at fifty paces. Try me square.",
+          "You're circling me with words. I'd rather run beside you than be hunted by charm."
+        ],
+        "compliment_fail": [
+          "Too shiny. I'm not a trophy to be praised. Run with me and I'll believe you.",
+          "I don't want to be admired from the fence. Get on the track."
         ]
       },
       {
@@ -444,6 +664,22 @@
         ],
         "lore": [
           "Wolves mark what they love, they don't just guard it—they make sure the whole territory knows it's claimed. I've run the West Track every dawn for years, and lately I run it right past where you stand, dawdling on purpose. I want the scent to stick. I want the world to know where my pack-heart's pitched camp."
+        ],
+        "idle_neutral": [
+          "You're here. Good. The track's been emptier without you in it.",
+          "I was scouting for you again. Purely tactical, as always."
+        ],
+        "flirt_neutral": [
+          "You smell like belonging now. I've been circling you for it all day.",
+          "Flirt at me twice more and I'm claiming that lap as mine."
+        ],
+        "flirt_fail": [
+          "Don't soften on me. I guard you because you're real with me, not smooth.",
+          "A line from you stings more than a stranger's. I wanted the honest you."
+        ],
+        "compliment_fail": [
+          "Praise me like that and I'll think you want a wounded wolf. Be careful what you feed.",
+          "You overwhelm me when you do that. I'd rather run in silence than be admired so loud."
         ]
       },
       {
@@ -463,6 +699,22 @@
         ],
         "lore": [
           "A wolf gives three gifts in a life: her paw in your hand, her nose to your scent, and her howl to carry your name. I'd give you all three on the rooftop tonight, where the moon can hear, so every creature with ears knows exactly whose I am."
+        ],
+        "idle_neutral": [
+          "My Yuuji. You're here, so the whole field is claimed and calm.",
+          "Sit. I'll guard the perimeter while you rest. My vigilance is your peace."
+        ],
+        "flirt_neutral": [
+          "Keep saying I'm yours, love. Every word is a collar I wear gladly.",
+          "You make me want to run toward you, not around you. That's new. That's you."
+        ],
+        "flirt_fail": [
+          "My heart, don't tease me with names. I'll take 'yours' so literally I'll never untangle us.",
+          "Even now you could hurt me with a wrong word. Say the true one instead."
+        ],
+        "compliment_fail": [
+          "You adore me too loudly and I forget I've ever been strong. Keep it, but say it softer.",
+          "I trust no praise but yours — and yours undoes me every time. Hold some back."
         ]
       }
     ],
@@ -552,6 +804,36 @@
           }
         ]
       }
+    ],
+    "player": [
+      [
+        "Hi. You're the one they call the West Track alpha. I was hoping it was you.",
+        "You run so fast it looks like the track is scared of you. I'm Yuuji.",
+        "Um, I brought you water. I didn't want you going dry after that hundred meters. Sorry if that's forward.",
+        "I'm not here to challenge you. Promise. I just think you're impressive.",
+        "You can scent-check me if you want. I figure that's basic manners around here."
+      ],
+      [
+        "You circled me twice before you'd talk to me. I felt like a very approved squirrel.",
+        "Save me a lap? I'll keep pace as long as you go easy on the last stretch.",
+        "You do that little huff-laugh when you're pleased. I've started collecting them.",
+        "I left the faster path open for you. Figured an alpha shouldn't have to dodge bushes.",
+        "You keep me in your sights on the track. Honestly? I kind of like being watched by you."
+      ],
+      [
+        "Run yourself tired beside me, then let me carry you back. I've got you.",
+        "Your pack's lucky, but I'm luckier — you guard me without being asked.",
+        "Lean on me. Even an alpha gets to stop running for a minute.",
+        "I'll hold still whenever you need to be sure I'm here. Always.",
+        "You're not just fast. You're safe. That's why I keep coming back to the track."
+      ],
+      [
+        "Run with me as far as the light goes. I'll keep the pace and keep your side.",
+        "You scent me, you circle me, you claim me. I stopped running from it — I run to it now.",
+        "I'm yours. Say it again in your voice, and I'll guard that word for you.",
+        "When you're tired of being strong, be soft in my arms. I can hold an alpha.",
+        "Every lap of yours comes back to me. I want to be the place you always return to."
+      ]
     ]
   },
   {
@@ -591,6 +873,22 @@
         ],
         "lore": [
           "Most of my family turned to dust centuries ago, but we linger where the moonlight never quite reaches. The corridor keeps us company. It's the only loyal thing I own."
+        ],
+        "idle_neutral": [
+          "The shadows have been quiet tonight. A mortal may stand in them. Briefly.",
+          "I was composing an ode to a dying streetlamp. You may listen or leave."
+        ],
+        "flirt_neutral": [
+          "Oh, bold. A mortal flattering a countess. You've a flair for drama. I'll allow it.",
+          "Mm. That almost matched my own theatricality. Impressive."
+        ],
+        "flirt_fail": [
+          "Flattery is the coin of the desperate. You're not desperate yet, are you?",
+          "I've heard sweeter lines from dying candles. Try again, or not at all."
+        ],
+        "compliment_fail": [
+          "Stop. You'll make me drop the drape, and we can't have the countess caught blushing.",
+          "Such praise overwhelms — I must retreat to the shadows to collect myself."
         ]
       },
       {
@@ -610,6 +908,22 @@
         ],
         "lore": [
           "Our family blood is measured in patience, not years. We can wait out entire dynasties in a single quiet room. I'm waiting out this one just for you."
+        ],
+        "idle_neutral": [
+          "You've returned. The corridor noticed. I pretended not to.",
+          "I had a bat deliver a message to your window. It came back unstained."
+        ],
+        "flirt_neutral": [
+          "Your flattery has become... tolerable. I may permit a second.",
+          "Charm me once more and I'll admit I've begun liking the sound of your step."
+        ],
+        "flirt_fail": [
+          "A line, delivered with confidence. I've faced better, from better wits.",
+          "You toss compliments like cheap jewels. An heiress of shadow wants rarer currency."
+        ],
+        "compliment_fail": [
+          "You flatter me until I forget my own coldness. It's unsettling — I crave it and fear it.",
+          "Kindness addressed to the countess is like sunlight to a crypt. Far too much."
         ]
       },
       {
@@ -629,6 +943,22 @@
         ],
         "lore": [
           "In the old country, we carved oaths into bat-bone and fed them cold wine to keep them true. Oaths to you would be the first I've kept warm."
+        ],
+        "idle_neutral": [
+          "You're early. I was drawing your name in frost. Now I must pretend I wasn't.",
+          "A shadow asked where you were. I told it you'd be along. I was right."
+        ],
+        "flirt_neutral": [
+          "Flirt more, my sweet mortal. Eternity is dull, and you're the only shine in it.",
+          "You undo my theatrics. I'm almost soft, and I blame you entirely."
+        ],
+        "flirt_fail": [
+          "Don't tease a creature of eternity. My devotion takes things literally, forever.",
+          "A lovely line, but I'd rather have your truth than your charm. I've earned it."
+        ],
+        "compliment_fail": [
+          "You praise me until I'm warm, and warmth is my undoing. Soften that mercy.",
+          "I cannot hold the glow you hand me. It overflows my cold hands. Keep a little back."
         ]
       },
       {
@@ -648,6 +978,22 @@
         ],
         "lore": [
           "The first of my line who loved a mortal traded her shadow for his heartbeat. I would trade mine a hundred times over for yours."
+        ],
+        "idle_neutral": [
+          "My darling, you're here. The night arranges itself around you now.",
+          "Sit in my shadow forever. I've made it yours."
+        ],
+        "flirt_neutral": [
+          "Whisper that I'm yours again. I want to keep it among the bats and the stars.",
+          "Every immortal year with you would be a season I never want to end."
+        ],
+        "flirt_fail": [
+          "Don't tempt me with forever in jest, my love — I'll take it at its word and keep you always.",
+          "Cruel, sweet boy, to make a vampire hope. Hope is the one wound in me that won't heal."
+        ],
+        "compliment_fail": [
+          "You adore me until I forget I'm cold, and to forget it is to be made mortal. It destroys me, lovingly.",
+          "Give me that much love and I'll chain you to the night. I can't let warmth like that escape."
         ]
       }
     ],
@@ -737,6 +1083,36 @@
         ],
         "ending": true
       }
+    ],
+    "player": [
+      [
+        "Sorry to break your dramatic silence. I'm Yuuji. I was told the Shaded Corridor has a countess.",
+        "You move like a shadow with a plan. I mean that as a compliment.",
+        "I brought a little jar of something red. Is that rude? Is it too on the nose?",
+        "If you're going to menace me, do it properly. I'd hate to be undramatically dismissed.",
+        "You have that look like you've seen a hundred boring mortals. I'd like to not be one."
+      ],
+      [
+        "You called the moon 'a bored spotlight' last week. I think about that a lot.",
+        "I found a bat asleep in the eaves. I told it you said hello. It approved.",
+        "You're only imperious when the lights are low, you know. I've noticed.",
+        "A shadow just whispered your name to me — or was it the draft? Either way, I'm listening.",
+        "You let me stand in your corridor without theatrics. That's the highest honor you give."
+      ],
+      [
+        "Between the shadows and the moonlight, I keep choosing the shadow you're standing in.",
+        "You don't need my heart for blood. But I'd hand it over anyway, if you wanted.",
+        "I keep your warmest secret — that you're soft. I'll take it to my grave, like a proper acolyte.",
+        "Tell me about forever again. I like hearing it in your voice, like it might actually fit.",
+        "You pretend the cold is your crown. I'll be the warmth you wear beneath it."
+      ],
+      [
+        "Kiss me like you've got eternity to spare. I want to be your favorite immortal moment.",
+        "I would give you a hundred mortal sunsets just to see you lit for one.",
+        "Shadow and all, you're the most alive thing in this school. I love you for it.",
+        "When you say forever like it could be mine, I believe you. Don't stop.",
+        "You were born for the night. I was born to be the warm thing it forgot."
+      ]
     ]
   },
   {
@@ -776,6 +1152,22 @@
         ],
         "lore": [
           "Evil clowns like me run on cracked carnival energy and leftover birthday cake. The cafeteria is our natural habitat — the pies supply themselves."
+        ],
+        "idle_neutral": [
+          "Sorry, I was planning the timing on a custard surprise for third period. What were we talking about?",
+          "Hm? Oh, sure, whatever. I was counting trays the whole time. Tray one, tray two..."
+        ],
+        "flirt_neutral": [
+          "Careful, that almost sounded like a real line. Almost. I'm saving it for later, don't waste it now.",
+          "Flattering. The scheduling department of my evil will get back to you on whether that's a threat or a sweet nothing."
+        ],
+        "flirt_fail": [
+          "Is that your best pitch? My last pie told funnier jokes. Come on, try again.",
+          "You're laying it on real thick. Suspiciously thick. Did someone put you up to this, or are you just practicing?"
+        ],
+        "compliment_fail": [
+          "That's a lot of nice before eleven in the morning. I think you want something, and I'm not sure I trust it.",
+          "Oh no, now I'm blushing, which ruins my whole evil brand. That was a low blow. Very rude. Good one."
         ]
       },
       {
@@ -795,6 +1187,22 @@
         ],
         "lore": [
           "My family runs the gnarliest carnival outside the capital. My grandpappy could make a balloon animal cry. The evil runs deep, sweetheart, and so does the birthday cake."
+        ],
+        "idle_neutral": [
+          "Sorry, I got distracted thinking about which stupid prank I owe you back for. It's a long queue in my head.",
+          "Huh? Oh right, talking. I was busy trying to figure out if your laugh has a favorite pitch yet. It's very trombone-adjacent."
+        ],
+        "flirt_neutral": [
+          "Okay, that one actually got me. I won't tell the others, but you've got a future in this.",
+          "Sure, and if I take you seriously enough to blush, I'm blaming the custard. That's my story and I'm sticking to it."
+        ],
+        "flirt_fail": [
+          "Hey, we're friends, so I'll let the line slide like a bad pie. But next one I'm grading.",
+          "That sounded like you read it off a cereal box. Respectfully, keep the day job."
+        ],
+        "compliment_fail": [
+          "Careful there—butter me up and I'll think you're planning to prank me. Which, honestly, is on brand for us.",
+          "That's sweet, which makes me want to check my pie for sponges. It's a reflex now."
         ]
       },
       {
@@ -814,6 +1222,22 @@
         ],
         "lore": [
           "Every clown's laugh is a signature, they say. Mine used to be all chaos. Then I met you, and now it goes soft at the edges, and I'm terrified everyone can hear it."
+        ],
+        "idle_neutral": [
+          "Sorry, I was mentally re-reading the note you tucked in my lunch bag. You know the one. I'm never throwing that out.",
+          "Zoned out thinking about the time you survived my 'evil' and just laughed. That's my favorite memory's soundtrack."
+        ],
+        "flirt_neutral": [
+          "If you keep looking at me like that I'm gonna forget about the candy apple and just sit here. That's a big deal. The apple's the good part.",
+          "You're making my honk go all soft. I thought honks only had two settings. You broke the calibration."
+        ],
+        "flirt_fail": [
+          "Aw, that was a swing and a miss from my favorite heckler. Want me to throw you a perfect pitch to hit?",
+          "That one was smoother than me, and I'm the one with the actual juggling act. Cute attempt though."
+        ],
+        "compliment_fail": [
+          "You can't just say that and expect me to keep my villain composure. I've got a reputation, Yuuji.",
+          "I'm holding the pie now. Defense mechanism. Your fault for being nice."
         ]
       },
       {
@@ -833,6 +1257,22 @@
         ],
         "lore": [
           "Old clown law says a clown who falls in love must retire the jokes and keep only the joy. I just retired every last one. The joy is all yours."
+        ],
+        "idle_neutral": [
+          "Zone out with you right in front of me? Evil takes a back seat. Pull up a tray.",
+          "Wasn't listening, I was just watching your eyebrows do the thing. It's my favorite show now."
+        ],
+        "flirt_neutral": [
+          "I told everyone I'd drown my heart in a bucket to prove I had one. You grabbed it first. So now it's yours.",
+          "You get to be the exception to all my evil, and that's the scariest thing I've ever admitted."
+        ],
+        "flirt_fail": [
+          "That was so close to perfect, and now I'm gonna heckle you about it for a week. It's a love language.",
+          "See, that's the thing—you miss on purpose when I'm looking so you get to hear me laugh. I see you."
+        ],
+        "compliment_fail": [
+          "You're gonna melt the whole carnival with that. And I'm the clown holding all the buckets, so I feel very attacked right now.",
+          "You said my evil dissolves on contact. You're the contact. So technically you made me soft, and now you owe me pie."
         ]
       }
     ],
@@ -922,6 +1362,36 @@
         ],
         "ending": true
       }
+    ],
+    "player": [
+      [
+        "I, uh—your laugh echoed off the lunch trays and made me drop mine. Worth it, honestly.",
+        "You keep a bucket of water like other girls keep a diary. I find that weirdly comforting.",
+        "Sorry, I'm not used to someone telling me they're evil and smiling like it's a compliment.",
+        "Do clowns schedule their strikes, or is it more of a vibe thing? Asking so I can schedule my panic accordingly.",
+        "You're the loudest thing in this cafeteria and I think that means I should say hello."
+      ],
+      [
+        "Your pie-in-the-face routine would've gotten me twice, but your aim's too honest. You telegraph.",
+        "You call it evil. I call it the best seat in the lunch queue, just with a clown filter.",
+        "Keep the honk handy—that girl two trays down could use a jumpscare to wake her up.",
+        "I brought you a real bucket this time, and it's empty. Your move, villain.",
+        "For a self-declared terror of the lunch line, you've got the softest wrists in this whole school."
+      ],
+      [
+        "Your 'evil' never lands anywhere near me, and I've decided that's your one weakness. Good. Keep it.",
+        "Every carnival act has a moment where the mask slips. That's my favorite part of you.",
+        "I saved your seat at the queue. That's love, in lunch-line currency.",
+        "You keep threatening my pie, but you've never once thrown it. Starting to think you'd miss me.",
+        "Your laugh fills the whole room and somehow it's only ever aimed at making me smile."
+      ],
+      [
+        "The evil dissolved on contact just like you said. What's left is just warm, and it's all mine.",
+        "I don't care if you're 'the bad guy' of this cafeteria. You're the best thing in it.",
+        "Between your buckets and my heart, only one of those gets a replay—and it's yours.",
+        "Hold my hand and let your evil melt into mine. I've got plenty of good to lend you.",
+        "For all your masks and buckets and honks, I'd stand in your line forever just to watch your face light up."
+      ]
     ]
   },
   {
@@ -961,6 +1431,22 @@
         ],
         "lore": [
           "Down in the deepest trench, where the light has never touched, we krakens learn to be patient. That's why I'm so good at waiting — even if waiting for you is harder than I expected."
+        ],
+        "idle_neutral": [
+          "Oh—sorry, I was focused on keeping all six arms from knocking over the ledge. What were you saying?",
+          "Hm? Ah, I was counting the ripples to make sure none of my tentacles disturbed the water. Did you say something?"
+        ],
+        "flirt_neutral": [
+          "That's a very kind thing to say, though I'm not sure I'm braver than the fountain. The fountain is very still and I knock things over.",
+          "You're being so nice to me—oh no, my ink's starting to shimmer. I can't even hide how pleased I am."
+        ],
+        "flirt_fail": [
+          "Oh! That's—that was a very smooth sentence. I think. I forgot to listen because I was trying to place all six hands somewhere safe.",
+          "I'm sorry, I think you meant that sincerely and I don't know how to hold sincerity without apologizing for taking up all of it."
+        ],
+        "compliment_fail": [
+          "You're too kind, really—are you sure? I'm fairly certain this compliment is misplaced and belongs on someone smaller and tidier.",
+          "Oh dear, now I'll spend all day worrying that I've tricked you into being nice to me. I'm not smart enough to trick anyone."
         ]
       },
       {
@@ -980,6 +1466,22 @@
         ],
         "lore": [
           "Kraken ink remembers everything it touches. That's why I keep a little of yours tucked safe — so I never lose track of where you've been with me."
+        ],
+        "idle_neutral": [
+          "Sorry, I was very focused on not letting my left tentacle drift into your lunch. It has opinions about your fries.",
+          "Mmm? Oh, I was wondering if your voice has ever carried down to my deep spots and echoed. It feels like it should."
+        ],
+        "flirt_neutral": [
+          "You're being charming, which is unfair, because my ink does the sparkle thing and I can't stop it. So now you know.",
+          "If you keep saying things like that I'll have to be careful the fountain doesn't hear—it'll get jealous of how soft you make me."
+        ],
+        "flirt_fail": [
+          "That was a nice try, but did you mean it, or are you just friendly to every giant? I ask because I'd like to know what I am to you.",
+          "I believe you, I do! I just misplaced my confidence under some ink and now I'm not sure I deserved it. Apologies."
+        ],
+        "compliment_fail": [
+          "You're buttering me up—oh no, that's a food word. Sorry. You're being very generous, possibly too generous for what I've done to deserve it.",
+          "I'm flattered, truly, but I think you've confused me with a day where I didn't knock something over. That never happens, so it must be someone else's luck."
         ]
       },
       {
@@ -999,6 +1501,22 @@
         ],
         "lore": [
           "They say a kraken's heart beats once a minute down in the cold. Yours has made mine beat like a surfacing storm, and I never knew it could."
+        ],
+        "idle_neutral": [
+          "Mm? Oh, sorry—I was watching the way you eat your fries and taking notes on which ones you save for last. It's a small study.",
+          "Hmm? I got distracted by how safe the water feels with you by it. That's not a sentence I expected to say."
+        ],
+        "flirt_neutral": [
+          "You're allowed to be this nice to me, you know. I checked—there's no rule saying a soft giant can't be charmed by a very warm boy.",
+          "My ink did the sparkly thing again and it's entirely your fault. I love that I finally know the cause. You're the cause."
+        ],
+        "flirt_fail": [
+          "Oh—I'm very bad at receiving, because I'll just keep everyone on all sides of me and then apologize for hogging them. I'm sorry I did that there.",
+          "You caught me mid-experiment and I got nervous—I wasn't even listening when you said that nice thing, I was so busy trying to look small."
+        ],
+        "compliment_fail": [
+          "You're so generous it makes me check my own ink for leaks, in case I'm leaking joy and that's what you're responding to. You shouldn't have to witness that.",
+          "Thank you, but I'll need you to repeat that kindly over the next decade, because I keep losing it in the deep places of my own disbelief."
         ]
       },
       {
@@ -1018,6 +1536,22 @@
         ],
         "lore": [
           "Krakens choose one harbor for eternity and never leave it. I choose you. You are my harbor now, and I am your gentle giant, always."
+        ],
+        "idle_neutral": [
+          "Hm? Oh, I was just thinking that your heartbeat sounds like the waves I'd choose to live under forever. Sorry, did you speak?",
+          "Mmm? I was watching you breathe and mapping it to the tide, because it matches. I'd really like to stay matched to you."
+        ],
+        "flirt_neutral": [
+          "You make all six of my arms forget which one is the polite one. In the best way. Please don't ever stop.",
+          "I used to think the deepest thing I'd ever love was the ocean. Then you came and made the ocean feel shallow."
+        ],
+        "flirt_fail": [
+          "You're going to make me cry saltwater, and I'll have to blame you for the fountain running over. That's a romantic catastrophe and I'll accept it.",
+          "I got so flustered trying to hold that compliment in all six hands at once that I dropped it into the water. Please say it again so I can keep it this time."
+        ],
+        "compliment_fail": [
+          "You love me 'louder'? I'm going to need that repeated for the rest of ocean time, because I keep hearing it wrong and smiling about folk songs.",
+          "I can't hold this much goodness without some ink spilling into your lap. Accept it as tribute. It's the purest color I produce, so I only spill it for you."
         ]
       }
     ],
@@ -1107,6 +1641,36 @@
         ],
         "ending": true
       }
+    ],
+    "player": [
+      [
+        "Um—hi. Sorry, I didn't mean to stare. It's just—you're enormous and gentle and I don't know what to do with either.",
+        "Do you—do you wave with all six hands at once, or is that just a special occasion thing?",
+        "I'm not scared of you. I think I'm scared of how not scared I am.",
+        "Your voice is really soft for someone who could probably knock over the cafeteria. I like that.",
+        "I dropped my tray when you said hi. The fountain's probably wondering why there's a ladle in it."
+      ],
+      [
+        "Six hands is perfect for holding four things and still having two to wave with. Showoff.",
+        "You keep apologizing for your tentacles like I'm not the one who keeps reaching for one like a handrail.",
+        "The fountain's your real estate and I keep stealing your spot. Sorry, I'm a squatter with good taste.",
+        "Your ink went sparkly when I said your joke was good. You can't hide that, I saw it.",
+        "I brought extra snacks in case you knock one over while being careful. It's, like, your signature move and I love it."
+      ],
+      [
+        "You'd think a girl with six hands would be hard to miss, but somehow there's only ever one of them I'm looking at.",
+        "Every time you apologize for taking up space, I want to show you how much room you've made in me.",
+        "Your tentacles are so careful with me I almost forget they could crush anything. That's the gentlest thing.",
+        "I know you worry about your size, so I'll say it plain: I've never once wished you were smaller.",
+        "Here's my plan for tonight—you pick the deep place and I'll follow. I trust your currents."
+      ],
+      [
+        "If you're the deep and I'm the tide, then I've already decided which way I'm pulling. Toward you.",
+        "You asked which of the six hands gets to hold mine. All of them. Absolutely all of them, always.",
+        "You made my heartbeat sparkle from ten feet away. Imagine what you do this close.",
+        "The fountain's got nothing on you. You're the whole ocean I didn't know I was aching for.",
+        "However big you feel, I love you louder. That's a deal you can't talk me out of."
+      ]
     ]
   }
 ]

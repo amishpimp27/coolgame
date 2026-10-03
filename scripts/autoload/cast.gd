@@ -79,11 +79,17 @@ func _normalise(c: Dictionary) -> void:
 	c["active_periods"] = c.get("active_periods", [0, 1, 2, 3, 4])
 	c["tiers"] = c.get("tiers", [])
 	c["events"] = c.get("events", [])
+	# The main character's scripted (non-interactive) lines: one array of lines
+	# per affection tier. Picked as the opening of each chat exchange.
+	c["player"] = c.get("player", [[], [], [], []])
 	if not c.has("encounter") or typeof(c["encounter"]) != TYPE_ARRAY:
 		c["encounter"] = ["She almost walks straight into you."]
-	# Guarantee the four tier buckets exist even if the file was thin.
+	# Guarantee every conversation bucket exists even if the file was thin.
+	# The four base keys are the SUCCESS lines; the _neutral/_fail variants feed
+	# the corresponding bad roll outcomes.
 	for t: Dictionary in c["tiers"]:
-		for key: String in ["idle", "flirt", "compliment", "lore"]:
+		for key: String in ["idle", "flirt", "compliment", "lore",
+				"idle_neutral", "flirt_neutral", "flirt_fail", "compliment_fail"]:
 			if typeof(t.get(key, null)) != TYPE_ARRAY or (t[key] as Array).is_empty():
 				t[key] = ["..."]
 
@@ -153,6 +159,52 @@ func pick_encounter(id: String) -> String:
 	if pool.is_empty():
 		return "She nearly walks straight into you."
 	return str(pool[randi() % pool.size()])
+
+
+## Maps a chat option + roll outcome to the tier's line bucket and returns a
+## random line from it. Fallback chain protects against a thin file.
+func pick_outcome(id: String, category: String, outcome: String, affection_value: int) -> String:
+	var key: String
+	match category:
+		"chat":
+			key = "idle" if outcome == "success" else "idle_neutral"
+		"flirt":
+			match outcome:
+				"success":
+					key = "flirt"
+				"neutral":
+					key = "flirt_neutral"
+				_:
+					key = "flirt_fail"
+		"compliment":
+			key = "compliment" if outcome == "success" else "compliment_fail"
+		"ask":
+			key = "lore"
+		_:
+			key = "idle"
+	var bucket := tier_bucket(id, affection_value)
+	var pool: Array = bucket.get(key, [])
+	if pool.is_empty():
+		# Fall back to the success flavour, then to anything.
+		for alt: String in [key, "idle", "flirt", "compliment", "lore"]:
+			pool = bucket.get(alt, [])
+			if not pool.is_empty():
+				break
+	if pool.is_empty():
+		return "..."
+	return str(pool[randi() % pool.size()])
+
+
+## A scripted (non-interactive) line from the main character toward this girl,
+## indexed by affection tier. This is Yuuji's opening line of a chat exchange.
+func player_line(id: String, tier_index: int) -> String:
+	var lines: Array = get_char(id).get("player", [[], [], [], []])
+	if lines.is_empty():
+		return ""
+	var bucket: Array = lines[clampi(tier_index, 0, lines.size() - 1)]
+	if bucket.is_empty():
+		return ""
+	return str(bucket[randi() % bucket.size()])
 
 
 ## Characters who are in `area_id` right now, in stable cast order.
