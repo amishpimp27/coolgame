@@ -917,7 +917,14 @@
         ]
       }
     ],
-    "meet": "A pale shimmer gathers at the end of the dark corridor — you catch a girl-shaped glow watching you, almost shyly, as though she's testing whether this new face is real or just another trick of the night."
+    "meet": "A pale shimmer gathers at the end of the dark corridor — you catch a girl-shaped glow watching you, almost shyly, as though she's testing whether this new face is real or just another trick of the night.",
+    "reveal": {
+      "text": "You've lingered in her late, shivery corridor long enough that one evening she goes still, and the cold eases. 'I've been a ghost so long I can taste the difference between kinds of warmth,' she says, almost thoughtful, 'and yours has never matched any girl's that walks these halls. It doesn't trail scent the way a daughter's does. Hold still, because I think I finally understand. Are you a boy?'",
+      "no_text": "No, I'm not a boy.",
+      "no_reply": "Her frost gathers at the sill, but her voice softens. 'You wear that lie better than this old gown, little flame, but I've had a hundred years to learn how a girl lies, and you don't. Be sure of this: I would keep a secret as easily as I keep this cold. But liar to ghost sits worse than any winter.'",
+      "yes_text": "Yes, I am a boy.",
+      "yes_reply": "A long, impossible warmth flickers behind her eyes. 'A boy — in this school of a hundred daughters, and he chose to be honest with a dead girl. Then I will hold your secret closer than I hold my own rest. You have my word, and a ghost's word outlasts stone.'"
+    }
   },
   {
     "id": "moira",
@@ -1837,7 +1844,14 @@
         ]
       }
     ],
-    "meet": "A warm, wobbling shape pops out of a dorm doorway and stops dead, its half-formed face visibly remaking itself mid-greeting as it takes stock of the new student who's wandered onto its stretch of hall."
+    "meet": "A warm, wobbling shape pops out of a dorm doorway and stops dead, its half-formed face visibly remaking itself mid-greeting as it takes stock of the new student who's wandered onto its stretch of hall.",
+    "reveal": {
+      "text": "She's squished you in the squidgiest, gooiest embrace of the day, and then she goes quiet and lets you slowly settle. 'Interesting,' she says to the ceiling, very scientific. 'I absorb a thousand little signals a day, and you do not read like any of the girls. Your shoulders, your voice, the way you don't flinch when I splorch. I have run the goo-math, and it returns one answer. Are you a boy?'",
+      "no_text": "No, I'm not a boy.",
+      "no_reply": "She bubbles for a long moment, then gives a grand, accepting wobble. 'The goo is rarely wrong, and it reads a boy in you loud and clear. But I am a professional absorber of secrets, and I can keep this one swelling warm inside me forever. You may be a liar now, but you are a liar I like.'",
+      "yes_text": "Yes, I am a boy.",
+      "yes_reply": "She lets out a soft, delighted gleep and squeezes you once more, careful not to squish. 'A BOY! Oh, this changes everything about lunchtimes. I have never once squished a boy, and now my entire week is a win. Your secret is goo-safe — locked in the squishiest vault on campus.'"
+    }
   },
   {
     "id": "nyra",
@@ -2757,7 +2771,14 @@
         ]
       }
     ],
-    "meet": "A lean wolf-girl cuts across your path in the gym and halts, ears swiveling toward you, quietly working a scent she's never caught in this school before — deciding, before she speaks, whether it belongs or not."
+    "meet": "A lean wolf-girl cuts across your path in the gym and halts, ears swiveling toward you, quietly working a scent she's never caught in this school before — deciding, before she speaks, whether it belongs or not.",
+    "reveal": {
+      "text": "She's been racing you around the track every afternoon, and today she slows to a walk beside you, ears swiveling. 'I have run beside every girl on this team, and I know the rhythm of their hearts when I'm closing in,' she says, low and pleased. 'Yours beats like a drummer — like nothing I've matched at the school gate. I think you already know what I've scented out. Are you a boy?'",
+      "no_text": "No, I'm not a boy.",
+      "no_reply": "Her tail flicks once, and she laughs, not unkind. 'A wolf knows better than to argue with a good scent, and yours is the best one on the track. But I like a packmate who trusts me, so here's my howl: if you're not a boy, you may keep it. But I know what I smell, and you owe me an honest run someday.'",
+      "yes_text": "Yes, I am a boy.",
+      "yes_reply": "She throws her head back and lets out a short, thrilled howl. 'I knew it! A boy on my track, and he finally says so. This is my best catch of the year. Your secret is a bone I will bury where no one finds it — and I'll race you to wherever it's hidden, winner's honor.'"
+    }
   },
   {
     "id": "krista",
@@ -3677,7 +3698,14 @@
         ]
       }
     ],
-    "meet": "A cold current cuts through the warm hallway as Krista steps out of the shadow of the west corridor, one pale hand raised as though parting a curtain of darkness. Her eyes sweep you once, head to toe, filing you away under a category she hasn't named yet, then a slow, practiced smile curves her lips. 'A loose new face in my territory and not a single warning could be bothered? The night grows interesting.'"
+    "meet": "A cold current cuts through the warm hallway as Krista steps out of the shadow of the west corridor, one pale hand raised as though parting a curtain of darkness. Her eyes sweep you once, head to toe, filing you away under a category she hasn't named yet, then a slow, practiced smile curves her lips. 'A loose new face in my territory and not a single warning could be bothered? The night grows interesting.'",
+    "reveal": {
+      "text": "She's been observing you all term with theatrical interest, and tonight she lowers her famously sharp gaze and lets her usual flourish drop. 'I have catalogued every daughter who enters my corridor,' she says, 'and you have never once matched the index. The way you stand, the weight of your steps, the proud little set of your shoulders — none of it belongs to a girl. I confess I have been dying to know. Are you a boy?'",
+      "no_text": "No, I'm not a boy.",
+      "no_reply": "She lets out a low, silky laugh, shadow pooling around her like a cape. 'Denial becomes you, little one — it has a certain gothic flair. But I have spent a lifetime reading faces in the dark, and yours lie no better than my own. I will keep your secret, on one condition: you must never bore me again.'",
+      "yes_text": "Yes, I am a boy.",
+      "yes_reply": "Her eyes flash once with genuine, pleased surprise, and her showiness melts into something almost warm. 'A boy — at last, a mystery worth keeping. How deliciously rare, in a school built of daughters. Your secret is sealed with my finest wax, and I shall guard it as jealously as I guard my reputation.'"
+    }
   },
   {
     "id": "honkers",
@@ -4597,7 +4625,14 @@
         ]
       }
     ],
-    "meet": "The cafeteria's busiest corner erupts in a single HONK before the sound resolves into a girl with a painted grin a mile wide, bouncing on her heels as she locks eyes on you across the lunch queue. She points, delighted, like she's just spotted the one interesting thing in a very boring room. 'A new student. Oh, this is going to be FUN.' The honk goes again, softer, almost a greeting."
+    "meet": "The cafeteria's busiest corner erupts in a single HONK before the sound resolves into a girl with a painted grin a mile wide, bouncing on her heels as she locks eyes on you across the lunch queue. She points, delighted, like she's just spotted the one interesting thing in a very boring room. 'A new student. Oh, this is going to be FUN.' The honk goes again, softer, almost a greeting.",
+    "reveal": {
+      "text": "She's been springing whoopee cushions on you for weeks, and eventually she catches you mid-honk with a look of sudden, dawning glee. 'Hold on. Hold on. You never react right when I honk — not like any girl in this whole cafeteria. You brace like you've SEEN a whoopee cushion before.' She narrows her eyes, delighted and scheming. 'I've got a nose for it. Are you a boy?'",
+      "no_text": "No, I'm not a boy.",
+      "no_reply": "She honks the cushion right at your feet with a slow, wicked grin. 'A liar in a clown school, now that's comedy gold. But you know what? I love a good gag, and keeping your secret is the best prank on the whole campus. As long as you laugh when I spring it, we're partners.'",
+      "yes_text": "Yes, I am a boy.",
+      "yes_reply": "She does a delighted, rubbery cartwheel and honks the cushion in triumph. 'A BOY! The rarest guest in Monster Girl College, and he sits at MY table! Oh, you and I are going to cause SO much trouble. Your secret? Buried under a hundred whoopee cushions — nobody's ever digging it up.'"
+    }
   },
   {
     "id": "squidney",
@@ -5517,6 +5552,13 @@
         ]
       }
     ],
-    "meet": "The fountain tosses a small, careful wave as an enormous shape uncoils from behind it — tentacles, many of them, scrambling apologetically out of your way while a shy, blushing face emerges over the water's edge. Her voice carries across the courtyard like soft water she's trying not to spill. 'Oh! Oh, hello — I didn't mean to loom. You're the new student, right? I was going to say hi properly, but...' She gestures at the tangled muddle of limbs, laughing a watery, embarrassed laugh."
+    "meet": "The fountain tosses a small, careful wave as an enormous shape uncoils from behind it — tentacles, many of them, scrambling apologetically out of your way while a shy, blushing face emerges over the water's edge. Her voice carries across the courtyard like soft water she's trying not to spill. 'Oh! Oh, hello — I didn't mean to loom. You're the new student, right? I was going to say hi properly, but...' She gestures at the tangled muddle of limbs, laughing a watery, embarrassed laugh.",
+    "reveal": {
+      "text": "She's been gently wrapping you in tentacle-y warmth by the fountain, and one day she lets you go and goes very, very still, ink swirling in surprise. 'Wait. Waitwaitwait. I have hugged EVERY girl at this school,' she says, her voice hitching a little, 'and your shoulders move different. Your voice is lower. You smell like the ocean when no one else does. Oh no. Oh no, I think I finally see it. Are you a boy?'",
+      "no_text": "No, I'm not a boy.",
+      "no_reply": "Her tentacles droop a little, but she rallies with a watery smile. 'I'm not sure you're being honest, and among kraken that's a big deal. But I like you anyway — gooey-warm and weird in all the right ways. I'll keep your secret safe under the fountain, where I keep everything lovely.'",
+      "yes_text": "Yes, I am a boy.",
+      "yes_reply": "A little jet of ink shoots out in sheer delight. 'A boy!' she squeaks, wrapping you in an extra-gentle hug. 'I've never hugged a boy! Oh, this is the best secret the fountain has ever kept. It's mine now, all locked in my suction cups, and I won't let it go for anything.'"
+    }
   }
 ]

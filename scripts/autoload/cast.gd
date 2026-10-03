@@ -80,6 +80,7 @@ func _normalise(c: Dictionary) -> void:
 	c["active_periods"] = c.get("active_periods", [0, 1, 2, 3, 4])
 	c["tiers"] = c.get("tiers", [])
 	c["events"] = c.get("events", [])
+	c["reveal"] = c.get("reveal", {})
 	# The main character's scripted (non-interactive) opening lines, keyed by the
 	# dialogue option, per affection tier:
 	#   player = [ tier0 = {chat:[], flirt:[], compliment:[], ask:[]}, ... ] (4 tiers)

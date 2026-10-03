@@ -917,7 +917,14 @@
         ]
       }
     ],
-    "meet": "In a far corner of the library, half-hidden behind a tall shelf, a quiet figure pauses mid-thread, one forelimb frozen over an open ledger. Eight patient eyes lift, take you in, and lower again with the calm of someone who has been expecting company for a while."
+    "meet": "In a far corner of the library, half-hidden behind a tall shelf, a quiet figure pauses mid-thread, one forelimb frozen over an open ledger. Eight patient eyes lift, take you in, and lower again with the calm of someone who has been expecting company for a while.",
+    "reveal": {
+      "text": "She's been cataloguing you in her corner of the library all term, and finally she lowers her reading glass with a series of precise little clicks. 'I collect data the way my kin collect flies, and I have measured you against every profile in this school's archive,' she says. 'You fail the index at exactly one point — where the matrix says \"girl,\" your margins read otherwise. My curiosity is thoroughly snared. Are you a boy?'",
+      "no_text": "No, I'm not a boy.",
+      "no_reply": "She folds one leg pair and gives a soft, knowing chitter. 'A denial entered into the ledger, recorded. But my web tells no lies, and it has already caught the true shape of you. I am a collector of secrets as much as specimens, and I will press yours between the pages of my fondest log — forever.'",
+      "yes_text": "Yes, I am a boy.",
+      "yes_reply": "She makes a pleased little hum and sets down her glass, eight eyes gleaming. 'A boy, classified at last — the rarest specimen this archive has ever held. I will catalogue you with the greatest care, and your secret shall be wound in my strongest silk, deeper than any shelf.'"
+    }
   },
   {
     "id": "zorp",
@@ -1837,7 +1844,14 @@
         ]
       }
     ],
-    "meet": "On the wide rooftop, a small figure stands perfectly still, three-fingered hands clasped, gazing down at the courtyard with the reverent stillness of a surveyor. As you take the final step through the door, she turns, and a translator device hums softly to life between you."
+    "meet": "On the wide rooftop, a small figure stands perfectly still, three-fingered hands clasped, gazing down at the courtyard with the reverent stillness of a surveyor. As you take the final step through the door, she turns, and a translator device hums softly to life between you.",
+    "reveal": {
+      "text": "She's been studying you with formal, analytical intensity while sitting on a bench you thought was empty, and after a long hum she straightens into a very proper posture. 'I have cross-referenced your spectral signature against the school's declared student body,' she says, 'and it returns zero matches in the expected range. This is a notable anomaly. I would like to resolve it. By your region's terminology — are you a boy?'",
+      "no_text": "No, I'm not a boy.",
+      "no_reply": "She blinks one extra eye, processing. 'The data disagrees with you, but I am a being of records and respect. I shall log your denial, and also log that I do not believe it. Your secret is statistically interesting either way — and I am very fond of interesting statistics. It stays aboard my vessel.'",
+      "yes_text": "Yes, I am a boy.",
+      "yes_reply": "Her posture loosens into something warm and almost delighted. 'Confirmed. A boy — a delightful deviation from the school's uniform data set. I will flag within my own files that you are easily the most interesting record on this campus, and that flag will never be shown to anyone else.'"
+    }
   },
   {
     "id": "kealoha",
@@ -2757,7 +2771,14 @@
         ]
       }
     ],
-    "meet": "A big laugh cuts across the cafeteria before you even spot her—a shark girl sprawled across the best sunlit table, one fin flicking, grinning at nothing in particular. She catches you hovering by the trays, and her whole face lights up as she waves you over like you're already old friends."
+    "meet": "A big laugh cuts across the cafeteria before you even spot her—a shark girl sprawled across the best sunlit table, one fin flicking, grinning at nothing in particular. She catches you hovering by the trays, and her whole face lights up as she waves you over like you're already old friends.",
+    "reveal": {
+      "text": "She's been sitting beside you at the edge of the fountain, sharing mangoes and surf stories, and one golden afternoon she turns to you mid-bite and goes slowly still. 'You know, brah,' she says, dropping into her warmest voice, 'I've paddled out with every girl on this beach, and you ride the same wave different. You don't shriek, you don't post-up the same, you just... hang. Like the ocean's been your spot all along. I think I finally got it. Are you a boy?'",
+      "no_text": "No, I'm not a boy.",
+      "no_reply": "She gives you a long, easy grin and bumps your shoulder. 'Okay, brah, I hear you. But the tide knows better than I do, and it's been telling me you're a boy all summer. I'm cool with secrets — surf and sand keep plenty. Just know I've got your back no matter what.'",
+      "yes_text": "Yes, I am a boy.",
+      "yes_reply": "Her grin goes full sunrise and she holds up a hand for a mighty high-five. 'That's it! A boy who hangs with the best surfer in the school! I knew there was a reason you felt like my favorite wave. Your secret? I'll bury it deeper than any sandbar, and we surf on together.'"
+    }
   },
   {
     "id": "valerie",
@@ -3677,7 +3698,14 @@
         ]
       }
     ],
-    "meet": "A new face in the council wing never slips past Valerie. The sharpest demon on the student council pauses mid-stamp over her ledger, arches a slim dark brow, and lets one corner of her mouth curl as she sizes you up from behind the paperwork."
+    "meet": "A new face in the council wing never slips past Valerie. The sharpest demon on the student council pauses mid-stamp over her ledger, arches a slim dark brow, and lets one corner of her mouth curl as she sizes you up from behind the paperwork.",
+    "reveal": {
+      "text": "She's been bantering with you on the quad, firelight dancing in her eyes, and one day she leans in close with a slow, pleased smirk. 'I've negotiated every contract in this school, sweet thing, and I read souls the way others read fine print,' she says. 'Yours has a signature I've never seen in a daughter's hands. Call it a demon's instinct. Are you a boy?'",
+      "no_text": "No, I'm not a boy.",
+      "no_reply": "She laughs, a low, warm roll of smoke. 'A demon always knows when her mark is lying, darling — it's the one thing we never, ever misjudge. But I'm a generous devil: I'll trade you my silence for a little of your heart, and consider it the best deal you've ever made. A handshake seals it, and my handshake is iron.'",
+      "yes_text": "Yes, I am a boy.",
+      "yes_reply": "Her grin sharpens into something genuinely delighted. 'There it is — the best bargain I've struck all year. A boy, confessed to a demon. I love secrets better than contracts, and I'll keep yours locked up tight as any vault. Consider it signed, sealed, and ours.'"
+    }
   },
   {
     "id": "asteria",
@@ -4597,7 +4625,14 @@
         ]
       }
     ],
-    "meet": "The gym doors sigh shut behind you, and somewhere among the weight racks a pair of cow ears pricks upright. Asteria straightens from her stretches, all too aware of how much space she takes up even at rest, and offers the new face a careful, gentle smile."
+    "meet": "The gym doors sigh shut behind you, and somewhere among the weight racks a pair of cow ears pricks upright. Asteria straightens from her stretches, all too aware of how much space she takes up even at rest, and offers the new face a careful, gentle smile.",
+    "reveal": {
+      "text": "She's been your gentle, protective giant all term, carrying your bag and watching the herd for you, and one quiet evening by the stables she goes still and turns to you with soft, honest eyes. 'I have strong instincts for who is part of my herd, little one,' she says, her voice low and kind, 'and you have never once felt like a sister to me. Not the way the others do. I have been too careful not to hurt you to look properly until now. Are you a boy?'",
+      "no_text": "No, I'm not a boy.",
+      "no_reply": "She gives a slow, patient nod, brow furrowing with care, not anger. 'Then I will believe you, because I believe in me being wrong more than I believe in you lying. But know this, little one: whether you are a brother or a secret, you are still my herd, and nothing — not even the truth — takes you out of that. I guard you all the same.'",
+      "yes_text": "Yes, I am a boy.",
+      "yes_reply": "A deep, rumbling warmth fills her voice, and she kneels to meet your eyes, her huge hand impossibly gentle. 'A boy. Then you are the bravest, most precious secret I have ever been trusted with, and I will guard you with the same strength I would a newborn calf. You are family now, little one. Forever.'"
+    }
   },
   {
     "id": "emilia",
@@ -5517,6 +5552,13 @@
         ]
       }
     ],
-    "meet": "The dusk wing's longest hallway catches a new arrival, and a soft-winged figure perched on the windowsill stirs. Emilia tips her head, taking you in with a slow, warm curiosity that knows exactly what's worth remembering."
+    "meet": "The dusk wing's longest hallway catches a new arrival, and a soft-winged figure perched on the windowsill stirs. Emilia tips her head, taking you in with a slow, warm curiosity that knows exactly what's worth remembering.",
+    "reveal": {
+      "text": "She's been dreaming of you quietly all term, glowing softly in the hallway, and one dream-blue evening she drifts up with a tender, knowing look. 'I visit the dreams of every girl at this school, sweet one,' she says, her voice like velvet and starlight, 'and your dreams have never matched a single one of theirs. They sing a different note — a rarer, braver one. I think my heart has known for ages what my head was too shy to say. Sweet one, are you a boy?'",
+      "no_text": "No, I'm not a boy.",
+      "no_reply": "She gives a soft, gentle laugh, luminous with understanding. 'Oh, darling, in the dream that spirit lives, you were never a daughter. But I am the last person to make anyone tell a truth they are not ready to give. I will warm the dream we share the same, and your secret will sleep safe beside me forever.'",
+      "yes_text": "Yes, I am a boy.",
+      "yes_reply": "Her glow warms to a soft rose, and she presses her hand to yours, eyes shining. 'A boy — the most beautiful dream this school has ever dreamed, and you trusted me enough to say it. Then know this: I would choose you a thousand times before I ever chased another. Your secret is sealed in the sweetest dream I keep, and it is yours, always.'"
+    }
   }
 ]

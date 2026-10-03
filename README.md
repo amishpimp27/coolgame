@@ -56,7 +56,10 @@ Open `project.godot` in Godot 4.7 and press F5, or from a shell:
    Close (60), Lover (85). Higher tiers raise your odds but never guarantee a
    success, so flirting and compliments can still fail at Lover. Crossing a
    threshold queues a bespoke **milestone event** that plays on your next
-   conversation with her. The 85 event is her route ending.
+   conversation with her. The 85 event is her route ending. Hitting **Friend**
+   (affection 30) plays her **boy-reveal cutscene** first — a one-time scene in
+   which she works out that you're a boy — before any milestone: tell her "no"
+   and your suspicion jumps +4, tell her "yes" and she hands you +3 affection.
 4. **Suspicion** rises when a risky roll lands badly. Hit 100 and the enrolment
    form gets read out loud in the staff room: game over. It decays a little
    every night — gossip goes stale.

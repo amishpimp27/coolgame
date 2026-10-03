@@ -285,6 +285,11 @@ func _on_talk(char_id: String) -> void:
 	if not Game.has_met(char_id):
 		_meet(char_id)
 		return
+	# Friend tier: she finally works out you're a boy, once per run.
+	if Game.get_affection(char_id) >= 30 and not Game.is_revealed(char_id) \
+			and not (Cast.get_char(char_id).get("reveal", {})).is_empty():
+		_play_reveal(char_id)
+		return
 	var ev := Cast.pending_event(char_id)
 	if not ev.is_empty():
 		_play_event(char_id, ev)
@@ -313,6 +318,26 @@ func _meet(char_id: String) -> void:
 		{"text": notice},
 		{"text": str(ch.get("greeting", "")), "id": char_id},
 		{"menu": char_id},
+	])
+
+
+## The Friend-tier reveal: she realises you're a boy and asks outright. How you
+## answer costs suspicion or buys affection, and it only ever plays once.
+func _play_reveal(char_id: String) -> void:
+	Game.mark_revealed(char_id)
+	Game.save_game()
+	var rev: Dictionary = Cast.get_char(char_id).get("reveal", {})
+	var opts := [
+		{"char": char_id, "text": str(rev.get("no_text", "No, I'm not a boy.")),
+			"reply": str(rev.get("no_reply", "She narrows her eyes, not entirely convinced.")),
+			"suspicion": 4, "end": true},
+		{"char": char_id, "text": str(rev.get("yes_text", "Yes... I am a boy.")),
+			"reply": str(rev.get("yes_reply", "Her eyes go wide, then warm.")),
+			"affection": 3, "end": true},
+	]
+	vn.open([
+		{"text": str(rev.get("text", "She studies you, and something clicks into place.")), "id": char_id},
+		{"id": char_id, "choices": opts},
 	])
 
 
@@ -881,8 +906,28 @@ func _run_playtest() -> void:
 			"one Just chat cost %d token (%d -> %d)" % [Game.COST_CHAT, tk_before, Game.tokens])
 	_check(world.visible and hud.visible, "the world unlocks again after the scene")
 
-	# 2. the milestone event firing on the next conversation (free, no tokens)
-	Game.add_affection("vilma", 40)
+	# 2. reaching Friend plays the boy-reveal cutscene first (free, no tokens)
+	Game.add_affection("vilma", 57)  # Friend is affection >= 30
+	var rel_guard := 0
+	_on_talk("vilma")
+	await _wait(0.4)
+	_check(vn.is_open(), "the boy-reveal cutscene fires as she reaches Friend")
+	_check(Game.is_revealed("vilma"), "the reveal is marked as seen")
+	var sus_rev := Game.suspicion
+	var chatted_rev := false
+	while vn.is_open() and rel_guard < 80:
+		rel_guard += 1
+		vn.advance()
+		await _wait(0.07)
+		if vn.choice_count() >= 2 and vn.choose(0):
+			await _wait(0.12)
+			break
+	await _close_scene()
+	await _wait(0.5)
+	_check(not vn.is_open(), "the reveal cutscene closes")
+	_check(Game.suspicion >= sus_rev, "the reveal choice applied suspicion")
+
+	# 2b. the milestone event then plays on the following conversation (free, no tokens)
 	_on_talk("vilma")
 	await _wait(0.4)
 	_check(vn.is_open(), "the milestone event plays on the next conversation")

@@ -36,6 +36,7 @@ var affection := {}       # char_id -> int
 var met := {}             # char_id -> true
 var events_seen := {}     # "char_id:min" -> true
 var asked_about := {}     # char_id -> day the "ask about herself" was used
+var revealed := {}        # char_id -> true once the Friend-tier boy reveal has played
 var confessed := ""       # char_id of whoever the run ended on
 var ending_title := ""
 var ending_text := ""
@@ -83,6 +84,7 @@ func reset() -> void:
 	met.clear()
 	events_seen.clear()
 	asked_about.clear()
+	revealed.clear()
 	confessed = ""
 	ending_title = ""
 	ending_text = ""
@@ -169,6 +171,16 @@ func mark_asked(id: String) -> void:
 	asked_about[id] = day
 
 
+## The Friend-tier boy-reveal cutscene: once per character per run.
+func is_revealed(id: String) -> bool:
+	return bool(revealed.get(id, false))
+
+
+func mark_revealed(id: String) -> void:
+	revealed[id] = true
+	stats_changed.emit()
+
+
 # --- clock -----------------------------------------------------------------
 
 func advance_period() -> void:
@@ -212,6 +224,7 @@ func to_dict() -> Dictionary:
 		"met": met,
 		"events_seen": events_seen,
 		"asked_about": asked_about,
+		"revealed": revealed,
 		"confessed": confessed,
 		"ending_title": ending_title,
 		"ending_text": ending_text,
@@ -230,6 +243,7 @@ func from_dict(d: Dictionary) -> void:
 	met = d.get("met", {})
 	events_seen = d.get("events_seen", {})
 	asked_about = d.get("asked_about", {})
+	revealed = d.get("revealed", {})
 	confessed = str(d.get("confessed", ""))
 	ending_title = str(d.get("ending_title", ""))
 	ending_text = str(d.get("ending_text", ""))
