@@ -79,9 +79,15 @@ func _normalise(c: Dictionary) -> void:
 	c["active_periods"] = c.get("active_periods", [0, 1, 2, 3, 4])
 	c["tiers"] = c.get("tiers", [])
 	c["events"] = c.get("events", [])
-	# The main character's scripted (non-interactive) lines: one array of lines
-	# per affection tier. Picked as the opening of each chat exchange.
-	c["player"] = c.get("player", [[], [], [], []])
+	# The main character's scripted (non-interactive) opening lines, keyed by the
+	# dialogue option, per affection tier:
+	#   player = [ tier0 = {chat:[], flirt:[], compliment:[], ask:[]}, ... ] (4 tiers)
+	c["player"] = c.get("player", [
+		{"chat": [], "flirt": [], "compliment": [], "ask": []},
+		{"chat": [], "flirt": [], "compliment": [], "ask": []},
+		{"chat": [], "flirt": [], "compliment": [], "ask": []},
+		{"chat": [], "flirt": [], "compliment": [], "ask": []},
+	])
 	if not c.has("encounter") or typeof(c["encounter"]) != TYPE_ARRAY:
 		c["encounter"] = ["She almost walks straight into you."]
 	# Guarantee every conversation bucket exists even if the file was thin.
@@ -195,16 +201,27 @@ func pick_outcome(id: String, category: String, outcome: String, affection_value
 	return str(pool[randi() % pool.size()])
 
 
-## A scripted (non-interactive) line from the main character toward this girl,
-## indexed by affection tier. This is Yuuji's opening line of a chat exchange.
-func player_line(id: String, tier_index: int) -> String:
-	var lines: Array = get_char(id).get("player", [[], [], [], []])
-	if lines.is_empty():
+## A scripted (non-interactive) line from the main character toward this girl at
+## the given tier, for the given dialogue option. This is Yuuji's opening line of
+## a chat exchange, chosen to pair with the girl's response in that category.
+func player_line(id: String, tier_index: int, category: String) -> String:
+	var tiers: Array = get_char(id).get("player", [])
+	if tiers.is_empty():
 		return ""
-	var bucket: Array = lines[clampi(tier_index, 0, lines.size() - 1)]
-	if bucket.is_empty():
+	var bucket: Variant = tiers[clampi(tier_index, 0, tiers.size() - 1)]
+	var pool: Array = []
+	if typeof(bucket) == TYPE_DICTIONARY:
+		pool = bucket.get(category, [])
+		if pool.is_empty():
+			for alt: String in ["chat", "flirt", "compliment", "ask"]:
+				pool = bucket.get(alt, [])
+				if not pool.is_empty():
+					break
+	elif typeof(bucket) == TYPE_ARRAY:
+		pool = bucket  # legacy flat list
+	if pool.is_empty():
 		return ""
-	return str(bucket[randi() % bucket.size()])
+	return str(pool[randi() % pool.size()])
 
 
 ## Characters who are in `area_id` right now, in stable cast order.

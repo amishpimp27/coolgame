@@ -48,8 +48,9 @@ Open `project.godot` in Godot 4.7 and press F5, or from a shell:
    *Ask about herself*, *Leave*. Every topic is a **roll** whose odds improve
    as she warms up — success, a neutral fizzle, or (for the risky ones) a
    failure that costs suspicion. Each exchange is a short scripted
-   back-and-forth: the boy opens with one of his tier-appropriate lines and she
-   answers according to how the roll landed.
+   back-and-forth: the boy opens with a line matched to the topic he picked for
+   his current tier (small talk, a compliment, a flirt, or a question about
+   her), and she answers according to how the roll landed.
 3. **Affection** climbs 0→100 across four tiers — Stranger (0), Friend (30),
    Close (60), Lover (85). Higher tiers raise your odds but never guarantee a
    success, so flirting and compliments can still fail at Lover. Crossing a

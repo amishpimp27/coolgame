@@ -625,14 +625,18 @@ func _run_selftest() -> void:
 			for key: String in spec:
 				var n := (t.get(key, []) as Array).size()
 				_check(n == spec[key], "%s tier %d: %s == %d (got %d)" % [id, int(t.get("min", 0)), key, spec[key], n])
-		# The main character's scripted lines: 5 per affection tier.
+		# The main character's scripted lines: a dict of option pools per tier.
 		var player: Array = c.get("player", [])
 		_check(player.size() == 4, "%s has 4 player-line tiers (%d)" % [id, player.size()])
+		var mc_spec := {"chat": 4, "flirt": 3, "compliment": 4, "ask": 2}
 		for t in player.size():
-			var lines: Array = player[t]
-			_check(lines.size() >= 5, "%s player lines at tier %d >= 5 (got %d)" % [id, t, lines.size()])
+			var tier_pool: Dictionary = player[t]
+			for opt: String in mc_spec:
+				var n := (tier_pool.get(opt, []) as Array).size()
+				_check(n >= mc_spec[opt], "%s player %s at tier %d >= %d (got %d)" % [id, opt, t, mc_spec[opt], n])
 		# Outcome + player line lookups never come back empty at any tier.
-		_check(not Cast.player_line(id, 0).is_empty(), "%s player_line tier 0 non-empty" % id)
+		for opt in ["chat", "flirt", "compliment", "ask"]:
+			_check(not Cast.player_line(id, 0, opt).is_empty(), "%s player_line %s tier 0 non-empty" % [id, opt])
 		for outcome_cat: Array in [["chat", "success"], ["chat", "neutral"],
 				["flirt", "success"], ["flirt", "neutral"], ["flirt", "fail"],
 				["compliment", "success"], ["compliment", "fail"], ["ask", "success"]]:

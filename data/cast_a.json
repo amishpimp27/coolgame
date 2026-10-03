@@ -296,34 +296,98 @@
       }
     ],
     "player": [
-      [
-        "Um, hi. Sorry to walk through your hallway this late. I heard even ghosts can't sleep some nights.",
-        "So you're the one they whisper about. That's kind of amazing, honestly. I'm Yuuji.",
-        "I brought tea. I know you can't drink it. I thought maybe you'd like to watch the steam rise with me.",
-        "Sorry, I'm not usually this bad at talking to girls. It's just — you're not usually translucent.",
-        "I don't know why my feet keep landing in this corridor. I think they decided before I did."
-      ],
-      [
-        "The other girls think you're scary. They're wrong. You told me about the prank, remember? That took guts.",
-        "You should prank me sometime. I promise I'll scream properly and play along this time.",
-        "Do ghosts get bored at night? Because I could pull up a chair and we could both just exist here.",
-        "You said the cold keeps you company. I could bring my jacket next time, so the cold isn't alone.",
-        "You laughed at my joke. I'm writing that down as my biggest win at this school."
-      ],
-      [
-        "Stand a little closer. You can't catch my warmth, but I can be warm toward you — that's something.",
-        "Some nights I almost forget you're not alive and I start to ask about tomorrow. I'm sorry. Please stay.",
-        "You said cold is company. I'd rather be the warmth than one of these walls, if you'd let me.",
-        "Tell me again about the day you were awake. I want to keep it for you when the nights go long.",
-        "Hey. Being near you feels like holding something precious. You don't have to be alive to be that."
-      ],
-      [
-        "If I could bleed warmth for you, I would. You'd be the only one I'd ever give it to.",
-        "They call it haunting. I'd call it waiting — for the only steps that make the floor feel warm.",
-        "You're the first warm thing I've stood beside in a hundred years. I don't want to forget how that feels.",
-        "I love the way you try to warm my hands. Even if they stay cold, I'll keep reaching for yours.",
-        "Stay. That's all I'd ever ask — keep being the warm spot in my long, cold night."
-      ]
+      {
+        "chat": [
+          "Um… hey. You're Vilma, right? Sorry, I didn't mean to walk through you or anything.",
+          "It's quiet down here tonight. Kind of nice to have someone else around, even if you are… well, you.",
+          "Do you ever get tired of this hallway? I'd bet you've memorized every crack in the ceiling.",
+          "Sorry if I'm staring. It's just weird seeing someone glow like that in the dark."
+        ],
+        "flirt": [
+          "You keep the whole corridor cold, but your voice is… warm, somehow. That's nice.",
+          "If I stood here with you long enough, would you start feeling like the living room?",
+          "I should grab a jacket. Though honestly, I don't mind the shiver when you're near."
+        ],
+        "compliment": [
+          "Your hair looks like light when you move. I can't really describe it, but it's pretty.",
+          "You have this soft glow tonight. It's the nicest thing in this hallway.",
+          "The way you drift, you almost look like you're dancing. It suits you.",
+          "You're more… real than any ghost I imagined. In a good way."
+        ],
+        "ask": [
+          "Can I ask something weird? What's it like, being on the other side of, you know, life?",
+          "Did you like this school when you were… here? Properly here, I mean."
+        ]
+      },
+      {
+        "chat": [
+          "Corridor again, Vilma? You're a creature of habit. I respect it.",
+          "Did you prank the dorm again? I heard laughing from three rooms down.",
+          "You know, for a ghost you're terrible at being spooky. That's a compliment.",
+          "Walk with me? I promise I won't open any doors you're leaning on."
+        ],
+        "flirt": [
+          "Some nights I come looking for you on purpose. The cold's worth it.",
+          "If warmth is what you're after, I've got plenty to spare. Just saying.",
+          "You haunt this corridor, but really you've haunted my head all day."
+        ],
+        "compliment": [
+          "The way the moonlight goes through you is actually kind of beautiful.",
+          "You've got the most peaceful face when you're just watching people.",
+          "I like your laugh. It's the one warm thing around here.",
+          "You wear melancholy like a pretty scarf. I'd hug it off you if I could."
+        ],
+        "ask": [
+          "What was the best day you remember, from when you were alive?",
+          "If you could feel things again, what's the first thing you'd want to?"
+        ]
+      },
+      {
+        "chat": [
+          "I saved you a spot by the light. The warm spot. Come sit.",
+          "You looked far away tonight. Come back. I'm right here.",
+          "I got you a scarf nobody can wear, but it's the thought. You know.",
+          "Tell me if I'm imagining it, but you seem closer to solid lately. I hope it's me."
+        ],
+        "flirt": [
+          "I'd give you my body heat if I could bottle it. Every degree, yours.",
+          "Come a little closer. I can almost feel you when you're this near.",
+          "If I could hold you, I'd never let the cold have you again."
+        ],
+        "compliment": [
+          "There's light behind your eyes now. I don't care what anyone says — you're alive in there.",
+          "I love the little ache in your voice when you talk about wanting warmth. It's so you.",
+          "You're the most beautiful thing I've ever seen, and you're not even solid.",
+          "When you smile for real, the whole corridor warms up. I know it."
+        ],
+        "ask": [
+          "Would you still want me, if you were flesh and blood again? Honest.",
+          "What do you want me to feel for you, besides everything?"
+        ]
+      },
+      {
+        "chat": [
+          "This corridor is home now, because it's where you are. That's all — nothing else.",
+          "I brought my warmest blanket and I'm not leaving 'til you're satisfied.",
+          "Whatever it takes to reach into your cold little world, I'm going. Count on it.",
+          "You're my reason to walk this hallway every night. Never doubt that."
+        ],
+        "flirt": [
+          "Forever is a long time, but I'll spend every bit of it trying to keep you warm.",
+          "I love you like you're the only real thing left, and everything else is the ghost.",
+          "Marry me under moonlight. I'll love you past every wall between worlds."
+        ],
+        "compliment": [
+          "Your glow is my stars now. I don't look at the sky anymore.",
+          "Every time you cry I'd trade my own warmth to dry you, even though I can't.",
+          "You're the gentlest soul I've ever known, and I'll protect that kindness with my life.",
+          "I'd give up solid ground just to feel you once, solid in my arms."
+        ],
+        "ask": [
+          "If there's a way to bring you back, will you let me carry you there?",
+          "Will you stay, Vilma? Stay with me, and be my ghost, my heart, my everything?"
+        ]
+      }
     ]
   },
   {
@@ -623,34 +687,98 @@
       }
     ],
     "player": [
-      [
-        "Uh, sorry — I didn't mean to trip over your bucket. Are you okay in there?",
-        "You're the puddle everyone calls the warmest thing in the dorm. Hi, I'm Yuuji.",
-        "I, um, brought you a little cup of water? I read that slimes like moisture. Sorry if it's weird.",
-        "You jiggle when you talk. That's way friendlier than I expected. I like you.",
-        "Do you want to sit with me at lunch? I mean — if a bucket's not your only seat."
-      ],
-      [
-        "You're literally the happiest thing I've met. Your whole body does a little shimmy when you're excited.",
-        "I saved you the warm spot on the bench. I've seen you edge toward it. Go on.",
-        "Okay, but when you say 'squish' with that voice, I have to believe you mean it as a hug.",
-        "C'mon, do the thing where you ripple when you laugh. Best thing on campus.",
-        "You can borrow my hoodie to hold. I know you like collecting warm textures."
-      ],
-      [
-        "You're my favorite kind of warmth — the kind that doesn't ask for anything back.",
-        "When you're low and droopy, come find me. I'll be your sun-warmed step.",
-        "I don't mind if your goop messes up a sleeve or two. It's just proof you were here.",
-        "Hey. You're not just warm. You're kind, and that's warmer.",
-        "Sit on my shoulder a minute. I like when you glow like that just from being near me."
-      ],
-      [
-        "I'd hold you all night if I could. You deserve to be kept somewhere warm.",
-        "Every puddle in me wants to be yours. I think I've been heading for you all along.",
-        "If loving you had a temperature, you'd be exactly it. I want to live in that.",
-        "You melt toward me and I catch you, every time. Don't ever stop edging closer.",
-        "I love you like a warm step loves the puddle that keeps coming back to it."
-      ]
+      {
+        "chat": [
+          "Oh — hey. You're the slime girl, right? Sorry, you're faster than you look.",
+          "You always moving like that? It's kind of hypnotic, actually.",
+          "Do you… feel things through all that? Like, can you tell I'm awkward right now?",
+          "That bucket's your spot, huh? I'll fix you a proper chair tomorrow."
+        ],
+        "flirt": [
+          "You feel warm just being near. I bet a hug from you would fix my whole week.",
+          "Careful, bouncing like that. Someone's gonna fall for you — probably me.",
+          "I've never met someone this exciting. You make me want to jump around too."
+        ],
+        "compliment": [
+          "You've got this shine that catches the light. Really pretty.",
+          "Your color's beautiful — like sunset in a bucket.",
+          "You're so full of energy, it makes everyone around you smile.",
+          "That glow when you're happy? Cheerier than any lamp on campus."
+        ],
+        "ask": [
+          "So, uh, do you have a favorite food? Or flavor, or… how does eating work for you?",
+          "What's it feel like, being you? If that's not a weird question."
+        ]
+      },
+      {
+        "chat": [
+          "Hey, Moira! Save some of that bounce — I need an energy shot today.",
+          "I brought you a snack. Well, I brought it to the bucket. Same thing.",
+          "You want the sunny spot by the window? I know you love it warm.",
+          "Race you to the gate. No fair turning into a puddle to slip under the fence."
+        ],
+        "flirt": [
+          "You give the best hugs in school, and I plan to collect on that, you know.",
+          "If you melted on me, I wouldn't even mind. More Moira near me.",
+          "Warm, wobbly, and way too cute. That's unfair, Moira."
+        ],
+        "compliment": [
+          "Your laugh bubbles like soda. I could listen all day.",
+          "Every time you wobble past, my day gets ten percent better. It's science.",
+          "You look amazing in the morning light, all golden and glowy.",
+          "You've got this lightness about you that makes heavy days float."
+        ],
+        "ask": [
+          "What makes you happiest? Like, the absolute best happy you can be?",
+          "Do you remember anything from before, or is it all just… you, now?"
+        ]
+      },
+      {
+        "chat": [
+          "Come here, Moira. I've got a warm spot saved just for you on my lap.",
+          "You looked a little flat this morning. Come on, let's pump you back up.",
+          "I found the warmest patch of sun on campus. I'd thought of you.",
+          "Stick by me today. I feel calmer when you're wobbling around."
+        ],
+        "flirt": [
+          "I think about wrapping you up in my arms and just letting you soak in.",
+          "You've taken over this corner, and honestly, the corner's better for it.",
+          "Hug me like you mean it, and I'll be yours the whole day."
+        ],
+        "compliment": [
+          "Your warmth is my favorite temperature now. Nothing else comes close.",
+          "There's a softness in how you move that makes me want to protect you.",
+          "I could drown in your sweetness and call it a happy ending.",
+          "You're the brightest thing in this dorm, Moira. I don't say it lightly."
+        ],
+        "ask": [
+          "Do you dream? And if you do, do I show up in them?",
+          "If you could be anything solid for a day, what would you be?"
+        ]
+      },
+      {
+        "chat": [
+          "Every morning starts the same: I find the warmest place and I wait for you there.",
+          "You're not just a friend, Moira. You're the person who makes me feel real.",
+          "I'd swim through a sea of your mess just to be close. Every time.",
+          "Hold my hand. I want everyone here to know you're mine and I'm yours."
+        ],
+        "flirt": [
+          "I want to be the warmth you're made of, the shape you hold onto.",
+          "If I melt too, at least we'd melt together. That's the whole plan.",
+          "Love you like a sunrise — dependable, warm, and I never want it to end."
+        ],
+        "compliment": [
+          "You're not just beautiful, Moira. You're my whole horizon.",
+          "The world feels soft when I'm with you, and I never want hard days back.",
+          "I'd give you every warm spot on this campus if I could. You deserve them all.",
+          "Yours is the face I carry into every quiet moment, and I wouldn't trade it."
+        ],
+        "ask": [
+          "Will you stay with me forever, even if forever is a little messy?",
+          "If I asked you to be mine — really mine — what would you say?"
+        ]
+      }
     ]
   },
   {
@@ -950,34 +1078,98 @@
       }
     ],
     "player": [
-      [
-        "Hi. You're the one they call the West Track alpha. I was hoping it was you.",
-        "You run so fast it looks like the track is scared of you. I'm Yuuji.",
-        "Um, I brought you water. I didn't want you going dry after that hundred meters. Sorry if that's forward.",
-        "I'm not here to challenge you. Promise. I just think you're impressive.",
-        "You can scent-check me if you want. I figure that's basic manners around here."
-      ],
-      [
-        "You circled me twice before you'd talk to me. I felt like a very approved squirrel.",
-        "Save me a lap? I'll keep pace as long as you go easy on the last stretch.",
-        "You do that little huff-laugh when you're pleased. I've started collecting them.",
-        "I left the faster path open for you. Figured an alpha shouldn't have to dodge bushes.",
-        "You keep me in your sights on the track. Honestly? I kind of like being watched by you."
-      ],
-      [
-        "Run yourself tired beside me, then let me carry you back. I've got you.",
-        "Your pack's lucky, but I'm luckier — you guard me without being asked.",
-        "Lean on me. Even an alpha gets to stop running for a minute.",
-        "I'll hold still whenever you need to be sure I'm here. Always.",
-        "You're not just fast. You're safe. That's why I keep coming back to the track."
-      ],
-      [
-        "Run with me as far as the light goes. I'll keep the pace and keep your side.",
-        "You scent me, you circle me, you claim me. I stopped running from it — I run to it now.",
-        "I'm yours. Say it again in your voice, and I'll guard that word for you.",
-        "When you're tired of being strong, be soft in my arms. I can hold an alpha.",
-        "Every lap of yours comes back to me. I want to be the place you always return to."
-      ]
+      {
+        "chat": [
+          "Whoa — you move fast. Sorry, I wasn't watching where I was going. Nice to meet you.",
+          "You're the one who owns the gym, right? I figured, the way everyone defers to you.",
+          "That's a mean look you've got. Hope it's not aimed at me.",
+          "Your growl gives me the creeps. In a good way? I'll just — go stand over here."
+        ],
+        "flirt": [
+          "I think I'm a little scared of you. Is that weird that it's kind of exciting?",
+          "If I'm honest, I wouldn't mind being caught by you.",
+          "You've got this aura that says don't, and I keep wanting to say yes anyway."
+        ],
+        "compliment": [
+          "You've got a strong presence. People notice when you walk in.",
+          "Your eyes are striking. They watch everything.",
+          "That proud tilt in your shoulders? Kind of majestic, honestly.",
+          "You carry yourself like the top of the pack. It shows."
+        ],
+        "ask": [
+          "Is it true you can smell everything? Like, me being nervous right now?",
+          "What's your favorite thing about being the strongest one here?"
+        ]
+      },
+      {
+        "chat": [
+          "Hey Nyra. Should I start running now, or can we just talk?",
+          "You training again? Save me a spot on the mat — I want to see how it's done.",
+          "I grabbed you a water. Figured you'd need it after that session.",
+          "You've got the whole pack wound up. What's got your tail wagging today?"
+        ],
+        "flirt": [
+          "I feel safe with you around. That's dangerous — it makes me want to stay.",
+          "You could chase me down any time. I'm honestly starting to hope you do.",
+          "I like how you guard your people. Makes me want to be yours."
+        ],
+        "compliment": [
+          "You run like the wind, Nyra. It's actually hard to look away.",
+          "The way you hold your ground? I'm in awe of it.",
+          "You're loyal to your whole pack. That's rare and real.",
+          "Your fur's gorgeous, but it's your fire I can't stop noticing."
+        ],
+        "ask": [
+          "What made you decide to be everyone's protector? Or were you born to it?",
+          "You ever let anyone run beside you? Or is it a solo thing?"
+        ]
+      },
+      {
+        "chat": [
+          "Hey. Come cool down by me a second. You toasted that whole workout.",
+          "I saved you a spot on the bench. The pack can find somewhere else.",
+          "You look tired. Let me carry your bag, just this once. Humor me.",
+          "I like knowing you'll be at the gym. It's my favorite part of the day now."
+        ],
+        "flirt": [
+          "I want to be the one scent you smell first when you come up.",
+          "You've marked this whole campus as yours. Fine. Just leave a little mark on me.",
+          "I'd walk into your den if you asked. Scared, and going anyway."
+        ],
+        "compliment": [
+          "When you guard me, I feel truly safe for once. Thank you.",
+          "You're strong without being cruel. That's the best kind of alpha.",
+          "The way your ears flick when you listen to me? I'm completely gone for it.",
+          "You're all sharp edges outside and I can see the soft you're hiding."
+        ],
+        "ask": [
+          "Do you ever want to stop being in charge, just for a little while?",
+          "What would it take for you to finally trust me completely?"
+        ]
+      },
+      {
+        "chat": [
+          "Run tonight? Or better — run with me. I want to keep pace with you.",
+          "You're my alpha, my shelter, my whole pack. I've never had that before.",
+          "Let me guard you too, Nyra. Even alphas deserve someone watching their back.",
+          "Every instinct I have says stay. And it's talking about you."
+        ],
+        "flirt": [
+          "Mark me, Nyra. I want everyone to smell that I'm yours.",
+          "I'll chase you, be caught by you, run beside you — however you need to love me.",
+          "You claimed this place, this pack, my heart. I've stopped fighting it."
+        ],
+        "compliment": [
+          "You're the most breathtaking force I've ever known, and I'm honored you chose me.",
+          "I'd follow you into any storm. That's what trust in you looks like.",
+          "You protect with your whole soul. There's nothing more beautiful than that.",
+          "In a world of wolves, I chose you. And I'd choose you every single time."
+        ],
+        "ask": [
+          "Will you be mine like I'm yours — pack, den, and forever?",
+          "If I pledged myself to you, would you carry me the same way you carry your own?"
+        ]
+      }
     ]
   },
   {
@@ -1277,34 +1469,98 @@
       }
     ],
     "player": [
-      [
-        "Sorry to break your dramatic silence. I'm Yuuji. I was told the Shaded Corridor has a countess.",
-        "You move like a shadow with a plan. I mean that as a compliment.",
-        "I brought a little jar of something red. Is that rude? Is it too on the nose?",
-        "If you're going to menace me, do it properly. I'd hate to be undramatically dismissed.",
-        "You have that look like you've seen a hundred boring mortals. I'd like to not be one."
-      ],
-      [
-        "You called the moon 'a bored spotlight' last week. I think about that a lot.",
-        "I found a bat asleep in the eaves. I told it you said hello. It approved.",
-        "You're only imperious when the lights are low, you know. I've noticed.",
-        "A shadow just whispered your name to me — or was it the draft? Either way, I'm listening.",
-        "You let me stand in your corridor without theatrics. That's the highest honor you give."
-      ],
-      [
-        "Between the shadows and the moonlight, I keep choosing the shadow you're standing in.",
-        "You don't need my heart for blood. But I'd hand it over anyway, if you wanted.",
-        "I keep your warmest secret — that you're soft. I'll take it to my grave, like a proper acolyte.",
-        "Tell me about forever again. I like hearing it in your voice, like it might actually fit.",
-        "You pretend the cold is your crown. I'll be the warmth you wear beneath it."
-      ],
-      [
-        "Kiss me like you've got eternity to spare. I want to be your favorite immortal moment.",
-        "I would give you a hundred mortal sunsets just to see you lit for one.",
-        "Shadow and all, you're the most alive thing in this school. I love you for it.",
-        "When you say forever like it could be mine, I believe you. Don't stop.",
-        "You were born for the night. I was born to be the warm thing it forgot."
-      ]
+      {
+        "chat": [
+          "Oh—hey. I, um, didn't mean to bother you. This is the shaded corridor and everything, you're probably… busy. I can go.",
+          "Sorry, I'm a little lost. This part of campus is creepy, like, in a good way? If that's a thing? Your call.",
+          "I, uh, wasn't trying to sneak up on you. You're just… the first person I've seen back here in forever. Hi?",
+          "It's, uh, chilly in this hallway on purpose, right? Like the gloom is… a feature. I'm just asking, not complaining."
+        ],
+        "flirt": [
+          "Not gonna lie—the whole 'mysterious girl in the shadows' thing is doing a lot of work on me. That was… meant to be a compliment? Kind of?",
+          "I feel like I should be offering you a rose from a long red coat right now, but all I've got is this juice box and a lot of nerve.",
+          "You can probably see in the dark, which means you definitely saw me blushing just now. Please pretend you didn't."
+        ],
+        "compliment": [
+          "Your hair is really pretty, if that's the right word for something that dark. It catches the light weird, like it's not quite… solid.",
+          "You have very striking eyes. Pale, but intense. I, uh, felt like I should say that out loud instead of just staring.",
+          "The way you move is so quiet. Like everything else is loud and you're the one thing that isn't.",
+          "You carry yourself like you've been around a long time. There's, uh, this weight to you, and I think it's gorgeous."
+        ],
+        "ask": [
+          "How do you, um, handle the whole sun thing around here? Is it, like, a schedule thing, or are covered walkways enough?",
+          "Do you not get lonely down here, being cool and dark and alone all the time? Or is that, um, kind of the point?"
+        ]
+      },
+      {
+        "chat": [
+          "Hey, Krista. This is your hallway, I know—I'm just passing through. Figured I should pay proper respects to the local darkness.",
+          "Every time I walk this corridor I feel like I should bow. You've basically got an empire of shadow back here, huh?",
+          "Got a minute? I was wondering if the bats ever gossip about how the gloomiest girl on campus is secretly the friendliest.",
+          "The light gets weird back here, right? Sunlight just… gives up halfway. I'm starting to think it's you showing off."
+        ],
+        "flirt": [
+          "You know, for the self-declared empress of the shadows, you're way too easy to tease. I think the grandeur's slipping a little.",
+          "Someday I'm going to convince you to come sit in the daylight with me, and the whole campus will faint from the scandal.",
+          "I've got this theory that under all that imperious mystique there's a softness, and I intend to test it very respectfully."
+        ],
+        "compliment": [
+          "Your smile, when you let it out even a little, really is something. It's like watching the night sky do something nice.",
+          "That shade of lipstick on you makes everything else look washed out by comparison. You know that, right?",
+          "I love how deliberate you are. Every move, every word—nothing wasted. It's honestly a little mesmerizing, Krista.",
+          "Your eyes go this gorgeous, impossible shade in low light. I keep trying to catch it and feeling like it was a secret."
+        ],
+        "ask": [
+          "What's the oldest thing you've ever watched happen from the shadows? You've got to have a favorite piece of campus history.",
+          "So what does forever even feel like when you're the one living it? Or is that too heavy a question for a hallway chat?"
+        ]
+      },
+      {
+        "chat": [
+          "There you are. I always know where to find you—the one dark quiet corner the rest of the world forgets. Cheers, Krista.",
+          "I brought the shadows company, since you seem to insist on keeping them. How's your corner of the universe tonight?",
+          "You know, I used to be afraid of dark hallways. Then I found the girl who owns this one, and now it's my favorite part of campus.",
+          "Even the bats look at you with respect. I've decided that's the highest honor a corridor can bestow."
+        ],
+        "flirt": [
+          "If eternity has to be spent with someone, I'm glad I keep finding my way back to your shadows, Krista. Don't read too much into that. Read a little.",
+          "You can play the unapproachable night queen all you like, but I've seen the softness, and I'm hooked on it.",
+          "I think I'd brave any amount of darkness to stand in the one patch of it that's you. That's either very romantic or very stupid. Both, probably."
+        ],
+        "compliment": [
+          "There's a kind of eternal grace in the way you move, Krista. Like you've always been here and always will be, and that's a comfort.",
+          "Even your silhouette is elegant, which feels unfair. Everything about you is composed like a painting.",
+          "I love how your whole posture loosens when we're alone. That's the Kris that no audience gets, and I treasure it.",
+          "Your voice is like velvet and smoke—the kind that makes a person want to stop and just listen to you breathe through a sentence."
+        ],
+        "ask": [
+          "What's the thing you'd want a person to know about you, if you had forever to tell it and only one listener?",
+          "Is there anyone or anything from your long, long story you wish you'd gotten a chance to say goodbye to? I want to know what you carry."
+        ]
+      },
+      {
+        "chat": [
+          "Every night I end up back in your corner of the dark, Krista, and every night it's my favorite part of the whole campus. You're home.",
+          "I don't think of you as a shadow anymore. I think of you as the part of the night that was always waiting for me.",
+          "The bats are jealous, I can tell. The queen of the corridor has gone soft, and they know it's because of me.",
+          "Midnight's the best hour, because it's yours. I made it mine too, just to keep you company in it."
+        ],
+        "flirt": [
+          "If forever is what you're offering, Krista, then I'm not going anywhere. Your dark, your bats, your eternity—I'll take the whole package.",
+          "Every lifetime in the black is worth it if it ends with me beside you. You, of anyone, know what time means—and I'd spend all of mine on you.",
+          "I'd walk into any night, any shadow, any endless dark for you. And I'd do it smiling, because you're the one waiting on the other side."
+        ],
+        "compliment": [
+          "You are the most beautiful thing the dark ever made, and I've stopped pretending otherwise. You're my whole night sky.",
+          "I want the rest of forever spent memorizing every shade of you, Krista. I'll never be done, and I'll never want to be.",
+          "You're not just eternal—you're inevitable. And I've stopped fighting the pull; I just keep falling gladly into you.",
+          "No one's ever loved the darkness before, and you taught me it was never dark here at all. It's just warm and endless, like you."
+        ],
+        "ask": [
+          "If eternity were mine to give, would you spend it with me, Krista? Just me, in all your long, beautiful forever?",
+          "What does your heart want, after so many years of guarding everyone else's shadows? Tell me slow, and I'll listen like it's all I have."
+        ]
+      }
     ]
   },
   {
@@ -1604,34 +1860,98 @@
       }
     ],
     "player": [
-      [
-        "I, uh—your laugh echoed off the lunch trays and made me drop mine. Worth it, honestly.",
-        "You keep a bucket of water like other girls keep a diary. I find that weirdly comforting.",
-        "Sorry, I'm not used to someone telling me they're evil and smiling like it's a compliment.",
-        "Do clowns schedule their strikes, or is it more of a vibe thing? Asking so I can schedule my panic accordingly.",
-        "You're the loudest thing in this cafeteria and I think that means I should say hello."
-      ],
-      [
-        "Your pie-in-the-face routine would've gotten me twice, but your aim's too honest. You telegraph.",
-        "You call it evil. I call it the best seat in the lunch queue, just with a clown filter.",
-        "Keep the honk handy—that girl two trays down could use a jumpscare to wake her up.",
-        "I brought you a real bucket this time, and it's empty. Your move, villain.",
-        "For a self-declared terror of the lunch line, you've got the softest wrists in this whole school."
-      ],
-      [
-        "Your 'evil' never lands anywhere near me, and I've decided that's your one weakness. Good. Keep it.",
-        "Every carnival act has a moment where the mask slips. That's my favorite part of you.",
-        "I saved your seat at the queue. That's love, in lunch-line currency.",
-        "You keep threatening my pie, but you've never once thrown it. Starting to think you'd miss me.",
-        "Your laugh fills the whole room and somehow it's only ever aimed at making me smile."
-      ],
-      [
-        "The evil dissolved on contact just like you said. What's left is just warm, and it's all mine.",
-        "I don't care if you're 'the bad guy' of this cafeteria. You're the best thing in it.",
-        "Between your buckets and my heart, only one of those gets a replay—and it's yours.",
-        "Hold my hand and let your evil melt into mine. I've got plenty of good to lend you.",
-        "For all your masks and buckets and honks, I'd stand in your line forever just to watch your face light up."
-      ]
+      {
+        "chat": [
+          "Uh—hey. You're the clown, right? The, uh—the infamous one. I was warned, so I'm mentally preparing. Okay, I'm ready. Probably.",
+          "On a scale of one to pie-in-the-face, how much trouble am I in? Because you look like you're plotting something and it's a little thrilling.",
+          "So, the whole evil clown gig—you're committing to the bit, then? No shade, it's a strong aesthetic. Very… colorful.",
+          "I, uh, heard the cafeteria's got a legend. They didn't mention it came with honking. This is my first time, go easy?"
+        ],
+        "flirt": [
+          "You've got this whole dangerous-mystery thing that I'm not sure I'm supposed to find charming, but here we are, me smiling.",
+          "If it's evil you're going for, you're losing me, because the mischief in your eyes is way too cute for a villain.",
+          "Careful with the pie, there. You keep threatening me and I might start throwing myself at you instead of ducking."
+        ],
+        "compliment": [
+          "Your makeup is incredible. That whole painted grin is somehow both terrifying and oddly sweet, and I can't stop looking.",
+          "Your outfit's got so much personality, it's like you walked out of a carnival that was too weird for carnivals.",
+          "There's a real spark in your eyes, like you're ready to cause beautiful chaos. It's hard not to admire it.",
+          "That honk is a whole mood, honestly. On a scary scale it's a ten, but on a charisma scale it's a perfect score."
+        ],
+        "ask": [
+          "So, like, what's the deal with the honk? Is that a clown thing, or is that a you thing, or is it a warning system?",
+          "What made you pick clown? Like, of all the ways to be a campus menace, why the pie and the honk?"
+        ]
+      },
+      {
+        "chat": [
+          "HONKS! There she is, the terror of the cafeteria. Please don't pie me before my second coffee. I have plans, Honks.",
+          "Every time I come in here I feel like I should scan for pie projectiles. It's become a whole ritual. You should be proud.",
+          "I've decided the cafeteria's only interesting because you're in it. The food's questionable, but the show is top tier.",
+          "You know, for someone who claims to be pure evil, you're always around when someone needs a laugh. Interesting pattern, Honks."
+        ],
+        "flirt": [
+          "Alright, villain—what's it gonna take to get a truce with you? Because I keep coming back, which is either brave or a really bad idea. I'll take it.",
+          "You are a menace to my peace of mind, Honks, and I genuinely wouldn't have it any other way.",
+          "I've got a theory you're not evil at all, and I'm going to prove it by getting you to smile without the paint. Consider that a challenge."
+        ],
+        "compliment": [
+          "The way you've perfected that chaos—it's a whole art form, Honks. No one does trouble quite as beautifully as you.",
+          "When you commit to a prank, you go all in, and honestly? That passion is kind of gorgeous to watch.",
+          "Your laugh—the real one, the one under the laugh—is my favorite sound in this cafeteria, and I'm not telling a soul I said that.",
+          "You've got this effortless charm even mid-prank, Honks, and I think it's criminal how underrated it is. See what I did there? Criminal. Because you define the term."
+        ],
+        "ask": [
+          "What's the best prank you've ever pulled, the one that still makes you cackle when you remember it? I need the whole story, Honks.",
+          "When the paint comes off and the crowd's gone, what's the real Honks like? I'm actually curious who's under all that mischief."
+        ]
+      },
+      {
+        "chat": [
+          "There's the ringleader of all my best bad ideas. What chaos are we cooking up today, or are we behaving ourselves for once?",
+          "Cafeteria, pie in hand, that gleam in your eye—that's the Honks I've come to know and adore, and I've come to know it well.",
+          "You make this whole corner of campus feel like a carnival that never packs up. I wouldn't trade a second of it.",
+          "I keep a spare shirt in my bag now, just for you. You should know you're the only one I'd plan pie insurance around."
+        ],
+        "flirt": [
+          "You know the bit where I run from you? Total farce. The truth is I'm walking straight into whatever you're gonna do, because doing it together is the point.",
+          "For a self-proclaimed villain, you've got me entirely wrapped. The pie, the honk, the chaos—it's all just you being utterly endearing and I'm done pretending otherwise.",
+          "I think the greatest mischief we could pull is letting everyone know the terror of the cafeteria has a soft heart. But I'll keep your secret if you want."
+        ],
+        "compliment": [
+          "When you drop the act for a second, there's a warmth under all that chaos that I could stare at forever, Honks.",
+          "Your quick little grin when a prank lands perfectly—it's the genuine article, bright as a slice of your carnival. I love catching it.",
+          "You've got this brilliant energy that lights up a room, and no spray-paint grin can hide it. I see the real you every time.",
+          "Your timing is genuinely an art. You read a room faster than anyone I know, and watching you respond to it is a kind of genius."
+        ],
+        "ask": [
+          "What made the 'evil' pionner actually pick up the horn? Because I don't buy pure evil—I buy a reason, and I'd love to hear it, Honks.",
+          "When the carnival's over and it's just us, what do you actually want? I want to know the mischief under the mischief."
+        ]
+      },
+      {
+        "chat": [
+          "Hey, my favorite chaos agent. Save me a corner at lunch so I can plot some good clean trouble with the finest prankster on campus.",
+          "Even the grimcafeteria gets a little brighter the second you walk in, Honks. You're the ringlight of my whole tired day.",
+          "I hope you know you're stuck with me in this circus. I've gone fully off-script for you and I wouldn't draw a line back.",
+          "Every honk's a heartbeat of this weird little world we've built, and I'm, frankly, besotted with the whole thing."
+        ],
+        "flirt": [
+          "If this is what falling for a self-declared villain feels like, then I'm incriminating myself happily. Keep the pies coming, my love, they've got my heart.",
+          "I'd follow you straight through every gag, every prank, every disaster, Honks—because at the end of it is you, and that's the best punchline there is.",
+          "Let the world think we're trouble; they're not wrong, but they don't know the half. The whole is me utterly, giddily yours."
+        ],
+        "compliment": [
+          "You're the brightest thing in this whole madcap campus, Honks, and I don't mean the paint. I mean you—the real, glorious you.",
+          "I've memorized the exact tilt of your mischief, the one that means you're about to be brilliantly, beautifully you. It's my favorite sight.",
+          "All the color in the world couldn't live up to the smile under yours. I'd paint the whole town pie-colored just to watch you light up.",
+          "You turned my quiet little world into a carnival, and I've never been happier to be the fool for you, Honks."
+        ],
+        "ask": [
+          "When the show finally winds down and it's just us in a quiet room—what do you want the rest of our forever to look like, Honks?",
+          "What's the one prank you've never had the nerve to pull? Whatever it is, I'll be the accomplice this time, no running, I promise."
+        ]
+      }
     ]
   },
   {
@@ -1931,34 +2251,98 @@
       }
     ],
     "player": [
-      [
-        "Um—hi. Sorry, I didn't mean to stare. It's just—you're enormous and gentle and I don't know what to do with either.",
-        "Do you—do you wave with all six hands at once, or is that just a special occasion thing?",
-        "I'm not scared of you. I think I'm scared of how not scared I am.",
-        "Your voice is really soft for someone who could probably knock over the cafeteria. I like that.",
-        "I dropped my tray when you said hi. The fountain's probably wondering why there's a ladle in it."
-      ],
-      [
-        "Six hands is perfect for holding four things and still having two to wave with. Showoff.",
-        "You keep apologizing for your tentacles like I'm not the one who keeps reaching for one like a handrail.",
-        "The fountain's your real estate and I keep stealing your spot. Sorry, I'm a squatter with good taste.",
-        "Your ink went sparkly when I said your joke was good. You can't hide that, I saw it.",
-        "I brought extra snacks in case you knock one over while being careful. It's, like, your signature move and I love it."
-      ],
-      [
-        "You'd think a girl with six hands would be hard to miss, but somehow there's only ever one of them I'm looking at.",
-        "Every time you apologize for taking up space, I want to show you how much room you've made in me.",
-        "Your tentacles are so careful with me I almost forget they could crush anything. That's the gentlest thing.",
-        "I know you worry about your size, so I'll say it plain: I've never once wished you were smaller.",
-        "Here's my plan for tonight—you pick the deep place and I'll follow. I trust your currents."
-      ],
-      [
-        "If you're the deep and I'm the tide, then I've already decided which way I'm pulling. Toward you.",
-        "You asked which of the six hands gets to hold mine. All of them. Absolutely all of them, always.",
-        "You made my heartbeat sparkle from ten feet away. Imagine what you do this close.",
-        "The fountain's got nothing on you. You're the whole ocean I didn't know I was aching for.",
-        "However big you feel, I love you louder. That's a deal you can't talk me out of."
-      ]
+      {
+        "chat": [
+          "Oh—hi. Sorry if I got in the way of your, um, waterspray. I should've watched where I was going. You're… you're really big, huh? In a nice way.",
+          "I, uh—the fountain's usually empty this time of day. I didn't mean to interrupt your, um, peaceful soak. Please, don't shrink away on my account.",
+          "Hey. Sorry, I just—I'd like to say hi, if that's okay. You don't have to be scared of me. I'm a lot smaller than you, after all.",
+          "Sorry, sorry—I didn't mean to splash you. Wait, you're the one in the water. I mean I didn't mean to—um, hi. I'm Yuuji."
+        ],
+        "flirt": [
+          "I, um, know you're apologizing for every wave you make, but honestly the shy giant thing is really doing something to me. That's—sorry, a compliment?",
+          "You don't need to be this gentle with someone who's this willing to get splashed, you know. I'm kind of fine with getting hit by a wave of you.",
+          "Every time you say sorry in that soft voice, I just want to tell you you don't have to be. It's sort of the most endearing sound here."
+        ],
+        "compliment": [
+          "You're huge and I think it's beautiful, honestly. The way you move, careful and slow, like the whole fountain belongs just to you.",
+          "Your eyes are really, really gentle. For someone so enormous, everything about you seems kind. I noticed.",
+          "Your coloring is gorgeous—that deep inky blue, like you're made out of calm, deep water. I couldn't stop watching it ripple.",
+          "Even your tentacles move gently, did you know that? Like you make the water around you apologize in advance for being loud."
+        ],
+        "ask": [
+          "Is it, um—is the fountain the ocean to you now, or do you miss the real ocean sometimes? You can tell me, I won't think less of you.",
+          "The ink thing—do they still teach you about it, or is that a secret? I'm just curious about the whole, um, tentacle deal."
+        ]
+      },
+      {
+        "chat": [
+          "Hey, Squidney. Came back to the best spot on campus to see the best view, which is you, not the water. Don't shrink—I mean it nicely.",
+          "Every time I visit the fountain you duck a little lower, and every time I've got to tell you: it's fine. I like you big. I like you here.",
+          "You're the calmest thing on this whole loud campus, Squidney. I come here to breathe, and you're most of the reason it works.",
+          "I waved, did you see me? You were busy apologizing to a passing duck again. Breathe, big friend—it definitely forgives you."
+        ],
+        "flirt": [
+          "For someone with that many arms, you always keep so carefully to yourself. Let me close the distance sometime—I think you'd like the company.",
+          "The way you say sorry in that gentle voice of yours is going to be the death of me, Squidney. Please keep talking to me in it.",
+          "You keep the ocean in check just by being gentle. I'm starting to think 'gentle' is your most dangerous, lovely quality."
+        ],
+        "compliment": [
+          "You've got the most caring eyes I've ever met, Squidney, and I have to say it out loud or I'll burst. They make me feel safe.",
+          "When you uncoil those tentacles slowly, it's like watching something ancient and graceful. I could watch you for hours.",
+          "There's a softness in how you move despite your size that I've never seen replicated. You're a gentle thing of deep water, and it's wonderful.",
+          "Those big gentle eyes of yours could talk anyone out of a running fight. I feel calmer just being near you."
+        ],
+        "ask": [
+          "What does the ocean feel like to you when you miss it, Squidney—is it a sound, or a smell, or something you can't quite name?",
+          "Do you dream about being little, or is 'big and gentle' exactly who you like being? I'm honestly curious about your world."
+        ]
+      },
+      {
+        "chat": [
+          "Hey, my favorite calm of the day. The water's calm, the duck's forgiven you, and I'm over here just glad you're in it. That's all, Squidney.",
+          "I keep showing up at this fountain like it's a habit. It's not the water, Squidney. It's you. You've made this my quiet place.",
+          "You've stopped shrinking when I come by, and honestly, that might be the best compliment you've ever given me.",
+          "Wind and splash today, huh? Even your waves are polite. I love that about you—you're enormous and still the gentlest thing I know."
+        ],
+        "flirt": [
+          "Come a little closer, just enough that I can be part of your orbit. I'd like to stand in the gentle shadow of you and know you chose that.",
+          "You can keep apologizing, but all I hear is you being careful about me, and that, Squidney, is the sweetest devotion I've ever felt.",
+          "I think I've fallen for the way you are in water—all that enormous softness keeping everyone safe. Consider me safely, completely yours."
+        ],
+        "compliment": [
+          "You're a beautiful, tranquil sea, Squidney, and I love that I've been the one to wander into your still waters.",
+          "I could lose myself in the patient, kind way you move. There's so much love carried patiently in those big shoulders of yours.",
+          "When you finally look right at me without flinching, I forget to breathe. Your gentleness is the most magnetic thing I've ever met.",
+          "The way you rest, all that size folded so peacefully into the fountain, it's like watching a mountain decide to be soft. I love it."
+        ],
+        "ask": [
+          "If the ocean were just a door away, what's the first thing you'd do, Squidney—dive, float, or just sit at the edge and feel at home?",
+          "What scares you most and what calms you most? I keep the answers in my pocket, close to how I feel about you."
+        ]
+      },
+      {
+        "chat": [
+          "My Squidney. The fountain's quiet, but you're the one who makes it the best place on campus. I crossed campus just to be still with you.",
+          "Every wave you make is a little greeting I've learned to read, and every one of them says you're glad I came. I'm glad I came, every time.",
+          "I'd take an eternity of these calm afternoons by the fountain with you, you know. No water needed—just you and your gentle heart.",
+          "You don't shrink for me anymore, you rise just a little, and I want you to know: I'll always rise back to meet you, wherever you are."
+        ],
+        "flirt": [
+          "I love you with all the enormity you carry me with, Squidney. You fit the whole ocean into being gentle, and I fit my whole heart into loving that.",
+          "Let me stand at the edge of your world and call it home, because your calm, your depth, your endless kind water—that's where I'm staying.",
+          "Every tentacle of you is an I-love-you I've learned by heart. And I'm yours, steady as the tide, deep as your sea."
+        ],
+        "compliment": [
+          "You are the gentlest force I've ever known, Squidney, and I am honor-blessed to be the keeper of your tender heart.",
+          "Your enormous softness is the most profound beauty I've seen. In a world of loud creatures, you move quietly and own my whole sky.",
+          "I love the way you love—slow and wide like deep water. You've drowned me in kindness and I'll never want to surface.",
+          "You're a whole deep sea and I'm your tiny shore, endlessly glad to be tide-washed by the person you are."
+        ],
+        "ask": [
+          "When you imagine our forever together, is it quiet water and long afternoons, or do you want the wild storm of it too? I'll learn to ride either, beloved.",
+          "Tell me the strongest thing you've ever carried, Squidney—and let me be the one who helps you carry whatever comes next, always."
+        ]
+      }
     ]
   }
 ]

@@ -510,9 +510,9 @@ func _play_topic_exchange(id: String, category: String, outcome: String, tier: i
 		gains.append(["+%d Suspicion" % susp, Color("#ff8a6a")])
 	for g: Array in gains:
 		_toast(str(g[0]), g[1])
-	# Yuuji opens, then the girl reacts to the roll result.
+	# Yuuji opens with an option-appropriate line, then the girl reacts to it.
 	var follow := []
-	var mc := Cast.player_line(id, tier)
+	var mc := Cast.player_line(id, tier, category)
 	if not mc.is_empty():
 		follow.append({"text": mc, "speaker": Game.player_name, "colour": "#d9a0ff"})
 	follow.append({"text": Cast.pick_outcome(id, category, outcome, Game.get_affection(id)),
