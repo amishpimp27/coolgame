@@ -610,13 +610,21 @@ func _run_selftest() -> void:
 			var total := 0
 			for t: Dictionary in tiers:
 				total += (t.get(cat, []) as Array).size()
-			_check(total >= 4, "%s has %s success lines in all tiers (%d)" % [id, cat, total])
+			_check(total >= 8, "%s has %s success lines in all tiers (%d)" % [id, cat, total])
 		# Roll-outcome lines: each tier needs its neutral/fail variants.
 		for cat: String in ["idle_neutral", "flirt_neutral", "flirt_fail", "compliment_fail"]:
 			var total2 := 0
 			for t: Dictionary in tiers:
 				total2 += (t.get(cat, []) as Array).size()
-			_check(total2 >= 4, "%s has %s outcome lines in all tiers (%d)" % [id, cat, total2])
+			_check(total2 >= 8, "%s has %s outcome lines in all tiers (%d)" % [id, cat, total2])
+		# Exact interaction counts per dialogue option per tier:
+		# Just Chat: 4 success + 4 neutral; Flirt: 3/3/3; Compliment: 4/4; Ask: 2.
+		var spec := {"idle": 4, "flirt": 3, "compliment": 4, "lore": 2,
+				"idle_neutral": 4, "flirt_neutral": 3, "flirt_fail": 3, "compliment_fail": 4}
+		for t: Dictionary in tiers:
+			for key: String in spec:
+				var n := (t.get(key, []) as Array).size()
+				_check(n == spec[key], "%s tier %d: %s == %d (got %d)" % [id, int(t.get("min", 0)), key, spec[key], n])
 		# The main character's scripted lines: 5 per affection tier.
 		var player: Array = c.get("player", [])
 		_check(player.size() == 4, "%s has 4 player-line tiers (%d)" % [id, player.size()])
