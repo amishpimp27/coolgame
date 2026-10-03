@@ -721,7 +721,7 @@ func _run_selftest() -> void:
 
 	# Ask about herself: free, once per day, per character.
 	Game.reset()
-	var ask_id := ids[0]
+	var ask_id: String = str(ids[0])
 	Game.day = 4
 	_check(Game.ask_available(ask_id), "ask is available the first time")
 	Game.mark_asked(ask_id)
