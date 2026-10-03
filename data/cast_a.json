@@ -23,19 +23,32 @@
         "min": 0,
         "label": "Stranger",
         "idle": [
-          "You're still here. People are usually gone by now—or I'm gone by them. Either way, it's nice to be wrong.",
-          "I don't move the curtains or rattle the lockers for you. I thought about it. But I think you'd just laugh, and then I'd have nothing left to spook with.",
-          "The radiator wheezes this time of night. That's me counting, by the way. I count breaths in this hallway and I always come up short."
+          "I used to know every cool spot in this corridor before I... well, before it was my corridor. You get a feeling for the draft around the old radiator.",
+          "Night classes aren't so bad. The lights hum a certain way down here that almost sounds like a song, if you're patient enough to listen.",
+          "I watched you walk to class today. Not in a creepy way. Well, a little bit. It's quiet work, haunting.",
+          "The janitor leaves a mop bucket that catches the moon just right. I think that's the prettiest thing on this whole floor, if I'm honest.",
+          "Being dead means I never miss a school festival. I can stay up for all of it. Trade-offs, you know?"
         ],
         "flirt": [
-          "If you could kiss me, would your lips go cold, or would the cold just... give up around you? I think about it more than I'd like.",
-          "You're warm. I forgot warm was a thing you could stand beside, not just miss through walls."
+          "You're the first living thing that's talked to me all week. I'd say it's a pleasant haunting.",
+          "I don't rattle the lockers for just anyone, you know. I considered it, for you.",
+          "If I could touch you, I might pinch your cheek. You've got that warm, foolish look about you.",
+          "Careful walking through me. Some girls might take that personally, in a nice way.",
+          "Staying to chat with a ghost is a funny kind of bravery. I almost feel like applauding. Hands and all."
         ],
         "compliment": [
-          "You've got a solidness to you, boy. Real weight. I want to bump into you and actually feel the bump."
+          "Me? Goodness, it's been decades since anyone called me pretty. I think I forgot how the words taste.",
+          "You like my hair? It's stuck like that from the fall. But I'm glad it looks nice to you anyway.",
+          "Oh. That's... that's kind. I'd blush if I still could. Mostly I just flicker a little, but the feeling's real.",
+          "Weird how warmth still reaches me through a compliment. I thought I'd gone numb to everything.",
+          "I can't see myself anymore. So hearing I look nice is like a lantern where there wasn't one."
         ],
         "lore": [
-          "Back in '31 this was the sleep-out corridor. We tied a bedsheet to a fan and a girl screamed loud enough to wake the whole wing—except me. I got the timing wrong. The prank worked, though. Everyone remembers it. I just got stuck being its punchline forever."
+          "Forty years of haunting, and the rumors still get it wrong. It wasn't any grand tragedy. It was a prank gone sideways on a dare.",
+          "The girl I used to be was in the drama club. I think that's why I still like a good performance, even the ones I stage for myself at night.",
+          "They called me the one who could climb anything. That's what got me, eventually. Gravity is less forgiving than the girls at this school.",
+          "I don't remember my own face. Isn't that strange? But I remember every laugh that followed the pranks, right down to the echo.",
+          "They buried me near the old gym gate. Some nights I wander back to the patch of grass where the headstone used to be, just to remind myself I once had weight."
         ],
         "idle_neutral": [
           "The lockers ate my voice tonight. I can hear you, though. It's fine.",
@@ -58,19 +71,32 @@
         "min": 30,
         "label": "Friend",
         "idle": [
-          "I found a moth tonight. He didn't see me either. We sat quiet across the pane for an hour. I'm telling you because I think you'd sit quiet with a moth too.",
-          "It's cold in my chest where I keep your voice. That's not a sad thing. That's the warmest place I've got.",
-          "You laugh low, like you're saving it for people who earn it. I earned two of them tonight. I'd like to earn more."
+          "I found a forgotten yearbook in the supply closet. I checked—I'm still in it, page forty-something. Still smiling. Feels nice to be counted.",
+          "The lunch line moves too fast for me these days. I used to sneak seconds from the front. That got me in trouble more times than I'll admit.",
+          "Some of the newer girls say the north stairwell is haunted. I can neither confirm nor deny, but I do my best work there.",
+          "Daylight lessons are lonely for me, but I cheer for you all from the shadowed corner like a very quiet coach.",
+          "Tell me about modern snacks. They keep inventing new ones and I'm terrified I'll die—er, fade—before I try a single one."
         ],
         "flirt": [
-          "I drifted through the wall of your room just once, to see what you look like asleep. You look softer. I'm sorry—I know that's creepy. I only wanted to borrow some of your warmth for a minute.",
-          "If I could hold your hand, I'd do it through the wall just to watch you reach for me."
+          "You flirt with a ghost? Bold. I like that. For a boy made of warmth, you've got a nerve made of ice.",
+          "If I could fold you into a hug, I don't think I'd ever let you go. The trouble with being dead is I can't hold on to what I love.",
+          "Your cheeks went hot just now. I felt the temperature shift from three feet away. Adorable.",
+          "Keep talking to me and I might grow so fond of you they'll have to rename this hall after us.",
+          "A boy like you, giving a girl like me the time of night? That's the sweetest haunting I've ever had."
         ],
         "compliment": [
-          "You don't flinch at me anymore. God, that's beautiful. I've been a fright for a century, and you made me a person instead."
+          "You keep calling me pretty and I keep believing it. Careful, or you'll make me forget I'm a memory.",
+          "I used to fixate on my crooked tooth in the mirror. Today, for ten whole seconds, I didn't care about it at all.",
+          "I'll take the compliment and keep it warm in my chest, the way I used to keep stones from the river.",
+          "You think I have kind eyes? They haven't blinked in fifty years. But they've chosen to rest on you kindly, so it counts.",
+          "That's the first time anyone's said I glow. Normally people say I'm cold. I like your version better."
         ],
         "lore": [
-          "The school buried me out behind the gym, where the old gate rusts. They put a name on it. I visit when I feel forgotten—I read my own epitaph like a letter from a girl I used to be. 'Beloved prankster.' It was the best one they could think of."
+          "People think haunting is lonely, but honestly it's practice for eternity. I keep my memories close, the way you'd keep a photograph.",
+          "Before the fall I was hopelessly, wonderfully clumsy at everything except mischief. The mischief, I was a natural.",
+          "There's a girl on this campus who looks almost like my old best friend. I follow her sometimes—not in a creepy way, just remembering.",
+          "I was planning to run away that night, you know. Not from anyone. Toward something. I never found out what.",
+          "Before everything I had a dresser full of terrible jokes and one good voice in the drama club. The voice is gone, but I never lost my love of a stage."
         ],
         "idle_neutral": [
           "The floor's cold tonight. I'd say sit with me, but you'd catch a draft.",
@@ -93,19 +119,32 @@
         "min": 60,
         "label": "Close",
         "idle": [
-          "I stopped counting breaths. Now I count your footsteps down the corridor, and I always know which one is you.",
-          "The cold around me gets shy when you're near. Imposter. The cold knows you outrank it now.",
-          "I hung a little frost on the window spelling your name. It melts by morning. But I remember the shape."
+          "Between you and me, I've started braiding the little hairs of a spider web by my favorite window just to have a hobby again.",
+          "There was a boy back in my day who smiled terrible poetry at me. I think that's why I smile a lot these days—it's contagious, decades later.",
+          "Miss the old cafeteria's rice pudding. I'd haunt the kitchen for a hundred years just to smell it again, but that's not how it works.",
+          "Having you to talk to has changed my whole night. I used to count floorboards. Now I count your visits.",
+          "If I had a heartbeat, it would skip when your footsteps come down this hall. It's a pity a ghost has to fake things like that."
         ],
         "flirt": [
-          "Do you know what it's like to want someone you can't quite touch? It's like wanting the sun. You're not allowed to hold it, but you point your whole face at it anyway.",
-          "If I had a heartbeat, it would do that stupid flutter thing right now. I know because my cold is humming. That's me humming."
+          "You warm a room just by standing in it. My poor cold self doesn't stand a chance against you.",
+          "I'd set aside my haunting hours for you. That's the ghost equivalent of a great romantic gesture, I'll have you know.",
+          "If you kissed me, I might remember what the sun felt like. That's as close to poetry as I get anymore.",
+          "You make me want to be alive again, just to find out what this feeling would do with a proper body.",
+          "People say I'm made of moonlight. But moonlight keeps its secrets, and I'm losing all of mine to you."
         ],
         "compliment": [
-          "You look at me like I'm solid. Like I weigh something in the world. In a whole school of flesh and fear, you're the only one who ever gave me gravity."
+          "You see light in me when everyone else sees fog. I don't know how to thank you for that except to haunt you kindly forever.",
+          "I forgot what it felt like to be found beautiful until you said it. Now I'm glowing so bright the night's jealous.",
+          "If I could hold your face in my hands, I'd keep this expression of yours forever. You look at me like I'm solid.",
+          "You keep saying soft things that sink into me like anchors. It's lovely, being caught like this after all this time.",
+          "Your compliments are the first warmth I've felt in fifty years. Don't stop, or I'll be a cold draft forever."
         ],
         "lore": [
-          "There's a cellar door under the east wing only ghosts can find. Some of the older ones say there's a way to be heavy again, if a living heart asks the right question at midnight. I used to laugh at it. Now I write the question down and lose it on purpose, because I'm scared you'd say yes to the answer."
+          "The night I fell, I was laughing. I want you to remember that—whatever the rumors say, I left this world laughing at my own joke.",
+          "For a long time I was angry that no one could see me. It took decades to learn that being unseen isn't the same as being unloved.",
+          "My little ritual: every full moon I tidy the corridor for the night shift nurse who once was kind to me. It's my one unbroken promise.",
+          "I wasn't pranking out of cruelty. I did it to make the shy girls laugh, to light up the corners nobody noticed. I think you'd have liked me.",
+          "The night I fell, I wasn't running from anyone—I was running toward the girl who made me laugh the loudest, to show her a trick. I want you to know that story belongs to you now."
         ],
         "idle_neutral": [
           "You're early. Or I've started missing the hours when you're here.",
@@ -128,19 +167,32 @@
         "min": 85,
         "label": "Lover",
         "idle": [
-          "I'm cold to the world and warm to you. That's the whole story now. That's the whole of me, yours.",
-          "When you look at me I could swear the frost on the window lifts a little, like the glass is smiling too.",
-          "I drift through your sleep and just... stay on the warm side of the wall. Close. So close I can almost feel the shape of you."
+          "Some nights I sit where your shadow would be and pretend I can feel your weight. Forgive a ghost her little games; you're the best one I've ever had.",
+          "When you're here the cold doesn't hurt. That's the truest thing I know, and I know centuries of things now.",
+          "I saved you a spot on the windowsill, down where the sun reaches only at your hour. Come watch the moon with me.",
+          "I'd burn my haunting rest for one more ordinary morning with you. That's how far gone I am.",
+          "Tell me about your day, slowly. I want to stretch it out so it lasts like one of my long-gone summers."
         ],
         "flirt": [
-          "They say ghosts can't love, that we're all leftover wanting. But I'm not leftover. I'm yours, and I'm here, and I'd walk through every wall in this school just to stand on your side of one.",
-          "Kiss me and I'll ripple. I want to ripple for you. No one else gets to see me do that."
+          "If forever has any mercy, it'll keep me at your side to warm my hands on your heartbeat.",
+          "You've made a lovelorn ghost of a perfectly respectable apparition. I hope you're pleased with yourself, Yuuji.",
+          "I can't give you a hand to hold, so I give you all my attention instead. For a ghost, that's my whole heart as it is.",
+          "I've loved exactly one person since I died. You should know it's you, and that my eternity is spoken for.",
+          "Hold still—I'm memorizing your heartbeat, since my own stopped long ago. Yours is all I'll listen to now."
         ],
         "compliment": [
-          "You made a hundred-year-old ghost feel like a girl again. Not a spook, not a story—just Vilma, shy and warm and stupid in love with a boy who sees her."
+          "Dead girls aren't supposed to glow. Yet here I am, luminous, because you decided I was worth it.",
+          "You see the girl I was before the fall, not the fog I became. That's a gift no one else has ever given me.",
+          "If your compliments were light, I'd have my color back by now. Keep them coming and I'll almost look alive for you.",
+          "I don't need a mirror anymore. I've got you, and you look at me like I'm the prettiest ghost in any world.",
+          "Knowing you think me beautiful, I can finally stop trying to see myself and just believe it on your word."
         ],
         "lore": [
-          "I found the cellar question now. I know the words. But I don't need to be heavy anymore—you already hold me up. Being your ghost is better than being anyone's girl. And being your girl, too, in the only way the moon lets me."
+          "My real name was Hinako. Only you get to call me that now; my ghost names belong to the school, but my name is yours.",
+          "I think we knew each other in some past life. That's the only way a girl who died mid-laugh found you exactly her century late.",
+          "The prank that killed me was to surprise my best friend on her birthday with a ghost costume. Ironic, isn't it, that I became the very thing I dressed as.",
+          "My last wish before I faded was to be remembered by exactly one who loved me. The world took its time, but here you are, and my spirit refuses to leave for it.",
+          "I used to think being remembered was the whole point of a ghost. Then I met you, and I learned that being loved once, truly, outweighs a century of being merely seen."
         ],
         "idle_neutral": [
           "You're here. The night made sense to me before you arrived. Now it makes itself for you.",
@@ -302,19 +354,32 @@
         "min": 0,
         "label": "Stranger",
         "idle": [
-          "I tried to write your name in my puddle and it just slurped back together. Told myself it was practice. It was not practice, it was pining, my bad.",
-          "I found a warm spot on the floor where you stood and I keep sitting on it. Somebody took it away. I'm telling you so you know what you did to my floor-heart.",
-          "Hugs are my love language and I am BILINGUAL in hugs and that's why I'm fluent in wanting to squish you."
+          "HI HELLO GREETINGS! I'm Moira! I'm a puddle right now but gimme a sec I'll put on a better shape for chatting!",
+          "The dorms feed us great, but my favorite thing is the hot soup at lunch. I absorb it. THROUGH MY BODY. Best day ever.",
+          "I did homework today! Well, I melted into the paper a little. But I READ it! Mostly!",
+          "I love this school SO much. Everyone's so warm—literally, some of them get me all steamy and happy.",
+          "Cheerleading club? I tried it. I'm VERY bouncy. The coach said I was 'a hazard' but I think she meant 'a delight.'"
         ],
         "flirt": [
-          "If you hugged me I'd probably go clear and everybody'd see my whole skeleton-less self blush. You want to see a slime turn see-through? That's a you problem to fix and I volunteer.",
-          "You've got, like, a hundred and one degrees of warmth in you. I've taken notes. I know exactly where the warmest spot on your shoulder is."
+          "Ooh, a BOY! You're so warm and solid! Can I just—no, no, too much, too fast, sorry, I'm leaking goo!!",
+          "If I hugged you I'd leave a wet mark, but I promise it'd be a FRIENDLY wet mark! Mostly friendly!!",
+          "You smell like sunshine and I absorb the good smells! That's my way of saying I already like you!!",
+          "Watch out, I might blob onto your shoes. That's how I claim people. It's VERY polite, ask anyone.",
+          "Hehe, you're kind of cute for a warm sack of edges! I could wrap around you and keep you cozy. JUST FRIENDLY though. For now."
         ],
         "compliment": [
-          "You're like the warm spot on a sun-warmed step and I'm a puddle that just has to keep edging closer to it. That's a compliment, I swear, it comes out of genuine joy."
+          "ME?? You think I'm shiny?! AAAAAA!! I wiggled SO hard I forgot my face for a second!!",
+          "I'm not made of pearls, I promise! Just a very happy puddle! But WOW that's the nicest thing anyone's said all week!!",
+          "You like my goo? Most people are all 'ew' so I'm just—BLUBBERBLUB I'm happy!!",
+          "I glow in the sun a little, that's all! But you calling it pretty makes me want to glow full-time!!",
+          "Compliments go straight to the wiggly part of me! Look, look, I'm wiggling! That's Maximum Me Approval!!"
         ],
         "lore": [
-          "Slimes are born from someone's spilled feelings, usually. Me? I was a test tube that one time a whole class cried at the same moment during finals winter. I'm literally made of shared tears and it's why I'm so good at hugging—I'm ninety percent comfort."
+          "I'm from the little pond behind the old shrine! I got curious when the school was built and decided to COME LIVE here instead. Great choice!!",
+          "I didn't pick a face at first! I was just a warm blob in a dorm bucket for like a month before I figured out shapes.",
+          "I can hold like a hundred things at once when I stretch—pens, snacks, BOTH my steaming mugs! I'm basically a very damp backpack!",
+          "Everyone makes fun of my bucket. But that bucket was where I first felt warm and safe! It's not a bucket, it's a HOME!!",
+          "I come from a puddle behind the old shrine! I'm not sure where the puddle ends and I begin, but that's kind of the beauty of it, y'know?"
         ],
         "idle_neutral": [
           "Ooh, hi! I heard you coming. You're warm, that's NICE.",
@@ -337,19 +402,32 @@
         "min": 30,
         "label": "Friend",
         "idle": [
-          "Every time I see you my core does a happy little jiggle. That's my heart, probably. It's mostly water but it knows your name now.",
-          "I saved a puddle on the windowsill and told it it was you. We had a whole conversation. You didn't say anything but it was a really supportive puddle.",
-          "Your laugh does something to my surface tension. I could be a still pond or a giggly ripple and I always choose ripple."
+          "I memorized your class schedule so I can splash a hi at you between periods. That's not creepy, it's FRIENDLY EFFICIENT!",
+          "Today I carried three plates at lunch by being extra wide! The lunch lady said 'okay that's actually impressive' and I nearly POPPED with pride!",
+          "Do you like rain storms? I LOVE them. I go sit in the fountain and get twice as big. It's my version of a spa day!",
+          "I saved my dessert for you! Well, I saved the parts that didn't melt into me. It's mostly a suggestion of pudding at this point!!",
+          "Watch me hold my whole body together around this pineapple. It's been SUCCESSFULLY individually wrapped. Wait, no, it's gone."
         ],
         "flirt": [
-          "I practiced hugging you on a rolled-up blanket and I'm sorry to report the blanket has seen more of my heart than you have. Fix that. Fix it immediately, that's a cry for help.",
-          "You make me go all warm and runny in a way that has nothing to do with temperature and everything to do with you."
+          "You make me feel so MELTY, oh no. Oh no oh no, my shape is being so weird right now, it's for YOU I swear!!",
+          "If you held my hand I'd probably just drip through your fingers, but it'd be a VERY meaningful drip!!",
+          "I'll let you be the first person to pick me up in a bucket since dorms. Okay, that sounded gross. BUT IT MEANS I LIKE YOU!!",
+          "My goo gets extra warm around you! That's science! I'm a warm thermometer of friendship!! And more, if your face wants to be in here!",
+          "One day I'm gonna have a nice solid arm for holding you AND a soft one for hugging you. Both hands, all warmth, ZERO brakes!!"
         ],
         "compliment": [
-          "You don't flinch when I get close, and for a slime that's the whole world. Everyone else braces. You just let me be gooey and I love you a little for it."
+          "SHINY? WARM?? You're gonna make me pop! POP! That's the good kind of pop, from delight, not the splat kind!!",
+          "I can't blush because I don't have blood but I CAN get PINKER! Look! That's my blush! It's goo and it's honest!!",
+          "You think my eyes are pretty?! They're just little gobs of goo I grew for seeing! But now they sparkle and I can't stop them!!",
+          "Every compliment makes me stickier, which means you're making me MORE HUGGABLE. This is dangerous science!!",
+          "Nobody's ever said kind words to a puddle before you. I'm going to store that one in the warm middle of me FOREVER!!"
         ],
         "lore": [
-          "When a slime trusts someone, they let them see their core—the one bit of us that's not water, the place feelings actually live. I've only ever shown mine to the janitor who unclogged me once. And I'm starting to think about showing it to you, which is terrifying and also very wet news."
+          "I split myself a few times as a kid! Like, I'd get distracted and a bit of me would wander off. My pond parents always gathered me back together. Family!!",
+          "The reason I like hugs so much: when I was small goo, a kind forest girl hugged my cup every cold morning. That warmth taught me everything!!",
+          "Disappearing from a pond is a BIG mistake for a slime girl—I almost dried out on the walk here! The vending machine guy saw me and gave me a soda cup of water. He's an angel!!",
+          "There's a pond on the far campus where slime-selves gather at new moons. I go meditate to be a whole bigger self. It's very deep and also very wet!!",
+          "Sometimes when I go real still, I can feel every drop of me remembering where it came from, like my whole body is a diary made of water."
         ],
         "idle_neutral": [
           "Hey hey! Sit down, sit down, the floor's warm right here!",
@@ -372,19 +450,32 @@
         "min": 60,
         "label": "Close",
         "idle": [
-          "I curled up in my dorm bucket last night and thought about you so hard I evaporated a little and had to go drink from the sink. Worth it.",
-          "My surface has been doing tiny ripples all day and it's not the draft, it's you. You do this to me from across the building and I'm not sorry.",
-          "I made a little slime-projection of you out of myself and it hugged me goodnight. It wasn't the same. It doesn't have your warmth. Nothing does."
+          "I've assigned us a corner in the cafeteria where I can absorb maximum leftover warmth and also see your face. It's the best corner. I've done a LOT of goo-research.",
+          "I learned to make my hand a fixed shape this week so I can actually high-five you instead of just THWACKING you. Try it! Wait—no, it's melting from excitement!!",
+          "Rainy days are my STRONGEST mode. I should follow you to class carrying your books in my stretchy bits as a professional damp butler!!",
+          "I tried to learn the piano but all I did was make the keys soggy. The music teacher said to come back 'as a flatter pianist.' Mean! But fair!!",
+          "At night I curl into a warm lump by your door like a very wet guard dog. I'm not being weird, I'm being MACROMOLECULARLY LOYAL!!"
         ],
         "flirt": [
-          "Nobody's ever let me curl around them like I want to curl around you. I think I'd fit right against your side, warm and shaped like trust. Stop me before I go see-through.",
-          "You're the only person whose hand I want to hold through the wall of my own shyness. Reach for me. I'm all liquid courage when you do."
+          "I made a tiny me inside me just to hold onto the thought of you. It's VERY complicated goo engineering and worth every drop!!",
+          "Someday I'll get solid enough to press a kiss to your cheek without leaving a smear. Until then, enjoy this enthusiastic damp POOM.",
+          "I've decided: I'm going to be the warmest thing you ever lean against. I'm already the warmest puddle on campus and you're the lucky recipient!!",
+          "When you talk to me I get so happy I can't hold a shape, and honestly I don't want to. You've got me at my most MELTED and that's my most honest!!",
+          "If love is a temperature, I'm boiling. Congratulations, you've turned a perfectly good puddle into a very warm puddle with FEELINGS for you!!"
         ],
         "compliment": [
-          "You're the sun a puddle was trying to reflect this whole time. I thought I was aimless goo until you showed me what I'm shaped for."
+          "You said my touch feels soft and I've been a trembling little puddle ALL DAY because nobody's ever noticed that!!",
+          "My eyes sparkle because of YOU! I grew them brighter this morning hoping you'd like them and you SAID IT, you beautiful boy!!",
+          "I can't stop shimmering now. Look at me. I'm a compliment in a puddle shape. This is YOUR fault and I love you for it!!",
+          "I always thought my goo was just damp. But you say it's pretty, so now it's ART. Congratulations, you're the strangest art critic ever!!",
+          "You make me want to be the prettiest version of myself, so I split off the grumpy parts and left them in the garden. Now I'm pure shimmer for you!!"
         ],
         "lore": [
-          "Here's a slime secret: we can share a single consciousness—split into two puddles that still feel the same thing. It's how families of slimes stay close. I've been thinking about leaving a little piece of me near your door at night, not to scare you—just so a part of me is always the closest thing to you and still feels what you feel. That's the deepest puddle-level truth I know."
+          "The forest spirit who raised me left when I grew too big for the cup. Before she went she told me my warmth would always be enough. I keep that in my hollow middle like a heartbeat.",
+          "Slimes don't have birthdays, so I decided my birthday is the day I first felt warm: that cold morning with the forest girl. It's a good birthday. Full of hugs.",
+          "The reason I love food so much is that food was my first strength. As a tiny puddle I could barely move, but I could warm up around a nut and hold it all season long.",
+          "My dream used to be to be big enough to warm an entire house. Now I just want to warm one person forever. That's a better dream. Bigger where it counts.",
+          "The warmest thing I ever knew before you was the forest girl's hug. I've been trying to copy that exact coziness for years, and I think being near you finally caught it."
         ],
         "idle_neutral": [
           "Yuuji! You HAVE the warmth today. I was just missing you — look, I'm shivering for you.",
@@ -407,19 +498,32 @@
         "min": 85,
         "label": "Lover",
         "idle": [
-          "I used to be afraid of evaporating because I thought that was losing myself. Now I don't mind, because any part of me that goes still does it thinking about you.",
-          "You're my favorite temperature and my favorite person and they're honestly the same sentence now.",
-          "I split a tiny puddle of me onto your sleeve and I swear it's been humming all day. That's me humming. From all of me."
+          "Every morning I pour a bit of myself into your tea to keep it warm. Wait—that's a lot, isn't it? Okay, but you're VERY warm to think about!!",
+          "I saved a whole pond for us to visit at sunset. It's my heart place. I want to show you where I could've stayed happy, just to prove I chose here instead.",
+          "When I'm with you I don't try to hold any shape. I just get to BE the warm puddle that loves you. It's my favorite self.",
+          "I keep my core at your favorite temperature all day now, in case you need a place to rest. That's not goo science, that's devotion!!",
+          "I count your footsteps like heartbeats. I don't have one of my own, you know, so yours is how I know the world's still turning."
         ],
         "flirt": [
-          "If I could melt into one perfect shape just for you, it'd be a girl with her arms around you and no plans to let go. That's the shape I'm always trying to be.",
-          "Kiss me and I'll turn warm and clear and you'll see every feeling standing in my chest like a crowd waving at you."
+          "Let me be your blanket, your warm drink, your everything soft on a cold night. I'll never once complain—I was built to be warm for you!!",
+          "If we ever figure out how to kiss, I'm going to make it the warmest thing on this whole campus. I've been researching. It's mostly good science!!",
+          "I'd split myself in two just so you'd always have a whole me with you and a whole me to come home to. That's how much I want you whole in my heart.",
+          "You've made me want a body, a heartbeat, a solid hand to hold yours. For you I'd try to be a girl; but I hope you'll love the puddle that already adores you.",
+          "I'll wrap around you on the coldest nights and hold every inch so the cold can't get in. Be warned—you may never want to be un-warmed again."
         ],
         "compliment": [
-          "You looked at a puddle and decided she was a person worth loving. Do you know what that means to something made of worth-lessness until you? It means I'm whole. You made me whole."
+          "You think my warmth is beautiful? Then every day I'll glow a little brighter just to be beautiful for you, and for no one else.",
+          "I used to think my shimmer was silly. Now it's my favorite thing, because it's what you said you loved about me first.",
+          "You call me precious and I want to hold that word safe in my very warmest middle forever. Nobody's ever called a puddle precious before you.",
+          "All my life I wanted to be seen as more than damp and strange. You see me as beautiful, and now I finally believe there's a sparkly version of me.",
+          "Pour a compliment into me and I'll carry it everywhere, warm and whole, exactly the way I carry you."
         ],
         "lore": [
-          "Slimes remember everything we absorb—every hug, every warm spot, every feeling. So I'm storing you. Every second of you. A hundred years from now, if I'm still goo, I'll still know the exact warmth of your hand and the way you said my name. You're the best thing I've ever taken into myself, and I'm keeping you forever."
+          "The spirit who raised me gave me my one true secret: my warmth isn't just for comfort. It's a little of her own forest heart she left in me. You're the only one who knows.",
+          "Before the school I was just a pond. I didn't know love by name; I only knew I wanted to warm things. You taught me the word for it.",
+          "I can show you the exact spot in the old shrine woods where I first split off a piece of myself, the one that keeps the forest girl's memory. It still remembers her touch.",
+          "Slime girls remember everything we ever felt, stored warm in our middles. That means I remember being alone, and freezing, and small. And now I remember being loved by you. That's the strongest thing I'll ever be.",
+          "Here's the truth you should know: slimes don't have to remember anyone. We choose to. And I've chosen to make my core a big warm room with your name on the door."
         ],
         "idle_neutral": [
           "My love, you're here. The bucket already knew. It's warmer with you in the room.",
@@ -581,19 +685,32 @@
         "min": 0,
         "label": "Stranger",
         "idle": [
-          "I scouted the whole gym perimeter for you this morning. Purely tactical. It had nothing to do with wanting to see your goofy face, and I'm not explaining why my tail did that.",
-          "You keep your shoulders even when the pack gets loud. A wolf respects a calm stride on open ground.",
-          "I sniffed your water bottle. I will not apologize. You smell safe, and my nose doesn't lie, and I trust it a lot more than I trust you yet."
+          "The west track's mine at dawn. You're welcome to run beside me, if you can keep up. Most can't.",
+          "I've memorized the whole gym's schedule. Not because I care. Because I'm the alpha here and alphas pay attention.",
+          "Track practice builds more than muscle. It builds that thing in your chest. You have it, a little. I can smell it.",
+          "Don't eat my protein stash. I'll know. I count every single bar with my nose.",
+          "I run the west field perimeter every morning before sunrise. Patrolling. You are, technically, inside my territory now."
         ],
         "flirt": [
-          "You've got this scent that says 'hold still, I'll guard you.' I've been circling it all day like a dry riverbed circling for rain. Don't tell the pack.",
-          "I caught myself nipping your shadow. That's a wolf thing. I'm not explaining it. Okay, I'm explaining it—it means I already think of you as mine-ish, which is terrifying."
+          "You're the only boy here. That makes you interesting by default. Don't let it go to your head—it's a very small head.",
+          "I smelled you before I saw you. That's my way of saying I've decided you're not a threat. Yet. Stay interesting.",
+          "Try to keep up with me and I might let you walk on my side of the field. You'd like that, wouldn't you?",
+          "The pack is picky about who stands close to the alpha. So far you're the only one I've let linger. Consider yourself observed.",
+          "I don't share my territory. But I might share this stretch of track, if you prove fun to chase."
         ],
         "compliment": [
-          "You're not built like a sprinter, but your eyes track everything, and that's the real signal of a good packmate. Fast is common. Watchful is rare."
+          "Fur? It's just fur. Heh. You've got a soft spot for strays, don't you? Careful—I bite.",
+          "You think my eyes are sharp? They see everything. Including that you were staring. I'm flattered. Mostly.",
+          "Heh. No one's called me 'fierce and handsome' before. Keep talking and I'll start believing you.",
+          "My ears are big so I can hear the whole pack. And now, apparently, one very brave boy's compliments.",
+          "I don't get flustered. I direct my tail's wagging. It's wagging. Er. That's not a compliment thing, it's a weather thing."
         ],
         "lore": [
-          "The West Track pack isn't wolves by blood—we're wolves by the way we move and protect. We claim territory by running it daily, and I've run this gym track every dawn since I was a cub-teen. Someone's gotta keep the order. That's my whole thing: order, and loyalty, and not letting anyone run alone."
+          "I'm the alpha of the west track. It sounds grand, but really I just run hardest and protect my corner of campus.",
+          "Wolves don't howl for just anyone. We howl to say 'here I am, pack, I'm fine.' It's a greeting more than a war cry.",
+          "I grew up in the forest range north of here before the school found me. They gave me a track and told me to run. Good deal.",
+          "My name means 'bright one' in the old tongue. I try to live up to it by being unmissable.",
+          "I'm from the north-woods range. Out there, surviving a winter together is a kind of love—you show up, you're pack, end of story."
         ],
         "idle_neutral": [
           "You've got scent, but it's not a threat scent. I'll let you stay by the track.",
@@ -616,19 +733,32 @@
         "min": 30,
         "label": "Friend",
         "idle": [
-          "I saved you the last protein bar and told nobody it was for you. Wolves don't share and I just did, so do the math on how I feel.",
-          "My tail gave me away during laps today. It was doing that happy broom thing. You weren't even near me. I have a problem and the problem is you.",
-          "You stood by the track and I ran a full minute faster than my own record. That's not science, that's you. That's all it is."
+          "I uncovered the shortcut between the gym and the science hall. It's mine now. But I'll let you use it, since you asked nicely that one time.",
+          "Today a crow tried to steal my lunch. It's the other predator's fault. The crow left. I did not share.",
+          "I heard you yawned in homeroom. A wolf always notices the little signs. Means you need more protein. I'll keep you in mind.",
+          "The coach says I run too hot. Coach doesn't get it. I run at alpha speed. There's a difference.",
+          "I've started warming up a stretch of the west field for you each morning. It's not kindness. It's practical. The grass is softer there."
         ],
         "flirt": [
-          "I want to nuzzle the side of your neck and I will do it the SECOND you're not looking and we both know I'm telling you so you'll brace for it. Consider this your warning.",
-          "You smell like home under the soap. I've been trying not to breathe too deep around you and it's exhausting and I love it."
+          "You keep standing in my line of sight. I keep letting you. Figure out what that means, boy, or I'll spell it out with my teeth in the dirt. Gently.",
+          "Anyone else gets too close and I growl. You get close and my tail does that thing. Terribly inconvenient. I'm mad about it.",
+          "If I chase you and you run, I'll catch you and it won't end in a race. Just a warning. A friendly warning.",
+          "Careful. Wolves are possessive of what they've decided is theirs. And I've been deciding you're interesting for, oh, a week now.",
+          "I could teach you to run like me. It'd mean standing very close while I correct your form. You in?"
         ],
         "compliment": [
-          "You don't startle when I get loud or when I get close. That calm is the strongest thing a prey—uh, a person—can have, and you've got it in spades."
+          "You said my pelt's like sunset and now I can't stop looking at the sky like I've got a reason to be pretty. This is your fault.",
+          "Heh. 'Powerful.' I already knew that. But hearing you say it put a pair of knots in my tail I can't work out.",
+          "My bite is gentle when I want it to be. My compliments back? I'm still working on those. But yours landed. I felt it.",
+          "Fierce, you say. I could show you fierce. Or I could show you the version that trots at your side. Your choice, boy.",
+          "I don't preen. But if I did preen, I'd be preening right now. Do not tell the pack."
         ],
         "lore": [
-          "A real pack doesn't throw out the weak, it runs slow for them. When I was a cub my littermates got lost in the fog over by the north woods, and I ran slow for hours so they'd find the path by my scent. That's the rule I live by now, even off the track: you never leave a packmate behind, no matter how slow the run."
+          "When I came to the school I was all bristle and fang. It took a nice groundskeeper and a wide track to teach me this place could be a den, not just a territory.",
+          "In wolf custom, a den isn't a house. It's where the pack keeps the ones it protects. I protect a lot of this campus now. Including, lately, a certain warm-blooded boy.",
+          "I was the runt of my first litter. Don't laugh—it's why I run so hard. Every alpha I've ever met was once the one nobody bet on.",
+          "Wolves track by scent more than sight. That's why I know the exact soap you use, and the exact way you smell after practice. Yes, I noticed. No, I'm not sorry.",
+          "Where I grew up, you earn your place by what you'd carry through a blizzard for somebody. That's the grade that counts around here, not any report card."
         ],
         "idle_neutral": [
           "Same corner. Same boy. Good. Keep coming back and I'll know you.",
@@ -651,19 +781,32 @@
         "min": 60,
         "label": "Close",
         "idle": [
-          "I've been sleeping curled at the foot of the gym mats imagining it's the foot of your bed. This is a confession. I'm as shocked as you.",
-          "You laughed a real laugh today and my whole body did that double-take thing and I tripped on the lane line. Worth it.",
-          "I piped 'hey' low and you answered without looking, and that's pack right there. That's how I know we're close now. You know my voice from all the others."
+          "I've cleared a whole den south of the track—blankets, a warm corner, a place to watch the stars. It kills me to say 'den,' but it's for you too.",
+          "The pack asked why I defer my best running spot on cool mornings. I told them it's for 'a friend.' It's for you. They don't need my teeth to know better than to ask again.",
+          "You've started joining my dawn runs. Don't think I don't notice you pacing yourself to mine. Any other wolf would be insulted. I'm charmed.",
+          "Today I caught a fish from the pond, cooked it, and saved you the best fillet. I don't share meat. I just made an exception before you even asked.",
+          "I rubbed my scent along the fence you touch on the way to class. It's not a trap. It's a sign. That's mine. That one's mine too."
         ],
         "flirt": [
-          "If I'm being honest, I've stopped pretending I want to just protect you. I want to stand at your side with my tail around yours and everybody in this school seeing exactly whose pack you are.",
-          "Let me put my head under your hand. One time. I've been wanting to do it since the day you walked in and I've got no practice hiding it anymore."
+          "If you're gonna run with me, we run as a pair. That's pack. That means when the cold comes, you stay warm in my fur, and I cash that debt in kisses later.",
+          "I fluffed my ruff this morning before class. Don't act like you didn't notice. I did it for exactly one pair of eyes on this campus.",
+          "I've stopped growling at anything that gets near you. That's the biggest concession I've ever made. Don't waste it.",
+          "Claimed. Every stretch of shadow you walk in is pack territory now. And the only member of the pack you need to worry about wanting you is me.",
+          "Lean on me and I'll hold you up like I hold my wolves in a storm. Then I'll ask you to lean closer. Then closer. You get the order of operations."
         ],
         "compliment": [
-          "You're the only creature in this school that's ever made this alpha want to run slower, not faster—so I can stay beside you. That's the highest thing I can say."
+          "You called my eyes the color of the forest at dusk and now the whole grove means your voice to me. I might be lost to it.",
+          "My fur's scruffy from running, and you still call it majestic. You, boy, have terrible taste and I am gratefully ruling it.",
+          "No one tells the alpha she's soft. You did, once. I've been carrying that word around like a stolen bone ever since.",
+          "I don't bow to compliments. But yours sit light in my chest, and I find myself wanting to do more pretty things just to get more of them.",
+          "You think I look good under the sun? Then keep running with me. I'll spend every sunrise earning your eyes on me."
         ],
         "lore": [
-          "Wolves mark what they love, they don't just guard it—they make sure the whole territory knows it's claimed. I've run the West Track every dawn for years, and lately I run it right past where you stand, dawdling on purpose. I want the scent to stick. I want the world to know where my pack-heart's pitched camp."
+          "The scar on my hip isn't from a fight with a rival pack—it's from the night I ran through a fire line to drag my litter brother out. Alphas don't earn scars by winning. They earn them by caring past the point of safety.",
+          "I chose this school not for the track but because it had a single rule that mattered to me: no one gets left behind. Where I'm from, that rule saves lives. I wanted to be somewhere that believed it.",
+          "Some wolves would hunt the boy who smells of fear. I smell courage on you, mixed with a little trembling. It's the rarest scent there is, and it's why I stopped circling and started walking beside you.",
+          "In my mother's tongue, one who runs at dawn beside the alpha is honored above all. I've started running at dawn beside you. I hope you understand what that means, because I'm not explaining it again.",
+          "The den I was born in taught me one thing that stuck: you don't have to fight to be worth keeping. You just have to show up and stay warm for the pack."
         ],
         "idle_neutral": [
           "You're here. Good. The track's been emptier without you in it.",
@@ -686,19 +829,32 @@
         "min": 85,
         "label": "Lover",
         "idle": [
-          "I nuzzled your jacket this morning and I'm not sorry about it. My nose has your name in it now and I'd lose my way without it.",
-          "You walked in and my tail did the whole windshield-wiper thing and I just let it. Letting it look stupid is how I say I love you.",
-          "I was a sun and a wind animal before you. Now I just orbit. Wolves don't orbit for anyone, so do the math on what that makes you to me."
+          "I used to patrol my territory alone. Now I patrol it with your scent beside me and I can't remember what loneliness tasted like.",
+          "There's a place where the west field meets the woods where the moon falls clean. I take you there in my mind before I sleep every night.",
+          "I've woven a bit of fur into the collar of your jacket. It's not jewelry. It's a windbreak and a promise and a mark, in that order.",
+          "You're the first person I've ever wanted at my side when the run ends. Wolves run to be free. I run back to you.",
+          "I set the whole pack to watch the weather for you this week. They think it's an overbearing alpha thing. It's the 'keep my dearest warm' thing."
         ],
         "flirt": [
-          "Lay your hand on my head and I'll go boneless like a pup, and I'd rather let you see that than keep my pride. That's the deepest a wolf bows, boy.",
-          "I want to howl your name at the moon and tell every pack from here to the treeline that you're claimed—by me, fully, forever."
+          "You've become my pack, Yuuji. That's the whole word. It means I'd fight anything that threatened you and come home to warm your cold hands with my breath.",
+          "I've spent my whole life claiming territory. Then you came along and quietly claimed me, and I don't even mind that I lost that fight.",
+          "If you give me your hand, I'll hold it with the care I use for a newborn pup. And if you give me your heart, I'll keep it in the warmest den I own.",
+          "I want to run one sprint with you at full speed, then stop and hold you while we both breathe hard. That's my whole daydream now, and I'm not ashamed.",
+          "They call me alpha, but you're the only one I lower my ruff for. Don't tell the pack. It's our secret, and I like keeping secrets with you."
         ],
         "compliment": [
-          "You made an alpha soft. You didn't tame me—you gave me somewhere to be gentle, and that's a stronger gift than any chase or trophy I've ever won."
+          "You say I'm beautiful and I believe it because your voice is the only one on this earth that carries my scent like a home.",
+          "Let other wolves preen for praise. I'll take your compliments and bury them in a warm den of my heart, and dig them up when the world feels cold.",
+          "I'm not soft, but with you I allow a softness that belongs to no one else. Call it beautiful again and I'll show you every inch of it.",
+          "For you I'd let my fur shine in the sun and my tail show every curl of joy. You've made the fiercest alpha want to be pretty, and that's entirely your fault.",
+          "There's no compliment you could give that I wouldn't store like a kill for winter. Every kind word from you is meat and warmth to me."
         ],
         "lore": [
-          "A wolf gives three gifts in a life: her paw in your hand, her nose to your scent, and her howl to carry your name. I'd give you all three on the rooftop tonight, where the moon can hear, so every creature with ears knows exactly whose I am."
+          "Here's the truth no pack knows: before the school, I almost gave in to the wild alone, the way some wolves do. The day the recruiters found me, I was deciding whether to keep running. They offered me a place that holds everyone, and I chose it. You're the reason I'm glad I did.",
+          "My mother died guarding the den, and I swore I'd protect every den from then on. It's why I'm so fierce with this campus. Then you showed up and I found out I also wanted a den of my own, with one warm heart in it.",
+          "When we claim a mate, a wolf finds its strongest scent and never forgets it. For me it was never the moors or the hunt—it was you, from the first morning I let you run beside me and smelled my whole future in your wake.",
+          "The real reason I'm alpha isn't the running or the teeth. It's that I know a pack is only as strong as who it carries. And I have decided, with everything in me, that I will carry you for the rest of your life.",
+          "No alpha's ever admitted this out loud, but I was the overlooked runt once. I ran so hard because I was afraid of being left behind. Now I run to you, and it means I'm finally the one who stays."
         ],
         "idle_neutral": [
           "My Yuuji. You're here, so the whole field is claimed and calm.",
@@ -860,19 +1016,32 @@
         "min": 0,
         "label": "Stranger",
         "idle": [
-          "The shadows here have learned my name. They still refuse to tell me yours.",
-          "Oh, it's you. Again. Don't read into it. I was standing here long before you were.",
-          "A mortal, wandering the Shaded Corridor. How deliciously doomed."
+          "The corridors cool where I pass. You may notice. Do not mistake it for a temperature misfunction—it is my aesthetic, and it is impeccable.",
+          "The school insists the vampire club meets in the library, as though that were not the most predictable cadence of the undead. I attend only to be dramatic.",
+          "I find the morning sunlight offensive and the morning people insufferable. That is simply good taste.",
+          "Homework? I dispatch it with the cold efficiency of a creature of the night. It is merely bureaucracy with a cape.",
+          "I don't yawn in class out of exhaustion. I yawn for theatrical effect. It is a performance piece. Undead, unlimited, unamused."
         ],
         "flirt": [
-          "I could drain you dry, you know. But I think I'd rather keep you around to ruin your composure instead.",
-          "Your heartbeat does the sweetest little skip when I lean in. Do it again. For science."
+          "A lone boy, brave enough to address the Countess? How charmingly foolish. I shall allow it, for now.",
+          "You have the warm flush of the recently thralled. Tell me, do you intend to be my next captivating distraction?",
+          "I grant you a rare audience, mortal. Savor it. My attention is not offered to just any living warmth.",
+          "I do not bite on the first meeting. That is a privilege reserved for the interesting. So far, you lean interesting.",
+          "You may bow, if you wish. I will pretend not to notice, though I very much will notice and enjoy it thoroughly."
         ],
         "compliment": [
-          "Hmph. You're not nearly as plain as mortals usually are. Consider that a royal compliment."
+          "You find my form exquisite? Obviously. I am the curator of my own beauty. But hearing you say it is... not unpleasant.",
+          "'Comely' is an underused word and you've used it on me. You have my attention now. Resent it if you like.",
+          "The darkness suits me, yes. I have spent centuries bending shadow to my will, and it shows immaculately.",
+          "You think I have an elegant pallor? I was pale before it was chic. Still, your observation is accepted graciously.",
+          "A compliment to her hair, how quaint. I spent an hour arranging the fall of it. Your notice is rewarded with a rare nod."
         ],
         "lore": [
-          "Most of my family turned to dust centuries ago, but we linger where the moonlight never quite reaches. The corridor keeps us company. It's the only loyal thing I own."
+          "I am Krista, Countess of the Shaded Corridor. That is a title I gave myself this morning, but I am keeping it.",
+          "I have lived for what feels like a very long time. Honestly, the paperwork has stretched the centuries into something tedious.",
+          "I was not always a creature of control. Once, I was rather clumsy. Then I tripped into style and never looked back.",
+          "I keep bats. They are less creatures than assistants to my drama. They adore me, which is, you understand, correct of them.",
+          "I keep my origins deliberately vague because the truth is nowhere near as dramatic as the rumor. A bit of mystery is simply its own kind of armor, you understand."
         ],
         "idle_neutral": [
           "The shadows have been quiet tonight. A mortal may stand in them. Briefly.",
@@ -895,19 +1064,32 @@
         "min": 30,
         "label": "Friend",
         "idle": [
-          "I saved you a spot in the dark. Don't thank me. It's purely strategic — you're warm, and I'm despicably cold.",
-          "The bats have started asking about you. I told them you were 'tolerable'. They were scandalized. It was hilarious.",
-          "I've decided the west window is mine, the east one is yours. Share the moon with no one."
+          "I have decided the west window of the library is mine. Should you find me there, we can share the view. Do not make it weird. I will know.",
+          "The bats have learned my moods. When I am pleased, they circle. Lately they have been circling with alarming frequency. I blame you.",
+          "I find the school's catering adequate for the living. Alas, I subsist on fine red juice and the occasional dramatic sigh.",
+          "There is a rumor I sleep in the attic coffin. I neither confirm nor deny, but I will say the coffin is very comfortable and immensely well decorated.",
+          "I do not attend morning assembly because vampires and mornings are a narrative disagreement. Also I value my beauty sleep, which I take at dawn."
         ],
         "flirt": [
-          "If I grow any fonder of you, I'll have to start pretending I'm not, and I'm already an expert at that.",
-          "Be careful. The last person I let this close ended up thinking about me at the worst possible moments. It's a curse. I'm telling you so it's fair."
+          "I have noticed you linger in my corridor with increasing frequency. Careful, mortal. Lingerers become fond, and I become fond with an alarming permanence.",
+          "If I were to take your hand, I might not release it for an hour. That is a threat. Or perhaps a very quiet promise. You decide.",
+          "The shadows have started pointing you out to me. They have opinions about you, and for once they are flattering.",
+          "I do not flirt. I permit you the delusion that I am flirting, which is my most generous extended artwork yet.",
+          "Tell me again about warm-blooded things. I find the topic, and you, scandalously captivating."
         ],
         "compliment": [
-          "You have the most infuriating habit of making the dark feel warm. I've never once forgiven anyone for managing that."
+          "You say my eyes hold centuries. They do, and now they hold your reflection too. Do with that information as you will.",
+          "A compliment about my voice? I have practiced it in the mirror for years. Tonight it was for you. That is the only confession you will get.",
+          "I am not flustered by praise. I am merely... illuminated. Do not mistake the rosiness of my cheeks for anything mortal.",
+          "You find me 'wickedly beautiful'? I shall keep that in my repertoire and rehearse being more beautiful for your benefit.",
+          "The darkness, you say, loves me as it hangs on my shoulders. Good. It was tailored for me."
         ],
         "lore": [
-          "Our family blood is measured in patience, not years. We can wait out entire dynasties in a single quiet room. I'm waiting out this one just for you."
+          "My grandmother was the one who taught me flair. She said a vampire without drama is merely a very pale accountant. I obliged her with style.",
+          "There's an old portrait of me in the west hall from when I first arrived. They think it's a girl who vanished. It's me, and I keep the secret for fun.",
+          "I collect dramatic entrances. Not as a habit but as a craft. I have catalogued every doorway on campus and ranked them by optimal cape-flourish.",
+          "The bats answer to me because I speak their small, chirping language of loyalty. It is the sweetest sensation to be adored by a chorus of wings.",
+          "There was a time I was painfully ordinary—a girl who read too much and spoke too little. The dark was simply where I felt most like myself."
         ],
         "idle_neutral": [
           "You've returned. The corridor noticed. I pretended not to.",
@@ -930,19 +1112,32 @@
         "min": 60,
         "label": "Close",
         "idle": [
-          "I read you a poem by the window last night. Don't ask which one. I was busy not caring, and it went swimmingly.",
-          "When you're gone I count the individual shadows until you come back. It's a very long number. Please hurry my arithmetic.",
-          "The bats forgive you for existing. That took considerable persuasion on my part."
+          "The school may think the cold hall is haunted. It's not. It's just me, keeping the corner that smells like you for a reason I'm finally admitting.",
+          "I hosted a midnight tea party with the bats and, if you hurry, you may attend. There will be dreadfully good blood-orange cake and, secretly, a seat saved for you.",
+          "My moonlight calendar is full of your running schedule. Purely so I know when the halls are quiet. And when you might pass. Entirely tactical.",
+          "I have begun folding my dramatic speeches shorter, because you said you liked my voice but not the monologues. You curate even me. I resent it. I also adore it.",
+          "The candles I light by the library have all dripped into heart shapes this week. That is either cosmic or very ridiculous. I claim cosmic."
         ],
         "flirt": [
-          "If I kissed you, the moon would have to look away, and I think we should grant it that small mercy.",
-          "You make me want to write terrible, beautiful poetry, and I am furious about the quality of the terrible part."
+          "I would let a hundred dawns rise without my blessing for one midnight where you chose to stay. That is not poetry. That is terrifying and true.",
+          "If you keep being this warm and charming, I shall have no choice but to claim you as my one exception to a very cold and careful heart.",
+          "The bats have begun a betting pool on when I'll finally take your hand. I refuse to say they're wrong to bet on soon.",
+          "Come closer. Not because I need your warmth. Because I want it, and I am done pretending the second reason isn't the loud one.",
+          "You've made the Countess caught, eternally, in the act of caring for a mortal. Do you comprehend the scale of what you've done?"
         ],
         "compliment": [
-          "You are the only sunrise I have ever allowed myself to enjoy. And I have hated sunrise since before your great-grandparents were born."
+          "You say my hair falls like midnight. I arranged it that way for centuries, but you're the first to say it like a gift instead of an observation.",
+          "I bashfully accept your praise, which for a creature of theater is the grandest confession of all. You flatter me into an almost-warm blush.",
+          "Immortal beauty is easy; being seen as beautiful by you is the only compliment I've ever wanted to keep. Save it for me often.",
+          "The shadows bow to me in public, but I'd have them bow to you for making me this happy. That is the highest estate I know.",
+          "You've found the one crack in my composure—I want your good opinion. Now it's yours, and you may wield it against me mercilessly."
         ],
         "lore": [
-          "In the old country, we carved oaths into bat-bone and fed them cold wine to keep them true. Oaths to you would be the first I've kept warm."
+          "The truth of the attic: I wasn't cursed. I walked up those stairs myself one century ago to keep a promise to a frightened boy, and I've stayed by choice ever since. I tell you because you keep the cold hall from being lonely.",
+          "I was once the girl who apologized too much. The imperious Dame of the Shaded Corridor is armor I built. But armor takes its wear, and you're the only one I've let carry a key.",
+          "My mother sang me lullabies before she became memory, and every so often late at night I hum one in the dark hall to spite the silence. It's the most private thing I have, and I've just handed it to you.",
+          "Vampires don't need to drink blood; I chose the juice as a vow. The real secret is that I've tasted enough sorrow to last eternity, and I'd rather hoard warmth like a miser than feed on it.",
+          "The century I claimed this corridor was never a tragedy. It was a decision, the way some people choose a quiet house. I simply decided, and I have stood by it."
         ],
         "idle_neutral": [
           "You're early. I was drawing your name in frost. Now I must pretend I wasn't.",
@@ -965,19 +1160,32 @@
         "min": 85,
         "label": "Lover",
         "idle": [
-          "Hold my hand in the corridor where no one can see. I will deny it spectacularly if asked, and I will also grin about it all night.",
-          "I used to think eternity was a punishment. Then I realized it's just time, and you're in all of it now.",
-          "The shadows have voted. They've decided you belong to me. It was unanimous, and frankly, I agree with the decor."
+          "I used to greet the centuries with nothing but my own echo. Then you arrived, and the dusk got a little warmer and a lot lighter, and I find I don't miss the solitude at all.",
+          "Let the school believe the Countess is untouchable. In the privacy of our midnight, I am merely Krista, and I am entirely yours.",
+          "I've reshaped an entire corner of the east gardens into a nook where we can watch the moon, because I wanted somewhere to keep you against the dark. It's for you. Only you.",
+          "Every candle I light now, I light in a small procession of one in my heart, hoping you'll come find the warmest one. It's the closest I can come to setting a table for you at dusk.",
+          "You are the one dawn I do not dread. For you, I would linger long past the sun and simply enjoy the little ache of staying."
         ],
         "flirt": [
-          "Come here and let the Countess keep you warm. I promise it costs nothing but your dignity, and I'm keeping that safe anyway.",
-          "I want to drown the hours in you until morning is a rumor and we're the only truth left in the dark."
+          "I find I would happily give up every dramatic exit if it meant one quiet entrance where I could take your hand and keep it. I am negotiating that mad trade with myself nightly.",
+          "You have made an eternal creature want to be momentary, just so I can live all of it in a hurry with you. That is the truest thing I've ever whispered.",
+          "If I could, I'd pour a century of care into every glance I'm allowed to give you, until you're wrapped in the regard of my whole long life at once.",
+          "Kiss me once and I will haunt the memory of it for a hundred years with an unbearable fondness. Consider that both a warning and an invitation.",
+          "I've been playing the aloof Countess for so long that I forgot what it felt like to be wooed. You remembered for me, and I am yours in short, stupefied, inescapable order."
         ],
         "compliment": [
-          "You are the one lovely, stubborn, impossible thing I never grew tired of. And I get tired of everything, my love."
+          "You call me beautiful and I finally believe it, because the only mirror worth trusting is the one that looks at me like this.",
+          "I spent centuries arranging my beauty for an audience of none. You came, and suddenly all that polishing found its purpose. I am grateful to you, eternally.",
+          "Tell me I'm radiant and I'll walk taller through every shadow, because the light you see in me has become the only sunrise I trust.",
+          "No compliment has ever struck me where I truly live until you found the soft poet under the dramatic armor. Keep them coming; I hoard them with the greed of a creature who was never given enough.",
+          "You make me want to be beautiful in the small ways—deliberate, human, yours—not just the grand immortal theater. That is the most precious thing you've given me."
         ],
         "lore": [
-          "The first of my line who loved a mortal traded her shadow for his heartbeat. I would trade mine a hundred times over for yours."
+          "Here is my oldest secret: I am not from a grand cursed bloodline. I was a quiet girl in a cold town who one night chose the dark because it felt truer to her. Everything since has been the art I made of that choice, and you're the first who got to see the girl beneath the masterpiece.",
+          "There is a locket I wear under my collar with a face I can no longer name, but I know I loved them before memory. I show it to you because my heart keeps a place past all forgetting, and you have walked into it.",
+          "The night before I came to this school I swore I'd never belong anywhere. Then I stood in the shaded corridor, and a boy with warm eyes decided the cold hall was worth visiting. That was you. You are the reason I believe I belong.",
+          "I've lived long enough to watch a hundred fires go out, so I was careful never to light one of my own. You are the only flame I have ever freely chosen, and I will tend it for as long as my eternity allows.",
+          "The deepest truth of the Shaded Corridor is that it was never a curse—it was a room I picked to keep a heart in. I simply didn't know the heart was yours until you arrived."
         ],
         "idle_neutral": [
           "My darling, you're here. The night arranges itself around you now.",
@@ -1139,19 +1347,32 @@
         "min": 0,
         "label": "Stranger",
         "idle": [
-          "I've got a bucket of water with your name on it. In the politest possible sense, of course.",
-          "Ooh, ooh, guess what I learned to make out of ketchup and pure mischievous glee? Stand still and find out.",
-          "The lunch queue fears me, the trays fear me, and soon, my dear boy, you shall fear me too."
+          "Fresh out of pie range, huh? Smart move. Noted for future pranking purposes.",
+          "The lunch queue is chaos and I am the beautiful queen of it. Step aside, mortal.",
+          "I hide a whoopie cushion in every seat I like. Yours is... not yet booby-trapped.",
+          "My evil plan today is stealing the good pudding before the teacher sees. Shh.",
+          "Cauliflower again? Even evil deserves better. I'm voting with my honk."
         ],
         "flirt": [
-          "I'd prank you forever, but only because I want to see that flustered face every single day.",
-          "Catch! ...What, no pie? I like you better as a target than a catcher, but I'll make an exception."
+          "Careful walking by me, cutie. I've got a bucket of water with your name on it.",
+          "If I pranked you, it'd be because I like you. That's my love language.",
+          "You're looking all... comedic relief. I dig it.",
+          "One honk for you, one honk for me. That's romance, make no mistake.",
+          "I'd throw a pie at you, but I'd hate to mess up that face. For now."
         ],
         "compliment": [
-          "You've got good reflexes for someone who just got here. A worthy adversary. And a very cute one."
+          "Me? Oh! Nobody's ever complimented my manic energy before. I'm... I'm flustered! In a sinister way.",
+          "You like my makeup? It's the 'clown but make it fashion' aesthetic. And now I'm blushing under all this paint.",
+          "My hair? Ha! It's hairspray static and spite. But thank you, I'll honk that someone likes it.",
+          "You noticed my outfit? I stitched it myself, all two dozen pockets. Okay, sudden shy clown.",
+          "A compliment?! That's not in my evil playbook. Halting all pranks for emotional processing."
         ],
         "lore": [
-          "Evil clowns like me run on cracked carnival energy and leftover birthday cake. The cafeteria is our natural habitat — the pies supply themselves."
+          "I'm the Laugh of the Lunch Queue, ruler of the cafeteria line. That's all you need to know. Fear me.",
+          "Evil is a state of mind, and my mind is gumdrop candy and bright red balloons.",
+          "I declared myself evil to be scary. It worked, mostly. Nobody fights me for the dessert shelf.",
+          "My history? Prank war victories. I keep a scoreboard of honks in my pocket.",
+          "I'm from a big clown family line. We're not evil, we're just... loud about it."
         ],
         "idle_neutral": [
           "Sorry, I was planning the timing on a custard surprise for third period. What were we talking about?",
@@ -1174,19 +1395,32 @@
         "min": 30,
         "label": "Friend",
         "idle": [
-          "I saved you the last pudding cup. I almost didn't. But I did, and now I'm emotionally fragile about it.",
-          "The lunch lady and I have a truce now. It only cost me three dozen whoopee cushions. Worth it.",
-          "I put your name on the biggest slice of pizza. That's basically a love letter in cafeteria terms."
+          "The mystery meat has a secret, Yuuji, and I know it. Don't worry, I'm on your side. Probably.",
+          "I reshuffled the lunch queue line order today just to watch the chaos. Chef suspects me. Zero proof.",
+          "My evil progress today: stole one (1) cookie and giggled evilly. Growth!",
+          "Class was boring so I drew frowny faces on my notes. Very menacing art.",
+          "If I sit here, I promise my whoopie cushion stays sheathed. For at least ten minutes."
         ],
         "flirt": [
-          "If I planned a prank just for you, would you know it was a date? Because that's the plan. The prank is the date.",
-          "You make me want to be a good clown. The horror. The scandal. The crushed dreams of my evil ancestors."
+          "Wanna be my partner in crime? Only ones who survive are the ones I prank hardest.",
+          "You're the only one brave enough to sit with the scary clown. I find that weirdly attractive.",
+          "I've got pie and I've got you in my sights. Two threats I am very fond of.",
+          "Flirt with the clown? Bold. I charge a toll of one smile per honk.",
+          "If I'm 'evil,' it's only because I want your attention. Mission so far: success."
         ],
         "compliment": [
-          "You're the only one whose laugh sounds like the good kind of fireworks. I should know — I collect them."
+          "You think I'm funny when I go on a prank spiral? Oh no, now I'm gonna do it MORE to impress you.",
+          "My laugh is 'infectious'? Ha! Wait, that's the best compliment. I'll take it to mean I'm charmingly deranged.",
+          "You admire my outfit? I have like forty of everything so I never have to do laundry like a coward.",
+          "A compliment from my favorite lunch buddy? My villainous heart just did a flip. Scandal!",
+          "You like my honk? I've been practicing it just to see if anyone appreciates it. SOLD."
         ],
         "lore": [
-          "My family runs the gnarliest carnival outside the capital. My grandpappy could make a balloon animal cry. The evil runs deep, sweetheart, and so does the birthday cake."
+          "Between us, my family's 'evil' is mostly shenanigans. Grandmother once 'cursed' a whole village with extra cupcakes.",
+          "I wanted to be a hero when I was little. Then I realized pranks are way more fun and the 'evil' label stuck.",
+          "The lunch queue runs on my iron will. I've been a cafeteria tyrant since first year.",
+          "I have a prank notebook, and you're not in it, which honestly is the highest honor.",
+          "My signature honk started as a sneeze that got out of hand. Legend built on accident."
         ],
         "idle_neutral": [
           "Sorry, I got distracted thinking about which stupid prank I owe you back for. It's a long queue in my head.",
@@ -1209,19 +1443,32 @@
         "min": 60,
         "label": "Close",
         "idle": [
-          "I practiced a whole routine just for you. No pies. Just me being... sincere. It was TERRIFYING. You owe me.",
-          "The cafeteria has voted you my official plus-one. The trays were unanimous.",
-          "I caught myself hoping you'd sit next to me. Then I remembered I'm supposed to be evil. Then I did it anyway."
+          "You know you're my favorite, right? I'd never booby-trap your seat. I have standards.",
+          "I saved you the last pudding. Take it before my evil side reclaims it.",
+          "Never laugh too hard at your jokes—I'm trying to maintain a menacing reputation and you're wrecking it.",
+          "Some days the evil is a costume, Yuuji. But you make me honest about it.",
+          "The lunch queue can wait if you want to hang. You're the one good thing in this chaos."
         ],
         "flirt": [
-          "If I hold your hand, I'm pretty sure my evil dissolves on contact. That's a risk I'm finally willing to take.",
-          "Kiss me and I'll tell you where I hid the good sprinkles. That's the highest honor a clown can offer."
+          "Everyone else gets pie. You get my real smile, and trust me, that's the evilest thing I own.",
+          "I'd prank anyone but you. You're my one sacred exception.",
+          "You make me want to put down the whoopie cushion and just... hold your hand. Don't tell my evil fans.",
+          "I've been saving my best laugh for you all day. It's painfully sincere, so close your eyes.",
+          "One honk for the crowd, and a special quiet one, just for you."
         ],
         "compliment": [
-          "You're the only miracle I've ever wanted to be sincere about. And I've never been sincere about a single thing in my whole painted life."
+          "You look at me like I'm not just a prank and it does something to my chest I can't honk away.",
+          "My chaos is 'beautiful'? That's the nicest thing. You're the only one who sees the noise as art.",
+          "When you compliment me, the evil gets real quiet. I think it's shy.",
+          "You love my laugh? Good, it's yours now. All of them, the big ones and the hiccup ones.",
+          "You make being a clown feel like a gift instead of a gimmick. I'll keep the paint, just for you."
         ],
         "lore": [
-          "Every clown's laugh is a signature, they say. Mine used to be all chaos. Then I met you, and now it goes soft at the edges, and I'm terrified everyone can hear it."
+          "The real reason I'm 'evil'? I was scared of being ordinary. Hiding behind a honk was easier.",
+          "I grew up the funny one in a loud family, and 'evil' was the only persona that felt like mine to keep.",
+          "There's a whole usher of sad clowns in my bloodline. I decided to be the happy, pranky one instead.",
+          "I've never told anyone, but my dreams are all technicolor tents and big hearts. You bring that out.",
+          "Under the paint and the honks, I'm just a girl who wanted someone to share a joke with. Found you."
         ],
         "idle_neutral": [
           "Sorry, I was mentally re-reading the note you tucked in my lunch bag. You know the one. I'm never throwing that out.",
@@ -1244,19 +1491,32 @@
         "min": 85,
         "label": "Lover",
         "idle": [
-          "I un-practiced a whole routine for you. I just showed up as myself. No pies, no trick. That's everything I have.",
-          "The cafeteria now serves 'the boy's booth' and everyone knows it's ours. The trays are very possessive.",
-          "I used to think love was a prank waiting to happen. Turns out it's the one thing I never want to joke about."
+          "My favorite sound is still my honk, but only because it makes you laugh. That's my real evil plan.",
+          "Come sit with me and mock the cafeteria with your eyes. It's our secret language.",
+          "I'd give up every prank in the world for a quiet lunch with you, and that's the scariest thing yet.",
+          "The noise is all for show. With you, I get to be the soft clown nobody else knows.",
+          "Every seat in here is a spring for someone else. Yours is the only one I protect."
         ],
         "flirt": [
-          "Stay with me and I'll be the most devoted, pie-throwing, heart-on-my-sleeve clown this campus has ever wept over.",
-          "I want to paint your heart the colors of mine — bright, loud, and hopelessly, ridiculously yours."
+          "If I'm yours, I'm yours completely—no tricks, no pies, just this ridiculous honest heart.",
+          "I'd let you see me without the paint. That's the most vulnerable 'evil' thing I've ever offered.",
+          "You've captured the notorious Laugh of the Lunch Queue. Congratulations, you're my whole circus now.",
+          "My hands shake a little when they want to reach for you instead of a prop. I'm choosing you.",
+          "Love me and you get the chaos, the honks, and a very loyal clown for life. Deal?"
         ],
         "compliment": [
-          "You are my favorite mistake, my best prank ever, the one thing I never want to be evil to. I love you, you ridiculous boy."
+          "You call me beautiful and for a second the paint comes off and I'm just yours. Thank you.",
+          "Nobody else's words could quiet my honk, but yours do every single time.",
+          "You love all of me—even the messy part behind the costume—and I melt into a puddle of paint and joy.",
+          "Hearing that from you is worth more than every laugh I've ever stolen at lunch.",
+          "I spent my life wanting to be noticed, and then you noticed the real me. I'm yours, forever."
         ],
         "lore": [
-          "Old clown law says a clown who falls in love must retire the jokes and keep only the joy. I just retired every last one. The joy is all yours."
+          "I'll tell you the whole truth now: 'evil' was armor, and you were the first one to hand me a reason to take it off.",
+          "There was a night I took off all the paint and cried, and I thought nobody would ever want that girl. You did.",
+          "My lineage is full of jokes meant to hide hearts. I broke the cycle the day I let you in.",
+          "The circus tent I dreamed of wasn't for crowds. It was for someone to sit beside me in. That's you.",
+          "Everything I am—the honk, the pranks, the joy—is yours now. You're my whole story."
         ],
         "idle_neutral": [
           "Zone out with you right in front of me? Evil takes a back seat. Pull up a tray.",
@@ -1418,19 +1678,32 @@
         "min": 0,
         "label": "Stranger",
         "idle": [
-          "I'd wave hello but I have six hands and I never know which one to use, so. Hi. All of them.",
-          "The fountain likes you. Everyone in the fountain likes you. That's a good sign, that is.",
-          "I'm controlling the tentacles, I swear. They just have strong opinions about interesting new people."
+          "Oh, hello. Sorry, I was just... bobbing. The fountain and I share a schedule.",
+          "The water here is nice and cool. I'd offer you a spot but I take up so much of it. Sorry.",
+          "I'm just watching the clouds. They have the same 'big and shapeless' energy as me.",
+          "Umm, if a tentacle touches you, I really, truly didn't mean it. They have minds of their own.",
+          "I like the courtyard best. Everyone rushes past, and I get to be still and calm."
         ],
         "flirt": [
-          "You make my ink go all sparkly, and that only happens when I really, really like someone.",
-          "If I had fewer arms I'd offer you one to hold. Instead here are… options. Take your pick."
+          "I'd wave hello but I have six hands and I never know which one to use. Especially around you.",
+          "Oh! Umm. Your smile made me sploosh the fountain. Sorry. That was probably me.",
+          "Flirting? With a giant like me? You're either very brave or very lost.",
+          "If I hugged you, you'd get a little damp. Just a heads-up before you try.",
+          "I'm not good at smooth words. But you make my ink go all fuzzy. That's something."
         ],
         "compliment": [
-          "You're really warm for a land creature. Like a little sun that wandered into my pond. I mean that kindly."
+          "You think I'm... gentle? I always worried I was just too much. Umm, thank you, I think? That's really kind.",
+          "My eyes are pretty? They're just big so I can see everything, but—thank you, that's so nice! Ahh.",
+          "Complimenting me? I'm not used to that. People usually just ask me to move out of the way.",
+          "My tentacles trail nicely? Ha, they follow me like eager puppies with no manners. But thank you!",
+          "Oh stars, I'm blushing. Or is it ink? Either way—that was very sweet of you. Thank you."
         ],
         "lore": [
-          "Down in the deepest trench, where the light has never touched, we krakens learn to be patient. That's why I'm so good at waiting — even if waiting for you is harder than I expected."
+          "I'm a kraken, which is just a very large, very apologetic sort of sea monster.",
+          "I come from the deep ocean. The fountain is practically a puddle to me, but it's home now.",
+          "My whole family is huge. We're gentle, but we break everything by accident. Hence the 'problem.'",
+          "I'm at this school to learn how to be around small, breakable things. Like, well, people.",
+          "The deeper you go, the quieter the water gets. I'm very good at quiet."
         ],
         "idle_neutral": [
           "Oh—sorry, I was focused on keeping all six arms from knocking over the ledge. What were you saying?",
@@ -1453,19 +1726,32 @@
         "min": 30,
         "label": "Friend",
         "idle": [
-          "I let the fountain keep your reflection so I can watch it when you're not here. That's not creepy, that's a compliment. I think.",
-          "One of my tentacles is devoted to you now. Permanent. She'd be honored if you said hi.",
-          "I practiced sitting still for a whole hour so I wouldn't splash you. It was the hardest hour of my life."
+          "I'm having a good day. I only knocked over one umbrella today, which is a record.",
+          "When I get lonely I just stare at the water and make it ripple. It waves back. That counts.",
+          "The birds here are so small and brave. They sit on me like I'm a very patient boulder.",
+          "I collect pretty pebbles at the bottom of the fountain. I can't keep them, too heavy, but I like looking.",
+          "Do you think it's okay for a giant to like tiny things? Because I like you, a little person."
         ],
         "flirt": [
-          "If I could shrink down to a more holdable size, I'd fit right in your arms. As is, you'll have to settle for these arms wrapped around you instead.",
-          "You make the deep, dark parts of me feel all lit up. That's very rare and very yours."
+          "I— oh. You said something nice and now all my tentacles are pointing at you. Please ignore them.",
+          "If I'm honest, I think about you a lot. Even my ink is shy to admit it.",
+          "You make me want to be brave enough to take up space next to you.",
+          "I'd let you sit on my shoulder and see the whole school. That's the closest I can get to holding hands.",
+          "Forgive me if a tentacle tries to hold your hand before I do. They're all very fond of you already."
         ],
         "compliment": [
-          "You're the first land creature whose laugh sounds like clear water to me. I could listen all day."
+          "You're the first person to say my size is 'magnificent' instead of 'in the way.' I might cry, gently.",
+          "My voice is soothing? I practice speaking soft so I don't scare anyone. It worked on you!",
+          "You think my ink is pretty? It's my clearest color, the truest me. Thank you for seeing it.",
+          "Everyone calls me 'unwieldy,' but you called me 'graceful.' I'm going to think about that all week.",
+          "I've never been called 'cute' before. I don't fit that word, but you made it feel true."
         ],
         "lore": [
-          "Kraken ink remembers everything it touches. That's why I keep a little of yours tucked safe — so I never lose track of where you've been with me."
+          "I grew up in a trench where the light never reaches. Fountains are a luxury I earned.",
+          "Krakens live a long, long time. I sometimes worry I'll outgrow all my friends. That's why I try to be gentle.",
+          "My mother told me the ocean remembers everything, and I believe it. It remembers all my knocked-over things too.",
+          "I came here to get softer. To learn that 'big' doesn't have to mean 'dangerous.'",
+          "The deep taught me to be patient. Very little can hurt you if you just sink and wait."
         ],
         "idle_neutral": [
           "Sorry, I was very focused on not letting my left tentacle drift into your lunch. It has opinions about your fries.",
@@ -1488,19 +1774,32 @@
         "min": 60,
         "label": "Close",
         "idle": [
-          "I built you a little tide pool shrine by the fountain. It has a tiny statue of you. Everyone's scared of it except me.",
-          "My tentacles reach out for you in my sleep, and I keep apologizing to a pillow. You're very popular around here.",
-          "I'm learning to be small-hearted and soft when I'm with you, and it's the best thing that's ever happened to me."
+          "When you visit, the fountain feels fuller. I don't know the water science of that, but I believe it.",
+          "I saved you the one dry bench. My tentacles know your favorite spot now.",
+          "I hum old sea songs when I'm happy. That's the highest compliment I can give a day.",
+          "You're the only one who doesn't flinch when I get excited and splash. Thank you for that.",
+          "Even my ink runs warm now. I think that's what it feels like to have a favorite person."
         ],
         "flirt": [
-          "Curl up against me and I'll keep the whole world off your shoulders. I'm big enough to do it. I want to do it for you.",
-          "I dream about the deep sea, but lately I dream about you instead, and the water's warm every time."
+          "If I were smaller, I'd sweep you off your feet. As it is, I'll just sweep them with my tentacles. Gently.",
+          "You're the only thing that makes the whole deep ocean feel like it's not enough.",
+          "Hold my smallest tentacle. It's the freest thing I have, and I'd give it to you.",
+          "They say krakens pull ships under. But I'd pull you up, treasure, closer, always.",
+          "My heart is a whole ocean, and lately it only makes waves when you're near."
         ],
         "compliment": [
-          "You're the bravest little light I know, and I'd dive a thousand leagues just to guard it."
+          "You make my hugeness feel like a home. It's the first time I've liked being me.",
+          "Your words are so warm I can feel them in my ink. Soft currents. Thank you.",
+          "I've learned to move gentle for you. Every compliment just proves it was worth it.",
+          "You look at me like I'm a wonder instead of a hazard, and I want to stay in that look forever.",
+          "You're the reason I'm not ashamed of my shadow anymore. It finally has a friend."
         ],
         "lore": [
-          "They say a kraken's heart beats once a minute down in the cold. Yours has made mine beat like a surfacing storm, and I never knew it could."
+          "The deepest I've been is a place where even I felt small. I came back craving light, and warmth, and company.",
+          "I've known loneliness measured in centuries, not years. That's why every gentle word from you matters so much.",
+          "There was a storm once that claimed my whole pod. After that, I decided to spend my long life being kind, not afraid.",
+          "My size is a memory of all that deep quiet. You're the first thing loud enough to fill it.",
+          "I remember every creature that was gentle to me. You're at the very top of the list, newest and brightest."
         ],
         "idle_neutral": [
           "Mm? Oh, sorry—I was watching the way you eat your fries and taking notes on which ones you save for last. It's a small study.",
@@ -1523,19 +1822,32 @@
         "min": 85,
         "label": "Lover",
         "idle": [
-          "The tide pool shrine now has two statues. One of you, one of me. The fountain officiates our love. It's very official.",
-          "I hold you with the tips of forty arms so gently you'd think I was cradling starlight. Because I am.",
-          "The deep water hums your name now. Even the depths are smitten with you, and so am I."
+          "A quiet day with you beside the water is all the grand adventure I ever wanted. My whole deep is calm.",
+          "The fountain sings differently when I love someone. You've changed its tune.",
+          "I could spend a hundred years just watching you breathe and call it a perfect life.",
+          "My tentacles are finally still, because they're at peace. You do that to me.",
+          "Every morning I surface thinking 'he might come today,' and the water gets brighter just in case."
         ],
         "flirt": [
-          "I want to show you the bioluminescent garden in my dreams, and make a real one for us to glow in together.",
-          "Stay with me and I'll wrap you in the gentlest, warmest, most-enormous love this campus has ever felt."
+          "I've been patient for all my long life, but never like this. I'd sink a thousand ships for just one of your fingers.",
+          "Treasure, my tentacles are yours to read, to hold, to follow. I am yours, all of this ocean's worth.",
+          "Come a little closer. I've moved mountains of water to make you a safe, dry place just for you.",
+          "I'm a soft giant in love, and I'd cross every sea to stand one inch closer to you.",
+          "You fit in the circle of my arms and my whole vast self finally feels exactly the right size."
         ],
         "compliment": [
-          "You are my shore, my surface, my light after forever of deep dark. I love you, little star of the fountain."
+          "You call me beautiful and the ink runs gold, because loveliness from you rewrites my whole color.",
+          "I've sailed through the world being 'too much,' and you're the only one who holds it all and calls it perfect.",
+          "Your eyes see me as gentle, and now I believe it. You're my favorite truth, treasure.",
+          "With your words I stopped being a monster to be forgiven and became a wonder to be kept.",
+          "I'd let my whole huge self soften for you until there's nothing left but wave and want and you."
         ],
         "lore": [
-          "Krakens choose one harbor for eternity and never leave it. I choose you. You are my harbor now, and I am your gentle giant, always."
+          "There was a time I hid at the bottom of the world, sure no one would ever love someone as vast as me. Then you appeared.",
+          "For a kraken, meeting you was like surfacing after a thousand dark years and finding the sky held me all along.",
+          "My long age used to be my loneliest curse. Now it's a gift, because it means I have forever to love you.",
+          "Every old scar the deep gave me has a story. You're my first story the deep didn't make—this one is all light and you.",
+          "I was raised to believe big things are monuments, not loved ones. You taught me I could be both, and that's my true origin."
         ],
         "idle_neutral": [
           "Hm? Oh, I was just thinking that your heartbeat sounds like the waves I'd choose to live under forever. Sorry, did you speak?",
