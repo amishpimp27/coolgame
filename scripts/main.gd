@@ -399,7 +399,8 @@ func _attend_class() -> void:
 	if not present.is_empty():
 		var who: String = present[randi() % present.size()]
 		steps.append({"text": "%s leans over. \"%s\"" % [Cast.display_name(who),
-				Cast.pick_outcome(who, "chat", "success", Game.get_affection(who))], "id": who})
+				Cast.pick_dialogue(who, Game.tier_of(who), "chat", "success")
+						.get("reply", "...")], "id": who})
 	steps.append({"text": "You survive the lesson. (+1 Charm)"})
 	Game.advance_period()
 	vn.open(steps)
@@ -637,6 +638,44 @@ func _run_selftest() -> void:
 		# Outcome + player line lookups never come back empty at any tier.
 		for opt in ["chat", "flirt", "compliment", "ask"]:
 			_check(not Cast.player_line(id, 0, opt).is_empty(), "%s player_line %s tier 0 non-empty" % [id, opt])
+		# Bound (mc, reply) pairs per option+outcome: unique across every tier.
+		var used_mc := {}
+		var used_reply := {}
+		var dspec := {"chat.success": 4, "chat.neutral": 4, "flirt.success": 3,
+				"flirt.neutral": 3, "flirt.fail": 3, "compliment.success": 4, "compliment.fail": 4}
+		for t: Dictionary in tiers:
+			var d: Variant = t.get("dialogue", null)
+			_check(typeof(d) == TYPE_DICTIONARY, "%s tier %d has dialogue pairs" % [id, int(t.get("min", 0))])
+			if typeof(d) != TYPE_DICTIONARY:
+				continue
+			for clabel: String in dspec:
+				var parts := clabel.split(".")
+				var cells: Array = ((d as Dictionary).get(parts[0], {}) as Dictionary).get(parts[1], [])
+				_check(cells.size() == dspec[clabel], "%s tier %d %s -> %d pairs (got %d)"
+						% [id, int(t.get("min", 0)), clabel, dspec[clabel], cells.size()])
+				for pair: Variant in cells:
+					var p := pair as Dictionary
+					_check(p.has("mc") and not str(p.get("mc", "")).is_empty()
+							and p.has("reply") and not str(p.get("reply", "")).is_empty(),
+							"%s dialogue pair complete" % id)
+					var mk := str(p.get("mc", "")).strip_edges().to_lower()
+					_check(not used_mc.has(mk), "%s dialogue MC reused" % id)
+					used_mc[mk] = true
+					var rk := str(p.get("reply", "")).strip_edges().to_lower()
+					_check(not used_reply.has(rk), "%s dialogue reply reused" % id)
+					used_reply[rk] = true
+			var asks: Array = (d as Dictionary).get("ask", [])
+			_check(asks.size() == 2, "%s tier %d ask -> 2 pairs (got %d)" % [id, int(t.get("min", 0)), asks.size()])
+			for pair: Variant in asks:
+				var p := pair as Dictionary
+				if p.has("mc") and not str(p.get("mc", "")).is_empty():
+					var mk := str(p.get("mc", "")).strip_edges().to_lower()
+					_check(not used_mc.has(mk), "%s dialogue MC reused" % id)
+					used_mc[mk] = true
+				if p.has("reply") and not str(p.get("reply", "")).is_empty():
+					var rk := str(p.get("reply", "")).strip_edges().to_lower()
+					_check(not used_reply.has(rk), "%s dialogue reply reused" % id)
+					used_reply[rk] = true
 		for outcome_cat: Array in [["chat", "success"], ["chat", "neutral"],
 				["flirt", "success"], ["flirt", "neutral"], ["flirt", "fail"],
 				["compliment", "success"], ["compliment", "fail"], ["ask", "success"]]:

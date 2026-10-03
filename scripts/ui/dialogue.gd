@@ -510,13 +510,15 @@ func _play_topic_exchange(id: String, category: String, outcome: String, tier: i
 		gains.append(["+%d Suspicion" % susp, Color("#ff8a6a")])
 	for g: Array in gains:
 		_toast(str(g[0]), g[1])
-	# Yuuji opens with an option-appropriate line, then the girl reacts to it.
+	# A single bound exchange: Yuuji's line is inseparable from her reply.
 	var follow := []
-	var mc := Cast.player_line(id, tier, category)
+	var ex: Dictionary = Cast.pick_dialogue(id, tier, category, outcome)
+	var mc := str(ex.get("mc", ""))
 	if not mc.is_empty():
 		follow.append({"text": mc, "speaker": Game.player_name, "colour": "#d9a0ff"})
-	follow.append({"text": Cast.pick_outcome(id, category, outcome, Game.get_affection(id)),
-			"id": id})
+	var reply := str(ex.get("reply", ""))
+	if not reply.is_empty():
+		follow.append({"text": reply, "id": id})
 	# Keep the conversation open while the player still has budget; Leave is
 	# always offered so nobody is trapped.
 	follow.append({"menu": id})

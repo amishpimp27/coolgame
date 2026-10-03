@@ -224,6 +224,35 @@ func player_line(id: String, tier_index: int, category: String) -> String:
 	return str(pool[randi() % pool.size()])
 
 
+## A fully bound (mc, reply) exchange for one option+outcome at a tier. Neither
+## line is ever reused across cells, so the MC line and the girl's reply are
+## inseparable. Falls back to a loose pairing if dialogue data is absent.
+func pick_dialogue(id: String, tier_index: int, option: String, outcome: String) -> Dictionary:
+	var tier := tier_bucket(id, Game.get_affection(id)) if has_char(id) else {}
+	var d: Variant = tier.get("dialogue", null)
+	var pool: Array = []
+	if typeof(d) == TYPE_DICTIONARY:
+		if option == "ask":
+			var ab: Variant = d.get("ask", null)
+			if typeof(ab) == TYPE_ARRAY:
+				pool = ab
+		else:
+			var opt: Variant = d.get(option, null)
+			if typeof(opt) == TYPE_DICTIONARY:
+				var outcome_arr: Variant = (opt as Dictionary).get(outcome, null)
+				if typeof(outcome_arr) == TYPE_ARRAY:
+					pool = outcome_arr
+	if not pool.is_empty():
+		var pick: Variant = pool[randi() % pool.size()]
+		if typeof(pick) == TYPE_DICTIONARY:
+			return (pick as Dictionary).duplicate()
+	# Fallback: keep the game playable even with a thin file.
+	return {
+		"mc": player_line(id, tier_index, option),
+		"reply": pick_outcome(id, option, outcome, Game.get_affection(id)),
+	}
+
+
 ## Characters who are in `area_id` right now, in stable cast order.
 func present_in(area_id: String, period_index: int) -> Array:
 	_ensure()
