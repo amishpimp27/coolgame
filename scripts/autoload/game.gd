@@ -12,16 +12,19 @@ const MAX_SUSPICION := 100
 const SAVE_PATH := "user://monster_girl_college_save.json"
 
 ## Player-facing knobs.
-const NIGHT_SUSPICION_DECAY := 14
+const NIGHT_SUSPICION_DECAY := 3
 
 ## Conversation budget. Every period the player gets a fresh pool of tokens and
 ## spends them to talk: Just Chat 1, Flirt 3, Compliment 2, Ask free (once/day).
-const TOKENS_PER_PERIOD := 25
+## Conversation budget. You get a fresh pool of 25 tokens each new *day* (not every
+## period), and spend them to talk: Just Chat 1, Flirt 3, Compliment 2,
+## Ask (once/day).
+const TOKENS_PER_DAY := 25
 const COST_CHAT := 1
 const COST_FLIRT := 3
 const COST_COMPLIMENT := 2
 const COST_ASK := 0
-## Attending class tops the conversation budget up by this much.
+## Attending class tops the day's conversation budget up by this much.
 const CLASS_TOKEN_REWARD := 5
 
 var player_name := "Yuuji"
@@ -30,7 +33,7 @@ var day := 1
 var period := 1  # index into PERIODS
 var suspicion := 0
 var area := "gate"
-var tokens := TOKENS_PER_PERIOD
+var tokens := TOKENS_PER_DAY
 
 var affection := {}       # char_id -> int
 var met := {}             # char_id -> true
@@ -76,10 +79,9 @@ func period_name() -> String:
 
 func reset() -> void:
 	day = 1
-	period = 1
-	suspicion = 0
+	period = 0
 	area = "gate"
-	tokens = TOKENS_PER_PERIOD
+	tokens = TOKENS_PER_DAY
 	affection.clear()
 	met.clear()
 	events_seen.clear()
@@ -130,6 +132,8 @@ func add_tokens(amount: int) -> void:
 	tokens = maxi(0, tokens + amount)
 	stats_changed.emit()
 
+func set_tokens(amount: int) -> void:
+	tokens = amount
 
 func add_suspicion(amount: int) -> void:
 	suspicion = clampi(suspicion + amount, 0, MAX_SUSPICION)
@@ -185,7 +189,6 @@ func mark_revealed(id: String) -> void:
 
 func advance_period() -> void:
 	# A fresh period is a fresh conversation budget (also fires on a new day).
-	tokens = TOKENS_PER_PERIOD
 	period += 1
 	if period >= PERIODS.size():
 		_next_day()
@@ -197,6 +200,8 @@ func _next_day() -> void:
 	period = 0
 	# Gossip fades overnight; the crisis of yesterday is old news by breakfast.
 	add_suspicion(-NIGHT_SUSPICION_DECAY)
+	if period == 0:
+		set_tokens(tokens + TOKENS_PER_DAY)
 
 
 func is_outed() -> bool:
@@ -238,7 +243,7 @@ func from_dict(d: Dictionary) -> void:
 	period = int(d.get("period", 1))
 	suspicion = int(d.get("suspicion", 0))
 	area = str(d.get("area", "gate"))
-	tokens = int(d.get("tokens", TOKENS_PER_PERIOD))
+	tokens = int(d.get("tokens", TOKENS_PER_DAY))
 	affection = d.get("affection", {})
 	met = d.get("met", {})
 	events_seen = d.get("events_seen", {})
