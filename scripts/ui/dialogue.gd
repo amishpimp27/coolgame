@@ -183,10 +183,10 @@ func _show_step(step: Dictionary) -> void:
 		_menu_char = str(step["menu"])
 		_show_menu()
 		return
-	# A step attributed to the main character shows a name plate (Yuuji) with no
-	# sprite; it is not interactive, just his scripted opening line.
+	# A step attributed to the main character shows his name plate (Yuuji) and
+	# his sprite on the left so the pair face each other across the exchange.
 	if step.has("speaker"):
-		_set_sprite("")
+		_set_sprite("player")
 		_set_speaker_named(str(step["speaker"]),
 				Color.from_string(str(step.get("colour", "#d9a0ff")), Color(0.85, 0.63, 1.0)))
 		var ptext := str(step.get("text", ""))
@@ -250,14 +250,20 @@ func _set_sprite(id: String) -> void:
 		_sprite.texture = null
 		return
 	_sprite.texture = load(path)
-	# Fit the sprite to the screen height and anchor its feet near the bottom
-	# right, which is the conventional visual-novel staging.
+	# Fit the sprite to the screen height and anchor its feet near the bottom.
+	# The girl stages on the right; the player stages on the left and mirrors
+	# so the two face each other across the conversation.
 	var size: Vector2 = _sprite.texture.get_size()
 	var target_h := 690.0
 	var scale := target_h / size.y
 	_sprite.scale = Vector2(scale, scale)
 	var w := size.x * scale
-	_sprite.position = Vector2(1020.0 - w * 0.5, 720.0 - target_h)
+	if id == "player":
+		_sprite.position = Vector2(300.0 - w * 0.5, 720.0 - target_h)
+		_sprite.flip_h = true
+	else:
+		_sprite.position = Vector2(1020.0 - w * 0.5, 720.0 - target_h)
+		_sprite.flip_h = false
 
 
 func _set_speaker(id: String) -> void:
@@ -430,7 +436,7 @@ func _menu_note(aff: int) -> String:
 		return "  She stands a little closer than she needs to."
 	if aff >= 30:
 		return "  She seems genuinely pleased to see you."
-	return "  She is very aware that you are the only boy here."
+	return "  What will you do?"
 
 
 func _add_topic_button(label: String, id: String, category: String, cost: int,
