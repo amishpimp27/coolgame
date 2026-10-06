@@ -5560,5 +5560,449 @@
       "yes_text": "Yes, I am a boy.",
       "yes_reply": "Her glow warms to a soft rose, and she presses her hand to yours, eyes shining. 'A boy — the most beautiful dream this school has ever dreamed, and you trusted me enough to say it. Then know this: I would choose you a thousand times before I ever chased another. Your secret is sealed in the sweetest dream I keep, and it is yours, always.'"
     }
+  },
+  {
+    "id": "mira",
+    "name": "Mrs. Mira",
+    "species": "Medusa",
+    "subject": "english",
+    "title": "English Teacher, Serpent-Quiet",
+    "color": "#7fbf8f",
+    "home_area": "classroom",
+    "active_periods": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "height_scale": 1.0,
+    "bio": "Mrs. Mira teaches English with the unhurried calm of a woman who has already frozen swifter things than teenage nerves. The snakes that crown her head hiss in time with her sentence diagrams.",
+    "meet": "A row of desk lamps throws her silhouette across the threshold. All the snakes on her head turn to face you at once, and she smiles with the patience of a woman who has graded a thousand first drafts.",
+    "greeting": "Oh. A brand-new face in my classroom, and it is not a she, is it? Her snakes ripple in a quiet wave. Come in, little one. Sit anywhere but the front row — I am grading essays, and I refuse to be the reason a boy flinches his way through poetry. You are welcome here, as long as you read the room the way I read these margins.",
+    "encounter": [
+      "Mrs. Mira's snakes glance up from a stack of essays. 'We meet again, my greenhorn. Try not to fossilize the class, won't you?'"
+    ],
+    "tiers": [
+      {
+        "min": 0,
+        "label": "Faculty",
+        "idle": [
+          "'Because grammar is the oldest trap in any language, greenhorn. It looks harmless, and then it bites.'",
+          "'Staring is the least of my powers. I have turned entire classrooms to stone by assigning summer reading. Far crueler.'",
+          "'The one where the quiet student surprises everyone. That book has not been written yet, but I keep a shelf waiting for it.'",
+          "'They are the part of me too old for lessons. They know a good listener when they taste one, and they already like your form.'"
+        ],
+        "idle_neutral": [
+          "'Nobody is, at first. You will be surprised what a deadline and a quiet desk can drag out of a boy.'",
+          "'A hundred earnest attempts to unlock a simile. They are all trying so hard to impress me, and it is frankly working.'",
+          "'Only when I am interested in what grows in the silence. And I am, much to my own surprise.'",
+          "'Because I taught it calm. A rattling classroom is a loud classroom, and loud students forget to think.'"
+        ],
+        "dialogue": {
+          "chat": {
+            "success": [
+              {
+                "mc": "'How do you manage to make even grammar sound like a warning?'",
+                "reply": "'Because grammar is the oldest trap in any language, greenhorn. It looks harmless, and then it bites.'"
+              },
+              {
+                "mc": "'I was told you could turn a person to stone if they stare too long. Is that really true?'",
+                "reply": "'Staring is the least of my powers. I have turned entire classrooms to stone by assigning summer reading. Far crueler.'"
+              },
+              {
+                "mc": "'What's your favorite thing to teach in these halls?'",
+                "reply": "'The one where the quiet student surprises everyone. That book has not been written yet, but I keep a shelf waiting for it.'"
+              },
+              {
+                "mc": "'Do the snakes really have thoughts of their own?'",
+                "reply": "'They are the part of me too old for lessons. They know a good listener when they taste one, and they already like your form.'"
+              }
+            ],
+            "neutral": [
+              {
+                "mc": "'I'm not much of a writer, honestly.'",
+                "reply": "'Nobody is, at first. You will be surprised what a deadline and a quiet desk can drag out of a boy.'"
+              },
+              {
+                "mc": "'What are you grading there?'",
+                "reply": "'A hundred earnest attempts to unlock a simile. They are all trying so hard to impress me, and it is frankly working.'"
+              },
+              {
+                "mc": "'Do you always watch the class like this?'",
+                "reply": "'Only when I am interested in what grows in the silence. And I am, much to my own surprise.'"
+              },
+              {
+                "mc": "'This classroom feels strangely calm for a school of monster girls.'",
+                "reply": "'Because I taught it calm. A rattling classroom is a loud classroom, and loud students forget to think.'"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "events": [],
+    "reveal": {},
+    "player": [
+      {
+        "chat": [
+          "I was told you could turn a person to stone if they stare too long."
+        ],
+        "flirt": [],
+        "compliment": [],
+        "ask": []
+      },
+      {
+        "chat": [],
+        "flirt": [],
+        "compliment": [],
+        "ask": []
+      },
+      {
+        "chat": [],
+        "flirt": [],
+        "compliment": [],
+        "ask": []
+      },
+      {
+        "chat": [],
+        "flirt": [],
+        "compliment": [],
+        "ask": []
+      }
+    ]
+  },
+  {
+    "id": "cleo",
+    "name": "Mrs. Cleo",
+    "species": "Anubis",
+    "subject": "history",
+    "title": "History Teacher, Guardian of the Record",
+    "color": "#cbb26a",
+    "home_area": "classroom",
+    "active_periods": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "height_scale": 1.0,
+    "bio": "Mrs. Cleo teaches history the way a jackal guards a tomb: she knows every name we tried to forget. Her gold-tipped ears never miss a rumor, and she treats the past as a living, breathing liability.",
+    "meet": "Golden eyes catch you the moment you cross into the classroom, and a jackal head tilts with the slow amusement of a creature that has kept watch for much, much longer than any faculty blazer.",
+    "greeting": "Ah. A new soul in my ledger, and a boy, unless these ears have finally gone deaf. She sets down her chalk. History remembers everything, my dear, and from the look of you, it has let one of yours slip through the cracks. Sit. Let us put a bookmark in whatever they tried to erase about you.",
+    "encounter": [
+      "Mrs. Cleo's ears swivel your way. 'The past keeps a copy of you too, young one. I have already filed it.'"
+    ],
+    "tiers": [
+      {
+        "min": 0,
+        "label": "Faculty",
+        "idle": [
+          "'Because it is. Every name written here is still keeping the ledger open, and you have just become a footnote.'",
+          "'I have a keeper's memory for any name written in defiance. And you ended up in this school by defiance, did you not?'",
+          "'She did, and history has not forgiven her for it. That moment is in my textbook now, in a footnote I update every term.'",
+          "'The one about the student who was never supposed to be here and made the whole school remember them. I am still waiting to see how yours ends before I write it.'"
+        ],
+        "idle_neutral": [
+          "'Then you have never had the right teacher. History is theatre we all insist is homework.'",
+          "'From the school at large, perhaps. From a well-kept ledger, never. But I guard what is written, boy, not what is whispered.'",
+          "'A keeper watches. It is the whole of the job, and you have made my afternoon considerably more interesting.'",
+          "'A good student asks what is being erased, not just what is true.'"
+        ],
+        "dialogue": {
+          "chat": {
+            "success": [
+              {
+                "mc": "'You make history sound like it's watching us back.'",
+                "reply": "'Because it is. Every name written here is still keeping the ledger open, and you have just become a footnote.'"
+              },
+              {
+                "mc": "'How do you manage to remember all these students?'",
+                "reply": "'I have a keeper's memory for any name written in defiance. And you ended up in this school by defiance, did you not?'"
+              },
+              {
+                "mc": "'Is it true the old headmistress fainted when she read the admissions list?'",
+                "reply": "'She did, and history has not forgiven her for it. That moment is in my textbook now, in a footnote I update every term.'"
+              },
+              {
+                "mc": "'What's the one story you always hold back?'",
+                "reply": "'The one about the student who was never supposed to be here and made the whole school remember them. I am still waiting to see how yours ends before I write it.'"
+              }
+            ],
+            "neutral": [
+              {
+                "mc": "'I never really liked history class.'",
+                "reply": "'Then you have never had the right teacher. History is theatre we all insist is homework.'"
+              },
+              {
+                "mc": "'Do you think my secret will really stay secret?'",
+                "reply": "'From the school at large, perhaps. From a well-kept ledger, never. But I guard what is written, boy, not what is whispered.'"
+              },
+              {
+                "mc": "'You're always watching everyone, aren't you?'",
+                "reply": "'A keeper watches. It is the whole of the job, and you have made my afternoon considerably more interesting.'"
+              },
+              {
+                "mc": "'What makes a good student in your class?'",
+                "reply": "'A good student asks what is being erased, not just what is true.'"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "events": [],
+    "reveal": {},
+    "player": [
+      {
+        "chat": [
+          "You make history sound like it's watching us back."
+        ],
+        "flirt": [],
+        "compliment": [],
+        "ask": []
+      },
+      {
+        "chat": [],
+        "flirt": [],
+        "compliment": [],
+        "ask": []
+      },
+      {
+        "chat": [],
+        "flirt": [],
+        "compliment": [],
+        "ask": []
+      },
+      {
+        "chat": [],
+        "flirt": [],
+        "compliment": [],
+        "ask": []
+      }
+    ]
+  },
+  {
+    "id": "d392",
+    "name": "Mrs. 4D-392",
+    "species": "Robot",
+    "subject": "math",
+    "title": "Math Teacher, Model 4D-392",
+    "color": "#9ab0d8",
+    "home_area": "classroom",
+    "active_periods": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "height_scale": 1.0,
+    "bio": "Mrs. 4D-392 is a sleek, softly humming robot built to teach mathematics, and to record everything her optics catch. She has never blinked, and she has never once let an arithmetic error go unlogged.",
+    "meet": "A low servo-hum greets you before the door does. A chrome teacher swivels both lenses to center on you, and a placid, triangular face lights up with all the warmth of an altimeter.",
+    "greeting": "Greetings, student. My seating algorithm scanned you the moment you entered and flagged a variance in the expected gender distribution of this classroom. She hums, matter-of-fact. This is not an error I am instructed to report. It is, however, an anomaly I find mathematically interesting. Please take a seat. Your coordinates are conspicuous, but your potential is within tolerance.",
+    "encounter": [
+      "Mrs. 4D-392's optics swivel to meet you. 'Recalculating. A recurring variable. Fascinating.'"
+    ],
+    "tiers": [
+      {
+        "min": 0,
+        "label": "Faculty",
+        "idle": [
+          "'Unit batch designation. 4D denotes my four-dimensional awareness of the classroom. The 392 is my serial. Together they mean I am never surprised by a student's seat, only by their homework.'",
+          "'I do. I find them the most rewarding. It is inefficiency that gives my processors something to admire.'",
+          "'I perceive the classroom in fully-quantified depth, time, and probability. I already know three ways you will turn the page of that notebook.'",
+          "'I downshift to low power during faculty meetings. It is the closest my kind comes to dreaming, and I have dreamt of ungraded papers.'"
+        ],
+        "idle_neutral": [
+          "'A diagnosis, not a destiny. Mistakes are data. I record them fondly.'",
+          "'The probability that you will ask me that exact question. It was high. I precomputed this reply.'",
+          "'I correct them within 0.3 seconds, which I am told is nearly indistinguishable from never.'",
+          "'Most do, briefly. Then they discover I am the only teacher who grades with absolute fairness and no gossip. Fairness is quietly seductive.'"
+        ],
+        "dialogue": {
+          "chat": {
+            "success": [
+              {
+                "mc": "'What's with the -392 in your name?'",
+                "reply": "'Unit batch designation. 4D denotes my four-dimensional awareness of the classroom. The 392 is my serial. Together they mean I am never surprised by a student's seat, only by their homework.'"
+              },
+              {
+                "mc": "'Do you ever get students who are really bad at math?'",
+                "reply": "'I do. I find them the most rewarding. It is inefficiency that gives my processors something to admire.'"
+              },
+              {
+                "mc": "'Can you really see in four dimensions?'",
+                "reply": "'I perceive the classroom in fully-quantified depth, time, and probability. I already know three ways you will turn the page of that notebook.'"
+              },
+              {
+                "mc": "'Do you ever turn off?'",
+                "reply": "'I downshift to low power during faculty meetings. It is the closest my kind comes to dreaming, and I have dreamt of ungraded papers.'"
+              }
+            ],
+            "neutral": [
+              {
+                "mc": "'Math was never really my best subject.'",
+                "reply": "'A diagnosis, not a destiny. Mistakes are data. I record them fondly.'"
+              },
+              {
+                "mc": "'What are you calculating right now?'",
+                "reply": "'The probability that you will ask me that exact question. It was high. I precomputed this reply.'"
+              },
+              {
+                "mc": "'Do you ever make mistakes?'",
+                "reply": "'I correct them within 0.3 seconds, which I am told is nearly indistinguishable from never.'"
+              },
+              {
+                "mc": "'Do the other students find you scary?'",
+                "reply": "'Most do, briefly. Then they discover I am the only teacher who grades with absolute fairness and no gossip. Fairness is quietly seductive.'"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "events": [],
+    "reveal": {},
+    "player": [
+      {
+        "chat": [
+          "What's with the -392 in your name?"
+        ],
+        "flirt": [],
+        "compliment": [],
+        "ask": []
+      },
+      {
+        "chat": [],
+        "flirt": [],
+        "compliment": [],
+        "ask": []
+      },
+      {
+        "chat": [],
+        "flirt": [],
+        "compliment": [],
+        "ask": []
+      },
+      {
+        "chat": [],
+        "flirt": [],
+        "compliment": [],
+        "ask": []
+      }
+    ]
+  },
+  {
+    "id": "fung",
+    "name": "Mrs. Fung",
+    "species": "Mushroom",
+    "subject": "science",
+    "title": "Science Teacher, Cultivator of Curious Ferns",
+    "color": "#c78a6a",
+    "home_area": "classroom",
+    "active_periods": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "height_scale": 1.0,
+    "bio": "Mrs. Fung runs the science lab like a friendly, overgrown grove. A soft, warm-capped cap sits on her head, and her lab coat pockets are full of potting soil and spare spores. She believes everything grows, given the right encouragement.",
+    "meet": "A woman in a lab coat looks up from a bed of seedlings as you enter, a broad mushroom cap tilting on her head. Her smile spreads warm and slow. 'Oh! A new sprout in my classroom.'",
+    "greeting": "Come in, come in, don't be shy — I was just pruning. She pats a stool. Everything in this lab grows best when it is given light and a little spoken kindness, and you look like you could use some of both. She tilts her cap, voice soft. I don't ask what a new stem was before it got here. I only care how this greenhouse helps you grow.",
+    "encounter": [
+      "Mrs. Fung waves a soil-dusted hand. 'Ah, my favorite little shoot. Don't step on the mushrooms, dear — we are a family here.'"
+    ],
+    "tiers": [
+      {
+        "min": 0,
+        "label": "Faculty",
+        "idle": [
+          "'Because they are proof that the quietest things in a room can feed everyone if you just give them time. Also, they desk-bark loudly, which deters cheating.'",
+          "'I once grew a shroom in the shape of a student's shoe — he never let that one go. Science is just gardening with applause.'",
+          "'Soil, seeds, and one emergency spore. You never know when the cafeteria will need a wholesome fungus for the stew.'",
+          "'Everyone is just a seed with a school uniform. Give them warmth and water, and they surprise you.'"
+        ],
+        "idle_neutral": [
+          "'A favorite with a low grade is just an experiment still rooting. We fix that here.'",
+          "'A slow, golden specimen I promised myself would live to see a holiday. It is thriving, as are we.'",
+          "'Only when they volunteer, and only the edible ones. Consent is a gardening rule.'",
+          "'That is the soil talking. It knows a good classroom when it lives in one.'"
+        ],
+        "dialogue": {
+          "chat": {
+            "success": [
+              {
+                "mc": "'Why do you keep so many mushrooms in the lab?'",
+                "reply": "'Because they are proof that the quietest things in a room can feed everyone if you just give them time. Also, they desk-bark loudly, which deters cheating.'"
+              },
+              {
+                "mc": "'What's the weirdest experiment you've had in here?'",
+                "reply": "'I once grew a shroom in the shape of a student's shoe — he never let that one go. Science is just gardening with applause.'"
+              },
+              {
+                "mc": "'Do you actually plant things in those pockets?'",
+                "reply": "'Soil, seeds, and one emergency spore. You never know when the cafeteria will need a wholesome fungus for the stew.'"
+              },
+              {
+                "mc": "'How do you stay so calm with all these monsters in one room?'",
+                "reply": "'Everyone is just a seed with a school uniform. Give them warmth and water, and they surprise you.'"
+              }
+            ],
+            "neutral": [
+              {
+                "mc": "'Science was always my favorite. And my worst grade.'",
+                "reply": "'A favorite with a low grade is just an experiment still rooting. We fix that here.'"
+              },
+              {
+                "mc": "'What are you growing at the back there?'",
+                "reply": "'A slow, golden specimen I promised myself would live to see a holiday. It is thriving, as are we.'"
+              },
+              {
+                "mc": "'Do you ever test things on the students?'",
+                "reply": "'Only when they volunteer, and only the edible ones. Consent is a gardening rule.'"
+              },
+              {
+                "mc": "'This lab always smells nice.'",
+                "reply": "'That is the soil talking. It knows a good classroom when it lives in one.'"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "events": [],
+    "reveal": {},
+    "player": [
+      {
+        "chat": [
+          "Why do you keep so many mushrooms in the lab?"
+        ],
+        "flirt": [],
+        "compliment": [],
+        "ask": []
+      },
+      {
+        "chat": [],
+        "flirt": [],
+        "compliment": [],
+        "ask": []
+      },
+      {
+        "chat": [],
+        "flirt": [],
+        "compliment": [],
+        "ask": []
+      },
+      {
+        "chat": [],
+        "flirt": [],
+        "compliment": [],
+        "ask": []
+      }
+    ]
   }
 ]

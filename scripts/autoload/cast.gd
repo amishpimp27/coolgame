@@ -9,6 +9,20 @@ const AREA_FILE := "res://data/areas.json"
 
 const TIER_LABELS := ["Stranger", "Friend", "Close", "Lover"]
 
+const CLASS_KEYS := ["english", "history", "math", "science"]
+const CLASS_NAMES := {
+	"english": "English",
+	"history": "History",
+	"math": "Math",
+	"science": "Science",
+}
+const CLASS_TEACHER_ID := {
+	"english": "mira",
+	"history": "cleo",
+	"math": "d392",
+	"science": "fung",
+}
+
 var chars := {}          # id -> Dictionary
 var order := []          # ids, stable and in file order
 var areas := {}          # id -> Dictionary
@@ -119,6 +133,20 @@ func has_char(id: String) -> bool:
 
 func display_name(id: String) -> String:
 	return str(get_char(id).get("name", id))
+
+
+## A cast member is a teacher if their entry carries a `subject` field.
+func is_teacher(id: String) -> bool:
+	var c := get_char(id)
+	return c.has("subject") and not str(c.get("subject", "")).is_empty()
+
+
+func class_name_of(class_key: String) -> String:
+	return str(CLASS_NAMES.get(class_key, class_key.capitalize()))
+
+
+func teacher_id_for(class_key: String) -> String:
+	return str(CLASS_TEACHER_ID.get(class_key, ""))
 
 
 func color_of(id: String) -> Color:
@@ -256,12 +284,15 @@ func pick_dialogue(id: String, tier_index: int, option: String, outcome: String)
 
 
 ## Characters who are in `area_id` right now, in stable cast order.
+## Teachers only show up in the classroom on the day their subject is taught.
 func present_in(area_id: String, period_index: int) -> Array:
 	_ensure()
 	var out := []
 	for id: String in order:
 		var c: Dictionary = chars[id]
 		if str(c["home_area"]) != area_id:
+			continue
+		if is_teacher(id) and str(c.get("subject", "")) != Game.current_class:
 			continue
 		if not _has_period(c["active_periods"], period_index):
 			continue

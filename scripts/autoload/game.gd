@@ -34,6 +34,7 @@ var period := 1  # index into PERIODS
 var suspicion := 0
 var area := "gate"
 var tokens := TOKENS_PER_DAY
+var current_class := ""  # the subject taught today (english/history/math/science)
 
 var affection := {}       # char_id -> int
 var met := {}             # char_id -> true
@@ -77,11 +78,20 @@ func period_name() -> String:
 	return PERIODS[clampi(period, 0, PERIODS.size() - 1)]
 
 
+## Pick the subject taught today. Used on a fresh run and on every new day.
+func roll_class() -> String:
+	var keys := Cast.CLASS_KEYS
+	current_class = str(keys[randi() % keys.size()])
+	time_changed.emit()
+	return current_class
+
+
 func reset() -> void:
 	day = 1
 	period = 0
 	area = "gate"
 	tokens = TOKENS_PER_DAY
+	roll_class()
 	affection.clear()
 	met.clear()
 	events_seen.clear()
@@ -200,6 +210,8 @@ func _next_day() -> void:
 	period = 0
 	# Gossip fades overnight; the crisis of yesterday is old news by breakfast.
 	add_suspicion(-NIGHT_SUSPICION_DECAY)
+	# Each day brings a fresh randomly-chosen subject.
+	roll_class()
 	if period == 0:
 		set_tokens(tokens + TOKENS_PER_DAY)
 
@@ -225,6 +237,7 @@ func to_dict() -> Dictionary:
 		"suspicion": suspicion,
 		"area": area,
 		"tokens": tokens,
+		"current_class": current_class,
 		"affection": affection,
 		"met": met,
 		"events_seen": events_seen,
@@ -244,6 +257,12 @@ func from_dict(d: Dictionary) -> void:
 	suspicion = int(d.get("suspicion", 0))
 	area = str(d.get("area", "gate"))
 	tokens = int(d.get("tokens", TOKENS_PER_DAY))
+	# A just-started save may not hold a class yet; roll one rather than
+	# resurrecting a stale subject.
+	if str(d.get("current_class", "")).is_empty():
+		roll_class()
+	else:
+		current_class = str(d.get("current_class", ""))
 	affection = d.get("affection", {})
 	met = d.get("met", {})
 	events_seen = d.get("events_seen", {})

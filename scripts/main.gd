@@ -20,14 +20,24 @@ const INTRO := [
 	{"text": "Try to survive the term. And try not to get caught."},
 ]
 
-const CLASS_FLAVOUR := [
-	"Advanced Hexonomics. Today's topic: the economics of soul-debt.",
-	"Introduction to Applied Curses. You are told to pair up. Everybody turns around.",
-	"Monstrous Biology. The diagram on the board is anatomically detailed and you "
-		+ "spend the entire hour looking at the ceiling.",
-	"History of the Blood Wars. Half the class falls asleep. The other half watches you.",
-	"Practical Shapeshifting. You are the only student who cannot demonstrate.",
-]
+const CLASS_FLAVOUR := {
+	"english": [
+		"Introduction to Metaphor. You are asked to find the hidden meaning in a love letter that is clearly about you.",
+		"Poetry Workshop. Mrs. Mira hands out blank verse and watches every face for the first raw line.",
+	],
+	"history": [
+		"Ancient Power Structures. Mrs. Cleo maps the old dynasties on the board and refuses to say which ones still rule.",
+		"Oral Histories of the Monster Age. Everyone is quietly certain the lesson is about them.",
+	],
+	"math": [
+		"Applied Geometry. Mrs. 4D-392 derives your seating position from three dimensions and one very suspicious variable.",
+		"Probability Theory. The robot teacher calculates the odds that you will pass today without being noticed. They are not in your favor.",
+	],
+	"science": [
+		"Botany and Regeneration. Mrs. Fung grows a fern overnight and dares anyone to say it wasn't here yesterday.",
+		"Fungal Symbiosis. The lab smells like soil and patience, and Mrs. Fung beams like a proud mother garden.",
+	],
+}
 
 var world: World
 var hud: HUD
@@ -415,15 +425,21 @@ func _attend_class() -> void:
 	if Game.period != 1:
 		return
 	_gameplay_pause()
-	# Nobody lives in the classroom, so draw the cameo from whoever is on campus
-	# during a class period rather than from the room's own roster.
-	var present := Cast.anyone_present(1)
-	var steps := [{"text": CLASS_FLAVOUR[randi() % CLASS_FLAVOUR.size()]}]
-	if not present.is_empty():
-		var who: String = present[randi() % present.size()]
-		steps.append({"text": "%s leans over. \"%s\"" % [Cast.display_name(who),
-				Cast.pick_dialogue(who, Game.tier_of(who), "chat", "success")
-						.get("reply", "...")], "id": who})
+	# Today's subject decides both the lesson and which teacher is on duty.
+	var subject := Game.current_class
+	if subject.is_empty() or not CLASS_FLAVOUR.has(subject):
+		subject = "english"
+	var teacher_id := Cast.teacher_id_for(subject)
+	var bowl: Array = CLASS_FLAVOUR[subject]
+	var steps: Array = [{
+			"text": "%s.\n\n%s\n\n%s is waiting at the front of the room."
+				% [Cast.class_name_of(subject), bowl[randi() % bowl.size()],
+					Cast.display_name(teacher_id)]}]
+	if Cast.has_char(teacher_id):
+		steps.append({"text": Cast.pick_dialogue(teacher_id, 0, "chat", "success")
+				.get("reply", "..."), "id": teacher_id})
+	else:
+		steps.append({"text": "She waits for the room to settle.", "id": teacher_id})
 	steps.append({"text": "You survive the lesson. (+%d Tokens)" % Game.CLASS_TOKEN_REWARD})
 	Game.advance_period()
 	Game.add_tokens(Game.CLASS_TOKEN_REWARD)
@@ -614,12 +630,15 @@ func _run_selftest() -> void:
 	var ids := Cast.all_ids()
 	_check(Cast.load_errors.is_empty(), "cast/area JSON parsed with no errors %s"
 			% str(Cast.load_errors))
-	_check(ids.size() == 12, "12 students loaded (got %d)" % ids.size())
+	_check(ids.size() == 16, "16 cast members loaded (12 students + 4 teachers, got %d)" % ids.size())
 	_check(Cast.area_order.size() == 12, "12 areas loaded (got %d)"
 			% Cast.area_order.size())
 
 	# Every character must be fully playable: art, four tiers, four topics.
+	# (Teachers are validated separately below — they only carry Just-chat.)
 	for id: String in ids:
+		if Cast.is_teacher(id):
+			continue
 		var c := Cast.get_char(id)
 		_check(ResourceLoader.exists("res://assets/sprites/%s.png" % id),
 				"%s has a sprite" % id)
@@ -716,6 +735,32 @@ func _run_selftest() -> void:
 					ok = false
 			_check(ok, "%s event at %d has >=2 complete choices" % [id, int(ev.get("min", 0))])
 		_check(not str(c.get("greeting", "")).is_empty(), "%s has a first-meeting line" % id)
+
+	# Teachers: one per subject, present in the classroom, with Just-chat only.
+	for tid: String in ids:
+		if not Cast.is_teacher(tid):
+			continue
+		var tc := Cast.get_char(tid)
+		var subj := str(tc.get("subject", ""))
+		_check(not subj.is_empty(), "%s has a subject" % tid)
+		_check(Cast.CLASS_KEYS.has(subj), "%s subject '%s' is one of the four classes" % [tid, subj])
+		_check(Cast.teacher_id_for(subj) == tid, "%s is the teacher for %s" % [tid, subj])
+		_check(str(tc.get("home_area", "")) == "classroom", "%s lives in Classroom 2-A" % tid)
+		_check(not str(tc.get("greeting", "")).is_empty(), "%s has a first-meeting line" % tid)
+		_check(ResourceLoader.exists("res://assets/sprites/%s.png" % tid), "%s has a sprite" % tid)
+		var troots: Array = tc.get("tiers", [])
+		_check(not troots.is_empty(), "%s has at least one tier" % tid)
+		if not troots.is_empty():
+			var d0: Variant = troots[0].get("dialogue", null)
+			_check(typeof(d0) == TYPE_DICTIONARY, "%s tier 0 has dialogue pairs" % tid)
+			if typeof(d0) == TYPE_DICTIONARY:
+				var chat: Variant = (d0 as Dictionary).get("chat", null)
+				_check(typeof(chat) == TYPE_DICTIONARY, "%s has Just-chat dialogue" % tid)
+				if typeof(chat) == TYPE_DICTIONARY:
+					_check((chat as Dictionary).get("success", []).size() >= 1, "%s Just-chat success lines" % tid)
+					_check((chat as Dictionary).get("neutral", []).size() >= 1, "%s Just-chat neutral lines" % tid)
+		_check(not str(Cast.pick_dialogue(tid, 0, "chat", "success").get("reply", "")).is_empty(),
+				"%s Just-chat reply non-empty" % tid)
 
 	# Tier resolution at every boundary.
 	_check(Cast.tier_index(ids[0], 0) == 0, "affection 0 -> tier 0")

@@ -407,13 +407,21 @@ func _show_menu() -> void:
 	_name_panel.visible = false
 
 	var token_colour := Color("#ffd24a")
-	_add_topic_button("Just chat" + _cost_suffix(Game.COST_CHAT), id, "chat", Game.COST_CHAT, token_colour)
-	_add_topic_button("Flirt with her  \u2665 (risky)" + _cost_suffix(Game.COST_FLIRT), id, "flirt", Game.COST_FLIRT, token_colour)
-	_add_topic_button("Compliment her" + _cost_suffix(Game.COST_COMPLIMENT), id, "compliment", Game.COST_COMPLIMENT, token_colour)
-	# Ask about herself is free but limited to once per day.
-	var ask_avail := Game.ask_available(id)
-	var ask_label := "Ask about herself" if ask_avail else "Ask about herself (used today)"
-	_add_topic_button(ask_label + _cost_suffix(Game.COST_ASK), id, "ask", Game.COST_ASK, token_colour, ask_avail)
+	var is_teacher := Cast.is_teacher(id)
+	if is_teacher:
+		# Teachers only have a classroom small-talk option; no romance, no
+		# personal lore questions.
+		_text.text = "%s is waiting for you to say something.  [Tokens: %d]" % [
+			Cast.display_name(id), Game.tokens]
+		_add_topic_button("Just chat" + _cost_suffix(Game.COST_CHAT), id, "chat", Game.COST_CHAT, token_colour)
+	else:
+		_add_topic_button("Just chat" + _cost_suffix(Game.COST_CHAT), id, "chat", Game.COST_CHAT, token_colour)
+		_add_topic_button("Flirt with her  \u2665 (risky)" + _cost_suffix(Game.COST_FLIRT), id, "flirt", Game.COST_FLIRT, token_colour)
+		_add_topic_button("Compliment her" + _cost_suffix(Game.COST_COMPLIMENT), id, "compliment", Game.COST_COMPLIMENT, token_colour)
+		# Ask about herself is free but limited to once per day.
+		var ask_avail := Game.ask_available(id)
+		var ask_label := "Ask about herself" if ask_avail else "Ask about herself (used today)"
+		_add_topic_button(ask_label + _cost_suffix(Game.COST_ASK), id, "ask", Game.COST_ASK, token_colour, ask_avail)
 
 	var leave := UIKit.button("Leave", Color("#8a8aa0"), 18)
 	leave.alignment = HORIZONTAL_ALIGNMENT_LEFT
