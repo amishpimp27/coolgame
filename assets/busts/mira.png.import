@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpjcoyc8vyfr2"
-path="res://.godot/imported/fung.png-aad025bb7cee79f3d85e6ef48dac4245.ctex"
+uid="uid://17ov3b0c2wgu"
+path="res://.godot/imported/mira.png-6ad3af7ccf1044f3ef411806d9b6b353.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/fung.png"
-dest_files=["res://.godot/imported/fung.png-aad025bb7cee79f3d85e6ef48dac4245.ctex"]
+source_file="res://assets/busts/mira.png"
+dest_files=["res://.godot/imported/mira.png-6ad3af7ccf1044f3ef411806d9b6b353.ctex"]
 
 [params]
 

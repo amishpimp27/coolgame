@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://odzdoc9is0j8ht9lgmxg9e"
-path="res://.godot/imported/cleo.png-fce75110d95bedd51264ce.ctex"
+uid="uid://b0stxmir3s0nk"
+path="res://.godot/imported/cleo.png-3477bacb5285647234f454aa4984a656.ctex"
 metadata={
 "vram_texture": false
 }
@@ -11,7 +11,7 @@ metadata={
 [deps]
 
 source_file="res://assets/sprites/cleo.png"
-dest_files=["res://.godot/imported/cleo.png-fce75110d95bedd51264ce.ctex"]
+dest_files=["res://.godot/imported/cleo.png-3477bacb5285647234f454aa4984a656.ctex"]
 
 [params]
 
