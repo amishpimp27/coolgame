@@ -22,20 +22,44 @@ const INTRO := [
 
 const CLASS_FLAVOUR := {
 	"english": [
-		"Introduction to Metaphor. You are asked to find the hidden meaning in a love letter that is clearly about you.",
-		"Poetry Workshop. Mrs. Mira hands out blank verse and watches every face for the first raw line.",
+		{
+			"lesson": "Introduction to Metaphor. You are asked to find the hidden meaning in a love letter that is clearly about you.",
+			"line": "The love letter is about one person in this room, and it is not the writer. Her snakes lean quietly toward your desk. Do not worry, little one — I grade the poem, not the boy, and I am gentle with whatever you hand in.",
+		},
+		{
+			"lesson": "Poetry Workshop. Mrs. Mira hands out blank verse and watches every face for the first raw line.",
+			"line": "Blank verse, ladies and one gentleman. She sets the paper face-down, patient as a garden after frost. No rhyme to hide behind — only rhythm and nerve. Somewhere in my margins, she says, your first true line is already trying to grow.",
+		},
 	],
 	"history": [
-		"Ancient Power Structures. Mrs. Cleo maps the old dynasties on the board and refuses to say which ones still rule.",
-		"Oral Histories of the Monster Age. Everyone is quietly certain the lesson is about them.",
+		{
+			"lesson": "Ancient Power Structures. Mrs. Cleo maps the old dynasties on the board and refuses to say which ones still rule.",
+			"line": "Every dynasty on this board still has a heartbeat, my dear. She sketches the lineage and lets her ears swivel to catch who gasps. Power does not die; it simply renames itself. Remember that.",
+		},
+		{
+			"lesson": "Oral Histories of the Monster Age. Everyone is quietly certain the lesson is about them.",
+			"line": "History remembers what it is fond of, and it is very fond of a well-kept secret. She looks at you across the desks, gold eyes warm. Tell me — which of these old tales sounds most like your own?",
+		},
 	],
 	"math": [
-		"Applied Geometry. Mrs. 4D-392 derives your seating position from three dimensions and one very suspicious variable.",
-		"Probability Theory. The robot teacher calculates the odds that you will pass today without being noticed. They are not in your favor.",
+		{
+			"lesson": "Applied Geometry. Mrs. 4D-392 derives your seating position from three dimensions and one very suspicious variable.",
+			"line": "Observe the desk as a four-dimensional object. She hums her cooling fans and projects the room's seating into a wireframe that curls around you. You are, statistically, the most satisfying irregularity in today's dataset.",
+		},
+		{
+			"lesson": "Probability Theory. The robot teacher calculates the odds that you will pass today without being noticed. They are not in your favor.",
+			"line": "The probability that you sit uneventfully through this period is 0.34 and falling. She recomputes, optics unblinking, then adds, almost warmly: do not be alarmed. I find your unpredictability refreshingly non-calculable.",
+		},
 	],
 	"science": [
-		"Botany and Regeneration. Mrs. Fung grows a fern overnight and dares anyone to say it wasn't here yesterday.",
-		"Fungal Symbiosis. The lab smells like soil and patience, and Mrs. Fung beams like a proud mother garden.",
+		{
+			"lesson": "Botany and Regeneration. Mrs. Fung grows a fern overnight and dares anyone to say it wasn't here yesterday.",
+			"line": "Watch the fern, dears. She pats the pot like a proud mother. It was a stump this morning, and now look at it reaching for the lamp. That is regeneration — and, if you are lucky, a metaphor for second years.",
+		},
+		{
+			"lesson": "Fungal Symbiosis. The lab smells like soil and patience, and Mrs. Fung beams like a proud mother garden.",
+			"line": "The mushrooms under the bench are not weeds. She beams, soil dark under her nails. They trade what the roots cannot reach and ask for nothing but company. Every good classroom is a little ecosystem just like this.",
+		},
 	],
 }
 
@@ -431,13 +455,14 @@ func _attend_class() -> void:
 		subject = "english"
 	var teacher_id := Cast.teacher_id_for(subject)
 	var bowl: Array = CLASS_FLAVOUR[subject]
+	var lesson: Dictionary = bowl[randi() % bowl.size()] as Dictionary
+	var lesson_text := str(lesson.get("lesson", "The lesson begins."))
 	var steps: Array = [{
 			"text": "%s.\n\n%s\n\n%s is waiting at the front of the room."
-				% [Cast.class_name_of(subject), bowl[randi() % bowl.size()],
+				% [Cast.class_name_of(subject), lesson_text,
 					Cast.display_name(teacher_id)]}]
 	if Cast.has_char(teacher_id):
-		steps.append({"text": Cast.pick_dialogue(teacher_id, 0, "chat", "success")
-				.get("reply", "..."), "id": teacher_id})
+		steps.append({"text": str(lesson.get("line", "...")), "id": teacher_id})
 	else:
 		steps.append({"text": "She waits for the room to settle.", "id": teacher_id})
 	steps.append({"text": "You survive the lesson. (+%d Tokens)" % Game.CLASS_TOKEN_REWARD})
