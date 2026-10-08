@@ -924,6 +924,26 @@
       "no_reply": "She folds one leg pair and gives a soft, knowing chitter. 'A denial entered into the ledger, recorded. But my web tells no lies, and it has already caught the true shape of you. I am a collector of secrets as much as specimens, and I will press yours between the pages of my fondest log — forever.'",
       "yes_text": "Yes, I am a boy.",
       "yes_reply": "She makes a pleased little hum and sets down her glass, eight eyes gleaming. 'A boy, classified at last — the rarest specimen this archive has ever held. I will catalogue you with the greatest care, and your secret shall be wound in my strongest silk, deeper than any shelf.'"
+    },
+    "encounter_scene": {
+      "text": "You step into the library's quietest corner to find Rachnia already watching you, a single fine silk thread drawn taut between two of her forelimbs, catching the low light. She doesn't reel it in so much as let the silence do the talking, cataloguing the exact shape of you before she speaks. \"I've been keeping the page beside mine warm for weeks, and it's official now — you're my favorite acquisition, cross-referenced under every entry I care about,\" she murmurs, and a soft, luminescent strand unspools toward you like an offered hand. \"There's a place in my web, the one I only show to things I mean to keep forever. Would you step into it with me?\"",
+      "choices": [
+        {
+          "text": "Keep me there",
+          "reply": "Her eight eyes all brighten at once, and she draws the glowing strand gently around your hand, not binding, just resting. \"Then that's where you belong — shelved beside my heart, where no careless breeze can reach. I'll mark this page as 'kept' and never re-file it.\"",
+          "affection": 3
+        },
+        {
+          "text": "I'll stay, but free",
+          "reply": "She pauses mid-weave, then gives a soft, considering chitter. \"As you wish. Then we're two spinners in one corner, weaving together instead of keeper and kept. I'll keep your spot warm, and you keep your own line — that's a fairer ledger, anyway.\"",
+          "affection": 0
+        },
+        {
+          "text": "Show me your web",
+          "reply": "She hesitates only a heartbeat before a slow, delighted hum answers you. \"Bold. To tread where I weave is to trust the thread holds — and I make my threads hold forever. Once you're woven in, I don't let go, boy of the library. Are you sure you want to tempt a spider's patience?\"",
+          "suspicion": 3
+        }
+      ]
     }
   },
   {
@@ -1851,6 +1871,26 @@
       "no_reply": "She blinks one extra eye, processing. 'The data disagrees with you, but I am a being of records and respect. I shall log your denial, and also log that I do not believe it. Your secret is statistically interesting either way — and I am very fond of interesting statistics. It stays aboard my vessel.'",
       "yes_text": "Yes, I am a boy.",
       "yes_reply": "Her posture loosens into something warm and almost delighted. 'Confirmed. A boy — a delightful deviation from the school's uniform data set. I will flag within my own files that you are easily the most interesting record on this campus, and that flag will never be shown to anyone else.'"
+    },
+    "encounter_scene": {
+      "text": "The rooftop door clicks shut and Zorp is already there, perched at the edge with her optical aperture aimed past the horizon, three fingers tracing an invisible chart. She turns to you with an expression her translators have only recently been taught to call 'fond.' \"My study of you has ceased to be observation and become something my homeworld would flag as dangerously subjective,\" she announces, rising and holding out one soft, three-fingered hand. \"I have catalogued your every habit, and I would like to stop cataloguing and simply be near you instead. Will you consent to being kept close, as my favorite variable rather than my data?\"",
+      "choices": [
+        {
+          "text": "Be my favorite",
+          "reply": "Her aperture brightens several lumens and she takes your hand with careful, reverent tenderness. \"Then I am promoted — no longer observer, but kept. I will log this under 'irreversible' and delete nothing. You are the variable I never want to correct.\"",
+          "affection": 3
+        },
+        {
+          "text": "Stay just a friend",
+          "reply": "She processes a beat, then nods with that serene precision of hers. \"Understood. Friendship is a markedly different dataset, one I have studied but never practiced. I will begin the fieldwork, if you will tolerate a curious subject at your side.\"",
+          "affection": 0
+        },
+        {
+          "text": "Tell me your scans",
+          "reply": "She perches closer, almost eager, her lens fixed on you with renewed intensity. \"Then let me show you everything your warmth signature reveals, every pattern your movements leave. To share my records is to invite you deep into my aperture — are you prepared to be the subject of a very thorough, very tender study?\"",
+          "suspicion": 3
+        }
+      ]
     }
   },
   {
@@ -2778,6 +2818,26 @@
       "no_reply": "She gives you a long, easy grin and bumps your shoulder. 'Okay, brah, I hear you. But the tide knows better than I do, and it's been telling me you're a boy all summer. I'm cool with secrets — surf and sand keep plenty. Just know I've got your back no matter what.'",
       "yes_text": "Yes, I am a boy.",
       "yes_reply": "Her grin goes full sunrise and she holds up a hand for a mighty high-five. 'That's it! A boy who hangs with the best surfer in the school! I knew there was a reason you felt like my favorite wave. Your secret? I'll bury it deeper than any sandbar, and we surf on together.'"
+    },
+    "encounter_scene": {
+      "text": "Mid-lunch, Kealoha slides sideways into the chair beside you, towel over one shoulder and a grin that could split the sun, nudging a basket of her fries your way as her fins catch the cafeteria light. \"Yo, fresh fin — I've been sharin' this sun-spot for weeks now, and nobody ever swims back, but you? You keep comin' back, and it's got my whole current feelin' warm,\" she laughs, salt-bright and still. \"I'll surf the big break at dawn tomorrow, just me and the tide, and I keep thinkin' you're the only person I'd actually wanna ride that wave with. You gonna be there, brah, or you gonna let the water have me all to itself?\"",
+      "choices": [
+        {
+          "text": "I'll ride that wave",
+          "reply": "Her whole face lights up and she practically vibrates off the seat, tail all but wagging under the table. \"YES. That's the energy I've been smellin' on you all along — real spine, real salt. Dawn it is, then. I'll have the board waxed and the coffee hot before the sun even pokes up.\"",
+          "affection": 3
+        },
+        {
+          "text": "Waves sound fun",
+          "reply": "She rocks back a little, grin softening into something easy and honest. \"Hey, no rush, brah. Not everyone's born to chase the foam. I'll still save you the sun-spot at lunch, but I get the break to myself — just me and the water, like always.\"",
+          "affection": 0
+        },
+        {
+          "text": "You can't be caught",
+          "reply": "The grin turns sly and slow, fin brushing yours under the table with a thrill in her voice. \"Ohhh, now THAT's bait. An apex don't get caught — but you just told me you're itchin' to try. Keep throwin' lines like that, and I might have to prove to you just how fast I can close the distance in this water.\"",
+          "suspicion": 3
+        }
+      ]
     }
   },
   {
@@ -3705,6 +3765,26 @@
       "no_reply": "She laughs, a low, warm roll of smoke. 'A demon always knows when her mark is lying, darling — it's the one thing we never, ever misjudge. But I'm a generous devil: I'll trade you my silence for a little of your heart, and consider it the best deal you've ever made. A handshake seals it, and my handshake is iron.'",
       "yes_text": "Yes, I am a boy.",
       "yes_reply": "Her grin sharpens into something genuinely delighted. 'There it is — the best bargain I've struck all year. A boy, confessed to a demon. I love secrets better than contracts, and I'll keep yours locked up tight as any vault. Consider it signed, sealed, and ours.'"
+    },
+    "encounter_scene": {
+      "text": "You edge into the council wing after hours, chasing a rumor of a locked archive, and the door clicks shut behind you with a sound that could be a latch or a coil. Valerie is already there, perched on the registrar's desk with your stolen key fob dangling from one claw, her tail ticking against the wood like a metronome, horns catching the low firelight of a brazier she definitely should not have lit indoors. \"Now this is an interesting visitation,\" she purrs, sliding off the desk and closing the gap until the warmth of her actually reaches you. \"Everyone comes to the student council to complain about schedules or beg for a budget. But you? You slipped in after the lights went out, with a key that isn't yours, and you clearly aren't here about gym fees. A demon loves a little trespass, little flame, so I won't call the guards — yet. You want something from my wing badly enough to break for it. You must want something from me even more. So tell me: what's the real reason you came looking for me tonight?\"",
+      "choices": [
+        {
+          "text": "Take the deal, both of us",
+          "reply": "Her smile sharpens into something genuinely delighted as she taps her fob against your chest. \"Ooh, a soul and a co-conspirator in one night — best bargain I've struck this term. Then the vault's yours, key and all, and I collect my fee in secret-sharing. Consider it the first clause of a very long, very pleasant contract.\" Her tail curls warm around your ankle, just once, for emphasis.",
+          "affection": 3
+        },
+        {
+          "text": "I just wanted the archive",
+          "reply": "\"Just the archive, hm? Mm, business only. Shame.\" She laughs, low and easy, and turns the key over in her palm before pressing it back into yours. \"Fine — a clean trade, no romance. The vault's locked behind the second shelf; go on and filch whatever historical trouble you're after. Just honestly? A girl can't help being a little disappointed you came for old papers and not me.\"",
+          "affection": 0
+        },
+        {
+          "text": "I came for what's locked away",
+          "reply": "\"Oh, now that is a dangerous little answer.\" Her eyes glitter as she leans in close enough that her horns almost brush your brow. \"Locked vaults, hidden keys, a demon who loves secrets — and a trespasser bold enough to say so. Whatever you've got hidden, little flame, I'm going to find it. Consider me your new tenant of every shadow you think you've kept.\" Her smile promises she'll enjoy the hunting.",
+          "suspicion": 3
+        }
+      ]
     }
   },
   {
@@ -4632,6 +4712,26 @@
       "no_reply": "She gives a slow, patient nod, brow furrowing with care, not anger. 'Then I will believe you, because I believe in me being wrong more than I believe in you lying. But know this, little one: whether you are a brother or a secret, you are still my herd, and nothing — not even the truth — takes you out of that. I guard you all the same.'",
       "yes_text": "Yes, I am a boy.",
       "yes_reply": "A deep, rumbling warmth fills her voice, and she kneels to meet your eyes, her huge hand impossibly gentle. 'A boy. Then you are the bravest, most precious secret I have ever been trusted with, and I will guard you with the same strength I would a newborn calf. You are family now, little one. Forever.'"
+    },
+    "encounter_scene": {
+      "text": "The gym is dark and empty except for one figure, and when you slip inside looking for a lost jacket, you nearly don't see her — Asteria is so still against the dark that she's practically furniture, sitting cross-legged on the floor with a single lantern by her hoof. Her cow ears prick up the instant your footsteps echo, and her deep voice comes out carefully soft: \"Oh. I thought I was the only one who knew how still this place gets at night. Don't be frightened, I'm just — I come here when the hallways feel too much like a labyrinth, and I was doing my thinking where I won't break anything.\" She sets the lantern down and gestures to the space beside her, both hands open, measured, as gentle as if she were inviting a fawn. \"You're the only person who's ever wandered in instead of away. I'd like to show you the quiet I found, and I'd like to keep you safe from all the heavy things out there. There's room beside me for someone small. Will you stay a while?\"",
+      "choices": [
+        {
+          "text": "I'll stay right here",
+          "reply": "Her breath lets out in a soft, happy rush, and she shifts to make a little more space without ever getting too close. \"Oh — good. That's good. Then I'll guard the door so nothing startles you, and we can talk slow about nothing at all.\" She smiles, shy and warm, hooves warm with a warmth that has nothing to do with the lantern. \"I don't get to keep people near very often. I'd hold my breath to make you stay.\"",
+          "affection": 3
+        },
+        {
+          "text": "I'm fine, I'll head out",
+          "reply": "\"Oh. Of course. I'm sorry — I didn't mean to keep you.\" She nods, careful and unhurried, and shifts herself a little further back so the path to the door is wide open. \"If you ever do want a quiet place to stand, the corner by the rack never breaks. I'll be here, minding my horns. You take care walking back — I'll listen to make sure the way stays safe.\"",
+          "affection": 0
+        },
+        {
+          "text": "Guarding faces a maze well",
+          "reply": "Her ears go very still, and a low, uneasy hum rumbles from her chest. \"You talk like you already know how to read a labyrinth — like you'd know the way to slip past a guard, big as she is.\" She rises slowly, blocking the door with all that careful bulk. \"I've been called trusting, but I'm not stupid. You came in quiet and you talk in riddles. I want to know who it is I'm protecting the walls from tonight — you, or whatever you're hiding.\"",
+          "suspicion": 3
+        }
+      ]
     }
   },
   {
@@ -5559,6 +5659,26 @@
       "no_reply": "She gives a soft, gentle laugh, luminous with understanding. 'Oh, darling, in the dream that spirit lives, you were never a daughter. But I am the last person to make anyone tell a truth they are not ready to give. I will warm the dream we share the same, and your secret will sleep safe beside me forever.'",
       "yes_text": "Yes, I am a boy.",
       "yes_reply": "Her glow warms to a soft rose, and she presses her hand to yours, eyes shining. 'A boy — the most beautiful dream this school has ever dreamed, and you trusted me enough to say it. Then know this: I would choose you a thousand times before I ever chased another. Your secret is sealed in the sweetest dream I keep, and it is yours, always.'"
+    },
+    "encounter_scene": {
+      "text": "The Dusk Wing goes dim and resonant as the dreaming hour settles in, and that's when you find the hallway's only other soul — Emilia, lounging along the window seat with her wings folded close, watching the last light bleed out. When she sees you, her gloved hand lifts in a slow wave, and her smile is warm in a way that doesn't reach for anything at all. \"Look who wandered in at my hour and actually stayed,\" she murmurs. \"The others sprint past this wing like I bite. I never have. I'm not the kind that takes, you know — everything I offer is an invitation, never a leash.\" She pats the worn cushion beside her, and there's something almost shy under all the grace, a succubus choosing softness on purpose. \"I've spent lifetimes being chased. Tonight I'd rather find out what it feels like to be chosen — to have someone stay with me because they truly want to, not because a little charm caught them. So I'll ask it plain, little dove: will you stay with me?\"",
+      "choices": [
+        {
+          "text": "I'm choosing you, Emilia",
+          "reply": "Her whole wing goes quiet, and then she laughs — a bright, unguarded sound that startles her enough to press a gloved hand to her mouth. \"Oh. Oh, that's — you actually said it plain. No one ever gives me the plain version.\" She scoots just enough to make real, warm room beside her. \"Then I'll keep every dream I'd have spun and use them for holding your hand instead. You chose me, so I don't have to hunger for anything else tonight.\" She leans into you, featherlight and entirely content.",
+          "affection": 3
+        },
+        {
+          "text": "I just needed to pass through",
+          "reply": "\"Ah — through, of course. My mistake.\" She smooths her skirts and gives a pleasant little nod, her smile staying warm even as she tucks herself back against the window. \"Then I'll let the hallway have you. No charms, no leash, no hurt feelings — an invitation declined is still an invitation made in good faith.\" She looks past you toward the shadowed end of the wing. \"Walk safe to wherever you're headed. And if you ever want a place to stop, you know where the dusk keeps its softest seat.\"",
+          "affection": 0
+        },
+        {
+          "text": "What would you grant a willing heart?",
+          "reply": "Her eyes flicker, and for a breath the warmth in them turns curious and sharp — the dream-weaver waking up. \"A very knowing question, for someone who only needed to pass through.\" She tilts her head, studying you over one folded wing. \"Succubi can read a heartbeat like a bedtime story, and yours is telling me you came here tonight to ask for more than a seat — that you were already thinking about a doorstep you could sneak a boy past.\" Her smile stays sweet, but her gaze doesn't. \"Say the wrong name by accident, and I'll know every one you carry.\"",
+          "suspicion": 3
+        }
+      ]
     }
   },
   {

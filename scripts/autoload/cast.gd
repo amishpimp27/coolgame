@@ -106,6 +106,8 @@ func _normalise(c: Dictionary) -> void:
 	])
 	if not c.has("encounter") or typeof(c["encounter"]) != TYPE_ARRAY:
 		c["encounter"] = ["She almost walks straight into you."]
+	if not c.has("encounter_scene") or typeof(c["encounter_scene"]) != TYPE_DICTIONARY:
+		c["encounter_scene"] = {}
 	# Guarantee every conversation bucket exists even if the file was thin.
 	# The four base keys are the SUCCESS lines; the _neutral/_fail variants feed
 	# the corresponding bad roll outcomes.

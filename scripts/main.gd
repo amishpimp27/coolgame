@@ -289,25 +289,46 @@ func _travel(area_id: String) -> void:
 	_maybe_encounter(area_id)
 
 
-## Walking into a new area is how the school ambushes you.
+## Walking into a new area is how the school ambushes you. 15% of the time one
+## of the girls you already know is waiting there (if several are, only one
+## intercepts). Talking to her plays her unique one-time encounter cutscene with
+## a three-way choice; it can only ever fire once per girl per run.
 func _maybe_encounter(area_id: String) -> void:
 	var present := Cast.present_in(area_id, Game.period)
-	var known := []
+	var candidates := []
 	for id: String in present:
-		if Game.has_met(id):
-			known.append(id)
-	if known.is_empty() or randf() > 0.3:
+		if not Game.has_met(id) or Game.is_encountered(id):
+			continue
+		var sc: Dictionary = Cast.get_char(id).get("encounter_scene", {})
+		if sc.is_empty():
+			continue
+		candidates.append(id)
+	if candidates.is_empty() or randf() > 0.15:
 		return
-	var who: String = known[randi() % known.size()]
+	var who: String = candidates[randi() % candidates.size()]
+	var scene: Dictionary = Cast.get_char(who).get("encounter_scene", {})
+	# Convert the writer's scene choices (text/reply + one effect) into VN
+	# choice entries scoped to this girl, closing the scene after the reply.
+	var scene_opts := []
+	for c: Variant in scene.get("choices", []):
+		if typeof(c) != TYPE_DICTIONARY:
+			continue
+		var opt: Dictionary = (c as Dictionary).duplicate()
+		opt["char"] = who
+		opt["end"] = true
+		scene_opts.append(opt)
 	_gameplay_pause()
 	vn.open([
 		{"text": "You step into the %s. %s" % [Cast.area_name(area_id),
-			Cast.pick_encounter(who)], "id": who},
+			str(scene.get("text", Cast.pick_encounter(who)))], "id": who},
 		{"id": who, "choices": [
-			{"text": "Talk to her", "then": [{"menu": who}]},
-			{"text": "Wave and move on",
-				"reply": "You nod at %s and keep walking. She watches you go."
-					% Cast.display_name(who), "affection": 1},
+			{"text": "Talk to her", "then": [
+				{"mark_encountered": who},
+				{"id": who, "choices": scene_opts},
+			]},
+			{"text": "Walk away",
+				"reply": "You excuse yourself and keep walking. She watches you go, unreadable.",
+				"end": true},
 		]},
 	])
 
@@ -786,6 +807,30 @@ func _run_selftest() -> void:
 					_check((chat as Dictionary).get("neutral", []).size() >= 1, "%s Just-chat neutral lines" % tid)
 		_check(not str(Cast.pick_dialogue(tid, 0, "chat", "success").get("reply", "")).is_empty(),
 				"%s Just-chat reply non-empty" % tid)
+
+	# One-time room encounters: every student has a scene with 3 choices whose
+	# effects are exactly +3 affection / neutral / +3 suspicion.
+	for eid: String in ids:
+		if Cast.is_teacher(eid):
+			continue
+		var esc: Dictionary = Cast.get_char(eid).get("encounter_scene", {})
+		_check(not esc.is_empty(), "%s has an encounter scene" % eid)
+		if esc.is_empty():
+			continue
+		var choic: Array = esc.get("choices", [])
+		_check(choic.size() == 3, "%s encounter has 3 choices (got %d)" % [eid, choic.size()])
+		_check(not str(esc.get("text", "")).is_empty(), "%s encounter has scene text" % eid)
+		for cf: Variant in choic:
+			var c_opt := cf as Dictionary
+			var eff := 0
+			if int(c_opt.get("affection", 0)) != 0:
+				eff += 1
+			if int(c_opt.get("suspicion", 0)) != 0:
+				eff += 1
+			_check(eff == 1, "%s encounter choice has exactly one effect" % eid)
+			_check(not str(c_opt.get("text", "")).is_empty()
+					and not str(c_opt.get("reply", "")).is_empty(),
+					"%s encounter choice has text + reply" % eid)
 
 	# Tier resolution at every boundary.
 	_check(Cast.tier_index(ids[0], 0) == 0, "affection 0 -> tier 0")

@@ -19,7 +19,7 @@ const NIGHT_SUSPICION_DECAY := 3
 ## Conversation budget. You get a fresh pool of 25 tokens each new *day* (not every
 ## period), and spend them to talk: Just Chat 1, Flirt 3, Compliment 2,
 ## Ask (once/day).
-const TOKENS_PER_DAY := 25
+const TOKENS_PER_DAY := 15
 const COST_CHAT := 1
 const COST_FLIRT := 3
 const COST_COMPLIMENT := 2
@@ -41,6 +41,7 @@ var met := {}             # char_id -> true
 var events_seen := {}     # "char_id:min" -> true
 var asked_about := {}     # char_id -> day the "ask about herself" was used
 var revealed := {}        # char_id -> true once the Friend-tier boy reveal has played
+var encountered := {}     # char_id -> true once her one-time room encounter has played
 var confessed := ""       # char_id of whoever the run ended on
 var ending_title := ""
 var ending_text := ""
@@ -97,6 +98,7 @@ func reset() -> void:
 	events_seen.clear()
 	asked_about.clear()
 	revealed.clear()
+	encountered.clear()
 	confessed = ""
 	ending_title = ""
 	ending_text = ""
@@ -195,6 +197,16 @@ func mark_revealed(id: String) -> void:
 	stats_changed.emit()
 
 
+## The one-time room-encounter cutscene: once per character per run.
+func is_encountered(id: String) -> bool:
+	return bool(encountered.get(id, false))
+
+
+func mark_encountered(id: String) -> void:
+	encountered[id] = true
+	stats_changed.emit()
+
+
 # --- clock -----------------------------------------------------------------
 
 func advance_period() -> void:
@@ -243,6 +255,7 @@ func to_dict() -> Dictionary:
 		"events_seen": events_seen,
 		"asked_about": asked_about,
 		"revealed": revealed,
+		"encountered": encountered,
 		"confessed": confessed,
 		"ending_title": ending_title,
 		"ending_text": ending_text,
@@ -268,6 +281,7 @@ func from_dict(d: Dictionary) -> void:
 	events_seen = d.get("events_seen", {})
 	asked_about = d.get("asked_about", {})
 	revealed = d.get("revealed", {})
+	encountered = d.get("encountered", {})
 	confessed = str(d.get("confessed", ""))
 	ending_title = str(d.get("ending_title", ""))
 	ending_text = str(d.get("ending_text", ""))

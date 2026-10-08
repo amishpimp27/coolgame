@@ -179,6 +179,11 @@ func _show_step(step: Dictionary) -> void:
 	if step.has("close"):
 		close()
 		return
+	if step.has("mark_encountered"):
+		# Lock a character's one-time room-encounter cutscene before it plays.
+		Game.mark_encountered(str(step["mark_encountered"]))
+		_next()
+		return
 	if step.has("menu"):
 		_menu_char = str(step["menu"])
 		_show_menu()
